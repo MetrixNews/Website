@@ -76,35 +76,14 @@ p {
   margin-bottom: calc(-.25 * var(--gutter));
 }
 
-
-/* Demo styles */
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  display: grid;
-  place-items: center;
-  background: #456173;
-}
-
 ul {
   list-style: none;
   padding: 0;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
 .app {
-  width: 375px;
-  height: 667px;
-  background: #DBD0BC;
+  width: 1500px;
+  height: auto;
   overflow-y: scroll;
 }
 
@@ -119,3 +98,5 @@ h3 {
   background: #fff;
   border-radius: 8px;
 }
+
+/* END article scroller*/
