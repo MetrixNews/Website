@@ -132,9 +132,15 @@ ul {
 
 /* Article Card */
 /* Create two equal columns that floats next to each other */
-.column {
+.column-35 {
   float: left;
-  width: 50%;
+  width: 35%;
+  padding: 10px;
+}
+
+.column-65 {
+  float: left;
+  width: 65%;
   padding: 10px;
 }
 
@@ -143,6 +149,10 @@ ul {
   content: "";
   display: table;
   clear: both;
+}
+
+.desc {
+  font-size: 12pt;
 }
 
 /* END article card */
