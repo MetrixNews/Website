@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6, p {
+body,h1,h2,h3,h4,h5,h6, p{
   font-family: "Source Sans Pro", sans-serif;
   color: auto;
 }
@@ -18,11 +18,16 @@ h2 {
   font-size: 20pt;
   padding-left: 50px;
   padding-top: 25px;
-
+  color: white;
 }
 
 p {
   font-size: 16pt;
+}
+
+.w3-top {
+  color: white;
+  position: static;
 }
 
 .pageDescription {
@@ -131,10 +136,16 @@ ul {
 /* END article scroller*/
 
 /* Article Card */
-/* Create two equal columns that floats next to each other */
-.column {
+/* Create two columns that floats next to each other */
+.column-35 {
   float: left;
-  width: 50%;
+  width: 35%;
+  padding: 10px;
+}
+
+.column-65 {
+  float: left;
+  width: 65%;
   padding: 10px;
 }
 
@@ -143,6 +154,14 @@ ul {
   content: "";
   display: table;
   clear: both;
+}
+
+.desc {
+  font-size: 12pt;
+}
+
+ul li {
+  color: black;
 }
 
 /* END article card */
