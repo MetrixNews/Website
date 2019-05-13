@@ -160,4 +160,35 @@ h5 {
   width:100%;
   height:auto;
 }
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+/* copied from w3 */
+/* Create two columns/boxes that floats next to each other */
+.candidatePic {
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  padding: 50px;
+}
+
+/* Style the list inside the menu */
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* END election.html */
