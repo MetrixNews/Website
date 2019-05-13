@@ -146,3 +146,17 @@ ul {
 }
 
 /* END article card */
+
+/* election.html */
+.electionimg {
+  width: 100%;
+  height: auto;
+}
+h5 {
+  word-wrap:break-word;
+}
+.ElectionPollImg{
+  width:100%;
+  height:auto;
+}
+/* END election.html */
