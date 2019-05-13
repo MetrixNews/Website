@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6, p {
+body,h1,h2,h3,h4,h5,h6, p{
   font-family: "Source Sans Pro", sans-serif;
   color: auto;
 }
@@ -18,11 +18,15 @@ h2 {
   font-size: 20pt;
   padding-left: 50px;
   padding-top: 25px;
-
+  color: white;
 }
 
 p {
   font-size: 16pt;
+}
+
+.w3-top {
+  color: white;
 }
 
 .pageDescription {
@@ -131,7 +135,7 @@ ul {
 /* END article scroller*/
 
 /* Article Card */
-/* Create two equal columns that floats next to each other */
+/* Create two columns that floats next to each other */
 .column-35 {
   float: left;
   width: 35%;
@@ -153,6 +157,10 @@ ul {
 
 .desc {
   font-size: 12pt;
+}
+
+ul li {
+  color: black;
 }
 
 /* END article card */
