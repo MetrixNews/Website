@@ -149,8 +149,9 @@ ul {
 
 /* election.html */
 .electionimg {
-  width: 100%;
+  width: 180px;
   height: auto;
+  vertical-align: middle;
 }
 h5 {
   word-wrap:break-word;
