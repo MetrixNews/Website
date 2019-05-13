@@ -83,7 +83,7 @@ p {
   overflow-x: scroll;
   scroll-snap-type: x proximity;
   padding-bottom: calc(.75 * var(--gutter));
-  margin-bottom: calc(-.5 * var(--gutter));
+  margin-bottom: calc(0 * var(--gutter));
 }
 
 .hs:before,
@@ -118,8 +118,8 @@ ul {
 .app {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
   overflow-y: hidden; // hide vertical
+  overflow-x: scroll;
 }
 
 .hs > li,
@@ -132,7 +132,11 @@ ul {
   align-items: center;
   background: #fff;
   border-radius: 8px;
+  width: auto;
+  height:auto;
 }
+
+
 /* END article scroller*/
 
 /* Article Card */
@@ -140,13 +144,13 @@ ul {
 .column-35 {
   float: left;
   width: 35%;
-  padding: 10px;
+  padding: 5px;
 }
 
 .column-65 {
   float: left;
   width: 65%;
-  padding: 10px;
+  padding: 5px;
 }
 
 /* Clear floats after the columns */
