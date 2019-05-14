@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Election</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -12,57 +12,268 @@
 
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-silver w3-card" id="myNavbar">
-    <a href="index.html" class="w3-bar-item w3-button w3-wide">METRIX</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="news.html" class="w3-bar-item w3-button">NEWS</a>
-      <a href="election.html" class="w3-bar-item w3-button">ELECTION</a>
-      <a href="contact.html" class="w3-bar-item w3-button"> CONTACT</a>
-      <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="signin.html" class="w3-bar-item w3-button">SIGN IN</a>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="index.html" class="w3-bar-item w3-button w3-wide">METRIX</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="news.html" class="w3-bar-item w3-button">NEWS</a>
+        <a href="election.html" class="w3-bar-item w3-button">ELECTION</a>
+        <a href="contact.html" class="w3-bar-item w3-button"> CONTACT</a>
+        <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="signin.html" class="w3-bar-item w3-button">SIGN IN</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
   </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="news.html" onclick="w3_close()" class="w3-bar-item w3-button">NEWS</a>
+    <a href="election.html" onclick="w3_close()" class="w3-bar-item w3-button">ELECTION</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="signin.html" onclick="w3_close()" class="w3-bar-item w3-button">SIGN IN</a>
+  </nav>
+
+  <div class="pageDescription">
+    <h1>2020 PRESIDENTIAL ELECTION</h1>
+    <p>Browse today's hottest political topics from trusted news sources. Select any topic to analyze it more in depth. Click here to suggest a new topic or source. Visit the About page to learn how we label articles.</p>
+  </div>
+
+  <div >
+    insert line graph of poll data.
+    <img src=".." class="img-fluid ElectionPollImg" float:alt="Line graph of poll data" style="width:800px;height:200px;"/>
+  </div>
+
+<br />
+  <div class="election">
+    <h2>Republicans</h2><br />
+    <!-- Start of Republicans -->
+    <!-- 1st Row -->
+    <div class="w3-panel ">
+    <div class="w3-container w3-col m12 l6">
+      <div class="w3-container w3-col s8 m4 l5  w3-margin-bottom">
+        <img src="images/Bernie_Sanders.jpg" class="electionimg" />
+      </div>
+
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
+        <h3>Name R1</h3>
+        <h5>From State</h5>
+        <h6>
+          Political Experience <br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
+          First few lines of bio <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
+      </div>
+    </div>
+
+    <div class="w3-container w3-col m12 l6">
+      <div class="w3-container w3-col s8 m4 l5  w3-margin-bottom">
+        <img src="images/Bernie_Sanders.jpg" class="electionimg" />
+      </div>
+
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
+        <h3>Name R2</h3>
+        <h5>From State</h5>
+        <h6>
+          Political Experience <br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
+          First few lines of bio <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
+      </div>
+    </div>
+</div>
+<!-- End of 1st Row -->
+
+    <!-- 2nd Row -->
+    <div class="w3-panel ">
+    <div class="w3-container w3-col m12 l6">
+      <div class="w3-container w3-col s8 m4 l5  w3-margin-bottom">
+        <img src="images/Bernie_Sanders.jpg" class="electionimg" />
+      </div>
+
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
+        <h3>Name R3</h3>
+        <h5>From State</h5>
+        <h6>
+          Political Experience <br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
+          First few lines of bio <br />
+          Few lines of bio <br />
+          Few lines of bio asfjkalsdjfaklsfjksljfkalsfjkda
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
+      </div>
+    </div>
+
+    <div class="w3-container w3-col m12 l6">
+      <div class="w3-container w3-col s8 m4 l5  w3-margin-bottom">
+        <img src="images/Bernie_Sanders.jpg" class="electionimg" />
+      </div>
+
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
+        <h3>Name R4</h3>
+        <h5>From State</h5>
+        <h6>
+          Political Experience <br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
+          First few lines of bio <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
+      </div>
+    </div>
+</div>
+    <!-- End of Republicans -->
+
+    <!-- Start of Democrats -->
+    <br />
+    <h2>Democrats</h2>
+    <br />
+    <!-- 1st Row -->
+    <div class="w3-panel ">
+
+    <div class="w3-container w3-col m12 l6">
+      <div class="w3-container w3-col s8 m4 l5  w3-margin-bottom">
+        <img src="images/Bernie_Sanders.jpg" class="electionimg" />
+      </div>
+
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
+        <h3>Name D1</h3>
+        <h5>From State</h5>
+        <h6>
+          Political Experience <br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
+          First few lines of bio <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
+      </div>
+    </div>
+
+    <div class="w3-container w3-col m12 l6">
+      <div class="w3-container w3-col s8 m4 l5  w3-margin-bottom">
+        <img src="images/Bernie_Sanders.jpg" class="electionimg" />
+      </div>
+
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
+        <h3>Name D2</h3>
+        <h5>From State</h5>
+        <h6>
+          Political Experience <br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
+          First few lines of bio <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
+      </div>
+    </div>
+</div>
+<!-- End of 1st Row -->
+
+    <!-- 2nd Row -->
+    <div class="w3-panel ">
+    <div class="w3-container w3-col m12 l6">
+      <div class="w3-container w3-col s8 m4 l5  w3-margin-bottom">
+        <img src="images/Bernie_Sanders.jpg" class="electionimg" />
+      </div>
+
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
+        <h3>Name D3</h3>
+        <h5>From State</h5>
+        <h6>
+          Political Experience <br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
+          First few lines of bio <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
+      </div>
+    </div>
+
+
+    <div class="w3-container w3-col m12 l6">
+      <div class="w3-container w3-col s8 m4 l5  w3-margin-bottom">
+        <img src="images/Bernie_Sanders.jpg" class="electionimg" />
+      </div>
+
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
+        <h3>Name D4</h3>
+        <h5>From State</h5>
+        <h6>
+          Political Experience <br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
+          First few lines of bio <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
+      </div>
+    </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="news.html" onclick="w3_close()" class="w3-bar-item w3-button">NEWS</a>
-  <a href="election.html" onclick="w3_close()" class="w3-bar-item w3-button">ELECTION</a>
-  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="signin.html" onclick="w3_close()" class="w3-bar-item w3-button">SIGN IN</a>
-</nav>
-
-<div class="pageDescription">
-  <h1>2020 PRESIDENTIAL ELECTION</h1>
-  <p>Browse today's hottest political topics from trusted news sources. Select any topic to analyze it more in depth. Click here to suggest a new topic or source. Visit the About page to learn how we label articles.</p>
-</div>
-
-<div class="election">
-  <h2>Republicans</h2>
-  <h2>Democrats</h2>
 
 
-<!-- Footer -->
-<footer class="w3-center w3-white w3-padding-48">
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+
+
+
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+
+
+
+  <!-- Footer -->
+  <footer class="w3-center w3-white w3-padding-48">
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
 </body>
 </html>
