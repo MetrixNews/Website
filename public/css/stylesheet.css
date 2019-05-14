@@ -169,6 +169,7 @@ ul li {
 
 .row {
   width: 100%;
+  margin: 2px;
 }
 
 .time {
@@ -179,6 +180,11 @@ ul li {
 .headline {
   font-size: 12pt;
   font-weight: bold;
+}
+
+.metric {
+display: flex;
+justify-content: space-between;
 }
 
 
