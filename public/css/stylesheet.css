@@ -150,16 +150,24 @@ ul {
 /* election.html */
 .electionimg {
   /* width: 100%; */
-  width:200px;
+  width:150px;
   height: auto;
   float:right;
 }
 h5 {
   word-wrap:break-word;
+
 }
 .ElectionPollImg{
   width:100%;
   height:auto;
+}
+h3 {
+  font-weight: bold;
+
+}
+.election{
+  color:white;
 }
 
 /* copied from w3 */
