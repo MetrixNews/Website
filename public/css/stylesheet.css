@@ -174,13 +174,9 @@ h3 {
   color:white;
 }
 
-/* copied from w3 */
-/* Create two columns/boxes that floats next to each other */
 .candidatePic {
-  float: left;
   width: 20%;
-  height: 300px; /* only for demonstration, should be removed */
-  padding: 50px;
+  height: auto;
 }
 
 .candidateBio{
@@ -207,3 +203,22 @@ line-height: 1.6em;
 } */
 
 /* END election.html */
+
+/* candidate.html */
+.candidatePic {
+  width: 15%;
+  height: auto;
+  /* padding-left: 20px; */
+}
+/* .candidateTable,td{
+  border: solid;
+} */
+.candidate{
+  color:white;
+}
+.card,.card-link{
+/* opacity: 0.5; */
+color:black;
+  /* background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);; */
+}
+/* END candidate.html */
