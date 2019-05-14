@@ -1,6 +1,7 @@
 body,h1,h2,h3,h4,h5,h6, p {
   font-family: "Source Sans Pro", sans-serif;
   color: auto;
+  /* word-wrap: break-word; */
 }
 
 body, html {
@@ -158,6 +159,9 @@ h5 {
   word-wrap:break-word;
 
 }
+/* h6{
+word-wrap:break-word;
+} */
 .ElectionPollImg{
   width:100%;
   height:auto;
@@ -178,5 +182,28 @@ h3 {
   height: 300px; /* only for demonstration, should be removed */
   padding: 50px;
 }
+
+.candidateBio{
+line-height: 1.6em;
+}
+
+.overflow {
+    /* width: 80vh; */
+  height:19ch;
+  /* outline: 1px solid #000; */
+  margin: 0 0 2em 0;
+  /* white-space: wrap; */
+ overflow: hidden;
+ word-wrap:break-word;
+ hyphens: auto;
+ overflow: ellipsis;
+ /* max-height: 7.2em;
+ line-height: 1.8em; */
+}
+
+/* .ellipsis::after{
+  content: "...";
+  position:absolute;
+} */
 
 /* END election.html */

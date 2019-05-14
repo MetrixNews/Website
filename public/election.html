@@ -8,7 +8,36 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="css\stylesheet.css">
+<style>
+/* styles for '...' */
+.block-with-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative;
+  /* use this value to count block height */
+  line-height: 1.8em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 7.2em;
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+/* create the ... */
+.block-with-text:before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
 
+</style>
 
 <body>
 
@@ -63,14 +92,20 @@
         <img src="images/Bernie_Sanders.jpg" class="electionimg" />
       </div>
 
-      <div class="w3-container w3-col s10 m8 l7 ">
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
         <h3>Name R1</h3>
         <h5>From State</h5>
-        <h5>
+        <h6>
           Political Experience <br />
-          Campaign slogan<br />
-          First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio<br />
-        </h5><br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
+          First few lines of bio <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
       </div>
     </div>
 
@@ -79,14 +114,20 @@
         <img src="images/Bernie_Sanders.jpg" class="electionimg" />
       </div>
 
-      <div class="w3-container w3-col s10 m8 l7 ">
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
         <h3>Name R2</h3>
         <h5>From State</h5>
-        <h5>
+        <h6>
           Political Experience <br />
-          Campaign slogan<br />
-          First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio<br />
-        </h5><br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
+          First few lines of bio <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
       </div>
     </div>
 </div>
@@ -99,14 +140,20 @@
         <img src="images/Bernie_Sanders.jpg" class="electionimg" />
       </div>
 
-      <div class="w3-container w3-col s10 m8 l7 ">
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
         <h3>Name R3</h3>
         <h5>From State</h5>
-        <h5>
+        <h6>
           Political Experience <br />
-          Campaign slogan<br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
           First few lines of bio <br />
-        </h5><br />
+          Few lines of bio <br />
+          Few lines of bio asfjkalsdjfaklsfjksljfkalsfjkda
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
       </div>
     </div>
 
@@ -115,15 +162,20 @@
         <img src="images/Bernie_Sanders.jpg" class="electionimg" />
       </div>
 
-      <div class="w3-container w3-col s10 m8 l7 ">
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
         <h3>Name R4</h3>
         <h5>From State</h5>
-        <h5>
+        <h6>
           Political Experience <br />
-          Campaign slogan<br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
           First few lines of bio <br />
-        </h5>
-        <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
       </div>
     </div>
 </div>
@@ -135,20 +187,26 @@
     <br />
     <!-- 1st Row -->
     <div class="w3-panel ">
+
     <div class="w3-container w3-col m12 l6">
       <div class="w3-container w3-col s8 m4 l5  w3-margin-bottom">
         <img src="images/Bernie_Sanders.jpg" class="electionimg" />
       </div>
 
-      <div class="w3-container w3-col s10 m8 l7 ">
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
         <h3>Name D1</h3>
         <h5>From State</h5>
-        <h5>
+        <h6>
           Political Experience <br />
-          Campaign slogan<br />
-          First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio<br />
-        </h5>
-        <br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
+          First few lines of bio <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
       </div>
     </div>
 
@@ -157,15 +215,20 @@
         <img src="images/Bernie_Sanders.jpg" class="electionimg" />
       </div>
 
-      <div class="w3-container w3-col s10 m8 l7 ">
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
         <h3>Name D2</h3>
         <h5>From State</h5>
-        <h5>
+        <h6>
           Political Experience <br />
-          Campaign slogan<br />
-          First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio First few lines of bio<br />
-        </h5>
-        <br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
+          First few lines of bio <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
       </div>
     </div>
 </div>
@@ -178,15 +241,20 @@
         <img src="images/Bernie_Sanders.jpg" class="electionimg" />
       </div>
 
-      <div class="w3-container w3-col s10 m8 l7 ">
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
         <h3>Name D3</h3>
         <h5>From State</h5>
-        <h5>
+        <h6>
           Political Experience <br />
-          Campaign slogan<br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
           First few lines of bio <br />
-        </h5>
-        <br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
       </div>
     </div>
 
@@ -196,14 +264,20 @@
         <img src="images/Bernie_Sanders.jpg" class="electionimg" />
       </div>
 
-      <div class="w3-container w3-col s10 m8 l7 ">
+      <div class="candidateBio w3-container w3-col s10 m8 l7 ">
         <h3>Name D4</h3>
         <h5>From State</h5>
-        <h5>
+        <h6>
           Political Experience <br />
-          Campaign slogan<br />
+          Campaign slogan<br /></h6>
+        <h6 class="overflow block-with-text">
           First few lines of bio <br />
-        </h5><br />
+          Few lines of bio <br />
+          Few lines of bio <br />
+          First few lines of bio
+          Few lines of bio
+          Few lines of bio <br />
+        </h6><br />
       </div>
     </div>
 </div>
