@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6, p {
+body,h1,h2,h3,h4,h5,h6, p{
   font-family: "Source Sans Pro", sans-serif;
   color: auto;
   /* word-wrap: break-word; */
@@ -17,13 +17,18 @@ h1 {
 
 h2 {
   font-size: 20pt;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 25px;
-
+  color: white;
 }
 
 p {
   font-size: 16pt;
+}
+
+.w3-top {
+  color: white;
+  position: static;
 }
 
 .pageDescription {
@@ -73,13 +78,13 @@ p {
 .hs {
   display: grid;
   grid-gap: calc(var(--gutter) / 2);
-  grid-template-columns: 10px repeat(6, calc(50% - var(--gutter) * 2)) 10px;
+  grid-template-columns: 10px repeat(10000, calc(30% - var(--gutter) * -4)) 10px;
   grid-template-rows: minmax(150px, 1fr);
 
   overflow-x: scroll;
   scroll-snap-type: x proximity;
   padding-bottom: calc(.75 * var(--gutter));
-  margin-bottom: calc(-.5 * var(--gutter));
+  margin-bottom: calc(0 * var(--gutter));
 }
 
 .hs:before,
@@ -114,8 +119,8 @@ ul {
 .app {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
   overflow-y: hidden; // hide vertical
+  overflow-x: scroll;
 }
 
 .hs > li,
@@ -128,22 +133,172 @@ ul {
   align-items: center;
   background: #fff;
   border-radius: 8px;
+  border: solid 5px #ff0000;
+  position: static;
+  height: 100%;
 }
+
+
 /* END article scroller*/
 
 /* Article Card */
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
+/* Create two columns that floats next to each other */
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.desc {
+  font-size: 12pt;
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative;
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.6em;
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: center;
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+/* create the ... */
+.desc:before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.desc:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
+}
+
+}
+
+.author {
+  font-size: 12pt;
+  font-style: italic;
+  text-align: center;
+}
+
+ul li {
+  color: black;
+}
+
+.source {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.row {
+  width: 100%;
+  margin: 5px 5px 5px 5px;
+}
+
+.time {
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.headline {
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* styles for '...' */
+.headline {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative;
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.6em;
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: center;
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+/* create the ... */
+.headline:before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.headline:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
+}
+
+.metric {
+display: flex;
+justify-content: space-between;
+float: right;
+}
+
+.articlephoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.sourcelogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articlebox {
+  border: solid 1px;
+  padding: 5px 5px 5px 5px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.publishinfo {
+  text-align: center;
 }
 
 /* END article card */
