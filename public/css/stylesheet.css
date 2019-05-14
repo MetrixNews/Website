@@ -238,9 +238,10 @@ line-height: 1.6em;
   height: auto;
   /* padding-left: 20px; */
 }
-/* .candidateTable,td{
-  border: solid;
-} */
+.candidateTable,td{
+color:white;
+}
+
 .candidate{
   color:white;
 }
