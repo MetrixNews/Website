@@ -305,10 +305,21 @@ float: right;
 
 /* election.html */
 .electionimg {
-  /* width: 100%; */
-  width:150px;
+  width:175px;
   height: auto;
   float:right;
+  padding-top: 20px;
+}
+/* img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+} */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 h5 {
   word-wrap:break-word;
@@ -335,7 +346,7 @@ h3 {
 }
 
 .candidateBio{
-line-height: 1.6em;
+line-height: 1.8em;
 }
 
 .overflow {
@@ -380,10 +391,9 @@ line-height: 1.6em;
 /* hide ... if we have text, which is less than or equal to max lines */
 
 
-/* .ellipsis::after{
-  content: "...";
-  position:absolute;
-} */
+.box{
+  border:solid;
+}
 
 /* END election.html */
 
