@@ -340,10 +340,7 @@ h3 {
   color:white;
 }
 
-.candidatePic {
-  width: 20%;
-  height: auto;
-}
+
 
 .candidateBio{
 line-height: 1.8em;
@@ -399,10 +396,15 @@ line-height: 1.8em;
 
 /* candidate.html */
 .candidatePic {
-  width: 15%;
+  width: 175px;
   height: auto;
-  /* padding-left: 20px; */
 }
+
+.candidatePicCell{
+  text-align: center;
+}
+
+
 .candidateTable,td{
 color:white;
 }
