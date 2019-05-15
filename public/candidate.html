@@ -12,7 +12,24 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+.textsize{
+  /* background-color: lightgrey; */
+  padding: 20px;
+}
 
+@media screen and (min-width: 415px) {
+  .textsize{
+    font-size: 200%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .textsize {
+    font-size: 50%;
+  }
+}
+</style>
 
 <body>
 
@@ -52,58 +69,76 @@
       Not sure if you agree with his platform? Click any topic to figure out your stance.</p>
     </div>
 
+
     <div class="candidate">
 
-      <table class="candidateTable table table-bordered">
-        <tbody >
-          <td class="w3-col s6 m4 l4 candidatePicCell">
-            <img src="images/Bernie_Sanders.jpg" class="candidatePic"  />
-          </td>
-          <td class="w3-col s6 m4 l4">
-            <h3>Bernie Sanders</h3>
-            <h5>From state<br />
-              Political experice<br />
-              Campaigh slogan<br />
-              short bio<br />
-            </h5>
-          </td>
-          <td class="w3-col m4 l4">
-            <h4>Experience Highlights</h4>
-            <h5>Experience 1 <br />
-              Experience 2<br />
-              Experience 3<br />
-              ...<br />
-            </h5>
-          </td>
+      <div id="Candidate" class="w3-panel">
+        <table class="candidateTable table table-bordered">
+          <tbody>
+            <td class="w3-col candidatePicCell">
+              <img src="images/Bernie_Sanders.jpg" class="candidatePic"  />
+            </td>
+            <td class="w3-col">
+              <h3>
+                Bernie Sanders
+              </h3>
+              <h5>From state<br />
+                Political experice<br />
+                Campaigh slogan: <i>Not me. Us.</i><br />
+                short bio<br />
+              </h5>
+            </td>
+            <td class="w3-col">
+              <h4>Experience Highlights</h4>
+              <h5>Experience 1 <br />
+                Experience 2<br />
+                Experience 3<br />
+                ...<br />
+              </h5>
+            </td>
 
-        </tbody>
-      </table>
+          </tbody>
+        </table>
+      </div>
 
-start of collapsable table
-  <div id="candidateCollaps">
-    <div class="card">
-      <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#collapseOne">
-          Climate Change
-        </a>
+
+      <div id="candidateCollapsible" class="w3-panel">
+        <h3>Hot Topics</h3>
+        <br />
+        <button class="candidateCollapsible"><h4>Climate Change</h4></button>
+        <div class="content">
+          Bernie Sanders' view on climate change.  Bernie Sanders' view on climate change.    Bernie Sanders' view on climate change.    Bernie Sanders' view on climate change.    Bernie Sanders' view on climate change.
+        </div>
+        <br />
+
+        <button class="candidateCollapsible"><h4>Gun Control</h4></button>
+        <div class="content">
+          Bernie Sanders' view on gun control.  Bernie Sanders' view on gun control.    Bernie Sanders' view on gun control.    Bernie Sanders' view on gun control.    Bernie Sanders' view on gun control.
+        </div>
+        <br />
+
+        <button class="candidateCollapsible"><h4>Gun Control</h4></button>
+        <div class="content">
+          Bernie Sanders' view on gun control.  Bernie Sanders' view on gun control.    Bernie Sanders' view on gun control.    Bernie Sanders' view on gun control.    Bernie Sanders' view on gun control.
+        </div>
+        <br />
+
+        <button class="candidateCollapsible"><h4>Gun Control</h4></button>
+        <div class="content">
+          Bernie Sanders' view on gun control.  Bernie Sanders' view on gun control.    Bernie Sanders' view on gun control.    Bernie Sanders' view on gun control.    Bernie Sanders' view on gun control.
+        </div>
+        <br />
+
       </div>
-      <div id="collapseOne" class="collapse show" data-parent="#candidateCollaps">
-        <div class="card-body">
-Bernie Sanders' view on climate change.   Bernie Sanders' view on climate change. Bernie Sanders' view on climate change. Bernie Sanders' view on climate change. Bernie Sanders' view on climate change.       </div>
-      </div>
+
+
+
+
+
+
+
+
     </div>
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-        Gun Control
-      </a>
-      </div>
-      <div id="collapseTwo" class="collapse" data-parent="#candidateCollaps">
-        <div class="card-body">
-Bernie Sanders' view on gun control.  Bernie Sanders' view on gun control.    Bernie Sanders' view on gun control.    Bernie Sanders' view on gun control.    Bernie Sanders' view on gun control.           </div>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -111,13 +146,15 @@ Bernie Sanders' view on gun control.  Bernie Sanders' view on gun control.    Be
 
 
 
-</div>
 
 
 
 
 
 
+
+
+    <script type="text/javascript" src="js/candidateCollaps.js"></script>
 
     <!-- Footer -->
     <footer class="w3-center w3-white w3-padding-48">
