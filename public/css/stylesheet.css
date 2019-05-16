@@ -10,6 +10,11 @@ body, html {
   background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
 }
 
+footer {
+  width: 100%;
+  height: auto;
+}
+
 h1 {
   font-size: 36pt;
   font-weight: bold;
@@ -26,9 +31,28 @@ p {
   font-size: 16pt;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: silver;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
 .w3-top {
   color: white;
   position: static;
+  font-size: 16pt;
+  font-weight: bold;
 }
 
 .pageDescription {
@@ -133,7 +157,7 @@ ul {
   align-items: center;
   background: #fff;
   border-radius: 8px;
-  border: solid 5px #ff0000;
+  /* border: solid 5px #ff0000; */
   position: static;
   height: 100%;
 }
@@ -291,7 +315,7 @@ ul li {
 }
 
 .articlebox {
-  border: solid 1px;
+  border: solid 5px #ff0000;
   padding: 5px 5px 5px 5px;
   width: 100%;
   background-color: #fff;
@@ -302,6 +326,36 @@ ul li {
 }
 
 /* END article card */
+
+/* BIAS SCOLLERS */
+/* width */
+.hs::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.hs::-webkit-scrollbar-track {
+  background: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+  border: solid 1px silver;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+
+/* Handle */
+.hs::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+/* Handle on hover */
+.hs::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* BIAS SCOLLERS END */
 
 /* election.html */
 .electionimg {
