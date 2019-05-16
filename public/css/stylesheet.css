@@ -358,18 +358,21 @@ ul li {
 /* BIAS SCOLLERS END */
 
 /* election.html */
+
+.electionPicCell{
+  text-align: right;
+}
+.electionPic {
+  width: 175px;
+  height: auto;
+}
 .electionimg {
   width:175px;
   height: auto;
   float:right;
   padding-top: 20px;
 }
-/* img {
-display: block;
-margin-left: auto;
-margin-right: auto;
 
-} */
 .clearfix::after {
   content: "";
   clear: both;
@@ -400,7 +403,7 @@ h3 {
 .overflow {
   /* width: 80vh; */
   height:19ch;
-  /* outline: 1px solid #000; */
+  outline: 1px solid #000;
   margin: 0 0 2em 0;
   /* white-space: wrap; */
   overflow: hidden;
@@ -423,7 +426,7 @@ h3 {
   /* fix problem when last visible word doesn't adjoin right side  */
   text-align: justify;
   /* place for '...' */
-  margin-right: -1em;
+  margin-right: 1em;
   padding-right: 1em;
 }
 /* create the ... */
@@ -449,7 +452,6 @@ h3 {
 .candidatePic {
   width: 175px;
   height: auto;
-
 }
 
 .candidatePicCell{
