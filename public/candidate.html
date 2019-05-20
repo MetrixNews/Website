@@ -17,7 +17,7 @@
 
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <div class="w3-bar w3-silver w3-card" id="myNavbar">
       <a href="index.html" class="w3-bar-item w3-button w3-wide">METRIX</a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
@@ -25,7 +25,16 @@
         <a href="election.html" class="w3-bar-item w3-button">ELECTION</a>
         <a href="contact.html" class="w3-bar-item w3-button"> CONTACT</a>
         <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="signin.html" class="w3-bar-item w3-button">SIGN IN</a>
+        <div class="dropdown">
+          <button class="dropbtn">ACCOUNT
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="signin.html">SIGN IN</a>
+            <a href="signup.html">SIGN UP</a>
+            <a href="account.html">PROFILE</a>
+          </div>
+        </div>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -33,7 +42,7 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
-  </div> 
+  </div>
 
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
