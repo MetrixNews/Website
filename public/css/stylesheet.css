@@ -430,6 +430,7 @@ ul li {
 }
 h5 {
   word-wrap:break-word;
+
 }
 
 .ElectionPollImg{
@@ -442,6 +443,9 @@ h3 {
 .election{
   color:white;
 }
+
+
+
 .candidateBio{
   line-height: 1.8em;
 }
@@ -488,19 +492,22 @@ h3 {
 /* hide ... if we have text, which is less than or equal to max lines */
 
 
+.box{
+  border:solid;
+}
+
 /* END election.html */
 
 /* candidate.html */
-#candidateName{
-  text-align: center;
-}
-#candidatePicCell{
-  text-align: center;
-}
 .candidatePic {
   width: 175px;
   height: auto;
 }
+
+.candidatePicCell{
+  text-align: center;
+}
+
 
 .candidateTable,td{
   color:white;
@@ -509,6 +516,10 @@ h3 {
 .candidate{
   color:white;
 }
+
+
+
+
 
 /* Candidate Collapsible Table */
 .candidateCollapsible {
