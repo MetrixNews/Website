@@ -66,7 +66,7 @@ a:active {
 }
 
 .btn, .default {
-  border: none;
+  border: solid #fff;
   background-color: inherit;
   padding: 28px 28px;
   margin: 10px;
@@ -78,10 +78,14 @@ a:active {
 }
 
 .btn:hover {
-  background: inherit;
+  background: #800080;
   border: solid #fff;
 }
 
+.pollButtons {
+  text-align: center;
+  margin: 25px;
+}
 
 /* NAVBAR */
 .w3-top {
@@ -454,10 +458,10 @@ ul li {
   width: 175px;
   height: auto;
 }
-.electionimg {
+.candidatephoto {
   width:175px;
   height: auto;
-  float:right;
+  float:left;
   padding-top: 20px;
 }
 
