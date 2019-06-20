@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="css\stylesheet.css">
-<body>
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css\stylesheet.css">
+</head>
 
+
+<body>
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar w3-silver w3-card" id="myNavbar">
@@ -58,31 +61,37 @@
       </div>
   </nav>
 
+  <main>
+
   <div class="pageDescription">
     <h1>2020 PRESIDENTIAL ELECTION</h1>
     <p>Browse today's hottest political topics from trusted news sources. Select any topic to analyze it more in depth. Click here to suggest a new topic or source. Visit the About page to learn how we label articles.</p>
   </div>
 
+  <div class="w3-container">
     <div class="pollButtons">
-      <a href=""><button class="btn default">POLL #1</button></a>
-      <a href=""><button class="btn default">POLL #2</button></a>
-      <a href=""><button class="btn default">POLL #3</button></a>
-    </div>
-
-    <div class="polticalParty w3-col w3-container s12 m6 l6">
-      <div class="row">
-        <a href="topic.html">
-          <img class="candidatephoto" src="images\Donald_Trump.jpg" alt="">
-          <h2>Donald Trump</h2>
-        </a>
+      <div class="w3-col w3-container s12 m4 l4">
+        <a href=""><button class="btn default">POLL #1</button></a>
+      </div>
+      <div class="w3-col w3-container s12 m4 l4">
+        <a href=""><button class="btn default">POLL #2</button></a>
+      </div>
+      <div class="w3-col w3-container s12 m4 l4">
+        <a href=""><button class="btn default">POLL #3</button></a>
       </div>
     </div>
 
     <div class="polticalParty w3-col w3-container s12 m6 l6">
-      <p> Some TExt </p>
+      <h2>Democrats</h2>
+      <div class="row">
+        <a href="candidate.html">
+          <img class="candidatephoto" src="images\Donald_Trump.jpg" alt="">
+          <h3>Donald Trump</h3>
+        </a>
+      </div>
     </div>
-
-
+</div>
+</main>
 
   <!-- Footer -->
   <footer class="w3-center w3-white w3-padding-48">
