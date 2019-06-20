@@ -343,7 +343,7 @@ ul li {
 
 .row {
   width: 100%;
-  /* margin: 5px 5px 5px 5px; */
+  padding: 10px;
 }
 
 .time {
@@ -466,6 +466,7 @@ ul li {
 /* BIAS SCOLLERS END */
 
 /* election.html */
+
 
 .electionPicCell{
   text-align: center;
@@ -617,6 +618,7 @@ h5 {
 
 .candidate{
   color:white;
+  margin: 10px;
 }
 
 
