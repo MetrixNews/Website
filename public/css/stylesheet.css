@@ -49,6 +49,40 @@ a:active {
   text-decoration: underline;
 }
 
+.emotion {
+  width: 75px;
+  height: auto;
+  padding: 5px;
+}
+
+.sentiment {
+  width: 75px;
+  height: auto;
+  padding: 5px;
+}
+
+.emotion:hover {
+  /* create some sort of text pop-up to show alt */
+}
+
+.btn, .default {
+  border: none;
+  background-color: inherit;
+  padding: 28px 28px;
+  margin: 10px;
+  font-size: 32px;
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  width: 25%;
+}
+
+.btn:hover {
+  background: inherit;
+  border: solid #fff;
+}
+
+
 /* NAVBAR */
 .w3-top {
   color: white;
