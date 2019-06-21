@@ -28,6 +28,16 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: 20pt;
+  /* padding-top: 5px; */
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /* h3 {
   font-size: 20pt;
   padding-left: 10px;
@@ -35,7 +45,7 @@ h2 {
 } */
 
 p {
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 a:link {
@@ -75,27 +85,6 @@ a:active {
   /* create some sort of text pop-up to show alt */
 }
 
-.btn, .default {
-  border: solid #fff;
-  background-color: inherit;
-  padding: 28px 28px;
-  margin: 10px;
-  font-size: 32px;
-  cursor: pointer;
-  display: inline-block;
-  color: white;
-  width: 100%;
-}
-
-.btn:hover {
-  background: #800080;
-  border: solid #fff;
-}
-
-.pollButtons {
-  text-align: center;
-  margin: 25px;
-}
 
 
 
@@ -172,7 +161,7 @@ a:active {
   padding-top: 250px;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
   min-height: 100%;
   text-align: center
 }
@@ -207,7 +196,7 @@ a:active {
 .hs {
   display: grid;
   grid-gap: calc(var(--gutter) / 1);
-  grid-template-columns: 5px repeat(10000, calc(35% - var(--gutter) * -22)) 5px;
+  grid-template-columns: 5px repeat(10000, calc(35% - var(--gutter) * -20)) 5px;
   grid-template-rows: minmax(150px, 1fr);
 
   overflow-x: scroll;
@@ -343,7 +332,7 @@ ul li {
 
 .row {
   width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .time {
@@ -355,6 +344,8 @@ ul li {
 .headline {
   font-size: 12pt;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* styles for '...' */
@@ -467,201 +458,79 @@ ul li {
 
 /* election.html */
 
-
-.electionPicCell{
-  text-align: center;
-}
-.electionPic {
-  width: 175px;
-  height: auto;
-}
-.candidatephoto {
-  width: 100px;
-  height: auto;
-  float:left;
-  padding-top: 20px;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-h5 {
-  word-wrap:break-word;
-
-}
-
-.ElectionPollImg{
-
-}
-/* h3 {
-  font-weight: bold;
-
-} */
-.election{
-  color:white;
-}
-
-
-
-.candidateBio{
-  line-height: 1.8em;
-  text-align: left;
-}
-
-/* styles for '...' */
-.candidateBio {
-  /* hide text if it more than N lines  */
-  overflow: hidden;
-  /* for set '...' in absolute position */
-  position: relative;
-  /* use this value to count block height */
-  line-height: 1.2em;
-  /* max-height = line-height (1.2) * lines max number (3) */
-  max-height: 3.6em;
-  /* fix problem when last visible word doesn't adjoin right side  */
-  text-align: left;
-  /* place for '...' */
-  margin-right: 0em;
-  padding-right: -1em;
-}
-/* create the ... */
-.candidateBio:before {
-  /* points in the end */
-  content: '...';
-  /* absolute position */
-  position: absolute;
-  /* set position to right bottom corner of block */
-  right: 0;
-  bottom: 0;
-}
-/* hide ... if we have text, which is less than or equal to max lines */
-.candidateBio:after {
-  /* points in the end */
-  content: '';
-  /* absolute position */
-  position: absolute;
-  /* set position to right bottom corner of text */
-  right: 0;
-  /* set width and height */
-  width: 1em;
-  height: 1em;
-  margin-top: 0.2em;
-  /* bg color = bg color under block */
-  background: white;
-}
-
-
-.overflow {
-  /* width: 80vh; */
-  height:19ch;
-  outline: 1px solid #000;
-  margin: 0 0 2em 0;
-  /* white-space: wrap; */
-  overflow: hidden;
-  word-wrap:break-word;
-  hyphens: auto;
-  overflow: ellipsis;
-  /* max-height: 7.2em;
-  line-height: 1.8em; */
-}
-/* styles for '...' */
-.block-with-text {
-  /* hide text if it more than N lines  */
-  overflow: hidden;
-  /* for set '...' in absolute position */
-  position: relative;
-  /* use this value to count block height */
-  line-height: 1.8em;
-  /* max-height = line-height (1.2) * lines max number (3) */
-  max-height: 7.2em;
-  /* fix problem when last visible word doesn't adjoin right side  */
-  text-align: justify;
-  /* place for '...' */
-  margin-right: 1em;
-  padding-right: 1em;
-}
-/* create the ... */
-.block-with-text:before {
-  /* points in the end */
-  content: '...';
-  /* absolute position */
-  position: absolute;
-  /* set position to right bottom corner of block */
-  right: 0;
-  bottom: 0;
-}
-/* hide ... if we have text, which is less than or equal to max lines */
-
-
-.box{
-  border:solid;
-}
-
-/* END election.html */
-
-/* candidate.html */
-.candidatePic {
-  width: 175px;
-  height: auto;
-}
-
-.candidatePicCell{
-  text-align: center;
-}
-
-
-.candidateTable,td{
-  color:white;
-}
-
-.candidate{
-  color:white;
-  margin: 10px;
-}
-
-
-
-
-
-/* Candidate Collapsible Table */
-.candidateCollapsible {
-  background-color: transparent;
-  color: white;
-  /* cursor: pointer; */
-  padding: 18px;
+.polticalParty {
   width: 100%;
-  border: 3px solid white;
-  border-radius: 15px;
-  text-align: left;
-  outline: none;
+  float: left;
+  margin-top: 50px;
+  border-top: solid thick silver;
 }
 
-.active, .candidateCollapsible:hover {
-  /* color: black; */
-  background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
-  /* font-size:110%; */
+.container {
+  position: relative;
+  max-width: 400px;/* Maximum width */
+  width: auto;
+  margin: 10px 10px auto; /* Center it */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.candidateCollapsible:after {
-  content: '\002B';
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+.candidateInfo {
+  line-height: 1.8em;
+  text-align: center;
+  margin: 0px;
+}
+
+.experience {
+  line-height: 1.8em;
+  text-align: center;
+  margin: 0px;
+  color: #fff;
+  max-width: 100%;
+}
+
+.education {
+  line-height: 1.8em;
+  text-align: center;
+  margin: 0px;
+  color: #fff;
+  max-width: 100%;
+}
+
+
+.btn.default {
+  border: solid #fff;
+  background-color: inherit;
+  padding: 15px 15px;
+  margin: 10px 10px 10px 10px;
+  font-size: 32px;
+  cursor: pointer;
+  display: inline-block;
   color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+  width: 100%;
 }
 
-.active:after {
-  content: "\2212";
+.btn:hover {
+  background: #800080;
+  border: solid #fff;
 }
 
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #transparent;
+.pollButtons {
+  text-align: center;
+  margin: 25px;
 }
 
-/* END candidate.html */
+.campaignButtons {
+  text-align: center;
+  margin: 25px;
+}
