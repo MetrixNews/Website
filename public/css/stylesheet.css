@@ -1,17 +1,27 @@
 :root {
-    --primary-color: #302AE6;
-    --secondary-color: #536390;
-    --font-color: #424242;
-    --bg-color: #fff;
-    --heading-color: #292922;
+    --metrix-color: #492354;
+    --secondary-color: #9768D1;
+    --font-color: #110726;
+    --secondary-font-color: #000000;
+    --bg-color: #F5F5F5;
+    --left-color: #3D67B1;
+    --center-left-color: #3F4174;
+    --center-color: #492354;
+    --center-right-color: #982156;
+    --right-color: #E22B35;
 }
 
 [data-theme="dark"] {
-    --primary-color: #9A97F3;
-    --secondary-color: #818cab;
-    --font-color: #e1e1ff;
-    --bg-color: #161625;
-    --heading-color: #818cab;
+    --metrix-color: #492354;
+    --secondary-color: #9768D1;
+    --font-color: #faf4ff;
+    --secondary-font-color: #000000;
+    --bg-color: #361259;
+    --left-color: #3D67B1;
+    --center-left-color: #3F4174;
+    --center-color: #492354;
+    --center-right-color: #982156;
+    --right-color: #E22B35;
 }
 
 
@@ -26,39 +36,39 @@ body,h1,h2,h3,h4,h5,h6,span, p{
 body {
   background-color: var(--bg-color);
   color: var(--font-color);
-
+  border: solid 1px var(--metrix-color);
   height: 100%;
   line-height: 1.8;
   /* background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%); */
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 
 footer {
-  color: var(--secondary-color);
-
+  background-color: var(--bg-color);
+  color: var(--font-color);
   width: 100%;
   height: auto;
 }
 
 h1 {
-  color: var(--secondary-color);
-
+  color: var(--font-color);
+  text-align: center;
   font-size: 36pt;
   font-weight: bold;
 }
 
 h2 {
-  color: var(--secondary-color);
-
+  color: var(--font-color);
   font-size: 24pt;
   padding-left: 10px;
   /* padding-top: 5px; */
   margin: 0;
+  text-align: center;
 }
 
 h3 {
-  color: var(--secondary-color);
+  color: var(--font-color);
 
   font-size: 20pt;
   /* padding-top: 5px; */
@@ -75,9 +85,13 @@ h3 {
 } */
 
 p {
-  color: var(--secondary-color);
-
+  color: var(--font-color);
   font-size: 14pt;
+}
+
+span {
+    /* color: var(--font-color); */
+    text-align: center;
 }
 
 a:link {
@@ -96,6 +110,7 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
+
 
 /* DarkMode switch */
 /*Simple css to style it like a toggle switch*/
@@ -184,13 +199,14 @@ input:checked + .slider:before {
 
 /* NAVBAR */
 .w3-top {
-  color: white;
+  color: var(--font-color);
   position: static;
   font-size: 16pt;
   font-weight: bold;
 }
 
 .dropdown {
+  color: var(--font-color);
   float: left;
   overflow: hidden;
   padding-left: 16px;
@@ -202,14 +218,14 @@ input:checked + .slider:before {
 .dropdown .dropbtn {
   border: none;
   outline: none;
-  color: white;
+  color: var(--font-color);
   background-color: inherit;
   font-family: inherit;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: silver;
-  color: black;
+  color: var(--font-color);
   text-decoration: underline;
 }
 
@@ -223,7 +239,7 @@ input:checked + .slider:before {
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: var(--font-color);
   text-decoration: none;
   display: block;
   text-align: left;
@@ -245,20 +261,20 @@ input:checked + .slider:before {
   padding-right: auto;
   padding-bottom: 10px;
   text-align: center;
-  color: white;
+  color: var(--font-color);
   align-self: center;
-  border-top: solid thick silver;
-  border-bottom: solid thick silver;
+  border-top: solid thick  var(--metrix-color);
+  border-bottom: solid thick  var(--metrix-color);
 }
 /* Home page */
-#home {
+/* #home {
   padding-top: 250px;
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
   min-height: 100%;
   text-align: center
-}
+} */
 
 #election {
   display: grid;
@@ -313,10 +329,10 @@ input:checked + .slider:before {
 
 /* Demo styles */
 
-html,
+/* html,
 body {
   height: 100%;
-}
+} */
 
 #news {
   display: grid;
@@ -345,7 +361,7 @@ ul {
   align-items: center;
   background: #fff;
   border-radius: 8px;
-  /* border: solid 5px #ff0000; */
+  border: solid 1px var(--metrix-color);
   position: static;
   height: 100%;
 }
@@ -408,6 +424,7 @@ ul {
 }
 
 .author {
+  color: var(--secondary-font-color);
   font-size: 12pt;
   font-style: italic;
   text-align: center;
@@ -430,12 +447,14 @@ ul li {
 }
 
 .time {
+  color: var(--secondary-font-color);
   font-size: 12pt;
   font-weight: bold;
   text-align: center;
 }
 
 .headline {
+  color: var(--secondary-font-color);
   font-size: 12pt;
   text-align: center;
   margin-top: 10px;
@@ -507,7 +526,7 @@ ul li {
 }
 
 .articlebox {
-  border: solid 5px #ff0000;
+  border: solid 5px var(--center-color);
   border-radius: 8px;
   padding: 10px 10px 10px 10px;
   width: 100%;
@@ -516,6 +535,7 @@ ul li {
 
 .publishinfo {
   text-align: center;
+    color: var(--secondary-font-color);
 }
 
 /* END article card */
@@ -529,7 +549,7 @@ ul li {
 /* Track */
 .hs::-webkit-scrollbar-track {
   background: linear-gradient(to left, #f43b47 -33%, #453a94 100%);
-  border: solid 1px silver;
+  border: solid 1px var(--metrix-color);
   border-radius: 10px;
   margin-left: 15px;
   margin-right: 15px;
@@ -538,7 +558,8 @@ ul li {
 
 /* Handle */
 .hs::-webkit-scrollbar-thumb {
-  background: #fff;
+  background: var(--bg-color);
+  border: solid 1px var(--metrix-color);
   border-radius: 10px;
   height: 50px;
   width: 50px;
@@ -603,20 +624,20 @@ ul li {
 
 
 .btn.default {
-  border: solid #fff;
+  border: solid var(--primary-color);
   background-color: inherit;
   padding: 15px 15px;
   margin: 10px 10px 10px 10px;
   font-size: 32px;
   cursor: pointer;
   display: inline-block;
-  color: white;
+  color: var(--font-color);
   width: 100%;
 }
 
 .btn:hover {
-  background: #800080;
-  border: solid #fff;
+  background-color: var(--primary-color);
+  border: solid var(--primary-color);
 }
 
 .pollButtons {
@@ -627,4 +648,9 @@ ul li {
 .campaignButtons {
   text-align: center;
   margin: 25px;
+}
+
+.newsSpectrum {
+  margin: 0 auto;
+  text-align: center;
 }
