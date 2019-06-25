@@ -2,7 +2,7 @@
     --metrix-color: #492354;
     --secondary-color: #9768D1;
     --font-color: #110726;
-    --secondary-font-color: #000000;
+    --secondary-font-color: #fff;
     --bg-color: #F5F5F5;
     --left-color: #3D67B1;
     --center-left-color: #3F4174;
@@ -104,7 +104,7 @@ a:visited {
 
 a:hover {
   text-decoration: underline;
-  color: silver;
+  color: var(--metrix-color);
 }
 
 a:active {
@@ -293,6 +293,7 @@ input:checked + .slider:before {
   /* grid-gap: var(--gutter) 0; */
   grid-template-columns: var(--gutter) 1fr var(--gutter);
   align-content: start;
+  border-top: solid thick var(--metrix-color);
 }
 
 .app > * {
@@ -577,17 +578,18 @@ ul li {
   width: 100%;
   float: left;
   margin-top: 50px;
-  border-top: solid thick silver;
+  border-top: solid thick var(--metrix-color);
 }
 
 .container {
   position: relative;
-  max-width: 400px;/* Maximum width */
+  max-width: 800px;/* Maximum width */
   width: auto;
   margin: 10px 10px auto; /* Center it */
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-top: solid thick var(--metrix-color);
 }
 
 .container .content {
@@ -604,6 +606,7 @@ ul li {
   line-height: 1.8em;
   text-align: center;
   margin: 0px;
+  color: var(--secondary-font-color);
 }
 
 .experience {
