@@ -1,22 +1,24 @@
 :root {
-    --metrix-color: #492354;
-    --secondary-color: #9768D1;
+      --metrix-color: #A2439A;
+    --highlight-color: #9768D1;
     --font-color: #110726;
-    --secondary-font-color: #fff;
+    --article-font-color: #000000;
+    --candidate-font-color:#faf4ff;
     --bg-color: #F5F5F5;
-    --left-color: #3D67B1;
-    --center-left-color: #3F4174;
-    --center-color: #492354;
-    --center-right-color: #982156;
-    --right-color: #E22B35;
+    --left-color: #4E5AD9;
+    --center-left-color: #734FBE;
+    --center-color: #A2439A;
+    --center-right-color: #CA397C;
+    --right-color: #E53367;
 }
 
 [data-theme="dark"] {
     --metrix-color: #492354;
-    --secondary-color: #9768D1;
+    --highlight-color: #faf4ff;
     --font-color: #faf4ff;
-    --secondary-font-color: #000000;
-    --bg-color: #361259;
+    --article-font-color: #000000;
+    --candidate-font-color:#faf4ff;
+    --bg-color: #3B1838;
     --left-color: #3D67B1;
     --center-left-color: #3F4174;
     --center-color: #492354;
@@ -24,7 +26,7 @@
     --right-color: #E22B35;
 }
 
-
+/* ALL HTML ELEMENTS & TAGS */ /* ALL HTML ELEMENTS & TAGS */ /* ALL HTML ELEMENTS & TAGS */ /* ALL HTML ELEMENTS & TAGS */ /* ALL HTML ELEMENTS & TAGS */ /* ALL HTML ELEMENTS & TAGS */
 
 
 body,h1,h2,h3,h4,h5,h6,span, p{
@@ -35,11 +37,10 @@ body,h1,h2,h3,h4,h5,h6,span, p{
 
 body {
   background-color: var(--bg-color);
-  color: var(--font-color);
+  /* color: var(--font-color); */
   border: solid 1px var(--metrix-color);
   height: 100%;
   line-height: 1.8;
-  /* background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%); */
   max-width: 1000px;
   margin: auto;
 }
@@ -111,129 +112,202 @@ a:active {
   text-decoration: underline;
 }
 
+/* NAVBAR */ /* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR */
 
-/* DarkMode switch */
-/*Simple css to style it like a toggle switch*/
-.theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
+* {
+  box-sizing: border-box;
 }
-.theme-switch {
-  display: inline-block;
-  height: 34px;
+
+.nav {
+  height: 50px;
+  width: 100%;
+  max-width: 875;
+  background-color: var(--bg-color);
   position: relative;
-  width: 60px;
+  border-bottom: solid 1px var(--highlight-color);
+  margin-bottom: 10px;
 }
 
-.theme-switch input {
-  display:none;
+.nav > .nav-header  {
+  display: inline;
+  float: left;
+  font-size: 18px;
 }
 
-.slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
-}
-
-.slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: .4s;
-  width: 26px;
-}
-
-input:checked + .slider {
-  background-color: #66bb6a;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-/* End DarkMode Switch */
-
-.w3-container {
-  padding: 0px;
-}
-
-.emotion {
-  width: 75px;
-  height: auto;
-  padding: 5px;
-}
-
-.sentiment {
-  width: 75px;
-  height: auto;
-  padding: 5px;
-}
-
-.emotion:hover {
-  /* create some sort of text pop-up to show alt */
-}
-
-
-
-
-/* NAVBAR */
-.w3-top {
+.nav > .nav-header > a {
+  display: inline-block;
+  padding: 4px 10px 4px 10px;
+  text-decoration: none;
   color: var(--font-color);
-  position: static;
   font-size: 16pt;
   font-weight: bold;
+  background: linear-gradient(to right, #A2439A 0%, #faf4ff 100%);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
 }
+
+.nav > .nav-header > a::first-letter {
+  font-size: 30pt;
+}
+
+.nav > .nav-header > a:hover {
+  border-bottom: solid 4px var(--highlight-color);
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 4px 10px 4px 10px;
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 16pt;
+}
+
+.nav > .nav-links > a:hover {
+  border-bottom: solid 4px var(--highlight-color);
+}
+
+/* .text {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  font-size: 36pt;
+
+} */
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: var(--bg-color);
+    position: relative;
+    border-bottom: solid 1px var(--highlight-color);
+    margin-bottom: 10px;
+  }
+
+  .nav > .nav-header {
+    display: inline;
+  }
+
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: var(--font-color);
+    padding: 7px 10px 7px 10px;
+  }
+
+  .nav > .nav-btn {
+    display: none;
+  }
+
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 7px 10px 7px 10px;
+    text-decoration: none;
+    color: var(--font-color);
+  }
+
+  .nav > .nav-links > a:hover {
+    border-bottom: solid 4px var(--highlight-color);
+  }
+
+
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: var(--metrix-color);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: var(--metrix-color);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
 
 .dropdown {
   color: var(--font-color);
-  float: left;
+  float: right;
   overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  display: inline-block;
+  /* padding: 7px 10px 7px 10px;*/
+  text-decoration: none;
 }
 
 .dropdown .dropbtn {
   border: none;
-  outline: none;
   color: var(--font-color);
-  background-color: inherit;
+  background-color: var(--bg-color);
   font-family: inherit;
+  padding: 7px 10px 7px 10px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: silver;
+  background-color: var(--bg-color);
   color: var(--font-color);
-  text-decoration: underline;
+  border-bottom: solid 4px var(--highlight-color);
 }
 
 .dropdown-content {
   display: none;
   position: fixed;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  background-color: var(--bg-color);
+  min-width: 100px;
   z-index: 1;
 }
 
@@ -246,7 +320,7 @@ input:checked + .slider:before {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  border-bottom: solid 4px var(--highlight-color);
 }
 
 .dropdown:hover .dropdown-content {
@@ -254,6 +328,11 @@ input:checked + .slider:before {
 }
 
 /* END NAVBAR */
+
+/* PAGE HEADERS */ /* PAGE HEADERS *//* PAGE HEADERS *//* PAGE HEADERS *//* PAGE HEADERS *//* PAGE HEADERS *//* PAGE HEADERS *//* PAGE HEADERS *//* PAGE HEADERS *//* PAGE HEADERS *//* PAGE HEADERS */
+.w3-container {
+  padding: 0px;
+}
 
 .pageDescription {
   padding-top: 50px;
@@ -276,12 +355,8 @@ input:checked + .slider:before {
   text-align: center
 } */
 
-#election {
-  display: grid;
-  place-items: center;
-}
 
-/* article scroller*/
+/* article scroller*/ /* article scroller*//* article scroller*//* article scroller*//* article scroller*//* article scroller*//* article scroller*//* article scroller*//* article scroller*/
 
 :root {
   --gutter: 10px;
@@ -370,7 +445,7 @@ ul {
 
 /* END article scroller*/
 
-/* Article Card */
+/* Article Card */ /* Article Card *//* Article Card *//* Article Card *//* Article Card *//* Article Card *//* Article Card *//* Article Card *//* Article Card *//* Article Card */
 /* Create two columns that floats next to each other */
 
 /* Clear floats after the columns */
@@ -380,52 +455,9 @@ ul {
   clear: both;
 }
 
-.desc {
-  font-size: 12pt;
-  /* hide text if it more than N lines  */
-  overflow: hidden;
-  /* for set '...' in absolute position */
-  position: relative;
-  /* use this value to count block height */
-  line-height: 1.2em;
-  /* max-height = line-height (1.2) * lines max number (3) */
-  max-height: 3.6em;
-  /* fix problem when last visible word doesn't adjoin right side  */
-  text-align: center;
-  /* place for '...' */
-  margin-right: -1em;
-  padding-right: 1em;
-}
-/* create the ... */
-.desc:before {
-  /* points in the end */
-  content: '...';
-  /* absolute position */
-  position: absolute;
-  /* set position to right bottom corner of block */
-  right: 0;
-  bottom: 0;
-}
-/* hide ... if we have text, which is less than or equal to max lines */
-.desc:after {
-  /* points in the end */
-  content: '';
-  /* absolute position */
-  position: absolute;
-  /* set position to right bottom corner of text */
-  right: 0;
-  /* set width and height */
-  width: 1em;
-  height: 1em;
-  margin-top: 0.2em;
-  /* bg color = bg color under block */
-  background: white;
-}
-
-}
 
 .author {
-  color: var(--secondary-font-color);
+  color: var(--article-font-color);
   font-size: 12pt;
   font-style: italic;
   text-align: center;
@@ -448,14 +480,14 @@ ul li {
 }
 
 .time {
-  color: var(--secondary-font-color);
+  color: var(--article-font-color);
   font-size: 12pt;
   font-weight: bold;
   text-align: center;
 }
 
 .headline {
-  color: var(--secondary-font-color);
+  color: var(--article-font-color);
   font-size: 12pt;
   text-align: center;
   margin-top: 10px;
@@ -527,7 +559,7 @@ ul li {
 }
 
 .articlebox {
-  border: solid 5px var(--center-color);
+  border: solid 5px var(--left-color);
   border-radius: 8px;
   padding: 10px 10px 10px 10px;
   width: 100%;
@@ -536,12 +568,29 @@ ul li {
 
 .publishinfo {
   text-align: center;
-    color: var(--secondary-font-color);
+    color: var(--article-font-color);
 }
+
+.emotion {
+  width: 75px;
+  height: auto;
+  padding: 5px;
+}
+
+.sentiment {
+  width: 75px;
+  height: auto;
+  padding: 5px;
+}
+
+.emotion:hover {
+  /* create some sort of text pop-up to show alt */
+}
+
 
 /* END article card */
 
-/* BIAS SCOLLERS */
+/* BIAS SCOLLERS */ /* BIAS SCOLLERS *//* BIAS SCOLLERS *//* BIAS SCOLLERS *//* BIAS SCOLLERS *//* BIAS SCOLLERS *//* BIAS SCOLLERS *//* BIAS SCOLLERS *//* BIAS SCOLLERS *//* BIAS SCOLLERS */
 /* width */
 .hs::-webkit-scrollbar {
   width: 10px;
@@ -549,7 +598,7 @@ ul li {
 
 /* Track */
 .hs::-webkit-scrollbar-track {
-  background: linear-gradient(to left, #f43b47 -33%, #453a94 100%);
+  background: linear-gradient(to left, var(--right-color) -20%, var(--left-color) 100%);
   border: solid 1px var(--metrix-color);
   border-radius: 10px;
   margin-left: 15px;
@@ -559,8 +608,8 @@ ul li {
 
 /* Handle */
 .hs::-webkit-scrollbar-thumb {
-  background: var(--bg-color);
-  border: solid 1px var(--metrix-color);
+  background: var(--highlight-color);
+  border: solid 1px var(--highlight-color);
   border-radius: 10px;
   height: 50px;
   width: 50px;
@@ -572,7 +621,7 @@ ul li {
 }
 /* BIAS SCOLLERS END */
 
-/* election.html */
+/* election.html */ /* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html */
 
 .polticalParty {
   width: 100%;
@@ -606,8 +655,10 @@ ul li {
   line-height: 1.8em;
   text-align: center;
   margin: 0px;
-  color: var(--secondary-font-color);
+  color: var(--candidate-font-color);
 }
+
+/* CANDIDATE.HTML */ /* CANDIDATE.HTML *//* CANDIDATE.HTML *//* CANDIDATE.HTML *//* CANDIDATE.HTML *//* CANDIDATE.HTML *//* CANDIDATE.HTML *//* CANDIDATE.HTML *//* CANDIDATE.HTML */
 
 .experience {
   line-height: 1.8em;
@@ -625,35 +676,101 @@ ul li {
   max-width: 100%;
 }
 
+/* BUTTONS */ /* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS */
 
 .btn.default {
-  border: solid var(--primary-color);
+  border: solid 2px var(--highlight-color);
   background-color: inherit;
   padding: 15px 15px;
   margin: 10px 10px 10px 10px;
   font-size: 32px;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   color: var(--font-color);
-  width: 100%;
+  width: 90%;
 }
 
 .btn:hover {
-  background-color: var(--primary-color);
-  border: solid var(--primary-color);
+  background-color: var(--highlight-color);
+  color: var(--metrix-color);
+  border: solid var(--highlight-color);
 }
 
-.pollButtons {
+/* .pollButtons {
   text-align: center;
   margin: 25px;
-}
 
-.campaignButtons {
+} */
+
+/* .campaignButtons {
   text-align: center;
   margin: 25px;
-}
+} */
 
-.newsSpectrum {
+/* .newsSpectrum {
   margin: 0 auto;
   text-align: center;
+} */
+
+/* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch */
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
 }
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* End DarkMode Switch */
