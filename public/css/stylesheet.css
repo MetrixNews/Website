@@ -46,10 +46,15 @@ body {
 }
 
 footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: var(--bg-color);
   color: var(--font-color);
   width: 100%;
-  height: auto;
+  height: 50px;
+  text-align: center;
 }
 
 h1 {
@@ -124,7 +129,7 @@ a:active {
   width: 100%;
   max-width: 875;
   background-color: var(--bg-color);
-  position: relative;
+  position: fixed;
   border-bottom: solid 1px var(--highlight-color);
   margin-bottom: 10px;
 }
