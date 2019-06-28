@@ -136,18 +136,14 @@ a:active {
 
 .nav > .nav-header > a {
   display: inline-block;
-  padding: 4px 10px 4px 10px;
-  text-decoration: none;
-  color: var(--font-color);
-  font-size: 16pt;
-  font-weight: bold;
-  background: linear-gradient(to right, #A2439A 0%, #faf4ff 100%);
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
+  padding: 1px 10px 1px 10px;
+  width: 50px;
+  height: auto;
 }
 
-.nav > .nav-header > a::first-letter {
-  font-size: 30pt;
+.logo {
+  width: 43px;
+  height: auto;
 }
 
 .nav > .nav-header > a:hover {
@@ -166,25 +162,15 @@ a:active {
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 4px 10px 4px 10px;
+  padding: 1px 10px 1px 10px;
   text-decoration: none;
   color: var(--font-color);
-  font-size: 16pt;
+  font-size: 18pt;
 }
 
 .nav > .nav-links > a:hover {
   border-bottom: solid 4px var(--highlight-color);
 }
-
-/* .text {
-	text-transform: uppercase;
-	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-  font-weight: bolder;
-  font-size: 36pt;
-
-} */
 
 .nav > #nav-check {
   display: none;
@@ -195,137 +181,64 @@ a:active {
   .nav {
     height: 50px;
     width: 100%;
+    max-width: 875;
     background-color: var(--bg-color);
     position: relative;
     border-bottom: solid 1px var(--highlight-color);
     margin-bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  .nav > .nav-header {
+  .nav > .nav-header  {
     display: inline;
+    font-size: 18px;
+    /* float: none;
+    position: absolute;
+    margin: 0 auto;
+    display: flex; justify-content: center */
   }
 
-  .nav > .nav-header > .nav-title {
+  .nav > .nav-header > a {
     display: inline-block;
-    font-size: 22px;
-    color: var(--font-color);
-    padding: 7px 10px 7px 10px;
+    padding: 1px 10px 1px 10px;
+    width: 50px;
+    height: auto;
   }
 
-  .nav > .nav-btn {
-    display: none;
+  .logo {
+    width: 43px;
+    height: auto;
+  }
+
+  .nav > .nav-header > a:hover {
+    border-bottom: solid 4px var(--highlight-color);
   }
 
   .nav > .nav-links {
     display: inline;
-    float: right;
     font-size: 18px;
+    /* float: none;
+    position: absolute;
+    margin: 0 auto;
+    display: flex; justify-content: center */
   }
 
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 7px 10px 7px 10px;
+    padding: 1px 10px 1px 10px;
     text-decoration: none;
     color: var(--font-color);
+    font-size: 18pt;
   }
 
   .nav > .nav-links > a:hover {
     border-bottom: solid 4px var(--highlight-color);
   }
 
-
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
+  .nav > .nav-links > a > span {
+    display: none;
   }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: var(--metrix-color);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: var(--metrix-color);
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
-}
-
-
-.dropdown {
-  color: var(--font-color);
-  float: right;
-  overflow: hidden;
-  display: inline-block;
-  /* padding: 7px 10px 7px 10px;*/
-  text-decoration: none;
-}
-
-.dropdown .dropbtn {
-  border: none;
-  color: var(--font-color);
-  background-color: var(--bg-color);
-  font-family: inherit;
-  padding: 7px 10px 7px 10px;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: var(--bg-color);
-  color: var(--font-color);
-  border-bottom: solid 4px var(--highlight-color);
-}
-
-.dropdown-content {
-  display: none;
-  position: fixed;
-  background-color: var(--bg-color);
-  min-width: 100px;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: var(--font-color);
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  border-bottom: solid 4px var(--highlight-color);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 /* END NAVBAR */
 
