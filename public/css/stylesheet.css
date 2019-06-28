@@ -129,7 +129,7 @@ a:active {
   width: 100%;
   max-width: 875;
   background-color: var(--bg-color);
-  position: fixed;
+  position: relative;
   border-bottom: solid 1px var(--highlight-color);
   margin-bottom: 10px;
 }
@@ -286,12 +286,12 @@ a:active {
   grid-column: 1 / -1;
 }
 
+
 .hs {
   display: grid;
   grid-gap: calc(var(--gutter) / 1);
   grid-template-columns: 5px repeat(10000, calc(35% - var(--gutter) * -20)) 5px;
   grid-template-rows: minmax(150px, 1fr);
-
   overflow-x: scroll;
   scroll-snap-type: x proximity;
   padding-bottom: calc(1 * var(--gutter));
@@ -383,6 +383,7 @@ ul li {
 
 .row {
   width: 100%;
+  height: auto;
   /* padding: 10px; */
 }
 
@@ -444,10 +445,17 @@ ul li {
 }
 
 .metric {
+  width: 40px;
+  height: auto;
+  margin: 0px 10% 0px 10%;
+}
+
+.metricRow {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   float: right;
   padding-top: 5px;
+  width: 100%;
 }
 
 .articlephoto {
