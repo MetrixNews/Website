@@ -610,6 +610,11 @@ ul li {
   border: solid var(--highlight-color);
 }
 
+.newsSpectrum {
+  margin: 0 auto;
+  text-align: center;
+}
+
 /* .pollButtons {
   text-align: center;
   margin: 25px;
@@ -619,11 +624,6 @@ ul li {
 /* .campaignButtons {
   text-align: center;
   margin: 25px;
-} */
-
-/* .newsSpectrum {
-  margin: 0 auto;
-  text-align: center;
 } */
 
 /* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch */
