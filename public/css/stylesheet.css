@@ -40,7 +40,7 @@ body {
   /* color: var(--font-color); */
   border: solid 1px var(--metrix-color);
   height: 100%;
-  line-height: 1.8;
+  line-height: 1.2;
   max-width: 1000px;
   margin: auto;
 }
@@ -88,6 +88,7 @@ h3 {
 p {
   color: var(--font-color);
   font-size: 14pt;
+  text-align: center;
 }
 
 span {
@@ -136,7 +137,8 @@ a:active {
 
 .nav > .nav-header > a {
   display: inline-block;
-  padding: 1px 10px 1px 10px;
+  /* padding: 1px 10px 1px 10px; */
+  margin: 2px 10px 0px 10px;
   width: 50px;
   height: auto;
 }
@@ -150,10 +152,6 @@ a:active {
   border-bottom: solid 4px var(--highlight-color);
 }
 
-.nav > .nav-btn {
-  display: none;
-}
-
 .nav > .nav-links {
   display: inline;
   float: right;
@@ -162,10 +160,10 @@ a:active {
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 1px 10px 1px 10px;
+  padding: 5px 10px 8px 5px;
   text-decoration: none;
   color: var(--font-color);
-  font-size: 18pt;
+  font-size: 20pt;
 }
 
 .nav > .nav-links > a:hover {
@@ -201,7 +199,7 @@ a:active {
 
   .nav > .nav-header > a {
     display: inline-block;
-    padding: 1px 10px 1px 10px;
+    margin: 2px 10px 0px 10px;
     width: 50px;
     height: auto;
   }
@@ -226,10 +224,10 @@ a:active {
 
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 1px 10px 1px 10px;
+    padding: 10px 10px 8px 5px;
     text-decoration: none;
     color: var(--font-color);
-    font-size: 18pt;
+    font-size: 20pt;
   }
 
   .nav > .nav-links > a:hover {
@@ -249,7 +247,7 @@ a:active {
 }
 
 .pageDescription {
-  padding-top: 50px;
+  padding-top: 25px;
   padding-left: auto;
   padding-right: auto;
   padding-bottom: 10px;
@@ -259,16 +257,6 @@ a:active {
   border-top: solid thick  var(--metrix-color);
   border-bottom: solid thick  var(--metrix-color);
 }
-/* Home page */
-/* #home {
-  padding-top: 250px;
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-  min-height: 100%;
-  text-align: center
-} */
-
 
 /* article scroller*/ /* article scroller*//* article scroller*//* article scroller*//* article scroller*//* article scroller*//* article scroller*//* article scroller*//* article scroller*/
 
