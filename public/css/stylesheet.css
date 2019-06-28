@@ -83,7 +83,6 @@ h3 {
   margin: 0;
   font-weight: bold;
   text-align: center;
-  text-decoration: underline;
 }
 
 /* h3 {
@@ -132,7 +131,8 @@ a:active {
   max-width: 875;
   background-color: var(--bg-color);
   position: relative;
-  border-bottom: solid 1px var(--highlight-color);
+  /* border-bottom: solid 1px var(--highlight-color); */
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -346,7 +346,7 @@ ul {
   align-items: center;
   background: #fff;
   border-radius: 8px;
-  border: solid 1px var(--metrix-color);
+  border: solid 2px var(--highlight-color);
   position: static;
   height: 100%;
 }
@@ -522,16 +522,14 @@ ul li {
 /* Track */
 .hs::-webkit-scrollbar-track {
   background: linear-gradient(to left, var(--right-color) -20%, var(--left-color) 100%);
-  border: solid 1px var(--metrix-color);
   border-radius: 10px;
   margin-left: 15px;
   margin-right: 15px;
-
 }
 
 /* Handle */
 .hs::-webkit-scrollbar-thumb {
-  background: var(--highlight-color);
+  background: #fff;
   border: solid 1px var(--highlight-color);
   border-radius: 10px;
   height: 50px;
@@ -539,9 +537,9 @@ ul li {
 }
 
 /* Handle on hover */
-.hs::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+/* .hs::-webkit-scrollbar-thumb:hover {
+  background: #var(--highlight);
+} */
 /* BIAS SCOLLERS END */
 
 /* election.html */ /* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html */
@@ -553,12 +551,28 @@ ul li {
   border-top: solid thick var(--metrix-color);
 }
 
+.candidate {
+  width: 100%;
+  padding: 5px;
+}
+
 .container {
   position: relative;
-  max-width: 350px;/* Maximum width */
   width: auto;
-  margin: 10px 10px auto; /* Center it */
-  display: block;
+  margin: 0 auto;
+  display: table;
+  color: var(--font-color);
+  text-align: center;
+}
+
+.candidateDesc {
+  position: relative;
+  width: auto;
+  /* margin: auto; /* Center it */
+  display: block; */
+  color: var(--font-color);
+  border-top: solid thick var(--highlight-color);
+  padding: 10px;
 }
 
 .content {
@@ -566,11 +580,23 @@ ul li {
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1; /* Grey text */
+  color: var(--candidate-font-color); /* Grey text */
   width: 100%; /* Full width */
   max-width: 350px;/* Maximum width */
   display: block;
 
+}
+
+.content:hover > h3 {
+  text-decoration: underline;
+}
+
+.content > h3 {
+  line-height: 1.8em;
+  text-align: center;
+  max-width: 350px;/* Maximum width */
+  margin: 0px;
+  color: var(--candidate-font-color);
 }
 
 .content > p {
@@ -593,7 +619,7 @@ ul li {
   line-height: 1.8em;
   text-align: center;
   margin: 0px;
-  color: #fff;
+  color: var(--font-color);
   max-width: 100%;
 }
 
@@ -601,7 +627,7 @@ ul li {
   line-height: 1.8em;
   text-align: center;
   margin: 0px;
-  color: #fff;
+  color: var(--font-color);
   max-width: 100%;
 }
 
@@ -622,7 +648,7 @@ ul li {
 
 .btn:hover {
   background-color: var(--highlight-color);
-  color: var(--metrix-color);
+  color: var(--bg-color);
   border: solid var(--highlight-color);
 }
 
