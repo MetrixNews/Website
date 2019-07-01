@@ -536,11 +536,18 @@ ul li {
   width: 50px;
 }
 
+
 /* Handle on hover */
 /* .hs::-webkit-scrollbar-thumb:hover {
   background: #var(--highlight);
 } */
 /* BIAS SCOLLERS END */
+
+/* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML */
+.home_button {
+  width: 100%;
+  text-align: center;
+}
 
 /* election.html */ /* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html */
 
@@ -657,11 +664,10 @@ ul li {
   text-align: center;
 }
 
-/* .pollButtons {
+.pollButtons {
+  width: 100%;
   text-align: center;
-  margin: 25px;
-
-} */
+}
 
 /* .campaignButtons {
   text-align: center;
