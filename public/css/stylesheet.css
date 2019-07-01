@@ -1,24 +1,24 @@
 :root {
+  --metrix-color: #492354;
+  --highlight-color: #faf4ff;
+  --font-color: #faf4ff;
+  --article-font-color: #000000;
+  --candidate-font-color:#faf4ff;
+  --bg-color: #3B1838;
+  --left-color: #3D67B1;
+  --center-left-color: #3F4174;
+  --center-color: #492354;
+  --center-right-color: #982156;
+  --right-color: #E22B35;
+}
+
+[data-theme="dark"] {
     --metrix-color: #492354;
     --highlight-color: #3B1838;
     --font-color:  #3B1838;
     --article-font-color: #000000;
     --candidate-font-color:#faf4ff;
     --bg-color: #fff;
-    --left-color: #3D67B1;
-    --center-left-color: #3F4174;
-    --center-color: #492354;
-    --center-right-color: #982156;
-    --right-color: #E22B35;
-}
-
-[data-theme="dark"] {
-    --metrix-color: #492354;
-    --highlight-color: #faf4ff;
-    --font-color: #faf4ff;
-    --article-font-color: #000000;
-    --candidate-font-color:#faf4ff;
-    --bg-color: #3B1838;
     --left-color: #3D67B1;
     --center-left-color: #3F4174;
     --center-color: #492354;
