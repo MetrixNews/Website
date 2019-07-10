@@ -36,12 +36,12 @@
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+	font-family: Source Sans Pro, sans-serif;
 }
 
 /*---------------------------------------------*/
 a:not(nav > a) {
-	font-family: Poppins-Regular;
+	font-family: Source Sans Pro;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -146,26 +146,26 @@ iframe {
 .txt1 {
   font-family: Poppins-Regular;
   font-size: 15px;
-  color: #999999;
+  color: var(--font-color);
   line-height: 1.4;
 }
 
 .txt2 {
   font-family: Poppins-Regular;
   font-size: 15px;
-  color: #666666;
+  color: var(--font-color);
   line-height: 1.4;
 }
 
 .txt3 {
   font-family: Poppins-Regular;
   font-size: 16px;
-  color: #666666;
+  color: var(--font-color);
   line-height: 1.4;
 }
 
 .hov1:hover {
-  color: #c87ef0;
+  color: var(--font-color);
 }
 
 
@@ -193,7 +193,7 @@ iframe {
 .wrap-login100 {
   width: 520px;
   min-height: 100vh;
-  background: #fff;
+  background: inherit;
   border-radius: 2px;
   position: relative;
 }
@@ -245,7 +245,7 @@ iframe {
   width: 100%;
   font-family: Poppins-Bold;
   font-size: 39px;
-  color: #333333;
+  color: var(--font-color);
   line-height: 1.2;
   text-align: left;
 }
@@ -258,14 +258,14 @@ iframe {
 .wrap-input100 {
   width: 100%;
   position: relative;
-  border-bottom: 2px solid #dbdbdb;
+  border-bottom: 2px solid var(--highlight-color);
   margin-bottom: 45px;
 }
 
 .label-input100 {
   font-family: Poppins-SemiBold;
   font-size: 18px;
-  color: #999999;
+  color: var(--font-color);
   line-height: 1.2;
   padding-left: 2px;
 }
@@ -277,7 +277,7 @@ iframe {
   background: transparent;
   font-family: Poppins-Regular;
   font-size: 22px;
-  color: #555555;
+  color: var(--font-color);
   line-height: 1.2;
   padding: 0 2px;
 }
@@ -306,7 +306,7 @@ iframe {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 
-  background: #d5007d;
+  background: var(--highlight-color);
   background: -webkit-linear-gradient(45deg, #d5007d, #e53935);
   background: -o-linear-gradient(45deg, #d5007d, #e53935);
   background: -moz-linear-gradient(45deg, #d5007d, #e53935);
@@ -355,7 +355,7 @@ iframe {
   width: 16px;
   height: 16px;
   border-radius: 2px;
-  background: #e6e6e6;
+  background: var(--highlight-color);
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -424,7 +424,7 @@ iframe {
 
   font-family: Poppins-Medium;
   font-size: 16px;
-  color: #fff;
+  color: var(--font-color);
   line-height: 1.2;
 }
 
