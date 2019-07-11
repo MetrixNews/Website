@@ -41,7 +41,7 @@ body {
   /* border: solid 1px var(--metrix-color); */
   height: 100%;
   line-height: 1.2;
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -110,13 +110,13 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
+a > h2:hover {
   text-decoration: underline;
-  color: var(--metrix-color);
+  color: var(--font-color);
 }
 
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* NAVBAR */ /* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR */
