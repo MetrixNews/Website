@@ -393,7 +393,6 @@ ul li {
 .time {
   color: var(--article-font-color);
   font-size: 12pt;
-  font-weight: bold;
   text-align: center;
 }
 
