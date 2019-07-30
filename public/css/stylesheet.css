@@ -777,6 +777,7 @@ ul li {
 
 .btn.default {
   border: solid 2px var(--highlight-color);
+  color: var(--font-color);
   background-color: inherit;
   padding: 15px 15px;
   margin: 10px 10px 10px 10px;
@@ -784,8 +785,8 @@ ul li {
   text-align: center;
   cursor: pointer;
   display: inline-block;
-  color: var(--font-color);
   width: 90%;
+  border-radius: 35px;
 }
 
 .btn:hover {
@@ -809,11 +810,25 @@ ul li {
   margin: 25px;
 } */
 
+/* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML */
+.settings {
+  padding: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.setting {
+  width: 50%;
+  color: var(--font-color);
+  font-size: 16pt;
+}
+
 /* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch *//* DarkMode switch */
 /*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
-  display: flex;
+  display: inline-block;
   align-items: center;
+  float: right;
 
   em {
     margin-left: 10px;
@@ -870,3 +885,57 @@ input:checked + .slider:before {
 }
 
 /* End DarkMode Switch */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

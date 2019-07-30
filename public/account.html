@@ -38,14 +38,70 @@
       </div>
     </div>
 
+    <div class="pageDescription">
+      <h1>PROFILE</h1>
+      <p>Welcome to your profile page. Here you can add your favorite topics for easy access and monitor your account. You can make a direct impact on Metrix by filling out the feedback forms as well!</p>
+    </div>
 
-<div class="theme-switch-wrapper">
-    <label class="theme-switch" for="checkbox">
-        <input type="checkbox" id="checkbox" />
-        <div class="slider round"></div>
-  </label>
-  <em>Enable Light Mode!</em>
-</div>
+    <h2>Settings</h2>
+
+    <div class="settings">
+      <span class="setting">Enable light mode</span>
+      <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+        </label>
+      </div>
+    </div>
+
+    <h2>Suggest New Topics</h2>
+
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+
+
+
+
 
 
 
