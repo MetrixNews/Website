@@ -456,7 +456,7 @@ ul li {
     width: 100%;
     height: auto;
     /* Magic! */
-    max-height: 65vw;
+    max-height: 60vw;
 
     display: block;
     /* width: 100%;
@@ -490,6 +490,7 @@ ul li {
   width: 75%;
   float: left;
   padding-bottom: 5px;
+  color: var(--article-font-color)
 }
 
 .source_logo {
@@ -835,8 +836,8 @@ ul li {
 }
 
 .newsSpectrum {
-  margin: 0 auto;
-  text-align: center;
+  /* margin: 0 auto; */
+  text-align: left;
 }
 
 .pollButtons {
