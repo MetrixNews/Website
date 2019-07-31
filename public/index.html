@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-<title>MetrixNews</title>
+<title>NewsExplore</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous">
 <link rel="stylesheet" href="css\stylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
 <body>
@@ -35,186 +36,728 @@
       </div>
     </div>
 
+<div class="pageDescription">
+  <h1>NEWS EXPLORATION</h1>
+  <p>Browse today's hottest political topics from trusted news sources. Select any topic to analyze it more in depth. Click here to suggest a new topic or source. Visit the About page to learn how we label articles.</p>
+</div>
 
-    <div class="pageDescription">
-      <h1>METRIX NEWS</h1>
-      <p>Browse today's hottest political topics or compare each 2020 presidential candidate's platform</p><br/>
-    </div>
-    <div class="home_button">
-      <a href="news.html"><button class="btn default"><i class="fa fa-newspaper-o"></i>   NEWS</button></a>
-    </div>
-    <div class="home_button">
-      <a href="election.html"><button class="btn default"><i class="fas fa-balance-scale"></i>   ELECTION</button></a>
-    </div>
+  <div class="w3-container">
 
-    <!-- Promo Section "Statistics" -->
-    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-      <div class="w3-quarter">
-        <span class="w3-xxlarge">30</span>
-        <br>Political Topics
-      </div>
-      <div class="w3-quarter">
-        <span class="w3-xxlarge">24</span>
-        <br>Presidential Candidates
-      </div>
-      <div class="w3-quarter">
-        <span class="w3-xxlarge">500+</span>
-        <br>Daily Articles
-      </div>
-      <div class="w3-quarter">
-        <span class="w3-xxlarge">100+</span>
-        <br>Case Studies
-      </div>
-    </div>
+<div class="app">
+  <div class="newsTopic">
+  <a href="topic.html">
+    <h2>Climate Change</h2>
+  </a>
+</div>
 
-    <!-- About Section -->
-    <div class="w3-container" style="padding:128px 16px" id="about">
-      <h3 class="w3-center">CAPABILITIES</h3>
-      <p class="w3-center w3-large">What does Metrix analyze?</p>
-      <div class="w3-row-padding w3-center" style="margin-top:64px">
-        <div class="w3-quarter">
-          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-          <p class="w3-large">Political Topic</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-        </div>
-        <div class="w3-quarter">
-          <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Bias</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-        </div>
-        <div class="w3-quarter">
-          <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Emotion</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-        </div>
-        <div class="w3-quarter">
-          <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Sentiment</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-        </div>
-      </div>
-    </div>
+  <div class="full hide-scroll">
 
-    <!-- Promo Section - "We know design" -->
-    <div class="w3-container w3-light-grey" style="padding:128px 16px">
-      <div class="w3-row-padding">
-        <div class="w3-col m6">
-          <h3>BIAS RATING PROCESS</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-        </div>
-      </div>
-    </div>
+    <ul class="hs">
 
+      <li class="item">
+        <a href="#openModal">
+          <div class="row articlebox">
 
-    <!-- Skills Section -->
-    <div class="w3-container w3-light-grey w3-padding-64">
-      <div class="w3-row-padding">
-        <div class="w3-col m6">
-          <h3>Performance Results</h3>
-          <p>This is where we summarize how well our algorithms are performing</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-          tempor incididunt ut labore et dolore.</p>
-        </div>
-        <div class="w3-col m6">
-          <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Topic Prediction</p>
-          <div class="w3-grey">
-            <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
-          </div>
-          <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Bias Prediction</p>
-          <div class="w3-grey">
-            <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
-          </div>
-          </div>
-        </div>
-      </div>
+            <div class="publish_info">
+              <div class="logo_div">
+                <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+              </div>
 
-      <!-- Team Section -->
-      <div class="w3-container" style="padding:128px 16px" id="team">
-        <h3 class="w3-center">THE TEAM</h3>
-        <p class="w3-center w3-large">The ones who runs this company</p>
-        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-          <div class="w3-col l4 m6 w3-margin-bottom">
-            <div class="w3-card">
-              <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-              <div class="w3-container">
-                <h3>AJ Raymond</h3>
-                <p class="w3-opacity">CEO & Founder</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+              <div class="publish_text">
+                <span class="source_name">The New York Times</span><br/>
+                <span class="author">Marcus Cymerman</span>
+                <span>   -   </span>
+                <span class="time">15m</span>
               </div>
             </div>
-          </div>
-          <div class="w3-col l4 m6 w3-margin-bottom">
-            <div class="w3-card">
-              <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-              <div class="w3-container">
-                <h3>Simon Mantlo</h3>
-                <p class="w3-opacity">Data Analyst</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-              </div>
+
+            <div>
+              <img class="articlephoto" src="images\test.jpg" alt="">
+            </div>
+
+            <div class="row">
+                <p class="headline">The findings of a new study that looked at the heart of a swimmer vs. the heart of a runner underscored how sensitive our bodies are to different types of exercise</p>
+            </div>
+
+            <div class="article_link">
+              <i class="fas fa-link"></i>
+              <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+              <span></span>
             </div>
           </div>
-          <div class="w3-col l4 m6 w3-margin-bottom">
-            <div class="w3-card">
-              <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-              <div class="w3-container">
-                <h3>Keana Mowery</h3>
-                <p class="w3-opacity">Designer</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-              </div>
-            </div>
+      </a>
+
+          <div class="metricRow">
+            <img src="images\emojis\left.png" class="metric" alt="bias">
+            <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+            <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
           </div>
-          <div class="w3-col l4 m6 w3-margin-bottom">
-            <div class="w3-card">
-              <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-              <div class="w3-container">
-                <h3>Marcus Cymerman</h3>
-                <p class="w3-opacity">Developer</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="w3-col l4 m6 w3-margin-bottom">
-            <div class="w3-card">
-              <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-              <div class="w3-container">
-                <h3>Nick Wethington</h3>
-                <p class="w3-opacity">Tester</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
-    <!-- Contact Section -->
-    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-      <h3 class="w3-center">CONTACT</h3>
-      <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-      <div style="margin-top:48px">
-        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-        <br>
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-          <p>
-            <button class="w3-button w3-black" type="submit">
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
-            </button>
-          </p>
-        </form>
-      </div>
-    </div>
+          <div id="openModal" class="modalDialog">
+          	<div>
+          		<a href="#close" title="Close" class="close">X</a>
 
+              <article>
+                <div class="row articlebox">
+
+                  <section>
+                    <div class="publish_info">
+                      <div class="logo_div">
+                        <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+                      </div>
+
+                      <div class="publish_text">
+                        <span class="source_name">The New York Times</span><br/>
+                        <span class="author">Marcus Cymerman</span>
+                        <span>   -   </span>
+                        <span class="time">15m</span>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section>
+                    <img class="articlephoto" src="images\test2.jpg" alt="">
+                  </section>
+
+                  <section>
+                    <h4>Summary</h4>
+                    <p class = "article_description">
+                      Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h4>Content</h4>
+                    <p class = "article_content">
+                      Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                    </p>
+                  </section>
+
+                  <div class="article_link">
+                    <i class="fas fa-link"></i>
+                    <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+                    <span></span>
+                  </div>
+
+                </div>
+                <div class="metricRow">
+                  <img src="images\emojis\left.png" class="metric" alt="bias">
+                  <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+                  <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+                </div>
+
+              </article>
+          	</div>
+          </div>
+        </li>
+
+        <li class="item">
+          <a href="#openModal">
+            <div class="row articlebox">
+
+              <div class="publish_info">
+                <div class="logo_div">
+                  <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+                </div>
+
+                <div class="publish_text">
+                  <span class="source_name">The New York Times</span><br/>
+                  <span class="author">Marcus Cymerman</span>
+                  <span>   -   </span>
+                  <span class="time">15m</span>
+                </div>
+              </div>
+
+              <div>
+                <img class="articlephoto" src="images\test.jpg" alt="">
+              </div>
+
+              <div class="row">
+                  <p class="headline">The findings of a new study that looked at the heart of a swimmer vs. the heart of a runner underscored how sensitive our bodies are to different types of exercise</p>
+              </div>
+
+              <div class="article_link">
+                <i class="fas fa-link"></i>
+                <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+                <span></span>
+              </div>
+            </div>
+        </a>
+
+            <div class="metricRow">
+              <img src="images\emojis\left.png" class="metric" alt="bias">
+              <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+              <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+            </div>
+
+
+            <div id="openModal" class="modalDialog">
+            	<div>
+            		<a href="#close" title="Close" class="close">X</a>
+
+                <article>
+                  <div class="row articlebox">
+
+                    <section>
+                      <div class="publish_info">
+                        <div class="logo_div">
+                          <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+                        </div>
+
+                        <div class="publish_text">
+                          <span class="source_name">The New York Times</span><br/>
+                          <span class="author">Marcus Cymerman</span>
+                          <span>   -   </span>
+                          <span class="time">15m</span>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section>
+                      <img class="articlephoto" src="images\test2.jpg" alt="">
+                    </section>
+
+                    <section>
+                      <h4>Summary</h4>
+                      <p class = "article_description">
+                        Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                      </p>
+                    </section>
+
+                    <section>
+                      <h4>Content</h4>
+                      <p class = "article_content">
+                        Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                      </p>
+                    </section>
+
+                    <div class="article_link">
+                      <i class="fas fa-link"></i>
+                      <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+                      <span></span>
+                    </div>
+
+                  </div>
+                  <div class="metricRow">
+                    <img src="images\emojis\left.png" class="metric" alt="bias">
+                    <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+                    <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+                  </div>
+
+                </article>
+            	</div>
+            </div>
+          </li>
+
+          <li class="item">
+            <a href="#openModal">
+              <div class="row articlebox">
+
+                <div class="publish_info">
+                  <div class="logo_div">
+                    <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+                  </div>
+
+                  <div class="publish_text">
+                    <span class="source_name">The New York Times</span><br/>
+                    <span class="author">Marcus Cymerman</span>
+                    <span>   -   </span>
+                    <span class="time">15m</span>
+                  </div>
+                </div>
+
+                <div>
+                  <img class="articlephoto" src="images\test.jpg" alt="">
+                </div>
+
+                <div class="row">
+                    <p class="headline">The findings of a new study that looked at the heart of a swimmer vs. the heart of a runner underscored how sensitive our bodies are to different types of exercise</p>
+                </div>
+
+                <div class="article_link">
+                  <i class="fas fa-link"></i>
+                  <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+                  <span></span>
+                </div>
+              </div>
+          </a>
+
+              <div class="metricRow">
+                <img src="images\emojis\left.png" class="metric" alt="bias">
+                <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+                <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+              </div>
+
+
+              <div id="openModal" class="modalDialog">
+                <div>
+                  <a href="#close" title="Close" class="close">X</a>
+
+                  <article>
+                    <div class="row articlebox">
+
+                      <section>
+                        <div class="publish_info">
+                          <div class="logo_div">
+                            <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+                          </div>
+
+                          <div class="publish_text">
+                            <span class="source_name">The New York Times</span><br/>
+                            <span class="author">Marcus Cymerman</span>
+                            <span>   -   </span>
+                            <span class="time">15m</span>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section>
+                        <img class="articlephoto" src="images\test2.jpg" alt="">
+                      </section>
+
+                      <section>
+                        <h4>Summary</h4>
+                        <p class = "article_description">
+                          Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                        </p>
+                      </section>
+
+                      <section>
+                        <h4>Content</h4>
+                        <p class = "article_content">
+                          Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                        </p>
+                      </section>
+
+                      <div class="article_link">
+                        <i class="fas fa-link"></i>
+                        <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+                        <span></span>
+                      </div>
+
+                    </div>
+                    <div class="metricRow">
+                      <img src="images\emojis\left.png" class="metric" alt="bias">
+                      <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+                      <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+                    </div>
+
+                  </article>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <a href="#openModal">
+                <div class="row articlebox">
+
+                  <div class="publish_info">
+                    <div class="logo_div">
+                      <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+                    </div>
+
+                    <div class="publish_text">
+                      <span class="source_name">The New York Times</span><br/>
+                      <span class="author">Marcus Cymerman</span>
+                      <span>   -   </span>
+                      <span class="time">15m</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img class="articlephoto" src="images\test.jpg" alt="">
+                  </div>
+
+                  <div class="row">
+                      <p class="headline">The findings of a new study that looked at the heart of a swimmer vs. the heart of a runner underscored how sensitive our bodies are to different types of exercise</p>
+                  </div>
+
+                  <div class="article_link">
+                    <i class="fas fa-link"></i>
+                    <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+                    <span></span>
+                  </div>
+                </div>
+            </a>
+
+                <div class="metricRow">
+                  <img src="images\emojis\left.png" class="metric" alt="bias">
+                  <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+                  <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+                </div>
+
+
+                <div id="openModal" class="modalDialog">
+                  <div>
+                    <a href="#close" title="Close" class="close">X</a>
+
+                    <article>
+                      <div class="row articlebox">
+
+                        <section>
+                          <div class="publish_info">
+                            <div class="logo_div">
+                              <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+                            </div>
+
+                            <div class="publish_text">
+                              <span class="source_name">The New York Times</span><br/>
+                              <span class="author">Marcus Cymerman</span>
+                              <span>   -   </span>
+                              <span class="time">15m</span>
+                            </div>
+                          </div>
+                        </section>
+
+                        <section>
+                          <img class="articlephoto" src="images\test2.jpg" alt="">
+                        </section>
+
+                        <section>
+                          <h4>Summary</h4>
+                          <p class = "article_description">
+                            Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                          </p>
+                        </section>
+
+                        <section>
+                          <h4>Content</h4>
+                          <p class = "article_content">
+                            Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                          </p>
+                        </section>
+
+                        <div class="article_link">
+                          <i class="fas fa-link"></i>
+                          <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+                          <span></span>
+                        </div>
+
+                      </div>
+                      <div class="metricRow">
+                        <img src="images\emojis\left.png" class="metric" alt="bias">
+                        <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+                        <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+                      </div>
+
+                    </article>
+                  </div>
+                </div>
+              </li>
+          </ul>
+  </div>
+</div>
+
+<div class="app">
+  <div class="newsTopic">
+  <a href="topic.html">
+    <h2>Gun Control</h2>
+  </a>
+</div>
+
+  <div class="full hide-scroll">
+
+    <ul class="hs">
+
+      <li class="item">
+        <a href="#openModal">
+          <div class="row articlebox">
+
+            <div class="publish_info">
+              <div class="logo_div">
+                <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+              </div>
+
+              <div class="publish_text">
+                <span class="source_name">The New York Times</span><br/>
+                <span class="author">Marcus Cymerman</span>
+                <span>   -   </span>
+                <span class="time">15m</span>
+              </div>
+            </div>
+
+            <div>
+              <img class="articlephoto" src="images\test.jpg" alt="">
+            </div>
+
+            <div class="row">
+                <p class="headline">The findings of a new study that looked at the heart of a swimmer vs. the heart of a runner underscored how sensitive our bodies are to different types of exercise</p>
+            </div>
+
+            <div class="article_link">
+              <i class="fas fa-link"></i>
+              <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+              <span></span>
+            </div>
+          </div>
+      </a>
+
+          <div class="metricRow">
+            <img src="images\emojis\left.png" class="metric" alt="bias">
+            <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+            <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+          </div>
+
+
+          <div id="openModal" class="modalDialog">
+            <div>
+              <a href="#close" title="Close" class="close">X</a>
+
+              <article>
+                <div class="row articlebox">
+
+                  <section>
+                    <div class="publish_info">
+                      <div class="logo_div">
+                        <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+                      </div>
+
+                      <div class="publish_text">
+                        <span class="source_name">The New York Times</span><br/>
+                        <span class="author">Marcus Cymerman</span>
+                        <span>   -   </span>
+                        <span class="time">15m</span>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section>
+                    <img class="articlephoto" src="images\test2.jpg" alt="">
+                  </section>
+
+                  <section>
+                    <h4>Summary</h4>
+                    <p class = "article_description">
+                      Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h4>Content</h4>
+                    <p class = "article_content">
+                      Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                    </p>
+                  </section>
+
+                  <div class="article_link">
+                    <i class="fas fa-link"></i>
+                    <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+                    <span></span>
+                  </div>
+
+                </div>
+                <div class="metricRow">
+                  <img src="images\emojis\left.png" class="metric" alt="bias">
+                  <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+                  <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+                </div>
+
+              </article>
+            </div>
+          </div>
+        </li>
+
+        <li class="item">
+          <a href="#openModal">
+            <div class="row articlebox">
+
+              <div class="publish_info">
+                <div class="logo_div">
+                  <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+                </div>
+
+                <div class="publish_text">
+                  <span class="source_name">The New York Times</span><br/>
+                  <span class="author">Marcus Cymerman</span>
+                  <span>   -   </span>
+                  <span class="time">15m</span>
+                </div>
+              </div>
+
+              <div>
+                <img class="articlephoto" src="images\test.jpg" alt="">
+              </div>
+
+              <div class="row">
+                  <p class="headline">The findings of a new study that looked at the heart of a swimmer vs. the heart of a runner underscored how sensitive our bodies are to different types of exercise</p>
+              </div>
+
+              <div class="article_link">
+                <i class="fas fa-link"></i>
+                <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+                <span></span>
+              </div>
+            </div>
+        </a>
+
+            <div class="metricRow">
+              <img src="images\emojis\left.png" class="metric" alt="bias">
+              <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+              <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+            </div>
+
+
+            <div id="openModal" class="modalDialog">
+              <div>
+                <a href="#close" title="Close" class="close">X</a>
+
+                <article>
+                  <div class="row articlebox">
+
+                    <section>
+                      <div class="publish_info">
+                        <div class="logo_div">
+                          <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+                        </div>
+
+                        <div class="publish_text">
+                          <span class="source_name">The New York Times</span><br/>
+                          <span class="author">Marcus Cymerman</span>
+                          <span>   -   </span>
+                          <span class="time">15m</span>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section>
+                      <img class="articlephoto" src="images\test2.jpg" alt="">
+                    </section>
+
+                    <section>
+                      <h4>Summary</h4>
+                      <p class = "article_description">
+                        Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                      </p>
+                    </section>
+
+                    <section>
+                      <h4>Content</h4>
+                      <p class = "article_content">
+                        Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                      </p>
+                    </section>
+
+                    <div class="article_link">
+                      <i class="fas fa-link"></i>
+                      <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+                      <span></span>
+                    </div>
+
+                  </div>
+                  <div class="metricRow">
+                    <img src="images\emojis\left.png" class="metric" alt="bias">
+                    <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+                    <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+                  </div>
+
+                </article>
+              </div>
+            </div>
+          </li>
+
+          <li class="item">
+            <a href="#openModal">
+              <div class="row articlebox">
+
+                <div class="publish_info">
+                  <div class="logo_div">
+                    <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+                  </div>
+
+                  <div class="publish_text">
+                    <span class="source_name">The New York Times</span><br/>
+                    <span class="author">Marcus Cymerman</span>
+                    <span>   -   </span>
+                    <span class="time">15m</span>
+                  </div>
+                </div>
+
+                <div>
+                  <img class="articlephoto" src="images\test.jpg" alt="">
+                </div>
+
+                <div class="row">
+                    <p class="headline">The findings of a new study that looked at the heart of a swimmer vs. the heart of a runner underscored how sensitive our bodies are to different types of exercise</p>
+                </div>
+
+                <div class="article_link">
+                  <i class="fas fa-link"></i>
+                  <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+                  <span></span>
+                </div>
+              </div>
+          </a>
+
+              <div class="metricRow">
+                <img src="images\emojis\left.png" class="metric" alt="bias">
+                <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+                <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+              </div>
+
+
+              <div id="openModal" class="modalDialog">
+                <div>
+                  <a href="#close" title="Close" class="close">X</a>
+
+                  <article>
+                    <div class="row articlebox">
+
+                      <section>
+                        <div class="publish_info">
+                          <div class="logo_div">
+                            <img src="images\source_logos\new_york_times.png" class="source_logo"  alt="">
+                          </div>
+
+                          <div class="publish_text">
+                            <span class="source_name">The New York Times</span><br/>
+                            <span class="author">Marcus Cymerman</span>
+                            <span>   -   </span>
+                            <span class="time">15m</span>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section>
+                        <img class="articlephoto" src="images\test2.jpg" alt="">
+                      </section>
+
+                      <section>
+                        <h4>Summary</h4>
+                        <p class = "article_description">
+                          Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                        </p>
+                      </section>
+
+                      <section>
+                        <h4>Content</h4>
+                        <p class = "article_content">
+                          Lorem ipsum dolor sit amet, vim aliquam inimicus reformidans in, eu altera eirmod propriae mel. Sit fabulas facilisis no, consul invenire ius no, sea quodsi audire torquatos et. Pro eruditi expetenda ut. Usu te diam magna erroribus, omittam pertinacia est ei. Nec at clita vivendum, ei iuvaret detraxit vim. Te habeo timeam neglegentur duo, erat probo ei vel, corpora abhorreant sit at.
+                        </p>
+                      </section>
+
+                      <div class="article_link">
+                        <i class="fas fa-link"></i>
+                        <a href="https://www.nytimes.com/" class="article_link" target="_blank">https://www.nytimes.com/</a>
+                        <span></span>
+                      </div>
+
+                    </div>
+                    <div class="metricRow">
+                      <img src="images\emojis\left.png" class="metric" alt="bias">
+                      <img  src="images\emojis\joy.png" class="metric" alt="emotion">
+                      <img  src="images\emojis\sentiment-score-positive.png" class="metric" alt="sentiment">
+                    </div>
+
+                  </article>
+                </div>
+              </div>
+            </li>
+
+    </ul>
+  </div>
+</div>
+</div>
 
 <!-- Footer -->
 <footer>
@@ -228,6 +771,7 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="js/darkMode.js"></script>
+<script src="js/centerscroll.js"></script>
 
 </body>
 </html>
