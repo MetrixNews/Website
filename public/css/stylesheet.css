@@ -256,7 +256,7 @@ a:active {
 }
 
 .pageDescription {
-  padding-top: 25px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -799,15 +799,19 @@ ul li {
 
 .experience {
   line-height: 1.8em;
-  text-align: center;
-  margin: 0px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 5px;
+  margin: 0;
   color: var(--font-color);
   max-width: 100%;
 }
 
 .education {
   line-height: 1.8em;
-  text-align: center;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 5px;
   margin: 0px;
   color: var(--font-color);
   max-width: 100%;
