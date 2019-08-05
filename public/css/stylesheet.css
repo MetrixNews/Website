@@ -65,6 +65,8 @@ h1 {
   text-align: center;
   font-size: 36pt;
   font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -133,7 +135,7 @@ a:active {
   max-width: 875;
   background-color: var(--bg-color);
   position: relative;
-  /* border-bottom: solid 1px var(--highlight-color); */
+  border-bottom: solid thick var(--metrix-color);
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -149,11 +151,6 @@ a:active {
   /* padding: 1px 10px 1px 10px; */
   margin: 2px 10px 0px 10px;
   width: 50px;
-  height: auto;
-}
-
-.logo {
-  width: 43px;
   height: auto;
 }
 
@@ -264,9 +261,8 @@ a:active {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-  text-align: left;
+  text-align: center;
   color: var(--font-color);
-  border-top: solid thick  var(--metrix-color);
   border-bottom: solid thick  var(--metrix-color);
 }
 
@@ -446,7 +442,7 @@ ul li {
   width: 100%;
   height: auto;
   /* Magic! */
-  max-height: 30vw;
+  max-height: 25vw;
 
   display: block;
   /* width: 100%;
@@ -722,92 +718,159 @@ ul li {
 } */
 /* BIAS SCOLLERS END */
 
-/* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML *//* INDEX.HTML */
+/* ABOUT.HTML */ /* ABOUT.HTML *//* ABOUT.HTML *//* ABOUT.HTML *//* ABOUT.HTML *//* ABOUT.HTML *//* ABOUT.HTML *//* ABOUT.HTML *//* ABOUT.HTML *//* ABOUT.HTML *//* ABOUT.HTML */
 .home_button {
   width: 100%;
   text-align: center;
 }
 
-.wrap-collabsible {
-  margin-bottom: 1.2rem 0;
+.legend_cont {
+  display: flex;
+  justify-content:space-between;
+  float: left;
+  padding: 5px;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  border-bottom: solid thick var(--metrix-color);
 }
 
-input[type='checkbox'] {
-  display: none;
-}
-
-.lbl-toggle {
-  display: block;
-
-  font-weight: bold;
-  font-family: monospace;
-  font-size: 1.2rem;
-  text-transform: uppercase;
+.legend {
   text-align: center;
-
-  padding: 1rem;
-
-  color: #A77B0E;
-  background: #FAE042;
-
-  cursor: pointer;
-
-  border-radius: 7px;
-  transition: all 0.25s ease-out;
 }
 
-.lbl-toggle:hover {
-  color: #7C5A0B;
+.legend_title {
+  font-size: 12pt;
+  color: var(--font-color);
+  text-align: center;
 }
 
-.lbl-toggle::before {
-  content: ' ';
-  display: inline-block;
 
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid currentColor;
-  vertical-align: middle;
-  margin-right: .7rem;
-  transform: translateY(-2px);
+/* Our Team
+-------------------------------------------------------*/
 
-  transition: transform .2s ease-out;
+
+/* Our Team
+-------------------------------------------------------*/
+
+.our-team .team-row {
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
-.toggle:checked + .lbl-toggle::before {
-  transform: rotate(90deg) translateX(-3px);
+.our-team .team-wrap {
+  padding: 0 40px;
 }
 
-.collapsible-content {
-  max-height: 0px;
+.our-team .container-fluid {
+  padding: 0 50px;
+}
+
+.team-img img {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   overflow: hidden;
-  transition: max-height .25s ease-in-out;
+  width: 100%;
 }
 
-.toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 350px;
+.team-member {
+    margin-bottom: 20px;
 }
 
-.toggle:checked + .lbl-toggle {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.team-member,
+.team-img {
+  position: relative;
+  overflow: hidden;
 }
 
-.collapsible-content .content-inner {
-  background: rgba(250, 224, 66, .2);
-  border-bottom: 1px solid rgba(250, 224, 66, .45);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  padding: .5rem 1rem;
+.team-title {
+  margin: 10px 0 7px;
 }
+
+.overlay {
+  background-color: rgba(20,20,20,.7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.team-details {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 5%;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.team-details p {
+  color: var(--font-color);
+}
+
+.team-img:hover .team-details {
+  opacity: 1;
+  margin-top: -80px;
+}
+
+.team-img:hover .overlay {
+  opacity: 1;
+}
+
+.socials a {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background-color: transparent;
+}
+
+.socials i {
+  line-height: 37px;
+  color: var(--font-color);
+  font-size: 14px;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.team-details .socials i {
+	color: #fff;
+}
+
+.socials a:hover i {
+  color: #fff;
+  background-color: #355c7d;
+}
+
+
+
 
 /* election.html */ /* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html *//* election.html */
 
-.polticalParty {
+.politicalParty {
   width: 100%;
   float: left;
   margin-top: 25px;
-  border-top: solid thick var(--metrix-color);
+  border-bottom: solid thick var(--metrix-color);
+  background-color: inherit;
 }
 
 .candidate {
