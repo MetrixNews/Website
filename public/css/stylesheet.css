@@ -744,13 +744,29 @@ ul li {
   text-align: center;
 }
 
+/* what we do
+-------------------------------------------------------*/
+.what_cont {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  border-bottom: solid thick var(--metrix-color);
+  text-align: center;
+  color: var(--font-color)
+}
+
 
 /* Our Team
 -------------------------------------------------------*/
 
-
-/* Our Team
--------------------------------------------------------*/
+.team_cont {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  border-bottom: solid thick var(--metrix-color);
+  text-align: center;
+  color: var(--font-color)
+}
 
 .our-team .team-row {
   margin-left: -40px;
@@ -772,6 +788,7 @@ ul li {
   transition: all .2s ease-in-out;
   overflow: hidden;
   width: 100%;
+  height: ;
 }
 
 .team-member {
