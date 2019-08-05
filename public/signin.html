@@ -1,47 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>SignIn</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/signin/util.css">
-	<link rel="stylesheet" type="text/css" href="css/signin/main.css">
-
-<!--===============================================================================================-->
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<html>
+<title>NewsExplore</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous">
 <link rel="stylesheet" href="css\stylesheet.css">
-
-</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
 <body>
 
-	<div class="nav">
+  <div class="nav">
     <!-- <input type="checkbox" id="nav-check"> -->
     <div class="nav-links">
       <a href="index.html">
@@ -63,83 +36,63 @@
       </div>
     </div>
 
-		<div class="pageDescription">
-		  <h1>SIGN IN</h1>
-		  <p>Sign in to help improve and tailor Metrix</p>
-		</div>
-
-
-<div class="limiter">
-  <div class="container-login100">
-    <!-- <div class="login100-more" style="background-image: url('images/logo.png');"></div> -->
-
-    <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-      <form class="login100-form validate-form">
-        <!-- <span class="login100-form-title p-b-59">
-          Sign In
-        </span> -->
-
-        <div class="wrap-input100 validate-input" data-validate="Username is required">
-          <span class="label-input100">Username</span>
-          <input class="input100" type="text" name="username" placeholder="Username...">
-          <span class="focus-input100"></span>
-        </div>
-
-        <div class="wrap-input100 validate-input" data-validate = "Password is required">
-          <span class="label-input100">Password</span>
-          <input class="input100" type="text" name="pass" placeholder="*************">
-          <span class="focus-input100"></span>
-        </div>
-
-        <div class="container-login100-form-btn">
-          <div class="wrap-login100-form-btn">
-            <div class="login100-form-bgbtn"></div>
-            <button class="login100-form-btn">
-              Sign In
-            </button>
-          </div>
-
-          <a href="signup.html" class="dis-block txt3 hov1 p-r-10 p-t-10 p-b-10 p-l-10">
-            Create Account
-            <i class="fa fa-long-arrow-right m-l-5"></i>
-          </a>
-        </div>
-      </form>
-    </div>
-  </div>
+<div class="pageDescription">
+  <h1>NEWS EXPLORATION</h1>
+  <p>Browse today's hottest political topics from trusted news sources. Select any topic to analyze it more in depth. Click here to suggest a new topic or source. Visit the About page to learn how we label articles.</p>
 </div>
 
+  <div class="w3-container">
 
+		<div class="form-wrap">
+			<div class="tabs">
+				<h3 class="signup-tab"><a class="active" href="#signup-tab-content">Sign Up</a></h3>
+				<h3 class="login-tab"><a href="#login-tab-content">Login</a></h3>
+			</div><!--.tabs-->
 
-<!-- Footer -->
-<footer>
-  <div class="socialLinks">
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-facebook"></i>
-  </div>
-    <i class="far fa-copyright"></i><span>2019 MetrixNews. All Rights Reserved</span>
-</footer>
+			<div class="tabs-content">
+				<div id="signup-tab-content" class="active">
+					<form class="signup-form" action="" method="post">
+						<input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
+						<input type="text" class="input" id="user_name" autocomplete="off" placeholder="Username">
+						<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
+						<input type="submit" class="button" value="Sign Up">
+					</form><!--.login-form-->
+					<div class="help-text">
+						<p>By signing up, you agree to our</p>
+						<p><a href="#" class="terms">Terms of service</a></p>
+					</div><!--.help-text-->
+				</div><!--.signup-tab-content-->
 
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/signin/main.js"></script>
+				<div id="login-tab-content">
+					<form class="login-form" action="" method="post">
+						<input type="text" class="input" id="user_login" autocomplete="off" placeholder="Email or Username">
+						<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
+						<input type="checkbox" class="checkbox" id="remember_me">
+						<label for="remember_me" class="remember">Remember me</label>
+
+						<input type="submit" class="button" value="Login">
+					</form><!--.login-form-->
+					<div class="help-text">
+						<p><a href="#" class="forget">Forget your password?</a></p>
+					</div><!--.help-text-->
+				</div><!--.login-tab-content-->
+			</div><!--.tabs-content-->
+		</div><!--.form-wrap-->
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="socialLinks">
+			<i class="fab fa-twitter"></i>
+			<i class="fab fa-instagram"></i>
+			<i class="fab fa-facebook"></i>
+		</div>
+			<i class="far fa-copyright"></i><span>2019 MetrixNews. All Rights Reserved</span>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 	<script src="js/darkMode.js"></script>
+	<script src="js/signin.js"></script>
 
-</body>
-</html>
+	</body>
+	</html>

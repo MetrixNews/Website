@@ -1037,6 +1037,178 @@ ul li {
   margin: 25px;
 } */
 
+
+/* signin.html *//* signin.html *//* signin.html *//* signin.html *//* signin.html *//* signin.html *//* signin.html *//* signin.html *//* signin.html *//* signin.html *//* signin.html *//* signin.html */
+
+
+.forget {
+color: var(--font-color);
+text-decoration: none;
+}
+
+.forget:hover {
+  color: #4FDA8C;
+}
+
+.terms {
+color: var(--font-color);
+text-decoration: none;
+}
+
+.terms:hover {
+  color: #4FDA8C;
+}
+
+.remember {
+color: var(--font-color);
+text-decoration: none;
+}
+
+input {
+font-size: 16pt;
+color: var(--font-color)
+}
+
+.form-wrap {
+background-color: var(bg-color);
+width: 100%;
+margin: 0 auto;
+padding: 10px;
+}
+
+.form-wrap .tabs {
+  overflow: hidden;
+}
+
+.form-wrap .tabs h3 {
+  float: left;
+  width: 50%;
+}
+
+.form-wrap .tabs h3 a {
+  padding: 0.5em 0;
+  text-align: center;
+  font-weight: 400;
+  background-color: var(--bg-color);
+  display: block;
+  color: var(--font-color);
+  border-radius: 25px;
+  border: solid 2px var(--highlight-color);
+  margin-left: 5px;
+}
+
+.form-wrap .tabs h3 a.active {
+  background-color: var(--highlight-color);
+  color: var(--bg-color);
+}
+
+.form-wrap .tabs-content {
+  padding: 10px 0px;
+}
+
+.form-wrap .tabs-content div[id$="tab-content"] {
+  display: none;
+}
+
+.form-wrap .tabs-content .active {
+  display: block !important;
+}
+
+.form-wrap form .input {
+  /* box-sizing: border-box;
+  -moz-box-sizing: border-box; */
+  color: var(--font-color);
+  padding: .8em 0 10px .8em;
+  display: inline-block;
+  margin: 0 0 .8em 0;
+  padding-right: 2em;
+  width: 100%;
+  border: solid 2px var(--highlight-color);
+  border-radius: 25px;
+  background-color: inherit;
+}
+.form-wrap form .input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--font-color);
+  opacity: 1; /* Firefox */
+}
+
+
+.form-wrap form .button {
+  width: 100%;
+  padding: .8em 0 10px .8em;
+  margin-bottom: 10px;
+  background-color: #29A66C;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.form-wrap form .button:hover {
+  background-color: #4FDA8C;
+}
+
+.form-wrap form .checkbox {
+  visibility: hidden;
+  padding: 20px;
+  margin: .5em 0 1.5em;
+}
+
+.form-wrap form .checkbox:checked + label:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.form-wrap form label[for] {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.form-wrap form label[for]:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #CFCFCF;
+  width: 17px;
+  height: 17px;
+  top: 0px;
+  left: -14px;
+}
+
+.form-wrap form label[for]:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background-color: transparent;
+  top: 4px;
+  left: -10px;
+  border: 2px solid var(--highlight-color);
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.form-wrap .help-text {
+  margin-top: .6em;
+  color: var(--font-color);
+}
+
+.form-wrap .help-text p {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+
 /* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML *//* ACCOUNT.HTML */
 .settings {
   padding: 10px;
