@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Nav from './nav'
-import News_Spectrum from './news_spectrum'
+import Nav from './components/nav'
+import Spectrum from './components/news_spectrum'
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <News_Spectrum />
+      {/* <Nav /> */}
+      <Spectrum />
     </div>
   );
 }
