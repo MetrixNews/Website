@@ -1,38 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 
-function Modal() {
+function PrimaryButton(props) {
     return (
-        <a href="#openModal">
-            <p>Hello World</p>
-            <div id="openModal" className="modalDialog">
-                <div>
-                    <a href="#close" title="Close" className="close">X</a>
-
-                    <article>
-                        <div className="row articlebox">
-
-                        </div>
-                    </article>
-                </div>
-             </div>
-        </a>
+        <div>
+            <Button variant="primary" size="lg" block>
+                {props.description}
+            </Button>
+        </div>
     )   
 }
 
-// const articleSummary = {
-//     sectionTitle: 'Summary',
-//     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-// };
+const primaryButton = {
+    description: 'Election Polls'
+};
 
 
 
   ReactDOM.render(
-    <Modal
+    <PrimaryButton
+        description={primaryButton.description}
     />,
     document.getElementById('root')
   );
