@@ -6,28 +6,34 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-function ArticleSummary(props) {
+function Modal() {
     return (
-        <section>
-            <h4>{articleSummary.sectionTitle}</h4>
-            <p className = "article_content">
-                {articleSummary.text}            
-            </p>
-      </section>
-    )
+        <a href="#openModal">
+            <p>Hello World</p>
+            <div id="openModal" className="modalDialog">
+                <div>
+                    <a href="#close" title="Close" className="close">X</a>
+
+                    <article>
+                        <div className="row articlebox">
+
+                        </div>
+                    </article>
+                </div>
+             </div>
+        </a>
+    )   
 }
 
-const articleSummary = {
-    sectionTitle: 'Summary',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-};
+// const articleSummary = {
+//     sectionTitle: 'Summary',
+//     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+// };
 
 
 
   ReactDOM.render(
-    <ArticleSummary
-        sectionTitle={articleSummary.sectionTitle}
-        text={articleSummary.text}
+    <Modal
     />,
     document.getElementById('root')
   );
