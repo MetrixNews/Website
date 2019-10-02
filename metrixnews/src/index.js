@@ -3,29 +3,40 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card'
+import CardDeck from 'react-bootstrap/CardDeck'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 
-function PrimaryButton(props) {
+function Candidate(props) {
     return (
-        <div>
-            <Button variant="primary" size="lg" block>
-                {props.description}
-            </Button>
-        </div>
+        <CardDeck>
+            
+        </CardDeck>
     )   
 }
 
-const primaryButton = {
-    description: 'Election Polls'
+
+const candidate = {
+    pic:  'https://upload.wikimedia.org/wikipedia/commons/d/de/Bernie_Sanders.jpg',
+    name: 'Bernie Sanders',
+    party: 'Democrat',
+    title: 'U.S. Senator',
+    state: 'Vermont',
+    slogan: '"Not Me, Us"'
 };
 
 
 
   ReactDOM.render(
-    <PrimaryButton
-        description={primaryButton.description}
+    <Candidate
+        pic={candidate.pic}
+        name={candidate.name}
+        party={candidate.party}
+        title={candidate.title}
+        state={candidate.state}
+        slogan={candidate.slogan}
     />,
     document.getElementById('root')
   );
