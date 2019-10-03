@@ -5,7 +5,6 @@ function NewsfeedComponent (){
  return (
      <PageHeader />
  )
- 
 }
 
 export default NewsfeedComponent;
