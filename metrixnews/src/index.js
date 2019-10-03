@@ -9,35 +9,36 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 
-function Candidate(props) {
-    return (
-        <CardDeck>
+// function Candidate(props) {
+//     return (
+//         <CardDeck>
             
-        </CardDeck>
-    )   
-}
+//         </CardDeck>
+//     )   
+// }
 
 
-const candidate = {
-    pic:  'https://upload.wikimedia.org/wikipedia/commons/d/de/Bernie_Sanders.jpg',
-    name: 'Bernie Sanders',
-    party: 'Democrat',
-    title: 'U.S. Senator',
-    state: 'Vermont',
-    slogan: '"Not Me, Us"'
-};
+// const candidate = {
+//     pic:  'https://upload.wikimedia.org/wikipedia/commons/d/de/Bernie_Sanders.jpg',
+//     name: 'Bernie Sanders',
+//     party: 'Democrat',
+//     title: 'U.S. Senator',
+//     state: 'Vermont',
+//     slogan: '"Not Me, Us"'
+// };
 
 
 
   ReactDOM.render(
-    <Candidate
-        pic={candidate.pic}
-        name={candidate.name}
-        party={candidate.party}
-        title={candidate.title}
-        state={candidate.state}
-        slogan={candidate.slogan}
-    />,
+    <App/>,
+    // <Candidate
+    //     pic={candidate.pic}
+    //     name={candidate.name}
+    //     party={candidate.party}
+    //     title={candidate.title}
+    //     state={candidate.state}
+    //     slogan={candidate.slogan}
+    // />,
     document.getElementById('root')
   );
 
