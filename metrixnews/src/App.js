@@ -5,10 +5,10 @@ import {
   Link
 } from 'react-router-dom'
 import NewsfeedComponent from './components/newsfeed.js';
+import news_feed from './components/newsfeed.js';
 import ElectionComponent from './components/election.js';
 import MetrixComponent from './components/metrix.js';
 import ProfileComponent from './components/profile.js';
-import PageHeader from './components/page_header';
 
 class App extends React.Component {
    render() {
@@ -30,7 +30,9 @@ class App extends React.Component {
             </li>
           </ul>
 
-          <Route exact path='/' component={NewsfeedComponent}></Route>       
+          <Route exact path='/' render={(props) => <NewsfeedComponent {...props.news_feed} title={news_feed.title} />}
+              />)
+            }/>       
           <Route exact path='/election' component={ElectionComponent}></Route>
           <Route exact path='/metrix' component={MetrixComponent}></Route>
           <Route exact path='/profile' component={ProfileComponent}></Route>
