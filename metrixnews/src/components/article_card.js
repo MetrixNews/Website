@@ -6,8 +6,8 @@ function Card(props) {
     return(
         <li className="item">
             <a href="#openModal">
-                <Article publishinfo={props.card}/>
-                <Metrics scores={props.card}/>
+                <Article />
+                <Metrics />
             </a>
         </li>
     )

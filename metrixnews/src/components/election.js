@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import PoliticalParty from './candidate_deck';
 
 function ElectionComponent (){
- return <h1>Election Component</h1>
+ return (
+    <PoliticalParty />
+ )
 }
 
 export default ElectionComponent;

@@ -1,10 +1,10 @@
 import React, { Component }  from 'react';
 
-function PageHeader(props) {
+function PageHeader() {
     return (
         <div className="pageDescription">
-            <h1>{props.header.title}</h1>
-            <p>{props.header.desc}</p>
+            <h1>PAGE HEADER</h1>
+            <p>Page Description</p>
         </div>
     )
 }

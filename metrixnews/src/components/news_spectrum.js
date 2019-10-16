@@ -6,20 +6,18 @@ function Spectrum(props) {
         <div className="app">
             <div className="newsTopic">
                 <a href="topic.html">
-                    <h2>{props.topic}</h2>
+                    <h2>Climate Change</h2>
                 </a>
             </div>
             <div className="full hide-scroll">
                 <ul className="hs">
-                     <Card card={props.card}/>
-                     <Card card={props.card}/>
-                     <Card card={props.card}/>
-                     <Card card={props.card}/>
-                     <Card card={props.card}/>
-                     <Card card={props.card}/>
-                     <Card card={props.card}/>
-                     <Card card={props.card}/>
-                     <Card card={props.card}/>
+                     <Card />
+                     <Card />
+                     <Card />
+                     <Card />
+                     <Card />
+                     <Card />
+                     <Card />
                 </ul>
             </div>
         </div>

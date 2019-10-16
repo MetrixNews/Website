@@ -1,13 +1,19 @@
 import React, { Component }  from 'react';
+import CardDeck from 'react-bootstrap/CardDeck';
+import Candidate from './candidate';
 
 // Still needs new styling ... used React Bootstrap ... https://react-bootstrap.github.io/components/cards/#card-deck
 
-function Candidate(props) {
+function PoliticalParty(props) {
     return (
         <CardDeck>
-            
+            <Candidate />
+            <Candidate />
+            <Candidate />
+            <Candidate />
+            <Candidate />
         </CardDeck>
     )   
 }
 
-// Might be better just to call CardDeck in App when pulling things together ... idk really ... it's here as a reminder for now
+export default PoliticalParty;
