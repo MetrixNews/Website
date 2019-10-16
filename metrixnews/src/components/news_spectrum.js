@@ -1,14 +1,21 @@
 import React, { Component }  from 'react';
 import Card from './article_card';
+import TopicComponent from './topic';
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+  } from 'react-router-dom'
 
 function Spectrum(props) {
     return(
         <div className="app">
-            <div className="newsTopic">
-                <a href="topic.html">
-                    <h2>Climate Change</h2>
-                </a>
-            </div>
+                <div className="newsTopic">
+                    <Router>
+                        <Link to="./components/topic.js"> Cimate Change </Link>
+                        <Route exact path='./components/topic.js' component={TopicComponent}></Route>    
+                    </Router>
+                </div>
             <div className="full hide-scroll">
                 <ul className="hs">
                      <Card />
