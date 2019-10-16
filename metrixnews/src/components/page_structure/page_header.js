@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+import './page_structure.scss'
 
 function PageHeader() {
     return (

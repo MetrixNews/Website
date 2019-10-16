@@ -16,8 +16,8 @@ class App extends React.Component {
       return (
         <Router>
         <div className="AppContainer">
-          <nav>
-            <ul>
+          <nav className="nav">
+            <ul className="nav-links">
               <li>
                 <Link to="/"> Newsfeed </Link>
               </li>
