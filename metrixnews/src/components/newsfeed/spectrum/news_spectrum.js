@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import Card from '../article/article_card';
+import Modal from '../article/modal'
 import TopicComponent from '../../topic';
 import {
     BrowserRouter as Router,
@@ -18,13 +18,11 @@ function Spectrum(props) {
                 </div>
             <div className="full hide-scroll">
                 <ul className="hs">
-                     <Card />
-                     <Card />
-                     <Card />
-                     <Card />
-                     <Card />
-                     <Card />
-                     <Card />
+                    <Modal />
+                    <Modal />
+                    <Modal />
+                    <Modal />
+                    <Modal />
                 </ul>
             </div>
         </div>

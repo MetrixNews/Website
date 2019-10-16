@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+import './article.scss'
 
 function ArticleHead(props) {
     return (

@@ -1,15 +1,18 @@
 import React, { Component }  from 'react';
 import Article from './article';
 import Metrics from './metrics';
+import './article.scss'
 
 function Card(props) {
     return(
-        <li className="item">
-            <a href="#openModal">
-                <Article />
+        <a href="#openModal">
+            <li className="item">
+                <div className="row articlebox">
+                    <Article />
+                </div>
                 <Metrics />
-            </a>
-        </li>
+            </li>
+        </a>
     )
 }
 

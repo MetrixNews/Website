@@ -1,17 +1,15 @@
 import React, { Component }  from 'react';
+import './article.scss'
 
 function ArticleContent(props) {
     return (
         <section>
-            <h4>{articleContent.sectionTitle}</h4>
-            <p className = "article_description">
-                {articleContent.text}
+            <h4>Content</h4>
+            <p className = "article_content">
+                article content is where we show the first paragraph or so of the article's content
             </p>
         </section>
     )
 }
 
-const articleContent = {
-    sectionTitle: 'Content',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-};
+export default ArticleContent;

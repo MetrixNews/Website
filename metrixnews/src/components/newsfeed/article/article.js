@@ -1,9 +1,10 @@
 import React, { Component }  from 'react';
 import ArticleHead from './article_head';
+import './article.scss'
 
 function Article(props) {
     return (
-        <div className="row articlebox">
+        <div>
             <ArticleHead />
             <div>
                 <img className="articlephoto" src="https://via.placeholder.com/250" alt=""/>
