@@ -4,8 +4,8 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import PageHeader from './components/page_header';
-import Footer from './components/footer';
+import PageHeader from './components/page_structure/page_header';
+import Footer from './components/page_structure/footer';
 import NewsfeedComponent from './components/newsfeed.js';
 import ElectionComponent from './components/election.js';
 import MetrixComponent from './components/metrix.js';

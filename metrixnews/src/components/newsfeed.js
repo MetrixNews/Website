@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Spectrum from './news_spectrum';
+import Spectrum from './newsfeed/spectrum/news_spectrum';
 
 
 function NewsfeedComponent (){

@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
-import Card from './article_card';
-import TopicComponent from './topic';
+import Card from '../article/article_card';
+import TopicComponent from '../../topic';
 import {
     BrowserRouter as Router,
     Route,

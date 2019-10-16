@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PoliticalParty from './candidate_deck';
+import PoliticalParty from './election/party/candidate_deck';
 
 function ElectionComponent (){
  return (
