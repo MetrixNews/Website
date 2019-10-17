@@ -245,8 +245,8 @@
     // modal styling -- may need to update to use onClick() instead
     .modalDialog {
       position: fixed;
-    max-height: 100%;
-    overflow-y: auto;
+      max-height: 100%;
+      overflow-y: auto;
       top: 0;
       right: 0;
       bottom: 0;
@@ -267,7 +267,7 @@
   
   .modalDialog > div {
       width: 90%;
-    max-width: 500px;
+      max-width: 500px;
       position: relative;
       margin: 10% auto;
       padding: 20px 10px 55px 10px;
@@ -277,9 +277,9 @@
   
   .close {
       background: var(--bg-color);
-    border: solid 2px var(--highlight-color);
+      border: solid 2px var(--highlight-color);
       color: var(--highlight-color);
-    font-size: 16pt;
+      font-size: 16pt;
       line-height: 40px;
       position: absolute;
       right: -12px;

@@ -6,16 +6,17 @@ import {
     Route,
     Link
   } from 'react-router-dom'
+import './spectrum.scss'
 
 function Spectrum(props) {
     return(
         <div className="app">
-                <div className="newsTopic">
-                    <Router>
-                        <Link to="./components/topic.js"> Cimate Change </Link>
-                        <Route exact path='./components/topic.js' component={TopicComponent}></Route>    
-                    </Router>
-                </div>
+            <div className="newsTopic">
+                <Router>
+                    <Link to="./components/topic.js"> Cimate Change </Link>
+                    <Route exact path='./components/topic.js' component={TopicComponent}></Route>    
+                </Router>
+            </div>
             <div className="full hide-scroll">
                 <ul className="hs">
                     <Modal />

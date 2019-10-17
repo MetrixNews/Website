@@ -7,7 +7,7 @@ function Article(props) {
         <div>
             <ArticleHead />
             <div>
-                <img className="articlephoto" src="https://via.placeholder.com/250" alt=""/>
+                <img className="articlephoto" src="https://via.placeholder.com/475x300" alt=""/>
             </div>
 
             <div className="row">

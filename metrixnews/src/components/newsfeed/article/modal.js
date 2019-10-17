@@ -14,7 +14,6 @@ function Modal() {
             <div id="openModal" className="modalDialog">
                 <div>
                     <a href="#close" title="Close" className="close">X</a>
-
                     <article>
                         <div className="row articlebox">
                             <Article />
@@ -23,7 +22,7 @@ function Modal() {
                         </div>
                         <Metrics />
                     </article>
-                </div>
+                </div> 
              </div> 
         </div>
     )   

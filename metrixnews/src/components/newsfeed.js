@@ -4,7 +4,11 @@ import Spectrum from './newsfeed/spectrum/news_spectrum';
 
 function NewsfeedComponent (){
  return (
-   <Spectrum />
+   <div>
+      <Spectrum />
+      <Spectrum />
+      <Spectrum />
+   </div>
  )
 }
 export default NewsfeedComponent;
