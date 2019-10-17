@@ -13,7 +13,7 @@ function Spectrum(props) {
         <div className="app">
             <div className="newsTopic">
                 <Router>
-                    <Link to="./components/topic.js"> Cimate Change </Link>
+                    <Link to="./components/topic.js"> <h2>Cimate Change</h2> </Link>
                     <Route exact path='./components/topic.js' component={TopicComponent}></Route>    
                 </Router>
             </div>
