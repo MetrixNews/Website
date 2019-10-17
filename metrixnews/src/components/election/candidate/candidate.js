@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import './candidate.scss'
 
 // Still needs new styling ... used React Bootstrap ... https://react-bootstrap.github.io/components/cards/#image-caps
 function Candidate(props) {
@@ -16,7 +17,8 @@ function Candidate(props) {
               <li>
                 <Link to="./components/candidatepage.js">
                   <div className="candidate">
-                    <Card className="container">
+                    <div className="container">
+                    <Card>
                     <Card.Img className="candidatePic" variant="top" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Bernie_Sanders.jpg" />
                     <Card.Body>
                         <Card.Text className="content">
@@ -28,6 +30,7 @@ function Candidate(props) {
                         </Card.Text>
                       </Card.Body>
                     </Card>
+                    </div>
                   </div>
                 </Link>
                 <Route exact path='./components/candidatepage.js' component={CandidateComponent}></Route>

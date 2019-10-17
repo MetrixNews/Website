@@ -513,90 +513,15 @@
     border-bottom: solid thick var(--metrix-color);
     background-color: inherit;
   }
+    
+
   
-  .candidate {
-    width: 100%;
-    padding: 5px;
-  }
   
-  .container {
-    position: relative;
-    width: auto;
-    margin: 0 auto;
-    display: table;
-    color: var(--font-color);
-    text-align: center;
-  }
-  
-  .candidateDesc {
-    position: relative;
-    width: auto;
-    /* margin: auto; /* Center it */
-    display: block; 
-    color: var(--font-color);
-    border-top: solid thick var(--highlight-color);
-    padding: 10px;
-  }
-  
-  .content {
-    position: absolute; /* Position the background text */
-    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: var(--candidate-font-color); /* Grey text */
-    width: 100%; /* Full width */
-    max-width: 350px;/* Maximum width */
-    display: block;
-  
-  }
-  
-  .content:hover > h3 {
-    text-decoration: underline;
-  }
-  
-  .content > h3 {
-    line-height: 1.8em;
-    text-align: center;
-    max-width: 350px;/* Maximum width */
-    margin: 0px;
-    color: var(--candidate-font-color);
-  }
-  
-  .content > p {
-    line-height: 1.8em;
-    text-align: center;
-    max-width: 350px;/* Maximum width */
-    margin: 0px;
-    color: var(--candidate-font-color);
-  }
-  
-  .candidatePic {
-    width: 100%;
-    max-width: 350px;
-    display: block;
-  }
+
   
   /* CANDIDATE.HTML */ /* CANDIDATE.HTML *//* CANDIDATE.HTML *//* CANDIDATE.HTML *//* CANDIDATE.HTML *//* CANDIDATE.HTML *//* CANDIDATE.HTML *//* CANDIDATE.HTML *//* CANDIDATE.HTML */
   
-  .experience {
-    line-height: 1.8em;
-    text-align: left;
-    padding-left: 10px;
-    padding-right: 5px;
-    margin: 0;
-    color: var(--font-color);
-    max-width: 100%;
-  }
-  
-  .education {
-    line-height: 1.8em;
-    text-align: left;
-    padding-left: 10px;
-    padding-right: 5px;
-    margin: 0px;
-    color: var(--font-color);
-    max-width: 100%;
-  }
+
   
   /* BUTTONS */ /* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS *//* BUTTONS */
   
