@@ -4,7 +4,12 @@ import Spectrum from './newsfeed/spectrum/news_spectrum';
 
 function TopicComponent (){
  return (
-   <Spectrum />
+    <div>
+      <div className="newsTopic">
+        <h2>Climate Change</h2>
+      </div>
+      <Spectrum />
+    </div>
  )
 }
 export default TopicComponent;
