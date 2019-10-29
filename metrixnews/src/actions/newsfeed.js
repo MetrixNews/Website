@@ -1,5 +1,5 @@
 // import 'babel-polyfill'
-// import fetch from 'cross-fetch'
+import fetch from 'cross-fetch'
 
 // { type: 'FETCH_ARTICLES_REQUEST' }
 // { type: 'FETCH_ARTICLES_FAILURE', error= 'Oops' }
@@ -10,15 +10,6 @@ export const SELECT_TOPIC = 'SELECT_TOPIC'
 export function selectTopic(topic) {
   return {
     type: SELECT_TOPIC,
-    topic
-  }
-}
-
-export const INVALIDATE_TOPIC = 'INVALIDATE_TOPIC'
-
-export function invalidateTopic(topic) {
-  return {
-    type: INVALIDATE_TOPIC,
     topic
   }
 }
@@ -40,6 +31,15 @@ function receiveArticles(topic, json) {
     topic,
     articles: json.data.children.map(child => child.data),
     receivedAt: Date.now()
+  }
+}
+
+export const INVALIDATE_TOPIC = 'INVALIDATE_TOPIC'
+
+export function invalidateTopic(topic) {
+  return {
+    type: INVALIDATE_TOPIC,
+    topic
   }
 }
 

@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import ShowModal from '../article/modal'
+import Card from '../article/modal'
 import './spectrum.scss'
 
 function Spectrum(props) {
@@ -7,11 +7,11 @@ function Spectrum(props) {
         <div className="app">
             <div className="full hide-scroll">
                 <ul className="hs">
-                    <ShowModal />
-                    <ShowModal />
-                    <ShowModal />
-                    <ShowModal />
-                    <ShowModal />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
                 </ul>
             </div>
         </div>

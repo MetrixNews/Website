@@ -1,6 +1,7 @@
 import React from 'react';
 // import Card from './article_card'
 import Article from './article';
+import ArticleHead from './article_head'
 import Metrics from './metrics';
 import ArticleSummary from './article_summary';
 import ArticleContent from './article_content';
@@ -30,16 +31,16 @@ function Card() {
   
         <Modal show={show} onHide={handleClose} animation={false}>
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Body>
+            <div className="row articlebox">
+                <Article />
+                <ArticleSummary />
+                <ArticleContent />
+            </div>
+          </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
+            <Metrics />
           </Modal.Footer>
         </Modal>
       </>
@@ -72,4 +73,4 @@ function Card() {
 //     )   
 // }
 
-export default ArticleModal;
+export default Card;
