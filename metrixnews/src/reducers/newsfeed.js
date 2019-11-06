@@ -1,69 +1,35 @@
-import { combineReducers } from 'redux'
+import {FETCH_ARTICLES_PENDING, FETCH_ARTICLES_SUCCESS, FETCH_ARTICLES_ERROR} from '../actions/index'
 
-import {
-  SELECT_TOPIC,
-  REQUEST_ARTICLES,
-  RECEIVE_ARTICLES,
-  INVALIDATE_TOPIC,
-} from '../actions/newsfeed';
-
-function selectedTopic(state = 'reactjs', action) {
-  switch (action.type) {
-    case SELECT_TOPIC:
-      return action.topic
-    default:
-      return state
-  }
+const initialState = {
+    pending: false,
+    articles: [],
+    error: null
 }
 
-function articles(
-  state = {
-    isFetching: false,
-    didInvalidate: false,
-    items: []
-  },
-  action
-) {
-  switch (action.type) {
-    case INVALIDATE_TOPIC:
-      return Object.assign({}, state, {
-        didInvalidate: true
-      })
-    case REQUEST_ARTICLES:
-      return Object.assign({}, state, {
-        isFetching: true,
-        didInvalidate: false
-      })
-    case RECEIVE_ARTICLES:
-      return Object.assign({}, state, {
-        isFetching: false,
-        didInvalidate: false,
-        items: action.articles,
-        lastUpdated: action.receivedAt
-      })
-    default:
-      return state
-  }
+export function articlesReducer(state = initialState, action) {
+    switch(action.type) {
+        case FETCH_ARTICLES_PENDING: 
+            return {
+                ...state,
+                pending: true
+            }
+        case FETCH_ARTICLES_SUCCESS:
+            return {
+                ...state,
+                pending: false,
+                articles: action.payload
+            }
+        case FETCH_ARTICLES_ERROR:
+            return {
+                ...state,
+                pending: false,
+                error: action.error
+            }
+        default: 
+            return state;
+    }
 }
 
-function articlesByTopic(state = {}, action) {
-  switch (action.type) {
-    case INVALIDATE_TOPIC:
-    case RECEIVE_ARTICLES:
-    case REQUEST_ARTICLES:
-      return Object.assign({}, state, {
-        [action.topic]: articles(state[action.topic], action)
-      })
-    default:
-      return state
-  }
-}
-
-
-//Move to ./reducers/index.js
-const rootReducer = combineReducers({
-  articlesByTopic,
-  selectedTopic
-})
-
-export default rootReducer
+export const getArticles = state => state.articles;
+export const getArticlesPending = state => state.pending;
+export const getArticlesError = state => state.error;
