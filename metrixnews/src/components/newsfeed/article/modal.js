@@ -1,13 +1,11 @@
 import React from 'react';
 // import Card from './article_card'
 import Article from './article';
-import ArticleHead from './article_head'
 import Metrics from './metrics';
 import ArticleSummary from './article_summary';
 import ArticleContent from './article_content';
 import Modal from 'react-bootstrap/Modal'
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar'
-import Button from 'react-bootstrap/Button'
+
 
 import './article.scss'
 
