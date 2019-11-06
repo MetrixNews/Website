@@ -4,109 +4,70 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import Spinner from 'react-bootstrap/Spinner';
 
-import Example from './newsfeed/spectrum/news_spectrum';
+import fetchArticlesAction from '../actionCreators/newsfeed';
+import {getArticlesError, getArticles, getArticlesPending} from '../reducers/newsfeed';
+
+import Spectrum from './newsfeed/spectrum/news_spectrum'
 import TopicComponent from './topic';
-// import {
-//   selectCategory,
-//   fetchArticlesIfNeeded,
-//   invalidateCategory,
-//   categories
-// } from '../actions/newsfeed'
 
-// class NewsfeedComponent extends Component {
-//   constructor(props) {
-//     super(props)
-//     this.handleChange = this.handleChange.bind(this)
-//     this.handleRefreshClick = this.handleRefreshClick.bind(this)
-//   }
 
-//   componentDidMount() {
-//     const { dispatch, selectedCategory } = this.props
-//     dispatch(fetchArticlesIfNeeded(selectedCategory))
-//   }
+class Newsfeed extends Component {
+  constructor(props) {
+      super(props);
 
-//   componentDidUpdate(prevProps) {
-//     if (this.props.selectedCategory !== prevProps.selectedCategory) {
-//       const { dispatch, selectedCategory } = this.props
-//       dispatch(fetchArticlesIfNeeded(selectedCategory))
-//     }
-//   }
+      this.shouldComponentRender = this.shouldComponentRender.bind(this);
+  }
 
-//   handleChange(nextCategory) {
-//     this.props.dispatch(selectCategory(nextCategory))
-//     this.props.dispatch(fetchArticlesIfNeeded(nextCategory))
-//   }
+  componentWillMount() {
+      const {fetchArticles} = this.props;
+      fetchArticles();
+  }
 
-//   handleRefreshClick(e) {
-//     e.preventDefault()
+  shouldComponentRender() {
+      const {pending} = this.props;
+      if(this.pending === false) return false;
+      // more tests
+      return true;
+  }
 
-//     const { dispatch, selectedCategory } = this.props
-//     dispatch(invalidateCategory(selectedCategory))
-//     dispatch(fetchArticlesIfNeeded(selectedCategory))
-//   }
+  render() {
+      const {articles, error, pending} = this.props;
 
-//   render() {
-//     const { selectedCategory, articles, isFetching, lastUpdated, categories } = this.props
-//     return (
-//       <div>
-//       <div className="newsTopic">
-//         <ul>
-//           <li>
-//             <Link to='/topic'><h2>{categories}</h2></Link> 
-//           </li>
-//         </ul>
-//         <Route exact path='/topic' component={TopicComponent}></Route>
-//       </div>
-//       <Spectrum />
-//       <Spectrum />
-//     </div>
-//     )
-//   }
-// }
+      if(!this.shouldComponentRender()) return <Spinner />
 
-// NewsfeedComponent.propTypes = {
-//   selectedCategory: PropTypes.string.isRequired,
-//   articles: PropTypes.array.isRequired,
-//   isFetching: PropTypes.bool.isRequired,
-//   lastUpdated: PropTypes.number,
-//   dispatch: PropTypes.func.isRequired
-// }
-
-// function mapStateToProps(state) {
-//   const { selectedCategory, articlesByCategory } = state
-//   const { isFetching, lastUpdated, items: articles } = articlesByCategory[
-//     selectedCategory
-//   ] || {
-//     isFetching: true,
-//     items: []
-//   }
-
-//   return {
-//     selectedCategory,
-//     articles,
-//     isFetching,
-//     lastUpdated
-//   }
-// }
-
-// export default connect(mapStateToProps)(NewsfeedComponent)
-
-function NewsfeedComponent (){
- return (
-    <div>
-      <div className="newsTopic">
-        <ul>
-          <li>
-            <Link to='/topic'><h2>Cimate Change</h2></Link> 
-          </li>
-        </ul>
-        <Route exact path='/topic' component={TopicComponent}></Route>
+      return (
+        <div>
+          <div className="newsTopic">
+            <ul>
+              <li>
+                <Link to='/topic'><h2>Cimate Change</h2></Link> 
+              </li>
+            </ul>
+            <Route exact path='/topic' component={TopicComponent}></Route>
+          </div>
+          <Spectrum articles={articles} />
       </div>
-      <Example />
-    </div>
-     )
+      )
+  }
 }
-export default NewsfeedComponent;
+
+
+const mapStateToProps = state => ({
+  error: getArticlesError(state),
+  articles: getArticles(state),
+  pending: getArticlesPending(state)
+})
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+  fetchArticles: fetchArticlesAction
+}, dispatch)
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Newsfeed );

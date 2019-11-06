@@ -3,20 +3,20 @@ export const FETCH_ARTICLES_PENDING = 'FETCH_ARTICLES_PENDING';
 export const FETCH_ARTICLES_SUCCESS = 'FETCH_ARTICLES_SUCCESS';
 export const FETCH_ARTICLES_ERROR = 'FETCH_ARTICLES_ERROR';
 
-function FETCH_ARTICLES_PENDING() {
+export function fetchArticlesPending() {
     return {
         type: FETCH_ARTICLES_PENDING
     }
 }
 
-function FETCH_ARTICLES_SUCCESS(articles) {
+export function fetchArticlesSuccess(articles) {
     return {
         type: FETCH_ARTICLES_SUCCESS,
         articles: articles
     }
 }
 
-function FETCH_ARTICLES_ERROR(error) {
+export function fetchArticlesError(error) {
     return {
         type: FETCH_ARTICLES_ERROR,
         error: error

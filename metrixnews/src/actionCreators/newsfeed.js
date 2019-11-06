@@ -38,7 +38,7 @@
 
 import {fetchArticlesPending, fetchArticlesSuccess, fetchArticlesError} from '../actions/index';
 
-function fetchArticles() {
+function fetchArticlesAction() {
     return dispatch => {
         dispatch(fetchArticlesPending());
         fetch('134.209.163.4/articles/category/Climate Change')
@@ -56,4 +56,4 @@ function fetchArticles() {
     }
 }
 
-export default fetchArticles;
+export default fetchArticlesAction;

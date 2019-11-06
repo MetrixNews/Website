@@ -6,7 +6,7 @@ const initialState = {
     error: null
 }
 
-export function articlesReducer(state = initialState, action) {
+export default function articlesReducer(state = initialState, action) {
     switch(action.type) {
         case FETCH_ARTICLES_PENDING: 
             return {
