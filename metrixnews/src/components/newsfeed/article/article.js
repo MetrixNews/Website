@@ -1,26 +1,39 @@
 import React, { Component }  from 'react';
 import ArticleHead from './article_head';
 import './article.scss'
-
-function Article(props) {
-    return (
+ 
+export default class Article extends Component {
+    render() {
+      return (
         <div>
-            <ArticleHead />
+            {this.props.articles.map((article, id) => (
+                <ArticleHead key={id} {...article} />
+            ))}
             <div>
-                <img className="articlephoto" src="https://via.placeholder.com/475x300" alt=""/>
+                {this.props.articles.map((article, id) => (
+                    <img key={id} {...article} className="articlephoto" src={article.urlToImage} alt="" />
+                ))}
             </div>
 
             <div>
-                <div className="headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <div className="headline">
+                    {this.props.articles.map((article, id) => (
+                        <span key={id} {...article}>{article.title}</span>
+                    ))}
+                </div>
             </div> 
 
             <div className="article_link">
                 <i className="fas fa-link"></i>
-                <a href="https://www.nytimes.com/" className="article_link" target="_blank" rel="noopener noreferrer">https://www.nytimes.com/</a>
+                {this.props.articles.map((article, id) => (
+                    <a href={article.url} className="article_link" target="_blank" rel="noopener noreferrer">
+                        <span>{article.url}</span>
+                    </a>
+                    ))}
+
                 <span></span>
             </div>
         </div>
     )
 }
-
-export default Article;
+}

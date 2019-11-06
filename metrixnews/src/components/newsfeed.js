@@ -1,9 +1,4 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -13,7 +8,7 @@ import fetchArticlesAction from '../actionCreators/newsfeed';
 import {getArticlesError, getArticles, getArticlesPending} from '../reducers/newsfeed';
 
 import Spectrum from './newsfeed/spectrum/news_spectrum'
-import TopicComponent from './topic';
+import TopicComponent from './topic'; 
 
 
 class Newsfeed extends Component {
@@ -42,14 +37,6 @@ class Newsfeed extends Component {
 
       return (
         <div>
-          <div className="newsTopic">
-            <ul>
-              <li>
-                <Link to='/topic'><h2>Cimate Change</h2></Link> 
-              </li>
-            </ul>
-            <Route exact path='/topic' component={TopicComponent}></Route>
-          </div>
           <Spectrum articles={articles} />
       </div>
       )

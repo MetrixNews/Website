@@ -1,18 +1,41 @@
 import React, { Component } from 'react';
-import Card from '../article/modal';
-import './spectrum.scss';
+import PropTypes from 'prop-types'
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+  } from 'react-router-dom';
 
-function Spectrum() {
-    return(
+import TopicComponent from '../../topic'
+import Card from '../article/card';
+import './spectrum.scss';
+import Article from '../article/article';
+
+export default class Spectrum extends Component {
+  render() {
+    return (
         <div className="app">
-            <div className="full hide-scroll">
-                <ul className="hs">        
-                    <Card {...articles} />
+            <div className="newsTopic">
+                <ul>
+                    <li>
+                        <Link to='/topic'><h2>Climate Change</h2></Link> 
+                    </li>
                 </ul>
+                <Route exact path='/topic' component={TopicComponent}></Route>
             </div>
+            <div className="full hide-scroll">
+                <ul className="hs">
+                    {this.props.articles.map((article, id) => (
+                        <Card key={id} {...article} />
+                    ))}   
+                </ul>
+            </div> 
         </div>
-    );
+    )
+  }
 }
 
-export default Spectrum;
+Spectrum.propTypes = {
+  articles: PropTypes.array.isRequired
+}
         
