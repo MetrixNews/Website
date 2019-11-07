@@ -8,8 +8,6 @@ import fetchArticlesAction from '../actionCreators/newsfeed';
 import {getArticlesError, getArticles, getArticlesPending} from '../reducers/newsfeed';
 
 import Spectrum from './newsfeed/spectrum/news_spectrum'
-import TopicComponent from './topic'; 
-
 
 class Newsfeed extends Component {
   constructor(props) {
@@ -18,7 +16,7 @@ class Newsfeed extends Component {
       this.shouldComponentRender = this.shouldComponentRender.bind(this);
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
       const {fetchArticles} = this.props;
       fetchArticles();
   }
@@ -43,6 +41,9 @@ class Newsfeed extends Component {
   }
 }
 
+Newsfeed.propTypes = {
+  articles: PropTypes.array,
+}
 
 const mapStateToProps = state => ({
   error: getArticlesError(state),

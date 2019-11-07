@@ -9,7 +9,6 @@ import {
 import TopicComponent from '../../topic'
 import Card from '../article/card';
 import './spectrum.scss';
-import Article from '../article/article';
 
 export default class Spectrum extends Component {
   render() {
@@ -36,6 +35,6 @@ export default class Spectrum extends Component {
 }
 
 Spectrum.propTypes = {
-  articles: PropTypes.array.isRequired
+  articles: PropTypes.array
 }
         

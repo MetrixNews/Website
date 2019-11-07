@@ -1,5 +1,5 @@
 // import 'babel-polyfill'
-// import fetch from 'cross-fetch'
+import fetch from 'cross-fetch'
 
 
 // export const categories = [
@@ -41,7 +41,7 @@ import {fetchArticlesPending, fetchArticlesSuccess, fetchArticlesError} from '..
 function fetchArticlesAction() {
     return dispatch => {
         dispatch(fetchArticlesPending());
-        fetch('134.209.163.4/articles/category/Climate Change/articles')
+        fetch('http://134.209.163.4/articles/category/Climate Change')
         .then(res => res.json())
         .then(res => {
             if(res.error) {
