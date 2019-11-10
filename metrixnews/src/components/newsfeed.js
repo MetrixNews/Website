@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 import Spinner from 'react-bootstrap/Spinner';
 
 import fetchArticlesAction from '../actionCreators/newsfeed';
-import {getArticlesError, getArticles, getArticlesPending} from '../reducers/newsfeed';
+// import {getArticlesError, getArticles, getArticlesPending} from '../reducers/newsfeed';
 
 import Spectrum from './newsfeed/spectrum/news_spectrum'
 
@@ -16,7 +16,7 @@ class Newsfeed extends Component {
       this.shouldComponentRender = this.shouldComponentRender.bind(this);
   }
 
-  UNSAFE_componentWillMount() {
+  componentDidMount() {
       const {fetchArticles} = this.props;
       fetchArticles();
   }
@@ -29,26 +29,27 @@ class Newsfeed extends Component {
   }
 
   render() {
-      const {articles, error, pending} = this.props;
+      const {articles} = this.props;
 
       if(!this.shouldComponentRender()) return <Spinner />
 
       return (
         <div>
-          <Spectrum articles={articles} />
-      </div>
+          <Spectrum articles={this.props.articles} />
+        </div>
       )
   }
 }
 
 Newsfeed.propTypes = {
   articles: PropTypes.array,
+  pending: PropTypes.bool
 }
 
 const mapStateToProps = state => ({
-  error: getArticlesError(state),
-  articles: getArticles(state),
-  pending: getArticlesPending(state)
+  articles: state.articles.articles,
+  loading: state.articles.pending,
+  error: state.articles.error
 })
 
 const mapDispatchToProps = dispatch => bindActionCreators({

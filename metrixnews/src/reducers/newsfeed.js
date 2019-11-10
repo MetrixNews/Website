@@ -3,7 +3,7 @@ import {FETCH_ARTICLES_PENDING, FETCH_ARTICLES_SUCCESS, FETCH_ARTICLES_ERROR} fr
 const initialState = {
     pending: false,
     articles: [],
-    error: null
+    error: null,
 }
 
 export default function articlesReducer(state = initialState, action) {
@@ -17,7 +17,7 @@ export default function articlesReducer(state = initialState, action) {
             return {
                 ...state,
                 pending: false,
-                articles: action.payload
+                articles: action.articles
             }
         case FETCH_ARTICLES_ERROR:
             return {

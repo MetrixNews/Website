@@ -38,6 +38,10 @@ import fetch from 'cross-fetch'
 
 import {fetchArticlesPending, fetchArticlesSuccess, fetchArticlesError} from '../actions/index';
 
+// play with lines 47-58. are the .then statements outta order? Is the data being dispatched correctly? Is it filling the array? 
+// .then(res => res.text())
+// .then(text => console.log(text)) 
+
 function fetchArticlesAction() {
     return dispatch => {
         dispatch(fetchArticlesPending());
