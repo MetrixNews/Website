@@ -1,4 +1,3 @@
-// import 'babel-polyfill'
 import fetch from 'cross-fetch'
 
 
@@ -38,7 +37,6 @@ import fetch from 'cross-fetch'
 
 import {fetchArticlesPending, fetchArticlesSuccess, fetchArticlesError} from '../actions/index';
 
-// play with lines 47-58. are the .then statements outta order? Is the data being dispatched correctly? Is it filling the array? 
 // .then(res => res.text())
 // .then(text => console.log(text)) 
 
@@ -46,13 +44,11 @@ function fetchArticlesAction() {
     return dispatch => {
         dispatch(fetchArticlesPending());
         fetch('http://134.209.163.4/articles/category/Climate Change')
-        .then(res => res.json())
-        .then(res => {
-            if(res.error) {
-                throw(res.error);
-            }
-            dispatch(fetchArticlesSuccess(res.articles))
-            return res.articles;
+        .then(response => {
+            return response.json();
+        })
+        .then(articles => {
+            dispatch(fetchArticlesSuccess(articles));
         })
         .catch(error => {
             dispatch(fetchArticlesError(error));
