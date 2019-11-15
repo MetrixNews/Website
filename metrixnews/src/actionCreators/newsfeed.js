@@ -40,7 +40,7 @@ const categories = [
 
 function fetchCategories(category) {
     return new Promise((resolve, reject) => {
-        return dispatch => {
+        // return dispatch => {
             // dispatch(fetchArticlesPending());
             fetch({category})
             .then(response => {
@@ -49,18 +49,19 @@ function fetchCategories(category) {
             // .then(articles => {
             //     dispatch(fetchArticlesSuccess(articles));
             // })
-            .then((articles) => {
-                resolve(articles);
+            .then((category) => {
+                resolve(category);
             })
             // .catch(error => {
             //     dispatch(fetchArticlesError(error));
             // })
-        }        
+        //}        
     })
 }
 
 export default function loadCategories(){
     let categoryRequest=[]
+
     return dispatch => {
         dispatch(fetchCategoriesPending());
         return categories.map((category) => {
