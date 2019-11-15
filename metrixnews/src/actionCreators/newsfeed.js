@@ -43,12 +43,12 @@ function fetchCategories(category) {
         // return dispatch => {
             // dispatch(fetchArticlesPending());
             fetch({category})
-            .then(response => {
-                return response.json();
-            })
-            // .then(res => res.text())
-            // .then(text => console.log(text))
-            // .then(url => console.log(category)) 
+            // .then(response => {
+            //     return response.json();
+            // })
+            .then(res => res.text())
+            .then(text => console.log(text))
+            .then(url => console.log(category)) 
 
             // .then(articles => {
             //     dispatch(fetchArticlesSuccess(articles));
