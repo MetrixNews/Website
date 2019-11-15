@@ -1,5 +1,5 @@
 // Fetch Articles
-// export const FETCH_ARTICLES_PENDING = 'FETCH_ARTICLES_PENDING';
+export const FETCH_ARTICLES_PENDING = 'FETCH_ARTICLES_PENDING';
 // export const FETCH_ARTICLES_SUCCESS = 'FETCH_ARTICLES_SUCCESS';
 // export const FETCH_ARTICLES_ERROR = 'FETCH_ARTICLES_ERROR';
 
@@ -8,11 +8,11 @@ export const FETCH_CATEGORIES_SUCCESS = 'FETCH_CATEGORIES_SUCCESS';
 export const FETCH_CATEGORIES_ERROR = 'FETCH_CATEGORIES_ERROR';
 
 
-// export function fetchArticlesPending() {
-//     return {
-//         type: FETCH_ARTICLES_PENDING
-//     }
-// }
+export function fetchArticlesPending() {
+    return {
+        type: FETCH_ARTICLES_PENDING
+    }
+}
 
 // export function fetchArticlesSuccess(articles) {
 //     return {
@@ -37,7 +37,7 @@ export function fetchCategoriesPending() {
 export function fetchCategoriesSuccess(categories) {
     return {
         type: FETCH_CATEGORIES_SUCCESS,
-        payload: categories
+        categories: categories
     }
 }
 

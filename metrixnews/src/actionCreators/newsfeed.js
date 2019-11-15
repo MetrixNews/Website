@@ -2,36 +2,36 @@ import fetch from 'cross-fetch'
 import {fetchArticlesPending, fetchArticlesSuccess, fetchArticlesError, fetchCategoriesPending, fetchCategoriesSuccess, fetchCategoriesError} from '../actions/index';
 
 const categories = [
-    "http://134.209.163.4/articles/category/Women's Rights",
-    "http://134.209.163.4/articles/category/Voter Rights",
-    "http://134.209.163.4/articles/category/Universal Basic Income",
-    "http://134.209.163.4/articles/category/Trade Wars",
+    "http://134.209.163.4/articles/category/Women's%20Rights    ",
+    "http://134.209.163.4/articles/category/Voter%20Rights",
+    "http://134.209.163.4/articles/category/Universal%20Basic%20Income",
+    "http://134.209.163.4/articles/category/Trade%20Wars",
     "http://134.209.163.4/articles/category/Terrorism",
     "http://134.209.163.4/articles/category/Taxes",
-    "http://134.209.163.4/articles/category/Prison Reform",
+    "http://134.209.163.4/articles/category/Prison%20Reform",
     "http://134.209.163.4/articles/category/Pollution",
-    "http://134.209.163.4/articles/category/Police Brutality",
-    "http://134.209.163.4/articles/category/Opioid Crisis",
-    "http://134.209.163.4/articles/category/Minimum Wage",
+    "http://134.209.163.4/articles/category/Police%20Brutality",
+    "http://134.209.163.4/articles/category/Opioid%20Crisis",
+    "http://134.209.163.4/articles/category/Minimum%20Wage",
     "http://134.209.163.4/articles/category/Military",
     "http://134.209.163.4/articles/category/Marijuana",
-    "http://134.209.163.4/articles/category/LGTBQ+ Rights",
+    "http://134.209.163.4/articles/category/LGTBQ+%20Rights",
     "http://134.209.163.4/articles/category/Infrastructure",
-    "http://134.209.163.4/articles/category/Income Inequality",
+    "http://134.209.163.4/articles/category/Income%20Inequality",
     "http://134.209.163.4/articles/category/Impeachment",
     "http://134.209.163.4/articles/category/Immigration",
-    "http://134.209.163.4/articles/category/Gun Control and Mass Shootings",
-    "http://134.209.163.4/articles/category/Government Spending",
+    "http://134.209.163.4/articles/category/Gun%20Control%20and%20Mass%20Shootings",
+    "http://134.209.163.4/articles/category/Government%20Spending",
     "http://134.209.163.4/articles/category/Energy",
     "http://134.209.163.4/articles/category/Education",
     "http://134.209.163.4/articles/category/Economy",
-    "http://134.209.163.4/articles/category/Data Privacy",
-    "http://134.209.163.4/articles/category/College Tuition",
-    "http://134.209.163.4/articles/category/Climate Change",
-    "http://134.209.163.4/articles/category/Border Security",
+    "http://134.209.163.4/articles/category/Data%20Privacy",
+    "http://134.209.163.4/articles/category/College%20Tuition",
+    "http://134.209.163.4/articles/category/Climate%20Change",
+    "http://134.209.163.4/articles/category/Border%20Security",
     "http://134.209.163.4/articles/category/Agriculture",
     "http://134.209.163.4/articles/category/Abortion",
-    "http://134.209.163.4/articles/category/2020 Presidental Election"
+    "http://134.209.163.4/articles/category/2020%20Presidental%20Election"
 ];
 
 
@@ -46,6 +46,10 @@ function fetchCategories(category) {
             .then(response => {
                 return response.json();
             })
+            // .then(res => res.text())
+            // .then(text => console.log(text))
+            // .then(url => console.log(category)) 
+
             // .then(articles => {
             //     dispatch(fetchArticlesSuccess(articles));
             // })
@@ -67,17 +71,17 @@ export default function loadCategories(){
         return categories.map((category) => {
                 categoryRequest.push(fetchCategories(category))
             }),
-    Promise.all(categoryRequest)
-        .then((categories)=>{
-            return(categories)
-        .then(categories => {
-            dispatch(fetchCategoriesSuccess(categories))
-        }) 
-    })   
-    .catch(error => {
-        dispatch(fetchCategoriesError(error));
-    })         
-}
+        Promise.all(categoryRequest)
+            .then((allCategoryData)=>{
+                return(allCategoryData)
+            })
+            .then(allCategoryData => {
+                dispatch(fetchCategoriesSuccess(allCategoryData))
+            })    
+            .catch(error => {
+                dispatch(fetchCategoriesError(error));
+            })         
+    }
 }
 
 // function render(CategoriesCorpus){}
