@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Spinner from 'react-bootstrap/Spinner';
-
-import fetchArticlesAction from '../actionCreators/newsfeed';
-// import {getArticlesError, getArticles, getArticlesPending} from '../reducers/newsfeed';
+import loadCategories from '../actionCreators/newsfeed';
+import {getCategoriesError, getCategories, getCategoriesPending} from '../reducers/newsfeed';
 
 import Spectrum from './newsfeed/spectrum/news_spectrum'
 
@@ -15,10 +14,10 @@ class Newsfeed extends Component {
 
       this.shouldComponentRender = this.shouldComponentRender.bind(this);
   }
-
+  
   componentDidMount() {
-      const {fetchArticles} = this.props;
-      fetchArticles();
+      const {loadedCategories} = this.props;
+      loadedCategories();
   }
 
   shouldComponentRender() {
@@ -29,31 +28,35 @@ class Newsfeed extends Component {
   }
 
   render() {
-      const {articles} = this.props;
+      const {categories} = this.props;
 
       if(!this.shouldComponentRender()) return <Spinner />
 
       return (
         <div>
-          <Spectrum articles={this.props.articles} />
+          <Spectrum categories={this.props.categories} />
         </div>
       )
   }
 }
 
 Newsfeed.propTypes = {
-  articles: PropTypes.array,
+  categories: PropTypes.array,
   pending: PropTypes.bool
 }
 
 const mapStateToProps = state => ({
-  articles: state.articles.articles,
-  loading: state.articles.pending,
-  error: state.articles.error
+  error: getCategoriesError(state),
+  categories: getCategories(state),
+  pending: getCategoriesPending(state)
+
+  // categories: state.categories.categories,
+  // loading: state.articles.pending,
+  // error: state.articles.error
 })
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-  fetchArticles: fetchArticlesAction
+  loadedCategories: loadCategories
 }, dispatch)
 
 export default connect(

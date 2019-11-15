@@ -1,25 +1,25 @@
-import {FETCH_ARTICLES_PENDING, FETCH_ARTICLES_SUCCESS, FETCH_ARTICLES_ERROR} from '../actions/index'
+import {FETCH_CATEGORIES_PENDING, FETCH_CATEGORIES_SUCCESS, FETCH_CATEGORIES_ERROR} from '../actions/index'
 
 const initialState = {
     pending: false,
-    articles: [],
+    categories: [],
     error: null,
 }
 
 export default function articlesReducer(state = initialState, action) {
     switch(action.type) {
-        case FETCH_ARTICLES_PENDING: 
+        case FETCH_CATEGORIES_PENDING: 
             return {
                 ...state,
                 pending: true
             }
-        case FETCH_ARTICLES_SUCCESS:
+        case FETCH_CATEGORIES_SUCCESS:
             return {
                 ...state,
                 pending: false,
-                articles: action.articles
+                categories: action.categories
             }
-        case FETCH_ARTICLES_ERROR:
+        case FETCH_CATEGORIES_ERROR:
             return {
                 ...state,
                 pending: false,
@@ -30,6 +30,6 @@ export default function articlesReducer(state = initialState, action) {
     }
 }
 
-export const getArticles = state => state.articles;
-export const getArticlesPending = state => state.pending;
-export const getArticlesError = state => state.error;
+export const getCategories = state => state.categories;
+export const getCategoriesPending = state => state.pending;
+export const getCategoriesError = state => state.error;
