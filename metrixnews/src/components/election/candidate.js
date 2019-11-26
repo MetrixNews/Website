@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Candidate from './election/candidate/candidate';
 
-function CandidateComponent (){
+function CandidateContainer (){
  return (
     <Candidate />
  )
 }
 
-export default CandidateComponent;
+export default CandidateContainer;

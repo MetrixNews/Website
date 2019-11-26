@@ -12,7 +12,6 @@ import Footer from './components/page_structure/footer';
 import NewsfeedComponent from './components/newsfeed.js';
 import ElectionComponent from './components/election.js';
 import MetrixComponent from './components/metrix.js';
-import ProfileComponent from './components/profile.js';
 
 const store = configureStore()
 
@@ -33,9 +32,6 @@ export default class App extends React.Component {
                 <li>
                   <Link to="/metrix"> Metrix </Link>
                 </li>
-                <li>
-                  <Link to="/profile"> Profile </Link>
-                </li>
               </ul>
             </nav>
             <PageHeader />
@@ -43,7 +39,6 @@ export default class App extends React.Component {
             <Route exact path='/' component={NewsfeedComponent}></Route>    
             <Route exact path='/election' component={ElectionComponent}></Route>
             <Route exact path='/metrix' component={MetrixComponent}></Route>
-            <Route exact path='/profile' component={ProfileComponent}></Route>
             
             <Footer />
           </div>
