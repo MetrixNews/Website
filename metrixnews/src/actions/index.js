@@ -34,10 +34,10 @@ export function fetchCategoriesPending() {
     }
 }
 
-export function fetchCategoriesSuccess(categories) {
+export function fetchCategoriesSuccess(allCategoryData) {
     return {
         type: FETCH_CATEGORIES_SUCCESS,
-        categories: categories
+        allCategoryData: allCategoryData
     }
 }
 

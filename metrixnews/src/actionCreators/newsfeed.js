@@ -2,7 +2,7 @@ import fetch from 'cross-fetch'
 import {fetchArticlesPending, fetchArticlesSuccess, fetchArticlesError, fetchCategoriesPending, fetchCategoriesSuccess, fetchCategoriesError} from '../actions/index';
 
 const categories = [
-    "http://134.209.163.4/articles/category/Women's%20Rights    ",
+    "http://134.209.163.4/articles/category/Women's%20Rights",
     "http://134.209.163.4/articles/category/Voter%20Rights",
     "http://134.209.163.4/articles/category/Universal%20Basic%20Income",
     "http://134.209.163.4/articles/category/Trade%20Wars",
@@ -42,13 +42,13 @@ function fetchCategories(category) {
     return new Promise((resolve, reject) => {
         // return dispatch => {
             // dispatch(fetchArticlesPending());
-            fetch({category})
-            // .then(response => {
-            //     return response.json();
-            // })
-            .then(res => res.text())
-            .then(text => console.log(text))
-            .then(url => console.log(category)) 
+            fetch(category)
+            .then(response => {
+                return response.json();
+            })
+            // .then(res => res.text())
+            // .then(text => console.log(text))
+            // .then(url => console.log(category)) 
 
             // .then(articles => {
             //     dispatch(fetchArticlesSuccess(articles));
