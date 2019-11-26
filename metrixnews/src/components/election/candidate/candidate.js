@@ -1,6 +1,5 @@
 import React, { Component }  from 'react';
 import Card from 'react-bootstrap/Card';
-import CandidateComponent from '../../candidatepage';
 
 // Still needs new styling ... used React Bootstrap ... https://react-bootstrap.github.io/components/cards/#image-caps
 function Candidate(props) {

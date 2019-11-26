@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Candidate from './election/candidate/candidate';
+import Candidate from './candidate/candidate';
 
 function CandidateContainer (){
  return (

@@ -5,8 +5,6 @@ import {
     Route,
     Link
   } from 'react-router-dom';
-
-import TopicComponent from '../../topic'
 import Card from '../article/card';
 import './spectrum.scss';
 
@@ -15,12 +13,7 @@ export default class Spectrum extends Component {
     return (
         <div className="app">
             <div className="newsTopic">
-                <ul>
-                    <li>
-                        <Link to='/topic'><h2>Climate Change</h2></Link> 
-                    </li>
-                </ul>
-                <Route exact path='/topic' component={TopicComponent}></Route>
+                <h2>Climate Change</h2>
             </div>
             <div className="full hide-scroll">
                 <ul className="hs">
