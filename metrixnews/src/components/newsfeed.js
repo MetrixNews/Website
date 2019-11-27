@@ -29,12 +29,17 @@ class Newsfeed extends Component {
 
   render() {
       // const {categories} = this.props;
-
       if(!this.shouldComponentRender()) return <Spinner />
 
       return (
         <div>
-          <Topic categories={this.props.categories} />
+          {this.props.categories.map((category, i) => (
+            <Topic
+              key={i}
+              topic={category}
+            />
+          ))}
+          {/* <Topic categories={this.props.categories} /> */}
         </div>
       )
   }
