@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
+
 import Spectrum from './spectrum/news_spectrum';
 
 
-class Topic extends Component {
+export default class Topic extends Component {
   constructor(props) {
     super(props);
   }
@@ -13,9 +15,12 @@ class Topic extends Component {
         <div className="newsTopic">
           <h2>Climate Change</h2>
         </div>
-        <Spectrum categories={this.props.categories}/>
+        <Spectrum articles={this.props.topic.articles}/>
       </div>
       )
     }
 }
-export default Topic;
+
+Topic.propTypes = {
+  topic: PropTypes.array
+}

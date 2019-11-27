@@ -39,11 +39,17 @@ class Newsfeed extends Component {
               topic={category}
             />
           ))}
-          {/* <Topic categories={this.props.categories} /> */}
         </div>
       )
   }
 }
+
+// Newsfeed.propTypes = {
+//   arrayWithShape: PropTypes.arrayOf(PropTypes.shape({
+//     id: PropTypes.string.isRequired,
+//     source: PropTypes.string.isRequired,
+//   })).isRequired,
+// }
 
 Newsfeed.propTypes = {
   categories: PropTypes.array,
@@ -54,10 +60,6 @@ const mapStateToProps = state => ({
   error: getCategoriesError(state),
   categories: getCategories(state),
   pending: getCategoriesPending(state)
-
-  // categories: state.categories.categories,
-  // loading: state.articles.pending,
-  // error: state.articles.error
 })
 
 const mapDispatchToProps = dispatch => bindActionCreators({
