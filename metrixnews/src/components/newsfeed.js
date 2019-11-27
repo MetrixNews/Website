@@ -44,17 +44,18 @@ class Newsfeed extends Component {
   }
 }
 
+Newsfeed.propTypes = {
+  categories: PropTypes.array,
+  category: PropTypes.array,
+  pending: PropTypes.bool
+}
+
 // Newsfeed.propTypes = {
 //   arrayWithShape: PropTypes.arrayOf(PropTypes.shape({
 //     id: PropTypes.string.isRequired,
 //     source: PropTypes.string.isRequired,
 //   })).isRequired,
 // }
-
-Newsfeed.propTypes = {
-  categories: PropTypes.array,
-  pending: PropTypes.bool
-}
 
 const mapStateToProps = state => ({
   error: getCategoriesError(state),
