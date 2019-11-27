@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
-import {
-    BrowserRouter as Router,
-    Route,
-    Link
-  } from 'react-router-dom';
 import Card from '../article/card';
 import './spectrum.scss';
 
 export default class Spectrum extends Component {
   render() {
+    // var categories = {categories};
+    // var articles = [];
+    // Object.keys(categories).forEach(function(key) {
+    //   articles.push(categories[key]);
+    // });
     return (
         <div className="app">
-            <div className="newsTopic">
-                <h2>Climate Change</h2>
-            </div>
             <div className="full hide-scroll">
                 <ul className="hs">
-                    {/* {this.props.articles.map((article, id) => (
-                        <Card key={id} {...article} />
-                    ))}    */}
+                  {/* {articles.map(categories => <Card key={categories.id} source={categories.source} author={categories.author} />)} */}
                 </ul>
             </div> 
         </div>

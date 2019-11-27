@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
-import Spectrum from './newsfeed/spectrum/news_spectrum';
+import Spectrum from './spectrum/news_spectrum';
 
 
-function TopicComponent (){
- return (
-    <div>
-      <div className="newsTopic">
-        <h2>Climate Change</h2>
+class Topic extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="newsTopic">
+          <h2>Climate Change</h2>
+        </div>
+        <Spectrum categories={this.props.categories}/>
       </div>
-      <Spectrum />
-    </div>
- )
+      )
+    }
 }
-export default TopicComponent;
+export default Topic;

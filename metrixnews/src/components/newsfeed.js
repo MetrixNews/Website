@@ -6,7 +6,7 @@ import Spinner from 'react-bootstrap/Spinner';
 import loadCategories from '../actionCreators/newsfeed';
 import {getCategoriesError, getCategories, getCategoriesPending} from '../reducers/newsfeed';
 
-import Spectrum from './newsfeed/spectrum/news_spectrum'
+import Topic from './newsfeed/topic'
 
 class Newsfeed extends Component {
   constructor(props) {
@@ -28,13 +28,13 @@ class Newsfeed extends Component {
   }
 
   render() {
-      const {categories} = this.props;
+      // const {categories} = this.props;
 
       if(!this.shouldComponentRender()) return <Spinner />
 
       return (
         <div>
-          <Spectrum categories={this.props.categories} />
+          <Topic categories={this.props.categories} />
         </div>
       )
   }
