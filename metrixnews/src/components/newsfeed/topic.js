@@ -10,6 +10,7 @@ export default class Topic extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div>
         <div className="newsTopic">
