@@ -1,6 +1,43 @@
 import fetch from 'cross-fetch'
 import {fetchArticlesPending, fetchArticlesSuccess, fetchArticlesError, fetchCategoriesPending, fetchCategoriesSuccess, fetchCategoriesError} from '../actions/index';
 
+// .then(res => res.text())
+// .then(text => console.log(text)) 
+// .then(url => console.log(category)) 
+
+function fetchCategories(category) {
+    return new Promise((resolve, reject) => {
+            fetch(category)
+            .then(response => {
+                return response.json();
+            })
+            .then((category) => {
+                resolve(category);
+            })    
+    })
+}
+
+export default function loadCategories(){
+    let categoryRequest=[]
+
+    return dispatch => {
+        dispatch(fetchCategoriesPending());
+        return categories.map((category) => {
+                categoryRequest.push(fetchCategories(category))
+            }),
+        Promise.all(categoryRequest)
+            .then((allCategoryData)=>{
+                return(allCategoryData)
+            })
+            .then(allCategoryData => {
+                dispatch(fetchCategoriesSuccess(allCategoryData))
+            })    
+            .catch(error => {
+                dispatch(fetchCategoriesError(error));
+            })         
+    }
+}
+
 const categories = [
     "http://134.209.163.4/articles/category/Women's%20Rights",
     "http://134.209.163.4/articles/category/Voter%20Rights",
@@ -33,55 +70,3 @@ const categories = [
     "http://134.209.163.4/articles/category/Abortion",
     "http://134.209.163.4/articles/category/2020%20Presidental%20Election"
 ];
-
-
-// .then(res => res.text())
-// .then(text => console.log(text)) 
-
-function fetchCategories(category) {
-    return new Promise((resolve, reject) => {
-        // return dispatch => {
-            // dispatch(fetchArticlesPending());
-            fetch(category)
-            .then(response => {
-                return response.json();
-            })
-            // .then(res => res.text())
-            // .then(text => console.log(text))
-            // .then(url => console.log(category)) 
-
-            // .then(articles => {
-            //     dispatch(fetchArticlesSuccess(articles));
-            // })
-            .then((category) => {
-                resolve(category);
-            })
-            // .catch(error => {
-            //     dispatch(fetchArticlesError(error));
-            // })
-        //}        
-    })
-}
-
-export default function loadCategories(){
-    let categoryRequest=[]
-
-    return dispatch => {
-        dispatch(fetchCategoriesPending());
-        return categories.map((category) => {
-                categoryRequest.push(fetchCategories(category))
-            }),
-        Promise.all(categoryRequest)
-            .then((allCategoryData)=>{
-                return(allCategoryData)
-            })
-            .then(allCategoryData => {
-                dispatch(fetchCategoriesSuccess(allCategoryData))
-            })    
-            .catch(error => {
-                dispatch(fetchCategoriesError(error));
-            })         
-    }
-}
-
-// function render(CategoriesCorpus){}
