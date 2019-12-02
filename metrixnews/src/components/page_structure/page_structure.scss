@@ -4,8 +4,7 @@
     padding-right: 10px;
     padding-bottom: 10px;
     text-align: center;
-    color: var(--font-color);
-    background-color: var(--bg-color);
+    background-color: var(--metrix-color);
   }
 
 footer {
@@ -13,8 +12,8 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--bg-color);
-    color: var(--font-color);
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
     height: 50px;
     text-align: center;
     padding-top: 10px;
@@ -22,9 +21,18 @@ footer {
   }
 
   .pageDescription > h1 {
-    color: var(--font-color);
+    color: var(--bg-color);
     text-align: center;
     font-size: 40pt;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .pageDescription > p {
+    color: var(--bg-color);
+    text-align: center;
+    font-size: 16pt;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
