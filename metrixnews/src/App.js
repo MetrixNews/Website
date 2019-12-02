@@ -7,11 +7,13 @@ import {
 import { Provider } from 'react-redux'
 import configureStore from './configureStore'
 
+
 import PageHeader from './components/page_structure/page_header';
 import Footer from './components/page_structure/footer';
 import NewsfeedComponent from './components/newsfeed.js';
 import ElectionComponent from './components/election.js';
 import MetrixComponent from './components/metrix.js';
+import './app.scss';
 
 const store = configureStore()
 

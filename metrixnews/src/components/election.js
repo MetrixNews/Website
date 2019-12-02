@@ -5,6 +5,8 @@
 // import './election/party/party.scss';
 // import PoliticalParty from './election/party/candidate_deck';
 
+//import '../app.scss';
+
 // class Election extends Component {
 //    constructor(props) {
 //        super(props);

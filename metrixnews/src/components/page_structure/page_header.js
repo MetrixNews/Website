@@ -4,8 +4,8 @@ import './page_structure.scss'
 function PageHeader() {
     return (
         <div className="pageDescription">
-            <h1>PAGE HEADER</h1>
-            <p>Page Description</p>
+            <h1>Newsfeed</h1>
+            <p>Freely explore political topics from many perspectives and check the data behind the arguments</p>
         </div>
     )
 }

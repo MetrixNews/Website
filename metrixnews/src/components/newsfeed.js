@@ -7,6 +7,7 @@ import loadCategories from '../actionCreators/newsfeed';
 import {getCategoriesError, getCategories, getCategoriesPending} from '../reducers/newsfeed';
 
 import Topic from './newsfeed/topic'
+import '../app.scss';
 
 class Newsfeed extends Component {
   constructor(props) {

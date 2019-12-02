@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 
 import Spectrum from './spectrum/news_spectrum';
+import PrimaryButton from '../misc/button';
+import '../../app.scss';
 
 
 export default class Topic extends Component {
@@ -12,11 +14,15 @@ export default class Topic extends Component {
   render() {
     console.log(this.props)
     return (
-      <div>
+      <div className="newsfeed">
         <div className="newsTopic">
           <h2>Climate Change</h2>
         </div>
         <Spectrum articles={this.props.topic}/>
+        <div className="newsData">
+          <PrimaryButton/>
+          <PrimaryButton/>
+        </div>
       </div>
       )
     }

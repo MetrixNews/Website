@@ -1,16 +1,14 @@
 import React, { Component }  from 'react';
 import Button from 'react-bootstrap/Button';
+import '../../app.scss';
+
 
 function PrimaryButton(props) {
     return (
         <div>
-            <Button variant="primary" size="lg" block>
-                {props.description}
-            </Button>
+            <button className="button">Data</button>
         </div>
     )   
 }
 
-const primaryButton = {
-    description: 'Election Polls'
-};
+export default PrimaryButton;

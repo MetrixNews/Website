@@ -5,7 +5,7 @@
     padding-bottom: 10px;
     text-align: center;
     color: var(--font-color);
-    border-bottom: solid thick  var(--metrix-color);
+    background-color: var(--bg-color);
   }
 
 footer {
@@ -17,7 +17,15 @@ footer {
     color: var(--font-color);
     height: 50px;
     text-align: center;
-    margin-top: 25px;
     padding-top: 10px;
     border-top: solid thick var(--metrix-color);
+  }
+
+  .pageDescription > h1 {
+    color: var(--font-color);
+    text-align: center;
+    font-size: 40pt;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
