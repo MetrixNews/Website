@@ -30,11 +30,13 @@
 //        if(!this.shouldComponentRender()) return <Spinner />
  
 //        return (
-//          <div class="polticalParty">
-//             <h2>Democrats:</h2>
-//             <CardDeck>
-//                <Candidate />  
-//             </CardDeck>
+            // <div className="polls">
+            //     <PrimaryButton />
+            //     <PrimaryButton />
+            //     <PrimaryButton />
+            // </div>
+//          <div>
+//              <Candidate />  
 //          </div>
 //        )
 //    }

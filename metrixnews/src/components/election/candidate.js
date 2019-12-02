@@ -7,7 +7,6 @@ export default class Candidate extends Component {
    }
  
    render() {
-     console.log(this.props)
      return (
        <div className="candidate">
          <div className="candidateName">
