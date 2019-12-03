@@ -12,9 +12,11 @@ import '../app.scss';
 class Newsfeed extends Component {
   constructor(props) {
       super(props);
-
       this.shouldComponentRender = this.shouldComponentRender.bind(this);
-  }
+      // this.state = {
+      //   categories: []
+      // };
+    }
   
   componentDidMount() {
       const {loadedCategories} = this.props;

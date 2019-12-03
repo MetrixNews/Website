@@ -10,7 +10,30 @@ function fetchCategories(category) {
             fetch(category)
             .then(response => {
                 return response.json();
+                // return response.json();
+                // return JSON.parse(response);
             })
+            .then((category) => {
+                // console.log(typeof(category))
+                var json = String(category);
+                var parsed = JSON.parse(category);
+                // console.log(parsed);
+                return JSON.parse(category);
+            })
+            // .then(response => {
+            //     var json = response.json();
+            //     var json = JSON.parse(JSON.stringify(json));
+            //     return json();
+
+            //     // console.log(typeof(json))
+            //     // json = String(json);
+            //     // var parsed = JSON.parse(json);
+            //     // console.log(parsed);
+            //     // return JSON.parse(parsed);
+
+            //     // return response.json();
+            //     // return JSON.parse(response);
+            // })
             .then((category) => {
                 resolve(category);
             })    
