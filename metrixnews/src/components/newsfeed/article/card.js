@@ -5,6 +5,7 @@ import Article from './article';
 import Metrics from './metrics';
 import ArticleSummary from './article_summary';
 import ArticleContent from './article_content';
+import ArticleLink from './article_link';
 import Modal from 'react-bootstrap/Modal'
 import '../newsfeed.scss'
 
@@ -35,6 +36,7 @@ export default function Card(props) {
                 <Article story={props.story}/>
                 <ArticleSummary story={props.story}/>
                 <ArticleContent story={props.story}/>
+                <ArticleLink story={props.story}/>
             </div>
           </Modal.Body>
           <Modal.Footer>

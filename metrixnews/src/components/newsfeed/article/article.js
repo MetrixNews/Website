@@ -1,5 +1,6 @@
 import React, { Component }  from 'react';
 import ArticleHead from './article_head';
+import ArticleLink from './article_link'
 import '../newsfeed.scss'
  
 export default class Article extends Component {
@@ -17,14 +18,7 @@ export default class Article extends Component {
                         <span>{this.props.story.title}</span>
                     </div>
                 </div> 
-
-                <div className="article_link">
-                    <i className="fas fa-link"></i>
-                        <a href={this.props.story.url} className="article_link" target="_blank" rel="noopener noreferrer">
-                            <span>{this.props.story.url}</span>
-                        </a>
-                    <span></span>
-                </div>
+                <ArticleLink story={this.props.story} />
         </div>
     )
 }
