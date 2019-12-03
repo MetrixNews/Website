@@ -6,7 +6,7 @@ import Metrics from './metrics';
 import ArticleSummary from './article_summary';
 import ArticleContent from './article_content';
 import Modal from 'react-bootstrap/Modal'
-import './article.scss'
+import '../newsfeed.scss'
 
 export default function Card(props) {
 

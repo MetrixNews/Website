@@ -7,7 +7,7 @@ import {
 import { Provider } from 'react-redux'
 import configureStore from './configureStore'
 
-
+import StatusBar from './components/page_structure/status_bar'
 import PageHeader from './components/page_structure/page_header';
 import Footer from './components/page_structure/footer';
 import NewsfeedComponent from './components/newsfeed.js';
@@ -20,6 +20,8 @@ const store = configureStore()
 export default class App extends React.Component {
    render() {
       return (
+        <div>
+        <StatusBar />
         <Provider store={store}>
           <Router>
           <div className="AppContainer">
@@ -46,6 +48,7 @@ export default class App extends React.Component {
           </div>
         </Router>
       </Provider>
+      </div>
       );
    }
 }

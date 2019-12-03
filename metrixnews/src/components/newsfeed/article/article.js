@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
 import ArticleHead from './article_head';
-import './article.scss'
+import '../newsfeed.scss'
  
 export default class Article extends Component {
     constructor(props) {
