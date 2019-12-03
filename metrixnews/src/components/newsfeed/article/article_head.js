@@ -9,17 +9,10 @@ function ArticleHead(props) {
             </div>
 
             <div className="publish_text">
-
-                {this.props.articles.map((article, id) => (
-                            <span key={id} {...article} className="source_name">{article.source}</span>
-                    ))}
-                {this.props.articles.map((article, id) => (
-                            <span key={id} {...article} className="author">{article.author}</span>
-                    ))}
+                <span className="source_name">article source</span>
+                <span className="author">author</span>
                 <span>   -   </span>    
-                {this.props.articles.map((article, id) => (
-                            <span key={id} {...article} className="time">{article.publishedAt}</span>
-                    ))}                                        
+                <span className="time">time</span>                                      
             </div>
       </div>
     );

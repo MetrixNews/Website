@@ -13,12 +13,12 @@ export default class Spectrum extends Component {
         <div className="app">
             <div className="full hide-scroll">
                 <ul className="hs">
-                  {/* {this.props.articles.map((article) => (
-                    <Card
-                      key={article.id}
-                      source={article.source}
-                    />
-                    ))}                 */}
+                {this.props.articles.map((article, i) => (
+                  <Card
+                    key={i}
+                    story={article}
+                  />
+                ))}            
                   </ul>
               </div> 
         </div>
