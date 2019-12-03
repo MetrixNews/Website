@@ -35,7 +35,7 @@ class Newsfeed extends Component {
       if(!this.shouldComponentRender()) return <Spinner />
 
       return (
-        <div>
+        <div className="bg">
           {this.props.categories.map((category, i) => (
             <Topic
               key={i}

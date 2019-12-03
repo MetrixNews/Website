@@ -1,10 +1,10 @@
 :root {
     --metrix-color: #492354;
-    --highlight-color: #2e003e;
-    --font-color: #2e003e;
-    --article-font-color: #2e003e;
+    --highlight-color: #BFBFBF;
+    --font-color: #262626;
+    --article-font-color: #0D0D0D;
     --candidate-font-color:#2e003e;
-    --bg-color: #f8f8fa;
+    --bg-color: #F2F2F2;
     --left-color: #3D67B1;
     --center-left-color: #3F4174;
     --center-color: #492354;
@@ -42,8 +42,8 @@
     /* border: solid 1px var(--metrix-color); */
     height: 100%;
     line-height: 1.2;
-    max-width: 1000px;
     margin: 0 auto;
+    text-align: center;
   }
   
   // h1 {
@@ -119,9 +119,8 @@
     height: 50px;
     width: 100%;
     max-width: 875;
-    background-color: var(--highlight-color);
+    background-color: var(--metrix-color);
     position: relative;
-    border-bottom: solid thick var(--metrix-color);
     margin-bottom: 10px;
   }
   
@@ -175,8 +174,7 @@
       height: 50px;
       width: 100%;
       max-width: 875;
-      background-color: var(--highlight-color);
-      border-bottom: solid 1px var(--highlight-color);
+      background-color: var(--metrix-color);
       margin-bottom: 10px;
       text-align: center;
       margin: 0 auto;
@@ -238,26 +236,6 @@
   
   /* END NAVBAR */
   
-  .newsfeed {
-    background-color: var(--bg-color);
-  }
-  
-  .newsTopic {
-    border-top: solid thick var(--metrix-color);
-    padding: 10px 10px;
-  }
-
-  .newsfeed > .newsTopic > h2 {
-    color: var(--font-color);
-    font-size: 27pt;
-    padding-left: 10px;
-    /* padding-top: 5px; */
-    margin: 0;
-    text-align: left;
-  }
-
-
-
   .button {
     background-color: var(--bg-color); /* Green */
     border: solid var(--metrix-color);
@@ -282,3 +260,12 @@
     color: white;
   }
 
+.bg {
+  background-color: var(--bg-color);
+}
+
+.appContainer {
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}

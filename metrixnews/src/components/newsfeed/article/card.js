@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types'
 
-import Article from './article';
+import ArticleHead from './article_head';
+import ArticlePhoto from './article_photo';
+import ArticleTitle from './article_title';
 import Metrics from './metrics';
 import ArticleSummary from './article_summary';
 import ArticleContent from './article_content';
@@ -22,7 +24,13 @@ export default function Card(props) {
         
             <li className="item">
                 <div className="row articlebox">
-                    <Article story={props.story}/>  
+                  <div className="article">
+                      <ArticleHead story={props.story} />
+                      <ArticlePhoto story={props.story} />
+                      <ArticleTitle story={props.story} />
+                      <ArticleSummary story={props.story} />
+                      <ArticleLink story={props.story} />
+                  </div>
                 </div>
                 <Metrics />
             </li>
@@ -33,10 +41,14 @@ export default function Card(props) {
           </Modal.Header>
           <Modal.Body>
             <div className="articlebox" >
-                <Article story={props.story}/>
+              <div className="article">
+                <ArticleHead story={props.story}/>
+                <ArticlePhoto story={props.story}/>
+                <ArticleTitle story={props.story}/>
                 <ArticleSummary story={props.story}/>
                 <ArticleContent story={props.story}/>
                 <ArticleLink story={props.story}/>
+              </div>
             </div>
           </Modal.Body>
           <Modal.Footer>

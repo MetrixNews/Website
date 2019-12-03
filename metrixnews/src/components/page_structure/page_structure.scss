@@ -1,27 +1,18 @@
+.statusBar {
+  background-color: var(--metrix-color);
+}
+
 .pageDescription {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     text-align: center;
-    background-color: var(--metrix-color);
-  }
-
-footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--highlight-color);
-    color: var(--bg-color);
-    height: 50px;
-    text-align: center;
-    padding-top: 10px;
-    border-top: solid thick var(--metrix-color);
+    background-color: var(--bg-color);
   }
 
   .pageDescription > h1 {
-    color: var(--bg-color);
+    color: var(--metrix-color);
     text-align: center;
     font-size: 40pt;
     font-weight: bold;
@@ -36,4 +27,17 @@ footer {
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    border-top: solid thick var(--metrix-color);
   }

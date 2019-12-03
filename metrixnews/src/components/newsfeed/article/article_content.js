@@ -9,7 +9,6 @@ export default class ArticleContent extends Component {
     render() {
     return (
         <section>
-            <h4>Content</h4>
             <p className = "article_content">
                 {this.props.story.content}
             </p>

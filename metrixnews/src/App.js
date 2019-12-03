@@ -20,11 +20,11 @@ const store = configureStore()
 export default class App extends React.Component {
    render() {
       return (
-        <div>
+        <div className="appContainer">
         <StatusBar />
         <Provider store={store}>
           <Router>
-          <div className="AppContainer">
+          <div>
             <nav className="nav">
               <ul className="nav-links">
                 <li>

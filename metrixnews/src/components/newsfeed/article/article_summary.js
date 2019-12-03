@@ -10,7 +10,6 @@ export default class ArticleSummary extends Component {
     render() {
     return (
         <section>
-            <h4>Summary</h4>
             <p className = "article_summary">
                 {this.props.story.description}        
             </p>
