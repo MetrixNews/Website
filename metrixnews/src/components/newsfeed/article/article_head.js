@@ -1,7 +1,11 @@
 import React, { Component }  from 'react';
 import './article.scss'
 
-function ArticleHead(props) {
+export default class ArticleHead extends Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
     return (
         <div className="publish_info">
             <div className="logo_div">
@@ -9,13 +13,12 @@ function ArticleHead(props) {
             </div>
 
             <div className="publish_text">
-                <span className="source_name">article source</span>
-                <span className="author">author</span>
+                <span className="source_name">{this.props.story.source}</span><br/>
+                <span className="author">{this.props.story.author}</span>
                 <span>   -   </span>    
-                <span className="time">time</span>                                      
+                <span className="time">{this.props.story.published_at}</span>                                      
             </div>
       </div>
     );
 }
-
-export default ArticleHead;
+}

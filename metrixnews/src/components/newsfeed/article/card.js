@@ -8,8 +8,7 @@ import ArticleContent from './article_content';
 import Modal from 'react-bootstrap/Modal'
 import './article.scss'
 
-export default class Card extends Component {
-  render() {
+export default function Card(props) {
 
     const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
@@ -22,9 +21,9 @@ export default class Card extends Component {
         
             <li className="item">
                 <div className="row articlebox">
-                    <Article />  
+                    <Article story={props.story}/>  
                 </div>
-                    <Metrics />
+                <Metrics />
             </li>
         </a>
   
@@ -33,20 +32,19 @@ export default class Card extends Component {
           </Modal.Header>
           <Modal.Body>
             <div className="row articlebox">
-                <Article />
-                <ArticleSummary />
-                <ArticleContent />
+                <Article story={props.story}/>
+                <ArticleSummary story={props.story}/>
+                <ArticleContent story={props.story}/>
             </div>
           </Modal.Body>
           <Modal.Footer>
             <Metrics />
           </Modal.Footer>
         </Modal>
-      </>
+      </> 
 
     )
   }
-}
 
 Card.propTypes = {
   articles: PropTypes.array

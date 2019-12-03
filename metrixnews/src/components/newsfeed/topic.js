@@ -12,11 +12,10 @@ export default class Topic extends Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <div className="newsfeed">
         <div className="newsTopic">
-          <h2>Climate Change</h2>
+          <h2>Topic Title</h2>
         </div>
         <Spectrum articles={this.props.topic}/>
         <div className="newsData">
