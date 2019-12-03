@@ -9,25 +9,22 @@ export default class Article extends Component {
 
     render() {
       return (
-        <div>
-            <ArticleHead story={this.props.story}/>
-            <div>
-                <img className="articlephoto" src={this.props.story.url_to_image} alt="" />
-            </div>
+            <div className="article">
+                <ArticleHead story={this.props.story}/>
+                <div className="test"> 
+                    <img className="articlephoto" src={this.props.story.url_to_image} alt="" />
+                    <div className="headline">
+                        <span>{this.props.story.title}</span>
+                    </div>
+                </div> 
 
-            <div>
-                <div className="headline">
-                    <span>{this.props.story.title}</span>
+                <div className="article_link">
+                    <i className="fas fa-link"></i>
+                        <a href={this.props.story.url} className="article_link" target="_blank" rel="noopener noreferrer">
+                            <span>{this.props.story.url}</span>
+                        </a>
+                    <span></span>
                 </div>
-            </div> 
-
-            <div className="article_link">
-                <i className="fas fa-link"></i>
-                    <a href={this.props.story.url} className="article_link" target="_blank" rel="noopener noreferrer">
-                        <span>{this.props.story.url}</span>
-                    </a>
-                <span></span>
-            </div>
         </div>
     )
 }

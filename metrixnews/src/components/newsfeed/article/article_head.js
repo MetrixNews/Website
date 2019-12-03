@@ -7,7 +7,7 @@ export default class ArticleHead extends Component {
     }
     render() {
     return (
-        <div className="publish_info">
+        <div>
             <div className="logo_div">
                 <img src="https://via.placeholder.com/50" className="source_logo"  alt=""/>
             </div>

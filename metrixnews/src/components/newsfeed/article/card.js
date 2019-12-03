@@ -31,7 +31,7 @@ export default function Card(props) {
           <Modal.Header closeButton>
           </Modal.Header>
           <Modal.Body>
-            <div className="row articlebox">
+            <div className="articlebox" >
                 <Article story={props.story}/>
                 <ArticleSummary story={props.story}/>
                 <ArticleContent story={props.story}/>

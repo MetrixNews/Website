@@ -110,22 +110,27 @@ text-align: left;
 /////// ARTICLES ////////
 
 // article_head styles
-.publishinfo {
+.article {
     text-align: left;
     color: var(--article-font-color);
-    width: 100%;
+    width: auto;
+    height: 100%;
+    position: relative;
+    top: 0;
+    overflow-x: hidden;
   }
 
   .logo_div {
-    width: 20%;
+    width: 15%;
     float: left;
     padding-bottom: 5px;
   }
 
   .source_logo {
     height: auto;
-    width: 50px;
+    width: 95%;
     border-radius: 5px;
+    padding: 3px;
   }
 
   .publish_text {
@@ -169,10 +174,11 @@ text-align: left;
 .articlebox {
     border: solid 5px var(--left-color);
     border-radius: 8px;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
     width: 100%;
     height: 100%;
     background-color: #fff;
+
   }
 
   @media (max-width:600px) {
