@@ -32,7 +32,7 @@ export default function Card(props) {
                       <ArticleLink story={props.story} />
                   </div>
                 </div>
-                <Metrics />
+                <Metrics story={props.story}/>
             </li>
         </a>
   
@@ -52,7 +52,7 @@ export default function Card(props) {
             </div>
           </Modal.Body>
           <Modal.Footer>
-            <Metrics />
+            <Metrics story={props.story}/>
           </Modal.Footer>
         </Modal>
       </> 

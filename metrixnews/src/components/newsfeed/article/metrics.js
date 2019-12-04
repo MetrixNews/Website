@@ -2,14 +2,21 @@ import React, { Component }  from 'react';
 import '../newsfeed.scss'
 
 
-function Metrics(props) {
+export default class Metrics extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
     return (
         <div className="metricRow">
-            <img src="https://via.placeholder.com/50" className="metric" alt="bias"/>
-            <img  src="https://via.placeholder.com/50" className="metric" alt="emotion"/>
-            <img  src="https://via.placeholder.com/50" className="metric" alt="sentiment"/>
+            <p className="metric">{this.props.story.political_biasness}</p>
+            <p className="metric">{this.props.story.emotion}</p>
+            <p className="metric">{this.props.story.sentiment}</p>
         </div>
-    )
+    );
+}
 }
 
-export default Metrics;
+{/* <img  src="https://via.placeholder.com/50" className="metric" alt="emotion"/>
+<img  src="https://via.placeholder.com/50" className="metric" alt="sentiment"/> */}

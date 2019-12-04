@@ -8,6 +8,7 @@ import {getCategoriesError, getCategories, getCategoriesPending} from '../reduce
 
 import Topic from './newsfeed/topic'
 import '../app.scss';
+import "./page_structure/page_structure.scss"
 
 class Newsfeed extends Component {
   constructor(props) {
@@ -35,13 +36,18 @@ class Newsfeed extends Component {
       if(!this.shouldComponentRender()) return <Spinner />
 
       return (
-        <div className="bg">
-          {this.props.categories.map((category, i) => (
-            <Topic
-              key={i}
-              topic={category}
-            />
-          ))}
+        <div>
+          <div className="pageDescription">
+            <h1>Newsfeed</h1>
+          </div>
+          <div className="bg">
+            {this.props.categories.map((category, i) => (
+              <Topic
+                key={i}
+                topic={category}
+              />
+            ))}
+          </div>
         </div>
       )
   }
