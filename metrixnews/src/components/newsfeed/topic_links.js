@@ -1,32 +1,25 @@
-export const topicData = [
-    {id: 0, title: "Climate Change", data1: "", data2=""},
-    {id: 1, title: "Climate Change", data1: "", data2=""},
-    {id: 2, title: "Climate Change", data1: "", data2=""},
-    {id: 3, title: "Climate Change", data1: "", data2=""},
-    {id: 4, title: "Climate Change", data1: "", data2=""},
-    {id: 5, title: "Climate Change", data1: "", data2=""},
-    {id: 6, title: "Climate Change", data1: "", data2=""},
-    {id: 7, title: "Climate Change", data1: "", data2=""},
-    {id: 8, title: "Climate Change", data1: "", data2=""},
-    {id: 9, title: "Climate Change", data1: "", data2=""},
-    {id: 10, title: "Climate Change", data1: "", data2=""},
-    {id: 11, title: "Climate Change", data1: "", data2=""},
-    {id: 12, title: "Climate Change", data1: "", data2=""},
-    {id: 13, title: "Climate Change", data1: "", data2=""},
-    {id: 14, title: "Climate Change", data1: "", data2=""},
-    {id: 15, title: "Climate Change", data1: "", data2=""},
-    {id: 16, title: "Climate Change", data1: "", data2=""},
-    {id: 17, title: "Climate Change", data1: "", data2=""},
-    {id: 18, title: "Climate Change", data1: "", data2=""},
-    {id: 19, title: "Climate Change", data1: "", data2=""},
-    {id: 20, title: "Climate Change", data1: "", data2=""},
-    {id: 21, title: "Climate Change", data1: "", data2=""},
-    {id: 22, title: "Climate Change", data1: "", data2=""},
-    {id: 23, title: "Climate Change", data1: "", data2=""},
-    {id: 24, title: "Climate Change", data1: "", data2=""},
-    {id: 25, title: "Climate Change", data1: "", data2=""},
-    {id: 26, title: "Climate Change", data1: "", data2=""},
-    {id: 27, title: "Climate Change", data1: "", data2=""},
-    {id: 28, title: "Climate Change", data1: "", data2=""},
-    {id: 29, title: "Climate Change", data1: "", data2=""},
-]
+import React from 'react';
+
+function TopicButton(props) {
+    // Correct! There is no need to specify the key here:
+    return <button className="button">{props.value}</button>
+  }
+  
+  export default function TopicData(props) {
+    const topicButton = props.topics.map((topic) =>
+      // Correct! Key should be specified inside the array.
+      <TopicButton key={topic.id}
+                value={topic.data1} />
+    );
+    return (
+      <ul>
+        {topicButton}
+      </ul>
+    );
+  }
+  
+//   ReactDOM.render(
+//     <TopicLinks topicData={topicData} />,
+//     document.getElementById('root')
+//   );
+

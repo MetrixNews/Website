@@ -1,5 +1,5 @@
 import fetch from 'cross-fetch'
-import {fetchArticlesPending, fetchArticlesSuccess, fetchArticlesError, fetchCategoriesPending, fetchCategoriesSuccess, fetchCategoriesError} from '../actions/index';
+import {fetchCategoriesPending, fetchCategoriesSuccess, fetchCategoriesError} from '../actions/index';
 
 // .then(res => res.text())
 // .then(text => console.log(text)) 
@@ -10,8 +10,6 @@ function fetchCategories(category) {
             fetch(category)
             .then(response => {
                 return response.json();
-                // return response.json();
-                // return JSON.parse(response);
             })
             .then((category) => {
                 // console.log(typeof(category))
@@ -20,20 +18,6 @@ function fetchCategories(category) {
                 // console.log(parsed);
                 return JSON.parse(category);
             })
-            // .then(response => {
-            //     var json = response.json();
-            //     var json = JSON.parse(JSON.stringify(json));
-            //     return json();
-
-            //     // console.log(typeof(json))
-            //     // json = String(json);
-            //     // var parsed = JSON.parse(json);
-            //     // console.log(parsed);
-            //     // return JSON.parse(parsed);
-
-            //     // return response.json();
-            //     // return JSON.parse(response);
-            // })
             .then((category) => {
                 resolve(category);
             })    
