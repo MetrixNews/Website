@@ -38,7 +38,6 @@ export default class App extends React.Component {
                 </li>
               </ul>
             </nav>
-            <PageHeader />
 
             <Route exact path='/' component={NewsfeedComponent}></Route>    
             <Route exact path='/election' component={ElectionComponent}></Route>
