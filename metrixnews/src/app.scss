@@ -118,7 +118,7 @@
   .nav {
     height: 50px;
     width: 100%;
-    max-width: 875;
+    max-width: 1250px;
     background-color: var(--metrix-color);
     // position: relative;
     margin-bottom: 10px;
@@ -176,7 +176,6 @@
     .nav {
       height: 50px;
       width: 100%;
-      max-width: 875;
       background-color: var(--metrix-color);
       margin-bottom: 10px;
       text-align: center;
@@ -269,7 +268,7 @@
 }
 
 .appContainer {
-  max-width: 1500px;
+  max-width: 1250px;
   margin: 0 auto;
   text-align: center;
 }

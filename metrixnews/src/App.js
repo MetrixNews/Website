@@ -8,7 +8,7 @@ import { Provider } from 'react-redux'
 import configureStore from './configureStore'
 
 import StatusBar from './components/page_structure/status_bar'
-import PageHeader from './components/page_structure/page_header';
+
 import Footer from './components/page_structure/footer';
 import NewsfeedComponent from './components/newsfeed.js';
 import ElectionComponent from './components/election.js';
@@ -28,7 +28,7 @@ export default class App extends React.Component {
             <nav className="nav">
               <ul className="nav-links">
                 <li>
-                  <Link to="/"> Newsfeed </Link>
+                  <Link to="/">Newsfeed</Link>
                 </li>
                 <li>
                   <Link to="/election"> Election </Link>
