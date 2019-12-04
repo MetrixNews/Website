@@ -120,8 +120,11 @@
     width: 100%;
     max-width: 875;
     background-color: var(--metrix-color);
-    position: relative;
+    // position: relative;
     margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 500;
   }
   
   /* .nav > .nav-header  {
@@ -180,6 +183,7 @@
       margin: 0 auto;
       position: fixed;
       bottom: 0;
+      z-index: 500;
       width: 100%;
     }
   
