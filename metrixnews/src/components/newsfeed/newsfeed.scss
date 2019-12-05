@@ -94,6 +94,7 @@ text-align: left;
     border-radius: 10px;
     margin-left: 15px;
     margin-right: 15px;
+    scroll-behavior: smooth;
   }
   
   /* Handle */
@@ -103,6 +104,7 @@ text-align: left;
     border-radius: 10px;
     height: 50px;
     width: 50px;
+    scroll-behavior: smooth;
   }
 
     ///////spectrum ////// 
@@ -321,13 +323,13 @@ text-align: left;
     margin-top: 10px;
     margin-bottom: 10px;
     /* hide text if it more than N lines  */
-    overflow: hidden;
+    // overflow: hidden;
     /* for set '...' in absolute position */
     position: relative;
     /* use this value to count block height */
-    line-height: 1.2em;
+    // line-height: 1.2em;
     /* max-height = line-height (1.2) * lines max number (3) */
-    max-height: 6.0em;
+    // max-height: 6.0em;
     /* fix problem when last visible word doesn't adjoin right side  */
     text-align: left;
     /* place for '...' */
@@ -335,31 +337,31 @@ text-align: left;
     padding-right: -1em;
   }
 
-    /* create the ... */
-    .article_content:before {
-      /* points in the end */
-      content: '...';
-      /* absolute position */
-      position: absolute;
-      /* set position to right bottom corner of block */
-      right: 0;
-      bottom: 0;
-    }
-    /* hide ... if we have text, which is less than or equal to max lines */
-    .article_content:after {
-      /* points in the end */
-      content: '';
-      /* absolute position */
-      position: absolute;
-      /* set position to right bottom corner of text */
-      right: 0;
-      /* set width and height */
-      width: 1em;
-      height: 1em;
-      margin-top: 0.2em;
-      /* bg color = bg color under block */
-      background: white;
-    }
+    // /* create the ... */
+    // .article_content:before {
+    //   /* points in the end */
+    //   content: '...';
+    //   /* absolute position */
+    //   position: absolute;
+    //   /* set position to right bottom corner of block */
+    //   right: 0;
+    //   bottom: 0;
+    // }
+    // /* hide ... if we have text, which is less than or equal to max lines */
+    // .article_content:after {
+    //   /* points in the end */
+    //   content: '';
+    //   /* absolute position */
+    //   position: absolute;
+    //   /* set position to right bottom corner of text */
+    //   right: 0;
+    //   /* set width and height */
+    //   width: 1em;
+    //   height: 1em;
+    //   margin-top: 0.2em;
+    //   /* bg color = bg color under block */
+    //   background: white;
+    // }
 
   //   // modal styling -- may need to update to use onClick() instead
   //   .modalDialog {

@@ -6,10 +6,11 @@ export default class ArticleHead extends Component {
         super(props);
     }
     render() {
+        // let sourcelogo = {"https://logo.clearbit.com/" + this.props.source}
     return (
         <div>
             <div className="logo_div">
-                <img src="https://via.placeholder.com/50" className="source_logo"  alt=""/>
+                <img src="https://logo.clearbit.com/nyt.com" className="source_logo"  alt=""/>
             </div>
 
             <div className="publish_text">
