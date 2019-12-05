@@ -14,9 +14,9 @@ class Newsfeed extends Component {
   constructor(props) {
       super(props);
       this.shouldComponentRender = this.shouldComponentRender.bind(this);
-      // this.state = {
-      //   categories: []
-      // };
+      this.state = {
+        categories: []
+      };
     }
   
   componentDidMount() {

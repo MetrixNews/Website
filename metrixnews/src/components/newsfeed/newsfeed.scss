@@ -260,15 +260,15 @@ text-align: left;
     color: var(--article-font-color);
     font-size: 16pt;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     /* hide text if it more than N lines  */
     overflow: hidden;
     /* for set '...' in absolute position */
     position: relative;
     /* use this value to count block height */
     line-height: 1.2em;
-    /* max-height = line-height (1.2) * lines max number (3) */
-    max-height: 3.6em;
+    // /* max-height = line-height (1.2) * lines max number (3) */
+    // max-height: 3.6em;
     /* fix problem when last visible word doesn't adjoin right side  */
     text-align: left;
     /* place for '...' */
@@ -276,41 +276,44 @@ text-align: left;
     padding-right: -1em;
   }
   
-  // /* create the ... */
-  // .headline:before {
-  //   /* points in the end */
-  //   content: '...';
-  //   /* absolute position */
-  //   position: absolute;
-  //   /* set position to right bottom corner of block */
-  //   right: 0;
-  //   bottom: 0;
-  // }
-  // /* hide ... if we have text, which is less than or equal to max lines */
-  // .headline:after {
-  //   /* points in the end */
-  //   content: '';
-  //   /* absolute position */
-  //   position: absolute;
-  //   /* set position to right bottom corner of text */
-  //   right: 0;
-  //   /* set width and height */
-  //   width: 1em;
-  //   height: 1em;
-  //   margin-top: 0.2em;
-  //   /* bg color = bg color under block */
-  //   background: white;
-  // }
+  /* create the ... */
+  .headline:before {
+    /* points in the end */
+    content: '...';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of block */
+    right: 0;
+    bottom: 0;
+  }
+  /* hide ... if we have text, which is less than or equal to max lines */
+  .headline:after {
+    /* points in the end */
+    content: '';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of text */
+    right: 0;
+    /* set width and height */
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    /* bg color = bg color under block */
+    background: white;
+  }
 
   .article_link {
-    color: var(--metrix-color);
+    color: blue;
     font-size: 12pt;
     text-align: left;
+    overflow: hidden;
+    line-height: 1.2em;
+    /* max-height = line-height (1.2) * lines max number (3) */
+    max-height: 1.2em;
   }
   
   .article_link:hover {
     text-decoration: underline;
-    color: var(--metrix-color);
   }
   
   .article_link:visited {
