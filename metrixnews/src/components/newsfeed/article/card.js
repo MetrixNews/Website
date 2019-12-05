@@ -40,6 +40,7 @@ export default function Card(props) {
           <Modal.Header closeButton>
           </Modal.Header>
           <Modal.Body>
+          {/* <div className={props.polital_biasness} > */}
             <div className="articlebox" >
               <div className="article">
                 <ArticleHead story={props.story}/>
@@ -50,7 +51,7 @@ export default function Card(props) {
                 <ArticleLink story={props.story}/>
               </div>
             </div>
-          </Modal.Body>
+          </Modal.Body> 
           <Modal.Footer>
             <Metrics story={props.story}/>
           </Modal.Footer>
