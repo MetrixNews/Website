@@ -6,11 +6,10 @@ export default class ArticleHead extends Component {
         super(props);
     }
     render() {
-        // let sourcelogo = {"https://logo.clearbit.com/" + this.props.source}
     return (
         <div>
             <div className="logo_div">
-                <img src="https://logo.clearbit.com/nyt.com" className="source_logo"  alt=""/>
+                <img src="https://logo.clearbit.com/Npr.org" className="source_logo"  alt=""/>
             </div>
 
             <div className="publish_text">
@@ -23,3 +22,26 @@ export default class ArticleHead extends Component {
     );
 }
 }
+
+function SourceLogo(props) {
+    const source = props.story.source;
+
+    if(source.search(".com") > 0) {
+        let sourcelogo = source.substring(0,source.search(".com")) + ".com"
+        return (
+            <img src={sourcelogo} className="source_logo"  alt="logo"/>
+        )
+    }
+    if(source.search(".net") > 0) {
+        let sourcelogo = source.substring(0,source.search(".net")) + ".net"
+        return (
+            <img src={sourcelogo} className="source_logo"  alt="logo"/>
+        )
+    }
+    if(source.search(".org") > 0) {
+        let sourcelogo = source.substring(0,source.search(".org")) + ".org"
+        return (
+            <img src={sourcelogo} className="source_logo"  alt="logo"/>
+        )
+    }
+  }
