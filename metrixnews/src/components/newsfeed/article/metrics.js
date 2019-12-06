@@ -40,7 +40,7 @@ function Sentiment(props) {
     const sentiment = props.story.sentiment
     if (sentiment == "pos") {
         return (
-            <img src={positive} alt="positive"></img>
+            <img src={positive} className="metric" alt="positive"></img>
         )
     }
     if (sentiment == "neu") {
