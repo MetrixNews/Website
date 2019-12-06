@@ -6,7 +6,6 @@ export default class ArticleHead extends Component {
         super(props);
     }
     render() {
-        console.log (SourceLogo)
     return (
         <div>
             <div className="logo_div">
@@ -25,24 +24,26 @@ export default class ArticleHead extends Component {
 }
 
 function SourceLogo(props) {
-    const source = props.story.source;
+    const url = props.story.url;
 
-    if(source.search(".com") > 0) {
-        let sourcelogo = source.substring(0,source.search(".com")+4)
+    if(url.search(url.match(".com")) >= 0) {
         return (
-            <img src={sourcelogo} className="source_logo"  alt="logo"/>
+            <img src={"https://logo.clearbit.com/" + url.substring(0,url.search(".com")+4)} className="source_logo"  alt="logo"/>
         )
     }
-    if(source.search(".net") > 0) {
-        let sourcelogo = source.substring(0,source.search(".net")+4)
+    if(url.search(url.match(".org")) >= 0) {
         return (
-            <img src={sourcelogo} className="source_logo"  alt="logo"/>
+            <img src={"https://logo.clearbit.com/" + url.substring(0,url.search(".org")+4)} className="source_logo"  alt="logo"/>
         )
     }
-    if(source.search(".org") > 0) {
-        let sourcelogo = source.substring(0,source.search(".org")+4)
+    if(url.search(url.match(".net")) >= 0) {
         return (
-            <img src={sourcelogo} className="source_logo"  alt="logo"/>
+            <img src={"https://logo.clearbit.com/" + url.substring(0,url.search(".net")+4)} className="source_logo"  alt="logo"/>
+        )
+    }
+    if(url.search(url.match(".co.uk")) >= 0) {
+        return (
+            <img src={"https://logo.clearbit.com/" + url.substring(0,url.search(".co.uk")+6)} className="source_logo"  alt="logo"/>
         )
     }
     else {
