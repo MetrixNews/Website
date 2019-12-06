@@ -8,11 +8,15 @@ import { Provider } from 'react-redux'
 import configureStore from './configureStore'
 
 import StatusBar from './components/page_structure/status_bar'
-
 import Footer from './components/page_structure/footer';
 import NewsfeedComponent from './components/newsfeed.js';
 import ElectionComponent from './components/election.js';
 import MetrixComponent from './components/metrix.js';
+
+import newsfeed from './assets/icons/nav/newsfeed.png';
+import election from './assets/icons/nav/election.png';
+import metrix from './assets/icons/nav/metrix.png';
+
 import './app.scss';
 
 const store = configureStore()
@@ -28,13 +32,13 @@ export default class App extends React.Component {
             <nav className="nav">
               <ul className="nav-links">
                 <li>
-                  <Link to="/">Newsfeed</Link>
+                  <Link to="/"><img src={newsfeed} alt="newsfeed" className="navIcon"></img></Link>
                 </li>
                 <li>
-                  <Link to="/election"> Election </Link>
+                  <Link to="/election"> <img src={election} alt="election" className="navIcon"></img> </Link>
                 </li>
                 <li>
-                  <Link to="/metrix"> Metrix </Link>
+                  <Link to="/metrix"> <img src={metrix} alt="metrix" className="navIcon"></img> </Link>
                 </li>
               </ul>
             </nav>

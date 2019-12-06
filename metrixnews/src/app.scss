@@ -116,7 +116,7 @@
   }
   
   .nav {
-    height: 50px;
+    height: 100px;
     width: 100%;
     max-width: 1200px;
     background-color: var(--metrix-color);
@@ -170,11 +170,16 @@
   .nav > #nav-check {
     display: none;
   }
+
+  .navIcon {
+    width: 64px;
+    height: 64px;
+  }
   
   @media (max-width:600px) {
 
     .nav {
-      height: 50px;
+      height: 100px;
       width: 100%;
       background-color: var(--metrix-color);
       margin-bottom: 10px;
@@ -230,6 +235,11 @@
   
     .nav > .nav-links > li:hover {
       border-bottom: solid 4px var(--highlight-color);
+    }
+
+    .navIcon {
+      width: 64px;
+      height: 64px;
     }
   
     // .nav > .nav-links > a > span {
