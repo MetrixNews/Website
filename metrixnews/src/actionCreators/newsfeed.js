@@ -46,7 +46,7 @@ export default function loadCategories(){
 }
 
 const categories = [
-    "http://134.209.163.4/articles/category/Women's%20Rights",
+    "http://134.209.163.4/articles/category/Gender%20Equality",
     "http://134.209.163.4/articles/category/Voter%20Rights",
     "http://134.209.163.4/articles/category/Universal%20Basic%20Income",
     "http://134.209.163.4/articles/category/Trade%20Wars",
