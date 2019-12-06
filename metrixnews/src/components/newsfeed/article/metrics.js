@@ -1,4 +1,24 @@
 import React, { Component }  from 'react';
+
+import positive from '../../../assets/icons/metrics/positive.png';
+import negative from '../../../assets/icons/metrics/negative.png';
+import neutral from '../../../assets/icons/metrics/neutral.png';
+
+import left from '../../../assets/icons/metrics/left.png';
+import center_left from '../../../assets/icons/metrics/center_left.png';
+import center from '../../../assets/icons/metrics/center.png';
+import center_right from '../../../assets/icons/metrics/center_right.png';
+import right from '../../../assets/icons/metrics/right.png';
+
+import joy from '../../../assets/icons/metrics/joy.png';
+import trust from '../../../assets/icons/metrics/trust.png';
+import fear from '../../../assets/icons/metrics/fear.png';
+import surprise from '../../../assets/icons/metrics/surprise.png';
+import sadness from '../../../assets/icons/metrics/sadness.png';
+import disgust from '../../../assets/icons/metrics/disgust.png';
+import anger from '../../../assets/icons/metrics/anger.png';
+import anticipation from '../../../assets/icons/metrics/anticipation.png';
+
 import '../newsfeed.scss'
 
 export default class Metrics extends Component {
@@ -20,22 +40,22 @@ function Sentiment(props) {
     const sentiment = props.story.sentiment
     if (sentiment == "pos") {
         return (
-            <p className="metric">pos</p>
+            <img src={positive} alt="positive"></img>
         )
     }
     if (sentiment == "neu") {
         return (
-            <p className="metric">neu</p>
+            <img src={neutral} className="metric" alt="neutral"></img>
         )
     }
     if (sentiment == "neg") {
         return (
-            <p className="metric">neg</p>
+            <img src={negative} className="metric" alt="negative"></img>
         )
     }
     else {
         return (
-            <p className="metric">N/A</p>
+            null
         )
     }
 
@@ -45,47 +65,47 @@ function Emotion(props) {
     const emotion = props.story.emotion
     if (emotion == "joy") {
         return (
-            <p className="metric">joy</p>
+            <img src={joy} className="metric" alt="joy"></img>
         )
     }
     if (emotion == "trust") {
         return (
-            <p className="metric">trust</p>
+            <img src={trust} className="metric" alt="trust"></img>
         )
     }
     if (emotion == "fear") {
         return (
-            <p className="metric">fear</p>
+            <img src={fear} className="metric" alt="fear"></img>
         )
     }
     if (emotion == "surprise") {
         return (
-            <p className="metric">surprise</p>
+            <img src={surprise} className="metric" alt="surprise"></img>
         )
     }
     if (emotion == "sadness") {
         return (
-            <p className="metric">sadness</p>
+            <img src={sadness} className="metric" alt="sadness"></img>
         )
     }
     if (emotion == "disgust") {
         return (
-            <p className="metric">disgust</p>
+            <img src={disgust} className="metric" alt="disgust"></img>
         )
     }
     if (emotion == "anger") {
         return (
-            <p className="metric">anger</p>
+            <img src={anger} className="metric" alt="anger"></img>
         )
     }
     if (emotion == "anticipation") {
         return (
-            <p className="metric">anticipation</p>
+            <img src={anticipation} className="metric" alt="anticipation"></img>
         )
     }
     else {
         return (
-            <p className="metric">N/A</p>
+            null
         )
     }
 
@@ -95,32 +115,32 @@ function Bias (props) {
     const bias = props.story.political_biasness
     if (bias == "left") {
         return (
-            <p className="metric">left</p>
+            <img src={left} className="metric" alt="left"></img>
         )
     }
-    if (bias == "left_center") {
+    if (bias == "center_left") {
         return (
-            <p className="metric">left_center</p>
+            <img src={center_left} className="metric" alt="center_left"></img>
         )
     }
     if (bias == "center") {
         return (
-            <p className="metric">center</p>
+            <img src={center} className="metric" alt="center"></img>
         )
     }
     if (bias == "center_right") {
         return (
-            <p className="metric">center_right</p>
+            <img src={center_right} className="metric" alt="center_right"></img>
         )
     }
     if (bias == "right") {
         return (
-            <p className="metric">right</p>
+            <img src={right} className="metric" alt="right"></img>
         )
     }
     else {
         return (
-            <p className="metric">N/A</p>
+            null
         )
     }
 
