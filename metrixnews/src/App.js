@@ -7,6 +7,11 @@ import {
 import { Provider } from 'react-redux'
 import configureStore from './configureStore'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faInfo } from '@fortawesome/free-solid-svg-icons'
+import {faNewspaper} from '@fortawesome/free-solid-svg-icons'
+import {faLandmark } from '@fortawesome/free-solid-svg-icons'
+
 import FooterMenu from './components/page_structure/FooterMenu'
 import Sidebar from './components/page_structure/Sidebar'
 import TopBar from './components/page_structure/TopBar'
@@ -14,10 +19,6 @@ import TopBar from './components/page_structure/TopBar'
 import NewsfeedComponent from './components/newsfeed.js';
 import ElectionComponent from './components/election.js';
 import MetrixComponent from './components/metrix.js';
-
-import newsfeed from './assets/icons/nav/newsfeed.png';
-import election from './assets/icons/nav/election.png';
-import metrix from './assets/icons/nav/metrix.png';
 
 import './app.scss';
 
@@ -49,6 +50,10 @@ export default class App extends React.Component {
   }
 
    render() {
+    let newspaper = <FontAwesomeIcon icon={faNewspaper} />;
+    let election = <FontAwesomeIcon icon={faLandmark} />;
+    let about = <FontAwesomeIcon icon={faInfo} />;
+
     const { windowWidth } = this.state;
 
     const styles = {
@@ -64,16 +69,16 @@ export default class App extends React.Component {
 
     const menuItems = styles.showSidebar
     ? [
-        { icon: newsfeed, text: "NewsFeed" },
+        { icon: newspaper, text: "NewsFeed" },
         { icon: election, text: "Election" },
-        { icon: metrix, text: "About" },
+        { icon: about, text: "About" },
         { icon: `⚙`, text: "Settings" }
       ]
 
     : [
-        { icon: newsfeed, text: "NewsFeed" },
-        { icon: election, text: "Election" },
-        { icon: metrix, text: "About" },
+      { icon: newspaper, text: "NewsFeed" },
+      { icon: election, text: "Election" },
+      { icon: about, text: "About" },
       ];
 
       return (
