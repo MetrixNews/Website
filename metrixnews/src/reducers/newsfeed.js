@@ -6,7 +6,7 @@ const initialState = {
     error: null,
 }
 
-export default function articlesReducer(state = initialState, action) {
+export default function NewsfeedReducer(state = initialState, action) {
     switch(action.type) {
         case FETCH_CATEGORIES_PENDING: 
             return {

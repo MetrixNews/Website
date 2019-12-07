@@ -6,7 +6,6 @@ import Spinner from 'react-bootstrap/Spinner';
 import loadCategories from '../actionCreators/newsfeed';
 import {getCategoriesError, getCategories, getCategoriesPending} from '../reducers/newsfeed';
 
-import App from '../App'
 import Topic from './newsfeed/topic'
 import '../app.scss';
 import "./page_structure/page_structure.scss"

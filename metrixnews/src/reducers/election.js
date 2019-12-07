@@ -6,7 +6,7 @@ const initialState = {
     error: null,
 }
 
-export default function candidatesReducer(state = initialState, action) {
+export default function ElectionReducer(state = initialState, action) {
     switch(action.type) {
         case FETCH_CANDIDATES_PENDING: 
             return {
