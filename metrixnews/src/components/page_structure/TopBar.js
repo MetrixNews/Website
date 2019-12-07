@@ -4,6 +4,7 @@ const TopBar = ({ styles }) => {
   const topBarStyle = {
     position: "fixed",
     top: 0,
+    zIndex: 1,
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",

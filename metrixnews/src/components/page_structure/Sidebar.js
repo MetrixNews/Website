@@ -5,6 +5,7 @@ const Sidebar = ({ menuItems, styles }) => {
     height: "100vh",
     width: styles.sidebarWidth,
     position: "fixed",
+    zIndex: 1,
     backgroundColor: styles.black(0.8),
     paddingTop: 40
   };
