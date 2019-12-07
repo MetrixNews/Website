@@ -50,9 +50,6 @@ export default class App extends React.Component {
   }
 
    render() {
-    let newspaper = <FontAwesomeIcon icon={faNewspaper} />;
-    let election = <FontAwesomeIcon icon={faLandmark} />;
-    let about = <FontAwesomeIcon icon={faInfo} />;
 
     const { windowWidth } = this.state;
 
@@ -67,18 +64,22 @@ export default class App extends React.Component {
       sidebarCollapsed: windowWidth < 1100
     };
 
+    let newspaper = <Link to='./'> <FontAwesomeIcon icon={faNewspaper} /></Link>;
+    let election = <Link to='./election'><FontAwesomeIcon icon={faLandmark} /> </Link> ;
+    let about = <Link to='./metrix'><FontAwesomeIcon icon={faInfo} /> </Link>;
+
     const menuItems = styles.showSidebar
     ? [
-        { icon: newspaper, text: "NewsFeed" },
-        { icon: election, text: "Election" },
-        { icon: about, text: "About" },
+        { icon: newspaper, text: "NewsFeed"},
+        { icon: election, text: "Election"},
+        { icon: about, text: "About"},
         { icon: `⚙`, text: "Settings" }
       ]
 
     : [
-      { icon: newspaper, text: "NewsFeed" },
-      { icon: election, text: "Election" },
-      { icon: about, text: "About" },
+      { icon: newspaper, text: "NewsFeed"},
+      { icon: election, text: "Election"},
+      { icon: about, text: "About"},
       ];
 
       return (
