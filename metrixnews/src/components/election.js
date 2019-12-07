@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Spinner from 'react-bootstrap/Spinner';
+
 import loadCandidates from '../actionCreators/election';
 import {getCandidatesError, getCandidates, getCandidatesPending} from '../reducers/election';
 
+import Candidate from './election/candidate'
 
 import './election/party/party.scss';
 import '../app.scss';
@@ -32,10 +34,20 @@ class Election extends Component {
    render() {
        if(!this.shouldComponentRender()) return <Spinner />
  
-       return (
-           
-            <div className="polls">
-         </div>
+       else return (
+        <div>
+          <div className="pageDescription">
+            <h1>Election</h1>
+          </div>
+          <div className="bg">
+            {/* {this.props.candidates.map((candidate, i) => (
+              <Candidate
+                key={i}
+                person={candidate}
+              />
+            ))} */}
+          </div>
+        </div>
        )
    }
  }

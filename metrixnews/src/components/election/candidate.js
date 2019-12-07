@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Candidate from './candidate/candidate';
+import PropTypes from 'prop-types'
+
+import Spectrum from '../newsfeed/spectrum/news_spectrum'
 
 export default class Candidate extends Component {
    constructor(props) {
@@ -10,15 +12,14 @@ export default class Candidate extends Component {
      return (
        <div className="candidate">
          <div className="candidateName">
-           <h2>Bernie Sanders</h2>
+            <h2>{this.props.candidate.name}</h2>
          </div>
-         <Spectrum articles={this.props.topic}/>
-         <div className="campaignLinks">
-           <PrimaryButton/>
-           <PrimaryButton/>
-           <PrimaryButton/>
-         </div>
+         <Spectrum articles={this.props.candidate.articles}/>
        </div>
        )
      }
  }
+
+ Candidate.propTypes = {
+  candidate: PropTypes.array
+}
