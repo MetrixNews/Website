@@ -100,11 +100,6 @@
     text-decoration: none;
   }
   
-  a > h2:hover {
-    text-decoration: underline;
-    color: var(--font-color);
-  }
-  
   a:active {
     text-decoration: none;
   }
@@ -277,8 +272,8 @@
   background-color: var(--bg-color);
 }
 
-.appContainer {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
+// .appContainer {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   text-align: center;
+// }

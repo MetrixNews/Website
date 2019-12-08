@@ -15,7 +15,7 @@ class Newsfeed extends Component {
       super(props);
       this.shouldComponentRender = this.shouldComponentRender.bind(this);
       this.state = {
-        categories: []
+        categories: [],
       };
     }
   
@@ -32,24 +32,12 @@ class Newsfeed extends Component {
   }
 
   render() {
-    const { windowWidth } = this.state;
-
-    const styles = {
-      white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-      black: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
-      topBarHeight: 40,
-      footerMenuHeight: 50,
-      showFooterMenuText: windowWidth > 500,
-      showSidebar: windowWidth > 768,
-      sidebarWidth: windowWidth < 1100 ? 50 : 150,
-      sidebarCollapsed: windowWidth < 1100
-    };
 
     const contentStyle = {
-      paddingTop: styles.showSidebar ? 20 : styles.topBarHeight + 20,
-      paddingRight: 20,
-      paddingBottom: styles.showSidebar ? 20 : styles.footerMenuHeight + 20,
-      paddingLeft: styles.showSidebar ? styles.sidebarWidth + 20 : 20
+      paddingTop: this.props.styles.showSidebar ? 20 : this.props.styles.topBarHeight,
+      paddingRight: 10,
+      paddingBottom: this.props.styles.showSidebar ? 20 : this.props.styles.footerMenuHeight + 20,
+      paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 20 : 10
     };
 
       if(!this.shouldComponentRender()) return <Spinner />

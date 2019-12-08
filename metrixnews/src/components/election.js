@@ -32,10 +32,17 @@ class Election extends Component {
    }
  
    render() {
+
+    const contentStyle = {
+      paddingTop: this.props.styles.showSidebar ? 20 : this.props.styles.topBarHeight,
+      paddingRight: 10,
+      paddingBottom: this.props.styles.showSidebar ? 20 : this.props.styles.footerMenuHeight + 20,
+      paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 20 : 10
+    };
        if(!this.shouldComponentRender()) return <Spinner />
  
-       else return (
-        <div>
+       return (
+        <div style={contentStyle}>
           <div className="pageDescription">
             <h1>Election</h1>
           </div>

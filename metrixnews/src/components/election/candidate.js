@@ -10,11 +10,16 @@ export default class Candidate extends Component {
  
    render() {
      return (
-       <div className="candidate">
-         <div className="candidateName">
-            <h2>{this.props.candidate.name}</h2>
-         </div>
-         <Spectrum articles={this.props.candidate.articles}/>
+      <div>
+        <div className="pageDescription">
+          <h1>Election</h1>
+        </div>
+        <div className="candidate">
+          <div className="candidateName">
+              <h2>{this.props.candidate.name}</h2>
+          </div>
+          <Spectrum articles={this.props.candidate.articles}/>
+        </div>
        </div>
        )
      }

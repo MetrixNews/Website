@@ -10,10 +10,17 @@ class Metrix extends Component {
   
     render() {
 
+      const contentStyle = {
+        paddingTop: this.props.styles.showSidebar ? 20 : this.props.styles.topBarHeight,
+        paddingRight: 10,
+        paddingBottom: this.props.styles.showSidebar ? 20 : this.props.styles.footerMenuHeight + 20,
+        paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 20 : 10
+      };
+
         return (
-          <div>
+          <div style={contentStyle}>
             <div className="pageDescription">
-              <h1>About Metrix News</h1>
+              <h1>About</h1>
             </div>
             <p>
               It's presidential election year. We understand it will be especially toxic this year. This is a tool to understand different perspectives, topics, and candidates without judgement, confirmation bias, or favoritism in your political media. Understand. Accept. Vote.

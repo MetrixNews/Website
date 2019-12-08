@@ -64,6 +64,10 @@ export default class App extends React.Component {
       sidebarCollapsed: windowWidth < 1100
     };
 
+    const linkstyle = {
+      color:   styles.black
+    }
+
     let newspaper = <Link to='./'> <FontAwesomeIcon icon={faNewspaper} /></Link>;
     let election = <Link to='./election'><FontAwesomeIcon icon={faLandmark} /> </Link> ;
     let about = <Link to='./metrix'><FontAwesomeIcon icon={faInfo} /> </Link>;
@@ -101,9 +105,19 @@ export default class App extends React.Component {
                 {!styles.showSidebar && (
                   <FooterMenu menuItems={menuItems} styles={styles} />
                 )}
-                <Route exact path='/' component={NewsfeedComponent}></Route>    
-                <Route exact path='/election' component={ElectionComponent}></Route>
-                <Route exact path='/metrix' component={MetrixComponent}></Route>
+
+                <Route exact path="/" render={props => 
+                    (<NewsfeedComponent {...props} styles={styles} state={this.state}/>)
+                } ></Route> 
+
+                  <Route exact path="/election" render={props => 
+                    (<ElectionComponent {...props} styles={styles} state={this.state}/>)
+                } ></Route> 
+
+                  <Route exact path="/metrix" render={props => 
+                    (<MetrixComponent {...props} styles={styles} state={this.state}/>)
+                } ></Route> 
+
               </ul>
             </Router>
           </Provider>

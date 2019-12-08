@@ -1,24 +1,17 @@
-.statusBar {
-  background-color: var(--metrix-color);
-  height: 20px;
-}
-
 .pageDescription {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-    margin-top: 10px;
     text-align: center;
-    background-color: var(--metrix-color);
+    background-color: var(--bg-color);
   }
 
   .pageDescription > h1 {
-    color: var(--bg-color);
+    color: var(--metrix-color);
     text-align: center;
     font-size: 40pt;
     font-weight: bold;
-    margin-top: 10px;
     margin-bottom: 10px;
   }
 
