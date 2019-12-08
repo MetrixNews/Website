@@ -70,14 +70,13 @@ export default class App extends React.Component {
 
     let newspaper = <Link to='./'> <FontAwesomeIcon icon={faNewspaper} /></Link>;
     let election = <Link to='./election'><FontAwesomeIcon icon={faLandmark} /> </Link> ;
-    let about = <Link to='./metrix'><FontAwesomeIcon icon={faInfo} /> </Link>;
+    let about = <Link to='./metrix'><FontAwesomeIcon style={{margin: 8}} icon={faInfo} /> </Link>;
 
     const menuItems = styles.showSidebar
     ? [
         { icon: newspaper, text: "NewsFeed"},
         { icon: election, text: "Election"},
-        { icon: about, text: "About"},
-        { icon: `⚙`, text: "Settings" }
+        { icon: about, text: "About"}
       ]
 
     : [

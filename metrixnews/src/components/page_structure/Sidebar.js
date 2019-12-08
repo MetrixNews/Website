@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as
-  Link
-} from 'react-router-dom';
+import '../../app.scss'
 
 const Sidebar = ({ menuItems, styles }) => {
   const sidebarStyle = {
@@ -10,7 +7,7 @@ const Sidebar = ({ menuItems, styles }) => {
     width: styles.sidebarWidth,
     position: "fixed",
     zIndex: 1,
-    backgroundColor: styles.black(0.8),
+    backgroundColor: "#E4E4E4",
     paddingTop: 40
   };
 
@@ -19,8 +16,10 @@ const Sidebar = ({ menuItems, styles }) => {
     justifyContent: styles.sidebarCollapsed ? "center" : "flex-start",
     alignItems: "center",
     padding: `4px ${styles.sidebarCollapsed ? 0 : 10}px`,
-    color: styles.white(0.9)
-  };
+    color: "#492354",
+    fontWeight: "bold",
+    fontSize: 16
+  }
 
   const iconStyle = {
     fontSize: 26,
@@ -29,7 +28,7 @@ const Sidebar = ({ menuItems, styles }) => {
 
   const logoStyle = {
     textAlign: "center",
-    color: styles.white(),
+    color: "#492354",
     fontSize: 34,
     marginBottom: 60,
     fontWeight: "bold"

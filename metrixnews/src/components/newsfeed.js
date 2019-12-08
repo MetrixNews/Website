@@ -48,12 +48,12 @@ class Newsfeed extends Component {
             <h1>Newsfeed</h1>
           </div>
           <div className="bg">
-            {/* {this.props.categories.map((category, i) => (
+            {this.props.categories.map((category, i) => (
               <Topic
                 key={i}
                 topic={category}
               />
-            ))} */}
+            ))}
           </div>
         </div>
       )

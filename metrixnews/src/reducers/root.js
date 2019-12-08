@@ -4,8 +4,8 @@ import NewsfeedReducer from '../reducers/newsfeed';
 import ElectionReducer from '../reducers/election';
 
 const RootReducer = combineReducers({
-    NewsfeedReducer,
-    ElectionReducer
+    newsfeed: NewsfeedReducer,
+    election: ElectionReducer
   })
 
   export default RootReducer;

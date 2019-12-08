@@ -12,15 +12,20 @@ const TopBar = ({ styles }) => {
     height: styles.topBarHeight,
     backgroundColor: "#fff",
     borderBottom: "1px solid #d8d8d8",
-    fontWeight: "bold",
     padding: "0px 20px",
+    textAlign: "center",
     boxSizing: "border-box"
   };
+  const titleStyle = {
+    display: "inline-block",
+    fontWeight: "bold",
+    margin: "0 auto",
+    fontSize: 24,
+  }
 
   return (
     <div style={topBarStyle}>
-      Metrix
-      <span>{`⚙️`}</span>
+      <span style={titleStyle}>Metrix News</span>
     </div>
   );
 };

@@ -30,6 +30,6 @@ export default function NewsfeedReducer(state = initialState, action) {
     }
 }
 
-export const getCategories = state => state.categories;
+export const getCategories = state => state.newsfeed.categories;
 export const getCategoriesPending = state => state.pending;
 export const getCategoriesError = state => state.error;
