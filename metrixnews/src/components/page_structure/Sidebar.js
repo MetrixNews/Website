@@ -7,7 +7,7 @@ const Sidebar = ({ menuItems, styles }) => {
     width: styles.sidebarWidth,
     position: "fixed",
     zIndex: 1,
-    backgroundColor: "#E4E4E4",
+    backgroundColor: "#492354",
     paddingTop: 40
   };
 
@@ -16,7 +16,7 @@ const Sidebar = ({ menuItems, styles }) => {
     justifyContent: styles.sidebarCollapsed ? "center" : "flex-start",
     alignItems: "center",
     padding: `4px ${styles.sidebarCollapsed ? 0 : 10}px`,
-    color: "#492354",
+    color: "#F2F2F2",
     fontWeight: "bold",
     fontSize: 16
   }
@@ -28,7 +28,7 @@ const Sidebar = ({ menuItems, styles }) => {
 
   const logoStyle = {
     textAlign: "center",
-    color: "#492354",
+    color: "#F2F2F2",
     fontSize: 34,
     marginBottom: 60,
     fontWeight: "bold"

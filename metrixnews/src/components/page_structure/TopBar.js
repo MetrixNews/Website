@@ -10,7 +10,7 @@ const TopBar = ({ styles }) => {
     alignItems: "center",
     width: "100%",
     height: styles.topBarHeight,
-    backgroundColor: "#fff",
+    backgroundColor: "#492354",
     borderBottom: "1px solid #d8d8d8",
     padding: "0px 20px",
     textAlign: "center",
@@ -21,6 +21,7 @@ const TopBar = ({ styles }) => {
     fontWeight: "bold",
     margin: "0 auto",
     fontSize: 24,
+    color: "#F2F2F2"
   }
 
   return (
