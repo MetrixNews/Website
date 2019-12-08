@@ -10,14 +10,12 @@ export default class Candidate extends Component {
  
    render() {
      return (
-      <div>
         <div className="candidate">
           <div className="candidateName">
-              {/* <h2>{this.props.candidate.name}</h2> */}
+              <h2>{this.props.person.Name}</h2>
           </div>
-          {/* <Spectrum articles={this.props.candidate.articles}/> */}
+          <Spectrum articles={this.props.person.articles}/>
         </div>
-       </div>
        )
      }
  }

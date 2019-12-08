@@ -46,8 +46,8 @@ export default function loadCandidates(){
 }
 
 const candidates = [
-    "http://134.209.163.4/articles/candidate/donald%20j.%20trump",
-    "http://134.209.163.4/articles/candidate/michael%20bennet",
+    "http://134.209.163.4/articles/candidate/Donald%20J.%20Trump",
+    "http://134.209.163.4/articles/candidate/Michael%20Bennet",
     "http://134.209.163.4/articles/candidate/Joseph%20R.%20Biden%20Jr.",
     "http://134.209.163.4/articles/candidate/Michael%20R.%20Bloomberg",
     "http://134.209.163.4/articles/candidate/Cory%20Booker",
@@ -55,7 +55,6 @@ const candidates = [
     "http://134.209.163.4/articles/candidate/Julián%20Castro",
     "http://134.209.163.4/articles/candidate/John%20Delaney",
     "http://134.209.163.4/articles/candidate/Tulsi%20Gabbard",
-    "http://134.209.163.4/articles/candidate/Kamala%20Harris",
     "http://134.209.163.4/articles/candidate/Amy%20Klobuchar",
     "http://134.209.163.4/articles/candidate/Bernie%20Sanders",
     "http://134.209.163.4/articles/candidate/Tom%20Steyer",
