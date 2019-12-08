@@ -47,12 +47,12 @@ class Election extends Component {
             <h1>Election</h1>
           </div>
           <div className="bg">
-            {/* {this.props.candidates.map((candidate, i) => (
+            {this.props.candidates.map((candidate, i) => (
               <Candidate
                 key={i}
                 person={candidate}
               />
-            ))} */}
+            ))}
           </div>
         </div>
        )

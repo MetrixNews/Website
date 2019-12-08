@@ -30,6 +30,6 @@ export default function ElectionReducer(state = initialState, action) {
     }
 }
 
-export const getCandidates = state => state.candidates;
+export const getCandidates = state => state.election.candidates;
 export const getCandidatesPending = state => state.pending;
 export const getCandidatesError = state => state.error;
