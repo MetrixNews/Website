@@ -13,7 +13,7 @@ class Metrix extends Component {
         return (
           <div>
             <div className="pageDescription">
-              <h1>ABOUT METRIX NEWS</h1>
+              <h1>About Metrix News</h1>
             </div>
             <p>
               It's presidential election year. We understand it will be especially toxic this year. This is a tool to understand different perspectives, topics, and candidates without judgement, confirmation bias, or favoritism in your political media. Understand. Accept. Vote.

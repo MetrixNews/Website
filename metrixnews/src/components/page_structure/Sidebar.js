@@ -37,7 +37,7 @@ const Sidebar = ({ menuItems, styles }) => {
 
   return (
     <div style={sidebarStyle}>
-      <div style={logoStyle}>{styles.sidebarCollapsed ? "A" : "App"}</div>
+      <div style={logoStyle}>{styles.sidebarCollapsed ? "M" : "Metrix"}</div>
       {menuItems.map(item => (
         <div style={menuItemStyle}>
           <span style={iconStyle}>{item.icon}</span>
