@@ -17,8 +17,8 @@ export default class Topic extends Component {
         <div className="topicTitle">
           <h2>{this.props.topic.topic}</h2>
         </div>
-        <Spectrum articles={this.props.topic.articles}/>
         <Data topic={this.props.topic}/>
+        <Spectrum articles={this.props.topic.articles}/>
         </div>
       )
     }
