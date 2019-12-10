@@ -8,7 +8,8 @@ import Metrics from './metrics';
 import ArticleSummary from './article_summary';
 import ArticleContent from './article_content';
 import ArticleLink from './article_link';
-import Modal from 'react-bootstrap/Modal'
+import CorrectionForm from './correction_form';
+import Modal from 'react-bootstrap/Modal';
 import '../newsfeed.scss'
 
 export default function Card(props) {
@@ -17,8 +18,20 @@ export default function Card(props) {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    return (
+//     let displayCorrectionForm = () => {
+//       this.setState({
+//         displayCorrectionForm: !this.state.displayCorrectionForm
+//       })
+//     }
 
+//     if ( this.state.displayCorrectionForm ) {
+//       const correctionForm = (
+//       <div>
+//         <span>User Correction from</span>
+//       </div>
+//       )
+//  }
+    return (
       <>
         <a onClick={handleShow}>
         
@@ -51,9 +64,10 @@ export default function Card(props) {
                 <ArticleLink story={props.story}/>
               </div>
             </div>
+            <Metrics story={props.story}/>
           </Modal.Body> 
           <Modal.Footer>
-            <Metrics story={props.story}/>
+            <CorrectionForm labels={props.labels}/>
           </Modal.Footer>
         </Modal>
       </> 
