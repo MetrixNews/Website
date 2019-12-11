@@ -1,4 +1,4 @@
-import fetch from 'cross-fetch'
+import fetch from 'cross-fetch';
 import {fetchCategoriesPending, fetchCategoriesSuccess, fetchCategoriesError} from '../actions/index';
 
 // .then(res => res.text())

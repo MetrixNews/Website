@@ -1,41 +1,43 @@
-import React, { Component }  from 'react';
-import Form from 'react-bootstrap/Form';
-import {left} from '../../../assets/icons/metrics/left.png';
-import {centerleft} from '../../../assets/icons/metrics/center_left.png';
-import {center} from '../../../assets/icons/metrics/center.png';
-import {centerright} from '../../../assets/icons/metrics/center_right.png';
-import {right} from '../../../assets/icons/metrics/right.png';
+import React from 'react'
+import { Field, reduxForm } from 'redux-form'
 
-export default class CorrectionForm extends Component {
-    constructor(props){
-        super(props);
-    }
+let CorrectionForm = props => {
+  const { handleSubmit } = props
+  return (
+    <form onSubmit={props.handleSubmit}>
+      <div>
+        <label>Disagree with our political bias rating? Let us know what it should be below!</label>
+        <div>
+          <label>
+            <Field name="left" component="input" type="radio" value="left" />{' '}
+            Left
+          </label>
+          <label>
+            <Field name="centerleft" component="input" type="radio" value="centerleft" />{' '}
+            Center-Left
+          </label>
+          <label>
+            <Field name="center" component="input" type="radio" value="center" />{' '}
+            Center
+          </label>
+          <label>
+            <Field name="cetnerright" component="input" type="radio" value="cetnerright" />{' '}
+            Center-Right
+          </label>
+          <label>
+            <Field name="right" component="input" type="radio" value="right" />{' '}
+            Right
+          </label>
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  )
+}
 
-    render() {
-      return (
-        // <Form style={{width: '100%', display: 'inline-block', textAlign: 'center'}}>
-        //     <span>Disagree with the poltiical bias rating? Correct it below to improve Metrix!</span>
-        //     {['checkbox'].map(type => (
-        //         <div key={`inline-${type}`} className="mb-3">
-        //         <Form.Check inline label='Left' type={type} id={`inline-${type}-1`} />
-        //         <Form.Check inline label='Center-Left' type={type} id={`inline-${type}-1`} />
-        //         <Form.Check inline label='Center' type={type} id={`inline-${type}-1`} />
-        //         <Form.Check inline label='Center-Right' type={type} id={`inline-${type}-1`} />
-        //         <Form.Check inline label='Right' type={type} id={`inline-${type}-1`} />
-        //         </div>
-        //     ))}
-        // </Form>
+CorrectionForm = reduxForm({
+  // a unique name for the form
+  form: 'correction',
+})(CorrectionForm)
 
-        <form style={{width: '100%', display: 'inline-block', textAlign: 'center'}}>
-            <span>Disagree with the poltiical bias rating? Correct it below to improve Metrix!</span><br/>
-            <input type="radio" name="gender" value="male" /> Left
-            <input type="radio" name="gender" value="female"/> Left-Center
-            <input type="radio" name="gender" value="other"/> Center
-            <input type="radio" name="gender" value="other"/> Center-Right
-            <input type="radio" name="gender" value="other"/> Right
-            <br/>
-            <input type="submit" value="Submit"/>
-        </form>
-      );
-    }
-  }
+export default CorrectionForm;

@@ -17,20 +17,8 @@ export default function Card(props) {
     const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const { handleSubmit } = props
 
-//     let displayCorrectionForm = () => {
-//       this.setState({
-//         displayCorrectionForm: !this.state.displayCorrectionForm
-//       })
-//     }
-
-//     if ( this.state.displayCorrectionForm ) {
-//       const correctionForm = (
-//       <div>
-//         <span>User Correction from</span>
-//       </div>
-//       )
-//  }
     return (
       <>
         <a onClick={handleShow}>
@@ -67,7 +55,7 @@ export default function Card(props) {
             <Metrics story={props.story}/>
           </Modal.Body> 
           <Modal.Footer>
-            <CorrectionForm labels={props.labels}/>
+            <CorrectionForm onSubmit={props.handleSubmit} />
           </Modal.Footer>
         </Modal>
       </> 
