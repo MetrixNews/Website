@@ -34,10 +34,10 @@ class Newsfeed extends Component {
   render() {
 
     const contentStyle = {
-      paddingTop: this.props.styles.showSidebar ? 20 : this.props.styles.topBarHeight,
+      paddingTop: this.props.styles.showSidebar ? 10 : this.props.styles.topBarHeight,
       paddingRight: 10,
-      paddingBottom: this.props.styles.showSidebar ? 20 : this.props.styles.footerMenuHeight + 20,
-      paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 20 : 10
+      paddingBottom: this.props.styles.showSidebar ? 10 : this.props.styles.footerMenuHeight + 20,
+      paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 10 : 10
     };
 
       if(!this.shouldComponentRender()) return <Spinner />

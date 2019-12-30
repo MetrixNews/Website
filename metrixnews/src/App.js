@@ -61,28 +61,28 @@ export default class App extends React.Component {
       showFooterMenuText: windowWidth > 500,
       showSidebar: windowWidth > 768,
       sidebarWidth: windowWidth < 1100 ? 50 : 150,
-      sidebarCollapsed: windowWidth < 1100
+      sidebarCollapsed: windowWidth < 1100,
     };
 
-    const linkstyle = {
-      color:   styles.black
-    }
-
     let newspaper = <Link to='./'> <FontAwesomeIcon icon={faNewspaper} /></Link>;
-    let election = <Link to='./election'><FontAwesomeIcon icon={faLandmark} /> </Link> ;
-    let about = <Link to='./metrix'><FontAwesomeIcon style={{margin: 8}} icon={faInfo} /> </Link>;
+    let election = <Link to='./election'><FontAwesomeIcon icon={faLandmark} /></Link> ;
+    let about = <Link to='./metrix'><FontAwesomeIcon style={{marginRight: 12}} icon={faInfo} /></Link>;
+
+    let newsfeedText = <Link to='./'>Newsfeed</Link>;
+    let electionText = <Link to='./election'>Election</Link>;
+    let aboutText = <Link to='./metrix'>About</Link>;
 
     const menuItems = styles.showSidebar
     ? [
-        { icon: newspaper, text: "NewsFeed"},
-        { icon: election, text: "Election"},
-        { icon: about, text: "About"}
+        { icon: newspaper, text: newsfeedText},
+        { icon: election, text: electionText},
+        { icon: about, text: aboutText}
       ]
 
     : [
-      { icon: newspaper, text: "NewsFeed"},
-      { icon: election, text: "Election"},
-      { icon: about, text: "About"},
+      { icon: newspaper, text: newsfeedText},
+      { icon: election, text: electionText},
+      { icon: about, text: aboutText},
       ];
 
       return (

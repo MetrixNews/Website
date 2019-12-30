@@ -8,11 +8,12 @@ const FooterMenu = ({ menuItems, styles }) => {
         alignItems: "stretch",
         width: "100%",
         height: styles.footerMenuHeight,
-        backgroundColor: "#492354",
-        color: "#fff",
+        backgroundColor: "#F2F2F2",
+        color: "#492354",
         position: "fixed",
+        borderTop: "1px solid #d8d8d8",
         bottom: 0,
-        zIndex: 1
+        zIndex: 1,
       }}
     >
       {menuItems.map((item, i) => {
