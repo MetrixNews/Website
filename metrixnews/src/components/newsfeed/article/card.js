@@ -55,7 +55,7 @@ export default function Card(props) {
             <Metrics story={props.story}/>
           </Modal.Body> 
           <Modal.Footer>
-            <CorrectionForm onSubmit={props.handleSubmit} />
+            {/* <CorrectionForm onSubmit={props.handleSubmit} /> */}
           </Modal.Footer>
         </Modal>
       </> 
