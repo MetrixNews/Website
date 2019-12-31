@@ -180,45 +180,45 @@
     }
   }
 
-  .headline {
-    color: var(--article-font-color);
-    font-size: 16pt;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    /* hide text if it more than N lines  */
-    overflow: hidden;
-    /* for set '...' in absolute position */
-    position: relative;
-    /* use this value to count block height */
-    line-height: 1.2em;
-    // /* max-height = line-height (1.2) * lines max number (3) */
-    // max-height: 3.6em;
-    /* fix problem when last visible word doesn't adjoin right side  */
-    text-align: left;
-    /* place for '...' */
-    margin-right: 0em;
-    padding-right: -1em;
-  }
+  // .headline {
+  //   color: var(--article-font-color);
+  //   font-size: 16pt;
+  //   margin-top: 10px;
+  //   margin-bottom: 15px;
+  //   /* hide text if it more than N lines  */
+  //   overflow: hidden;
+  //   /* for set '...' in absolute position */
+  //   position: relative;
+  //   /* use this value to count block height */
+  //   line-height: 1.2em;
+  //   // /* max-height = line-height (1.2) * lines max number (3) */
+  //   // max-height: 3.6em;
+  //   /* fix problem when last visible word doesn't adjoin right side  */
+  //   text-align: left;
+  //   /* place for '...' */
+  //   margin-right: 0em;
+  //   padding-right: -1em;
+  // }
   
-  /* create the ... */
-  .headline:before {
-    /* points in the end */
-    content: '...';
-    /* absolute position */
-    position: absolute;
-    /* set position to right bottom corner of block */
-    right: 0;
-    bottom: 0;
-  }
-  .headline:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    width: 1em;
-    height: 1em;
-    margin-top: 0.2em;
-    background: white;
-  }
+  // /* create the ... */
+  // .headline:before {
+  //   /* points in the end */
+  //   content: '...';
+  //   /* absolute position */
+  //   position: absolute;
+  //   /* set position to right bottom corner of block */
+  //   right: 0;
+  //   bottom: 0;
+  // }
+  // .headline:after {
+  //   content: '';
+  //   position: absolute;
+  //   right: 0;
+  //   width: 1em;
+  //   height: 1em;
+  //   margin-top: 0.2em;
+  //   background: white;
+  // }
 
   .article_link {
     color: blue;
