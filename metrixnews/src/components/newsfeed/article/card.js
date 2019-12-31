@@ -20,9 +20,8 @@ export default function Card(props) {
     const { handleSubmit } = props
 
     const modal = {
-      height: "75vh",
-      width: "75vw",
-      margin: "0 auto",
+      borderRadius: "5%",
+      fontSize: "32pt",
     }
 
     return (
@@ -42,8 +41,8 @@ export default function Card(props) {
             </li>
         </a>
   
-        <Modal style={modal} show={show} onHide={handleClose} animation={false}>
-          <Modal.Header closeButton>
+        <Modal show={show} onHide={handleClose} animation={false} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+          <Modal.Header closeButton style={modal}>
           </Modal.Header>
           <Modal.Body>
           {/* <div className={props.polital_biasness} > */}

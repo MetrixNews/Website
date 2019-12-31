@@ -8,9 +8,17 @@ export default class ArticleSummary extends Component {
     }
 
     render() {
+        const summary = {
+            color: "var(--article-font-color)",
+            fontSize: "12pt",
+            textAlign: "left",
+            marginTop: "5px",
+            marginBottom: "5px",
+            textAlign: "left",
+        }
     return (
         <section>
-            <p className = "article_summary">
+            <p style={summary}>
                 {this.props.story.description}        
             </p>
       </section>

@@ -20,14 +20,14 @@ export default class Data extends Component {
             borderRadius: "15px",
             width: "45%",
             color: "var(--font-color)",
-            padding: "5px",
+            padding: "2px",
             margin: "5px",
             textAlign: "center",
             display: "inline-block",
-            fontSize: "20pt",
-            scrollMarginBottom: "5px",
-            webkitTransitionDuration: "0.4s", /* Safari */
-            transitionDuration: "0.4s",
+            fontSize: "12pt",
+            // scrollMarginBottom: "5px",
+            // webkitTransitionDuration: "0.4s", /* Safari */
+            // transitionDuration: "0.4s",
             cursor: "pointer",
           }
 
