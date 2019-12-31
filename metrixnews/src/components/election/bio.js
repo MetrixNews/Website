@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
 import Card from 'react-bootstrap/Card';
-import '../../../app.scss';
+import '../../app.scss';
  
 export default class Bio extends Component {
     constructor(props) {
@@ -8,8 +8,24 @@ export default class Bio extends Component {
     }
 
     render() {
+
+      const candidate = {
+        width: "100%",
+        padding: "5px",
+      }
+
+      const container = {
+          position: "relative",
+          width: "auto",
+          margin: "0 auto",
+          display: "table",
+          color: "var(--font-color)",
+          textAlign: "center",
+
+      }
+
       return (
-        <div className="candidate">
+        <div style={candidate}>
           <div className="container">
           <Card>
           <Card.Img className="candidatePic" variant="top" src={this.props.person.photo} />

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 
-import Bio from './candidate/bio'
+import Bio from './bio'
 import Spectrum from '../newsfeed/spectrum/news_spectrum'
 
 export default class Candidate extends Component {
