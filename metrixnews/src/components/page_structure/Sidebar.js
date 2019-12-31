@@ -7,7 +7,7 @@ const Sidebar = ({ menuItems, styles }) => {
     width: styles.sidebarWidth,
     position: "fixed",
     zIndex: 1,
-    backgroundColor: "#F2F2F2 ",
+    backgroundColor: "#fff ",
     paddingTop: 10,
   };
 
@@ -30,7 +30,7 @@ const Sidebar = ({ menuItems, styles }) => {
   const logoStyle = {
     textAlign: "center",
     color: "#492354",
-    fontSize: 45,
+    fontSize: "30pt",
     marginBottom: 60,
     fontWeight: "bold"
   };

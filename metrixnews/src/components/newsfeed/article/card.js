@@ -19,6 +19,12 @@ export default function Card(props) {
     const handleShow = () => setShow(true);
     const { handleSubmit } = props
 
+    const modal = {
+      height: "75vh",
+      width: "75vw",
+      margin: "0 auto",
+    }
+
     return (
       <>
         <a onClick={handleShow}>
@@ -30,14 +36,13 @@ export default function Card(props) {
                       <ArticlePhoto story={props.story} />
                       <ArticleTitle story={props.story} />
                       <ArticleSummary story={props.story} />
-                      {/* <ArticleLink story={props.story} /> */}
                   </div>
                 </div>
                 <Metrics story={props.story}/>
             </li>
         </a>
   
-        <Modal show={show} onHide={handleClose} animation={false}>
+        <Modal style={modal} show={show} onHide={handleClose} animation={false}>
           <Modal.Header closeButton>
           </Modal.Header>
           <Modal.Body>

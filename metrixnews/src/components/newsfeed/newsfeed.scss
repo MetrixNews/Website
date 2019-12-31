@@ -1,31 +1,3 @@
-////topic //// 
-.newsTopic {
-  border-top: solid thick var(--highlight-color);
-  background-color: var(--bg-color);
-}
-
-.topicTitle {
-padding: 10px 10px;
-}
-
-.newsTopic > .topicTitle > h2 {
-color: var(--font-color);
-font-size: 27pt;
-padding-left: 10px;
-/* padding-top: 5px; */
-margin: 0;
-text-align: left;
-}
-
-.newsData {
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 25px;
-  }
-
-////topic//////
-
 ///////spectrum ////// 
 :root {
     --gutter: 10px;
@@ -37,8 +9,12 @@ text-align: left;
     /* grid-gap: var(--gutter) 0; */
     grid-template-columns: var(--gutter) 1fr var(--gutter);
     align-content: start;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden; 
+    overflow-x: hidden;
   }
-  
+ 
   .app > * {
     grid-column: 2 / -2;
   }
@@ -54,7 +30,6 @@ text-align: left;
     grid-template-columns: 5px repeat(10000, calc(35% - var(--gutter) * -20)) 5px;
     grid-template-rows: minmax(150px, 1fr);
     overflow-x: scroll;
-    scroll-snap-type: x proximity;
     padding-bottom: calc(1 * var(--gutter));
     margin-bottom: calc(1 * var(--gutter));
   }
@@ -75,16 +50,9 @@ text-align: left;
     padding: 0;
   }
   
-  .app {
-    width: 100%;
-    height: 100%;
-    overflow-y: hidden; 
-    overflow-x: hidden;
-  }
-
 //   Bias scrollers
   .hs::-webkit-scrollbar {
-    width: 10px;
+    height: 25px;
     scroll-behavior: smooth;
   }
   
@@ -102,12 +70,12 @@ text-align: left;
     background: #fff;
     border: solid 1px var(--highlight-color);
     border-radius: 10px;
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: auto;
     scroll-behavior: smooth;
   }
 
-    ///////spectrum ////// 
+  ///////spectrum ////// 
 
 /////// ARTICLES ////////
 
@@ -120,50 +88,6 @@ text-align: left;
     position: relative;
     top: 0;
     overflow-x: hidden;
-  }
-
-  .logo_div {
-    width: 15%;
-    float: left;
-    padding-bottom: 5px;
-  }
-
-  .source_logo {
-    height: auto;
-    width: 95%;
-    border-radius: 5px;
-    padding: 3px;
-  }
-
-  .publish_text {
-    width: 75%;
-    float: left;
-    padding-bottom: 5px;
-    color: var(--article-font-color);
-    font-size: 12pt;
-  }
-  
-  .source_name {
-    color: var(--article_font_color);
-    font-size: 16pt;
-    text-align: left;
-    margin: 0;
-    font-weight: bold;
-  }
-  
-  .author {
-    color: var(--article-font-color);
-    text-align: left;
-    margin: 0;
-    font-style: italic;
-  }
-  
-  .time {
-    color: var(--article-font-color);
-    text-align: left;
-    margin: 0;
-    font-style: italic;
-  
   }
 
 //   article styling
@@ -286,19 +210,13 @@ text-align: left;
     right: 0;
     bottom: 0;
   }
-  /* hide ... if we have text, which is less than or equal to max lines */
   .headline:after {
-    /* points in the end */
     content: '';
-    /* absolute position */
     position: absolute;
-    /* set position to right bottom corner of text */
     right: 0;
-    /* set width and height */
     width: 1em;
     height: 1em;
     margin-top: 0.2em;
-    /* bg color = bg color under block */
     background: white;
   }
 
@@ -308,7 +226,6 @@ text-align: left;
     text-align: left;
     overflow: hidden;
     line-height: 1.2em;
-    /* max-height = line-height (1.2) * lines max number (3) */
     max-height: 1.2em;
   }
   
@@ -348,9 +265,8 @@ text-align: left;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #fff;
     border-radius: 8px;
-    border: solid 2px var(--highlight-color);
+    border: solid 1px var(--highlight-color);
     position: static;
     height: 100%;
   }
@@ -372,80 +288,12 @@ text-align: left;
     text-align: left;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* hide text if it more than N lines  */
-    // overflow: hidden;
-    /* for set '...' in absolute position */
     position: relative;
-    /* use this value to count block height */
-    // line-height: 1.2em;
-    /* max-height = line-height (1.2) * lines max number (3) */
-    // max-height: 6.0em;
-    /* fix problem when last visible word doesn't adjoin right side  */
     text-align: left;
-    /* place for '...' */
     margin-right: 0em;
     padding-right: -1em;
   }
-
-    // /* create the ... */
-    // .article_content:before {
-    //   /* points in the end */
-    //   content: '...';
-    //   /* absolute position */
-    //   position: absolute;
-    //   /* set position to right bottom corner of block */
-    //   right: 0;
-    //   bottom: 0;
-    // }
-    // /* hide ... if we have text, which is less than or equal to max lines */
-    // .article_content:after {
-    //   /* points in the end */
-    //   content: '';
-    //   /* absolute position */
-    //   position: absolute;
-    //   /* set position to right bottom corner of text */
-    //   right: 0;
-    //   /* set width and height */
-    //   width: 1em;
-    //   height: 1em;
-    //   margin-top: 0.2em;
-    //   /* bg color = bg color under block */
-    //   background: white;
-    // }
-
-  //   // modal styling -- may need to update to use onClick() instead
-  //   .modalDialog {
-  //     position: fixed;
-  //     max-height: 100%;
-  //     overflow-y: auto;
-  //     top: 0;
-  //     right: 0;
-  //     bottom: 0;
-  //     left: 0;
-  //     background: rgba(0,0,0,0.8);
-  //     z-index: 99999;
-  //     opacity:0;
-  //     -webkit-transition: opacity 400ms ease-in;
-  //     -moz-transition: opacity 400ms ease-in;
-  //     transition: opacity 400ms ease-in;
-  //     pointer-events: none;
-  // }
-  
-  // .modalDialog:target {
-  //     opacity:1;
-  //     pointer-events: auto;
-  // }
-  
-  // .modalDialog > div {
-  //     width: 90%;
-  //     max-width: 500px;
-  //     position: relative;
-  //     margin: 10% auto;
-  //     padding: 20px 10px 55px 10px;
-  //     border-radius: 10px;
-  //     background: #fff;
-  // }
-  
+ 
   /////// ARTICLES ////////
 
 

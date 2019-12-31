@@ -10,7 +10,7 @@ const TopBar = ({ styles }) => {
     alignItems: "center",
     width: "100%",
     height: styles.topBarHeight,
-    backgroundColor: "#F2F2F2",
+    backgroundColor: "#fff",
     borderBottom: "1px solid #d8d8d8",
     padding: "0px 20px",
     textAlign: "center",
@@ -26,7 +26,7 @@ const TopBar = ({ styles }) => {
 
   return (
     <div style={topBarStyle}>
-      <span style={titleStyle}>Metrix News</span>
+      <span style={titleStyle}>Metrix</span>
     </div>
   );
 };

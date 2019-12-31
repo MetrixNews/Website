@@ -12,14 +12,28 @@ export default class Topic extends Component {
   }
 
   render() {
+
+    const topic = {
+      borderTop: "solid thick var(--highlight-color)",
+      backgroundColor: "var(--bg-color)",
+    }
+
+    const topicTitle = {
+      color: "var(--font-color)",
+      fontSize: "25pt",
+      paddingLeft: "10px",
+      textAlign: "left",
+    }
+    
+
     return (
-      <div className="newsTopic">
-        <div className="topicTitle">
-          <h2>{this.props.topic.topic}</h2>
+      <div style={topic}>
+        <div >
+          <h2 style={topicTitle}>{this.props.topic.topic}</h2>
         </div>
         <Data topic={this.props.topic}/>
         <Spectrum articles={this.props.topic.articles}/>
-        </div>
+      </div>
       )
     }
 }

@@ -6,17 +6,41 @@ export default class ArticleHead extends Component {
         super(props);
     }
     render() {
+
+        const logo = {
+            width: "12%",
+            float: "left",
+            paddingBottom: "5px",
+        }
+
+        const publishInfo = {
+            width: "75%",
+            float: "left",
+            paddingBottom: "5px",
+            color: "var(--article-font-color)",
+            fontSize: "12pt",
+        }
+
+        const source = {
+            textAlign: "left",
+            fontWeight: "bold",
+        }
+
+        const time = {
+            fontStyle: "italic",
+        }
+
     return (
         <div>
-            <div className="logo_div">
+            <div style={logo}>
                 <SourceLogo story={this.props.story}/>
             </div>
 
-            <div className="publish_text">
-                <span className="source_name">{this.props.story.source}</span><br/>
-                <span className="author">{this.props.story.author}</span>
+            <div style={publishInfo}>
+                <span style={source}>{this.props.story.source}</span><br/>
+                <span>{this.props.story.author}</span>
                 <span>   -   </span>    
-                <span className="time">{this.props.story.published_at}</span>                                      
+                <span style={time}>{this.props.story.published_at}</span>                                      
             </div>
       </div>
     );
