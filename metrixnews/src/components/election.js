@@ -9,7 +9,6 @@ import {getCandidatesError, getCandidates, getCandidatesPending} from '../reduce
 
 import Candidate from './election/candidate'
 
-import './election/party/party.scss';
 import '../app.scss';
 
 class Election extends Component {

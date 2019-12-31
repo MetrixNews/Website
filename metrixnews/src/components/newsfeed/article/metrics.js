@@ -27,9 +27,6 @@ export default class Metrics extends Component {
     }
     render() {
         const row = {
-            // display: "flex",
-
-            // justifyContent: "space-between",
             paddingTop: "5px",
             width: "100%",
         }

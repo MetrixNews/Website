@@ -10,11 +10,12 @@ export default class Candidate extends Component {
    }
  
    render() {
+    const candidate = {
+      borderTop: "solid thick var(--highlight-color)",
+      paddingTop: "10px",
+    }
      return (
-        <div className="candidate">
-          <div className="candidateName">
-              <h2>{this.props.person.Name}</h2>
-          </div>
+        <div style={candidate}>
           <Bio person={this.props.person}/>
           <Spectrum articles={this.props.person.articles}/>
         </div>
