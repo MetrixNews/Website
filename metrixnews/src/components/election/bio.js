@@ -21,7 +21,6 @@ export default class Bio extends Component {
       const pic = {
         maxWidth: "100%",
         maxHeight: "50vw",
-        borderRadius: "10px",
         marginLeft: "10px",
       }
 
@@ -61,7 +60,7 @@ export default class Bio extends Component {
             <img style={pic} variant="top" src={this.props.person.photo} />
           </div>
           <div style={buttonContainer}>
-              <h2 style={name}>{this.props.person.Name} - {this.props.person.party}</h2>
+              <h2 style={name}>{this.props.person.Name} ({this.props.person.party})</h2>
             <a href={this.props.person.website} target="_blank" rel="noopener noreferrer">
               <button style={button}>Campaign Site</button>
             </a>

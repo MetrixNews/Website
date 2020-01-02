@@ -50,6 +50,7 @@ function SourceLogo(props) {
 
     const logo = {
         width: "15%",
+        // put something to standardize a min height
         float: "left",
         margin: "5px",
     }
