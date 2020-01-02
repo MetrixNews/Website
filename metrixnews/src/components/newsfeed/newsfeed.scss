@@ -42,6 +42,7 @@
   /* Hide scrollbar */
   .hide-scroll {
     overflow-y: hidden;
+    overflow-x: hidden;
     margin-bottom: calc(-.1 * var(--gutter));
   }
 
@@ -52,25 +53,25 @@
   
 //   Bias scrollers
   .hs::-webkit-scrollbar {
-    height: 25px;
+    height: 10px;
     scroll-behavior: smooth;
   }
   
   /* Track */
   .hs::-webkit-scrollbar-track {
-    background: linear-gradient(to left, var(--right-color) -20%, var(--left-color) 100%);
-    border-radius: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     scroll-behavior: smooth;
   }
   
   /* Handle */
   .hs::-webkit-scrollbar-thumb {
-    background: #fff;
-    border: solid 1px var(--highlight-color);
-    border-radius: 10px;
-    height: 25px;
+    background: #492354;
+    border: solid 1px var(--bg-color);
+    border-radius: 5px;
+    height: 10px;
     width: auto;
     scroll-behavior: smooth;
   }
@@ -100,7 +101,6 @@
 
   .articlebox {
     border: solid 5px var(--left-color);
-    border-radius: 8px;
     padding: 5px 5px 5px 5px;
     width: 100%;
     height: 100%;
@@ -109,7 +109,6 @@
 
 .left {
     border: solid 5px var(--left-color);
-    border-radius: 8px;
     padding: 5px 5px 5px 5px;
     width: 100%;
     height: 100%;
@@ -118,7 +117,6 @@
 
   .articlebox .center_left {
     border: solid 5px var(--center-left-color);
-    border-radius: 8px;
     padding: 5px 5px 5px 5px;
     width: 100%;
     height: 100%;
@@ -127,7 +125,6 @@
 
   .articlebox .center {
     border: solid 5px var(--center-color);
-    border-radius: 8px;
     padding: 5px 5px 5px 5px;
     width: 100%;
     height: 100%;
@@ -136,7 +133,6 @@
 
   .articlebox .center_right {
     border: solid 5px var(--center-right-color);
-    border-radius: 8px;
     padding: 5px 5px 5px 5px;
     width: 100%;
     height: 100%;
@@ -145,7 +141,6 @@
 
   .articlebox .right {
     border: solid 5px var(--right-color);
-    border-radius: 8px;
     padding: 5px 5px 5px 5px;
     width: 100%;
     height: 100%;
@@ -160,8 +155,7 @@
     min-height: 20vw;
     max-height: 20vw;
     display: block;
-    margin-bottom: 10px;
-    border-radius: 8px;
+    margin: 5px;
   }
 
   @media (max-width:600px) {
@@ -175,50 +169,10 @@
       display: block;
       /* width: 100%;
       height: 250px; */
-      margin-bottom: 10px;
-      border-radius: 10px;
+      margin-bottom: 5px;
     }
   }
 
-  // .headline {
-  //   color: var(--article-font-color);
-  //   font-size: 16pt;
-  //   margin-top: 10px;
-  //   margin-bottom: 15px;
-  //   /* hide text if it more than N lines  */
-  //   overflow: hidden;
-  //   /* for set '...' in absolute position */
-  //   position: relative;
-  //   /* use this value to count block height */
-  //   line-height: 1.2em;
-  //   // /* max-height = line-height (1.2) * lines max number (3) */
-  //   // max-height: 3.6em;
-  //   /* fix problem when last visible word doesn't adjoin right side  */
-  //   text-align: left;
-  //   /* place for '...' */
-  //   margin-right: 0em;
-  //   padding-right: -1em;
-  // }
-  
-  // /* create the ... */
-  // .headline:before {
-  //   /* points in the end */
-  //   content: '...';
-  //   /* absolute position */
-  //   position: absolute;
-  //   /* set position to right bottom corner of block */
-  //   right: 0;
-  //   bottom: 0;
-  // }
-  // .headline:after {
-  //   content: '';
-  //   position: absolute;
-  //   right: 0;
-  //   width: 1em;
-  //   height: 1em;
-  //   margin-top: 0.2em;
-  //   background: white;
-  // }
 
   .article_link {
     color: blue;
@@ -242,22 +196,6 @@
     text-decoration: none;
   }
 
-//   metrics styling
-// .metric {
-//     width: 64px;
-//     height: 64px;
-//     margin: 0px 10% 0px 5%;
-//   }
-  
-//   .metricRow {
-//     display: flex;
-//     justify-content:space-between;
-//     float: right;
-//     padding-top: 5px;
-//     width: 100%;
-//   }
-
-  // article_card styling
   .item {
     scroll-snap-align: center;
     padding: calc(var(--gutter) / 3 * 1.5);
@@ -265,33 +203,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
     // border: solid 1px var(--highlight-color);
     position: static;
     height: 100%;
-  }
-
-  // article_summary styling
-  // .article_summary {
-  //   color: var(--article-font-color);
-  //   font-size: 12pt;
-  //   text-align: left;
-  //   margin-top: 10px;
-  //   margin-bottom: 10px;
-  //   text-align: left;
-  // }
-  
-    // article_content styling
-  .article_content {
-    color: var(--article-font-color);
-    font-size: 12pt;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
-    text-align: left;
-    margin-right: 0em;
-    padding-right: -1em;
   }
  
   /////// ARTICLES ////////

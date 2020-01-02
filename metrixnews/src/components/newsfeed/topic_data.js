@@ -15,11 +15,11 @@ export default class Data extends Component {
         }
 
         const button = {
-            backgroundColor: "var(--bg-color)",
+            backgroundColor: "var(--metrix-color)",
             border: "solid var(--metrix-color)",
             borderRadius: "15px",
             width: "45%",
-            color: "var(--font-color)",
+            color: "var(--bg-color)",
             padding: "2px",
             margin: "5px",
             textAlign: "center",

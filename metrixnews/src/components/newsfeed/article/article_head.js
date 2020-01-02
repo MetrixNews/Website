@@ -1,5 +1,8 @@
 import React, { Component }  from 'react';
 import Moment from 'react-moment';
+
+import notfound from '../../../assets/img/404.png'
+
 import '../newsfeed.scss'
 
 export default class ArticleHead extends Component {
@@ -48,7 +51,7 @@ function SourceLogo(props) {
     const logo = {
         width: "15%",
         float: "left",
-        padding: "5px",
+        margin: "5px",
     }
 
     if(url.search(url.match(".com")) >= 0) {
@@ -73,7 +76,7 @@ function SourceLogo(props) {
     }
     else {
         return (
-            <img src="https://via.placeholder.com/50x50" style={logo}  alt="logo"/>
+            <img src={notfound} style={logo}  alt="logo"/>
         )
     }
   }
@@ -88,6 +91,5 @@ function SourceLogo(props) {
             <span style={timeStyle}>
                 <Moment fromNow ago>{time}</Moment>
             </span>
-            
         );
     }

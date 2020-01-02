@@ -11,7 +11,7 @@ export default class Bio extends Component {
  
       const bio = {
         // display: "table",
-        // width: "100%",
+        width: "100%",
       }
 
       const picContainer ={

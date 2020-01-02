@@ -64,13 +64,20 @@ export default class App extends React.Component {
       sidebarCollapsed: windowWidth < 1100,
     };
 
-    let newspaper = <Link to='./'> <FontAwesomeIcon icon={faNewspaper} /></Link>;
-    let election = <Link to='./election'><FontAwesomeIcon icon={faLandmark} /></Link> ;
-    let about = <Link to='./metrix'><FontAwesomeIcon style={{marginRight: 12}} icon={faInfo} /></Link>;
+    const linkStyles = {
+      fontSize: 20,
+      color: "#492354",
+      marginRight: styles.sidebarCollapsed ? 0 : 10,
 
-    let newsfeedText = <Link to='./'>Newsfeed</Link>;
-    let electionText = <Link to='./election'>Election</Link>;
-    let aboutText = <Link to='./metrix'>About</Link>;
+    }
+
+    let newspaper = <Link to='./' style={linkStyles}> <FontAwesomeIcon icon={faNewspaper} /></Link>;
+    let election = <Link to='./election' style={linkStyles}><FontAwesomeIcon icon={faLandmark} /></Link> ;
+    let about = <Link to='./metrix' style={linkStyles}><FontAwesomeIcon icon={faInfo} style={{marginRight: 10}} /></Link>;
+
+    let newsfeedText = <Link to='./' style={linkStyles}>Newsfeed</Link>;
+    let electionText = <Link to='./election' style={linkStyles}>Election</Link>;
+    let aboutText = <Link to='./metrix' style={linkStyles}>   About</Link>;
 
     const menuItems = styles.showSidebar
     ? [

@@ -7,9 +7,16 @@ export default class ArticleContent extends Component {
     }
 
     render() {
+        const content = {
+            color: "var(--article-font-color)",
+            fontSize: "12pt",
+            margin: 5,
+            position: "relative",
+            textAlign: "left",
+        }
     return (
         <section>
-            <p className = "article_content">
+            <p style={content}>
                 {this.props.story.content}
             </p>
         </section>

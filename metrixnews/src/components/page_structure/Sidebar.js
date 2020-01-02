@@ -7,7 +7,7 @@ const Sidebar = ({ menuItems, styles }) => {
     width: styles.sidebarWidth,
     position: "fixed",
     zIndex: 1,
-    backgroundColor: "#fff ",
+    backgroundColor: "#ffffff",
     paddingTop: 10,
   };
 
@@ -16,22 +16,13 @@ const Sidebar = ({ menuItems, styles }) => {
     justifyContent: styles.sidebarCollapsed ? "center" : "flex-start",
     alignItems: "center",
     padding: `4px ${styles.sidebarCollapsed ? 0 : 10}px`,
-    color: "#492354",
-    fontWeight: "bold",
-    fontSize: 16
   }
-
-  const iconStyle = {
-    fontSize: 16,
-    color: "#492354",
-    marginRight: styles.sidebarCollapsed ? 0 : 10,
-  };
 
   const logoStyle = {
     textAlign: "center",
     color: "#492354",
     fontSize: "30pt",
-    marginBottom: 60,
+    marginBottom: 100,
     fontWeight: "bold"
   };
 
@@ -40,7 +31,7 @@ const Sidebar = ({ menuItems, styles }) => {
       <div style={logoStyle}>{styles.sidebarCollapsed ? "M" : "Metrix"}</div>
       {menuItems.map(item => (
         <div style={menuItemStyle}>
-          <span style={iconStyle}>{item.icon}</span>
+          <span>{item.icon}</span>
           {!styles.sidebarCollapsed && item.text}
         </div>
       ))}
