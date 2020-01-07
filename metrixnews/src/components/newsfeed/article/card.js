@@ -36,7 +36,7 @@ export default function Card(props) {
             </li>
         </a>
   
-        <Modal show={show} onHide={handleClose} animation={false} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+        <Modal show={show} onHide={handleClose} animation={false} aria-labelledby="contained-modal-title-vcenter" centered>
           <Modal.Header closeButton style={{fontSize: "32pt"}}>
           </Modal.Header>
           <Modal.Body>

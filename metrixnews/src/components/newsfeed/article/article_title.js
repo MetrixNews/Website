@@ -11,7 +11,7 @@ export default class ArticleTitle extends Component {
         const headline = {
             font: "Source Sans Pro",
             color: "var(--article-font-color)",
-            fontSize: "12pt",
+            fontSize: "10pt",
             fontWeight: "bold",
             marginTop: "5px",
             marginBottom: "5px",

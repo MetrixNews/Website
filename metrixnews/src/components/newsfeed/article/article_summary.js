@@ -10,7 +10,7 @@ export default class ArticleSummary extends Component {
     render() {
         const summary = {
             color: "var(--article-font-color)",
-            fontSize: "12pt",
+            fontSize: "10pt",
             textAlign: "left",
             marginTop: "5px",
             marginBottom: "5px",

@@ -23,16 +23,61 @@
     grid-column: 1 / -1;
   }
   
-  
+  @media (min-device-width:1224px) {
   .hs {
     display: grid;
     grid-gap: calc(var(--gutter) / 1);
-    grid-template-columns: 5px repeat(10000, calc(35% - var(--gutter) * -20)) 5px;
+    grid-template-columns: 5px repeat(10000, calc(35% - var(--gutter) * -10)) 5px;
     grid-template-rows: minmax(150px, 1fr);
     overflow-x: scroll;
     padding-bottom: calc(1 * var(--gutter));
     margin-bottom: calc(1 * var(--gutter));
   }
+  @media (min-device-width:1824px) {
+    .hs {
+      display: grid;
+      grid-gap: calc(var(--gutter) / 1);
+      grid-template-columns: 5px repeat(10000, calc(35% - var(--gutter) * -20)) 5px;
+      grid-template-rows: minmax(150px, 1fr);
+      overflow-x: scroll;
+      padding-bottom: calc(1 * var(--gutter));
+      margin-bottom: calc(1 * var(--gutter));
+    }
+  }
+  @media (max-width:1224px) {
+    .hs {
+      display: grid;
+      grid-gap: calc(var(--gutter) / 1);
+      grid-template-columns: 5px repeat(10000, calc(35% - var(--gutter) * -15)) 5px;
+      grid-template-rows: minmax(150px, 1fr);
+      overflow-x: scroll;
+      padding-bottom: calc(1 * var(--gutter));
+      margin-bottom: calc(1 * var(--gutter));
+    }
+  }
+}
+  @media (max-device-width:1224px) {
+    .hs {
+      display: grid;
+      grid-gap: calc(var(--gutter) / 1);
+      grid-template-columns: 5px repeat(10000, calc(35% - var(--gutter) * -15)) 5px;
+      grid-template-rows: minmax(150px, 1fr);
+      overflow-x: scroll;
+      padding-bottom: calc(1 * var(--gutter));
+      margin-bottom: calc(1 * var(--gutter));
+    }
+    @media (orientation: portrait) {
+      .hs {
+        display: grid;
+        grid-gap: calc(var(--gutter) / 1);
+        grid-template-columns: 5px repeat(10000, calc(35% - var(--gutter) * -20)) 5px;
+        grid-template-rows: minmax(150px, 1fr);
+        overflow-x: scroll;
+        padding-bottom: calc(1 * var(--gutter));
+        margin-bottom: calc(1 * var(--gutter));
+      }
+    }
+}
   
   .hs:before,
   .hs:after {
@@ -100,7 +145,7 @@
   //dynamic article border based on political bias
 
   .articlebox {
-    border: solid 5px var(--left-color);
+    border: solid 5px var(--metrix-color);
     padding: 5px 5px 5px 5px;
     width: 100%;
     height: 100%;
@@ -152,13 +197,15 @@
     width: 100%;
     height: 100%;
     /* Magic! */
-    min-height: 20vw;
-    max-height: 20vw;
+    // min-width: 10vw;
+    // max-width: 10vw;
+    min-height: 30vh;
+    max-height: 30vh;
     display: block;
     margin: 5px;
   }
 
-  @media (max-width:600px) {
+  @media (max-width: 700px) {
     .articlephoto {
       width: 100%;
       height: 100%;
@@ -176,7 +223,7 @@
 
   .article_link {
     color: blue;
-    font-size: 12pt;
+    font-size: 10pt;
     text-align: left;
     overflow: hidden;
     line-height: 1.2em;
@@ -185,6 +232,7 @@
   
   .article_link:hover {
     text-decoration: underline;
+    color: --var(--metrix-color)
   }
   
   .article_link:visited {
@@ -198,18 +246,12 @@
 
   .item {
     scroll-snap-align: center;
-    padding: calc(var(--gutter) / 3 * 1.5);
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // border: solid 1px var(--highlight-color);
     position: static;
     height: 100%;
+    overflow-y: hidden;
   }
- 
-  /////// ARTICLES ////////
-
-
-  
-

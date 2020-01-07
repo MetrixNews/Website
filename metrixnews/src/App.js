@@ -60,12 +60,12 @@ export default class App extends React.Component {
       footerMenuHeight: 50,
       showFooterMenuText: windowWidth > 500,
       showSidebar: windowWidth > 768,
-      sidebarWidth: windowWidth < 1100 ? 50 : 150,
+      sidebarWidth: windowWidth < 1100 ? 50 : 125,
       sidebarCollapsed: windowWidth < 1100,
     };
 
     const linkStyles = {
-      fontSize: 20,
+      fontSize: 16,
       color: "#492354",
       marginRight: styles.sidebarCollapsed ? 0 : 10,
 

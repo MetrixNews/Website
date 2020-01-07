@@ -21,7 +21,7 @@ const Sidebar = ({ menuItems, styles }) => {
   const logoStyle = {
     textAlign: "center",
     color: "#492354",
-    fontSize: "30pt",
+    fontSize: "20pt",
     marginBottom: 100,
     fontWeight: "bold"
   };

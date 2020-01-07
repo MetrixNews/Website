@@ -20,7 +20,7 @@ export default class ArticleHead extends Component {
             float: "left",
             paddingBottom: "5px",
             color: "var(--article-font-color)",
-            fontSize: "12pt",
+            fontSize: "10pt",
         }
 
         const source = {
@@ -49,7 +49,7 @@ function SourceLogo(props) {
     const url = props.story.url;
 
     const logo = {
-        width: "15%",
+        width: 35,
         // put something to standardize a min height
         float: "left",
         margin: "5px",

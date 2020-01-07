@@ -9,8 +9,7 @@ export default class ArticleContent extends Component {
     render() {
         const content = {
             color: "var(--article-font-color)",
-            fontSize: "12pt",
-            margin: 5,
+            fontSize: "10pt",
             position: "relative",
             textAlign: "left",
         }

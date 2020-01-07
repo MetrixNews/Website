@@ -10,9 +10,6 @@ export default class Spectrum extends Component {
   }
 
   render() {
-
-
-
     return (
         <div className="app">
             <div className="full hide-scroll">
