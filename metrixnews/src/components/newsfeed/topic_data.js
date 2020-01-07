@@ -33,11 +33,11 @@ export default class Data extends Component {
 
       return (
         <div style={data}>
-            <a href={this.props.topic.data1} >
-                <button style={button}>Data: {this.props.topic.data1}</button>
+            <a href={this.props.topic.data1} target="_blank" rel="noopener noreferrer">
+                <button style={button}>{this.props.topic.topic} Data</button>
             </a>
-            <a href={this.props.topic.data2} >
-                <button style={button}>Data: {this.props.topic.data2}</button>
+            <a href={this.props.topic.data2} target="_blank" rel="noopener noreferrer">
+                <button style={button}>{this.props.topic.topic} Data</button>
             </a>
         </div>
     )
