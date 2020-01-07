@@ -25,9 +25,6 @@ export default class Data extends Component {
             textAlign: "center",
             display: "inline-block",
             fontSize: "12pt",
-            // scrollMarginBottom: "5px",
-            // webkitTransitionDuration: "0.4s", /* Safari */
-            // transitionDuration: "0.4s",
             cursor: "pointer",
           }
 
