@@ -19,6 +19,10 @@ export default class Bio extends Component {
         float: "left",
       }
 
+      const pic = {
+        height: 165,
+      }
+
        const buttonContainer = {
         float: "left",
         width: "50%",
@@ -33,7 +37,6 @@ export default class Bio extends Component {
       const button = {
         backgroundColor: "var(--bg-color)",
         border: "solid var(--metrix-color)",
-        borderRadius: "15px",
         width: "100%",
         color: "var(--font-color)",
         margin: "5px 5px",
@@ -47,7 +50,7 @@ export default class Bio extends Component {
       return (
         <div style={bio}>
           <div style={picContainer}>
-            <img className="candidatePic" variant="top" src={this.props.person.photo} />
+            <img style={pic} variant="top" src={this.props.person.photo} />
           </div>
           <div style={buttonContainer}>
               <h2 style={name}>{this.props.person.Name} ({this.props.person.party})</h2>

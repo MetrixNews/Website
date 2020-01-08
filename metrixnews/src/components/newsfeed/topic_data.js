@@ -9,18 +9,15 @@ export default class Data extends Component {
     render() {
 
         const data = {
-            margin: "0 auto",
-            textAlign: "center",
+            textAlign: "left",
             width: "100%",
         }
 
         const button = {
             backgroundColor: "var(--bg-color)",
             border: "solid var(--metrix-color)",
-            borderRadius: "15px",
-            width: "45%",
+            width: "25%",
             color: "var(--metrix-color)",
-            padding: "2px",
             margin: "5px",
             textAlign: "center",
             display: "inline-block",

@@ -21,7 +21,7 @@ export default class Topic extends Component {
     const topicTitle = {
       color: "var(--font-color)",
       fontSize: "16pt",
-      paddingLeft: "10px",
+      paddingLeft: "5px",
       textAlign: "left",
     }
     
