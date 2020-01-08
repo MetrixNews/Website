@@ -22,7 +22,6 @@ export default function Card(props) {
     return (
       <>
         <a onClick={handleShow}>
-        
             <li className="item">
                 <div className="row articlebox">
                   <div className="article">
@@ -40,21 +39,21 @@ export default function Card(props) {
           <Modal.Header closeButton style={{fontSize: "32pt"}}>
           </Modal.Header>
           <Modal.Body>
-          {/* <div className={props.polital_biasness} > */}
-            <div className="articlebox" >
-              <div className="article">
-                <ArticleHead story={props.story}/>
-                <ArticlePhoto story={props.story}/>
-                <ArticleTitle story={props.story}/>
-                <ArticleSummary story={props.story}/>
-                <ArticleContent story={props.story}/>
-                <ArticleLink story={props.story}/>
+            {/* <div className={props.polital_biasness}> */}
+              <div className="articlebox" >
+                <div className="article">
+                  <ArticleHead story={props.story}/>
+                  <ArticlePhoto story={props.story}/>
+                  <ArticleTitle story={props.story}/>
+                  <ArticleSummary story={props.story}/>
+                  <ArticleContent story={props.story}/>
+                  <ArticleLink story={props.story}/>
+                </div>
               </div>
-            </div>
             <Metrics story={props.story}/>
           </Modal.Body> 
           <Modal.Footer>
-            {/* <CorrectionForm onSubmit={props.handleSubmit} /> */}
+            <CorrectionForm onSubmit={props.handleSubmit} />
           </Modal.Footer>
         </Modal>
       </> 
