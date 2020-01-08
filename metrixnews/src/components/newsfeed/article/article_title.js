@@ -17,7 +17,10 @@ export default class ArticleTitle extends Component {
             marginBottom: "5px",
             position: "relative",
             textAlign: "left",
-
+            lineHeight: "1.5em",
+            maxHeight: "3.0em",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
         }
 
       return (

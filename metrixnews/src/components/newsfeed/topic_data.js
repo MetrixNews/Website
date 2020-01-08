@@ -16,8 +16,9 @@ export default class Data extends Component {
         const button = {
             backgroundColor: "var(--bg-color)",
             border: "solid var(--metrix-color)",
-            width: "25%",
+            width: "45%",
             color: "var(--metrix-color)",
+            padding: "2px",
             margin: "5px",
             textAlign: "center",
             display: "inline-block",

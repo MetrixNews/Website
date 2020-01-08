@@ -1,5 +1,4 @@
 import React, { Component }  from 'react';
-import '../newsfeed.scss'
 
 
 export default class ArticleSummary extends Component {
@@ -15,6 +14,10 @@ export default class ArticleSummary extends Component {
             marginTop: "5px",
             marginBottom: "5px",
             textAlign: "left",
+            lineHeight: "1.5em",
+            maxHeight: "4.5em",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
         }
     return (
         <section>

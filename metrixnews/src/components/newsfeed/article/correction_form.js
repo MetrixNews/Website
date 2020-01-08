@@ -14,7 +14,7 @@ let CorrectionForm = props => {
     const form ={
         width: "100%",
         margin: "0 auto",
-        textAlign: "left",
+        textAlign: "center",
     }
     const field = {
         marginLeft: 10,
@@ -27,18 +27,16 @@ let CorrectionForm = props => {
     const button = {
         backgroundColor: "#ffffff",
         border: "solid var(--metrix-color)",
-        borderRadius: "15px",
-        width: "100%",
+        width: "25%",
         color: "var(--metrix-color)",
-        textAlign: "center",
-        display: "inline-block",
         fontSize: "10pt",
         cursor: "pointer",
       }
+
     return (
     <form onSubmit={handleSubmit} style={form}>
         <div >
-            <label>Disagree with our political bias rating? Let us know what it should be below!</label>
+            <label>Disagree with our political rating? Correct it below:</label>
             <div>
                 <label>
                     <Field name="left" component="input" type="radio" value="left" style={field}/>
