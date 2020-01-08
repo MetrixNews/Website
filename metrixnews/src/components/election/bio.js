@@ -1,5 +1,6 @@
 import React, { Component }  from 'react';
 import '../../app.scss';
+import './candidate.scss'
  
 export default class Bio extends Component {
     constructor(props) {
@@ -18,18 +19,11 @@ export default class Bio extends Component {
         float: "left",
       }
 
-      const pic = {
-        maxWidth: "100%",
-        maxHeight: "50vw",
-        marginLeft: "10px",
-      }
-
-      const buttonContainer = {
+       const buttonContainer = {
         float: "left",
         width: "50%",
-        // display: "table-cell",
-        // verticalAlign: "center",
       }
+
       const name = {
         color: "var(--font-color)",
         fontSize: "16pt",
@@ -42,14 +36,10 @@ export default class Bio extends Component {
         borderRadius: "15px",
         width: "100%",
         color: "var(--font-color)",
-        // padding: "2px",
         margin: "5px 5px",
         textAlign: "center",
         display: "inline-block",
         fontSize: "12pt",
-        // scrollMarginBottom: "5px",
-        // webkitTransitionDuration: "0.4s", /* Safari */
-        // transitionDuration: "0.4s",
         cursor: "pointer",
       }
 
@@ -57,7 +47,7 @@ export default class Bio extends Component {
       return (
         <div style={bio}>
           <div style={picContainer}>
-            <img style={pic} variant="top" src={this.props.person.photo} />
+            <img className="candidatePic" variant="top" src={this.props.person.photo} />
           </div>
           <div style={buttonContainer}>
               <h2 style={name}>{this.props.person.Name} ({this.props.person.party})</h2>
