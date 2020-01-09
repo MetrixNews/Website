@@ -20,7 +20,7 @@ export default class ArticleHead extends Component {
             float: "left",
             paddingBottom: "5px",
             color: "var(--article-font-color)",
-            fontSize: "10pt",
+            fontSize: "8pt",
         }
 
         const source = {
