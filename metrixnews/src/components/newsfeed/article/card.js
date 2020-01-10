@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types'
+import classnames from 'classnames';
 
 import ArticleHead from './article_head';
 import ArticlePhoto from './article_photo';
@@ -10,6 +11,7 @@ import ArticleContent from './article_content';
 import ArticleLink from './article_link';
 import CorrectionForm from './correction_form';
 import Modal from 'react-bootstrap/Modal';
+
 import '../newsfeed.scss'
 
 export default function Card(props) {
@@ -24,6 +26,7 @@ export default function Card(props) {
         <a onClick={handleShow}>
             <li className="item">
                 <div className="row articlebox">
+                {/* <div className={props.story.political_biasness}> */}
                   <div className="article">
                       <ArticleHead story={props.story} />
                       <ArticlePhoto story={props.story} />
@@ -31,6 +34,7 @@ export default function Card(props) {
                       <ArticleSummary story={props.story} />
                   </div>
                 </div>
+                {/* </div> */}
                 <Metrics story={props.story}/>
             </li>
         </a>
@@ -39,8 +43,8 @@ export default function Card(props) {
           <Modal.Header closeButton style={{fontSize: "32pt"}}>
           </Modal.Header>
           <Modal.Body>
-            {/* <div className={props.polital_biasness}> */}
-              <div className="articlebox" >
+            <div className="articlebox" >
+              {/* <div className={props.story.political_biasness}> */}
                 <div className="article">
                   <ArticleHead story={props.story}/>
                   <ArticlePhoto story={props.story}/>
@@ -49,7 +53,8 @@ export default function Card(props) {
                   <ArticleContent story={props.story}/>
                   <ArticleLink story={props.story}/>
                 </div>
-              </div>
+                </div>
+              {/* </div> */}
             <Metrics story={props.story}/>
           </Modal.Body> 
           <Modal.Footer>

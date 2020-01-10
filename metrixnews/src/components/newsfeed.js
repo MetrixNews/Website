@@ -45,7 +45,7 @@ class Newsfeed extends Component {
       else return (
         <div style={contentStyle}>
           <div className="pageDescription">
-            <h1>Newsfeed</h1>
+            <h1>Political Newsfeed</h1>
           </div>
           <div className="bg">
             {this.props.categories.map((category, i) => (

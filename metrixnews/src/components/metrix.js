@@ -67,7 +67,7 @@ class Metrix extends Component {
         return (
           <div style={contentStyle}>
             <div className="pageDescription">
-              <h1>About</h1>
+              <h1>User Guide</h1>
             </div>
 
             <div style={section}>
@@ -76,7 +76,10 @@ class Metrix extends Component {
 
             <div style={section}>
               <div style={half}>
-                tfidf chart
+                Step 1: Figure out what political topics are most important to you 
+                Step 2: Begin researching those topics using our data links and reading current events
+                Step 3: Review presidential candidates and determine which best addresses your topics of concern 
+                Step 4: Vote
               </div>
               <div style={half}>
                 <h2>Key Words:</h2>

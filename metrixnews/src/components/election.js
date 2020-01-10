@@ -43,7 +43,7 @@ class Election extends Component {
        return (
         <div style={contentStyle}>
           <div className="pageDescription">
-            <h1>Election</h1>
+            <h1>2020 Presidential Candidates</h1>
           </div>
           <div className="bg">
             {this.props.candidates.map((candidate, i) => (

@@ -20,17 +20,18 @@ export default class Bio extends Component {
       }
 
       const pic = {
-        height: 165,
+        height: 145,
+        marginBottom: 5,
       }
 
        const buttonContainer = {
         float: "left",
-        width: "50%",
+        width: "calc(100% - 160px)",
       }
 
       const name = {
         color: "var(--font-color)",
-        fontSize: "16pt",
+        fontSize: "14pt",
         paddingLeft: "10px",
         textAlign: "left",
       }

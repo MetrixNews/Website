@@ -156,7 +156,6 @@ function Bias (props) {
             null
         )
     }
-
 }
 
 {/* <img  src="https://via.placeholder.com/50" className="metric" alt="emotion"/>
