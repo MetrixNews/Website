@@ -36,10 +36,11 @@ export default class Bio extends Component {
         textAlign: "left",
       }
       const button = {
-        backgroundColor: "var(--bg-color)",
+        backgroundColor: "var(--metrix-color)",
         border: "solid var(--metrix-color)",
+        borderRadius: "20px",
         width: "100%",
-        color: "var(--font-color)",
+        color: "var(--bg-color)",
         margin: "5px 5px",
         textAlign: "center",
         display: "inline-block",
