@@ -49,7 +49,6 @@ class Metrix extends Component {
       const mission={
         fontSize: "14pt",
         textAlign: "center",
-
       }
 
       const metricContainer = {
@@ -70,6 +69,10 @@ class Metrix extends Component {
         height: "auto",
         margin: "0px auto",
     }
+
+    const description = {
+      fontSize: "12pt",
+    }
       
 
         return (
@@ -88,7 +91,7 @@ class Metrix extends Component {
           <Card style={{marginBottom: "25px"}}>
           <Card.Header as="h2">Legend</Card.Header>
           <Card.Body>
-            <Card.Title>Political Bias</Card.Title>
+            <Card.Title as="h3">Political Bias</Card.Title>
             <div style={metricContainer}>
                   <div style={legend}>
                     <img src={left} style={metric} alt="left"></img>
@@ -112,11 +115,11 @@ class Metrix extends Component {
                 </div>
               </div>
               <Card.Text style={{borderBottom: "solid grey"}}>
-                Our labels are not influenced by user input. Instead, we analyze the author's language in each political story. Metrix uses Machine Learnig to predict political bias of individual news articles using this 5 point scale
+                <p style={description}>Our labels are not influenced by user input. Instead, we analyze the author's language in each political story. Metrix uses Machine Learning to predict political bias of individual news articles using this 5 point scale</p>
               </Card.Text>
 
 
-            <Card.Title>Emotion</Card.Title>
+            <Card.Title as="h3">Emotion</Card.Title>
             <div style={metricContainer}>
                   <div style={legend}>
                     <img src={joy} style={metric} alt="joy"></img>
@@ -152,10 +155,11 @@ class Metrix extends Component {
                 </div>
               </div>
               <Card.Text style={{borderBottom: "solid grey"}}>
-              Metrix uses Natural Language Processing to indiciate emotional rhetoric in authors' language and presents an emoji representation of the most prominent one. Read more about these emotions here: 
+              <p style={description}>Metrix uses Natural Language Processing to indiciate emotional rhetoric in authors' language and presents an emoji representation of the most prominent one. Read more about these emotions here:                 <a href="https://www.6seconds.org/2017/04/27/plutchiks-model-of-emotions/" target="_blank" rel="noopener noreferrer">Plutchik's Wheel of Emotions</a> <br></br>
+              </p>
             </Card.Text>
 
-            <Card.Title>Sentiment</Card.Title>
+            <Card.Title as="h3">Sentiment</Card.Title>
             <div style={metricContainer}>
                   <div style={legend}>
                     <img src={positive} style={metric} alt="positive"></img>
@@ -171,7 +175,7 @@ class Metrix extends Component {
                   </div>
                 </div>
             <Card.Text>
-              Metrix uses Natural Language Processing to inidicate the overall sentiment of the article. Due to the structure of a news article, the majority are expected to be neutral. The event or author's tone must be rather extreme to recieve a positive or negative score.
+            <p style={description}>Metrix uses Natural Language Processing to inidicate the overall sentiment of the article. Due to the structure of a news article, the majority are expected to be neutral. The event or author's tone must be rather extreme to recieve a positive or negative score.</p>
             </Card.Text>
           </Card.Body>
         </Card>
@@ -214,41 +218,30 @@ class Metrix extends Component {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/150"/>
-              <Card.Body>
-                <Card.Title>Regan Stevenson</Card.Title>
-                <Card.Text>
-                  Mentor
-                  <br></br>
-                  <a href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/150"/>
-              <Card.Body>
-                <Card.Title>Travis Brown</Card.Title>
-                <Card.Text>
-                  Mentor
-                  <br></br>
-                  <a href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                </Card.Text>
-              </Card.Body>
-            </Card>
           </CardGroup>
 
+          {/* Contact */}
+          <Card style={{marginBottom: "25px"}}>
+            <Card.Header as="h2">Contact Us</Card.Header>
+            <Card.Body>
+              <Card.Title>Find more information about Metrix.News here or contact us with any questions or comments</Card.Title>
+              <Card.Text>
+                <a href="" target="_blank" rel="noopener noreferrer">Email</a> <br></br>
+                <a href="" target="_blank" rel="noopener noreferrer">Research PDF</a> <br></br>
+              </Card.Text> 
+            </Card.Body>
+          </Card>
+
           {/* Acknowledgements */}
-          <Card>
+          <Card style={{marginBottom: "25px"}}>
             <Card.Header as="h2">Acknowledgements</Card.Header>
             <Card.Body>
               <Card.Title>We thank the following services for their support</Card.Title>
               <Card.Text>
-                <a href="" target="_blank" rel="noopener noreferrer">MediaCloud</a> <br></br>
-                <a href="" target="_blank" rel="noopener noreferrer">NewsAPI</a> <br></br>
-                <a href="" target="_blank" rel="noopener noreferrer">NRC EmoLex</a> <br></br>
-                <a href="" target="_blank" rel="noopener noreferrer">emojis</a> <br></br>
-                <a href="" target="_blank" rel="noopener noreferrer">idk</a> <br></br>
+                <a href="https://mediacloud.org/" target="_blank" rel="noopener noreferrer">MediaCloud</a> <br></br>
+                <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">NewsAPI</a> <br></br>
+                <a href="http://sentiment.nrc.ca/lexicons-for-research/" target="_blank" rel="noopener noreferrer">NRC Emotion Lexicon</a> <br></br>
+                <a href="https://www.joypixels.com/emoji" target="_blank" rel="noopener noreferrer">Emojis</a> <br></br>
               </Card.Text> 
             </Card.Body>
           </Card>
