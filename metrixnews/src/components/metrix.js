@@ -226,8 +226,9 @@ class Metrix extends Component {
             <Card.Body>
               <Card.Title>Find more information about Metrix.News here or contact us with any questions or comments</Card.Title>
               <Card.Text>
-                <a href="" target="_blank" rel="noopener noreferrer">Email</a> <br></br>
-                <a href="" target="_blank" rel="noopener noreferrer">Research PDF</a> <br></br>
+                <p>Email: contact@metrix.news</p>
+                <span>Read more about our research here: </span><a href="" target="_blank" rel="noopener noreferrer">Research PDF</a> <br></br>
+                <span>Review our open source code here: </span><a href="https://github.com/MetrixNews" target="_blank" rel="noopener noreferrer">Github</a> <br></br>
               </Card.Text> 
             </Card.Body>
           </Card>
@@ -241,7 +242,7 @@ class Metrix extends Component {
                 <a href="https://mediacloud.org/" target="_blank" rel="noopener noreferrer">MediaCloud</a> <br></br>
                 <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">NewsAPI</a> <br></br>
                 <a href="http://sentiment.nrc.ca/lexicons-for-research/" target="_blank" rel="noopener noreferrer">NRC Emotion Lexicon</a> <br></br>
-                <a href="https://www.joypixels.com/emoji" target="_blank" rel="noopener noreferrer">Emojis</a> <br></br>
+                <a href="https://www.joypixels.com/emoji" target="_blank" rel="noopener noreferrer">JoyPixels</a> <br></br>
               </Card.Text> 
             </Card.Body>
           </Card>
