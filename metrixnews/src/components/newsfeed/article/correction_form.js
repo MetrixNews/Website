@@ -36,7 +36,7 @@ let CorrectionForm = props => {
     return (
     <form onSubmit={handleSubmit} style={form}>
         <div >
-            <label>Disagree with our political rating? Correct it below:</label>
+            <label>Disagree with our political bias rating? Correct it below:</label>
             <div>
                 <label>
                     <Field name="left" component="input" type="radio" value="left" style={field}/>

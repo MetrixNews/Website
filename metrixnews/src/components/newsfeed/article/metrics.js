@@ -33,7 +33,7 @@ export default class Metrics extends Component {
 
     return (
         <div style={row}>
-            <Bias story={this.props.story}/>
+            <img src={center} style={metric} alt="center"></img>
             <Emotion story={this.props.story}/>
             <Sentiment story={this.props.story}/>
         </div>

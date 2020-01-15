@@ -40,10 +40,11 @@ export default class Bio extends Component {
         border: "solid var(--metrix-color)",
         borderRadius: "20px",
         width: "100%",
+        maxWidth: "700px",
         color: "var(--bg-color)",
         margin: "5px 5px",
         textAlign: "center",
-        display: "inline-block",
+        display: "block",
         fontSize: "12pt",
         cursor: "pointer",
       }

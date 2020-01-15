@@ -49,7 +49,7 @@ export default function Card(props) {
                   <ArticleHead story={props.story}/>
                   <ArticlePhoto story={props.story}/>
                   <ArticleTitle story={props.story}/>
-                  <ArticleSummary story={props.story}/>
+                  {/* <ArticleSummary story={props.story}/> */}
                   <ArticleContent story={props.story}/>
                   <ArticleLink story={props.story}/>
                 </div>
