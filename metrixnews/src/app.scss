@@ -11,29 +11,11 @@
     --center-right-color: #982156;
     --right-color: #E22B35;
   }
-  
-  // [data-theme="dark"] {
-  //     --metrix-color: #492354;
-  //     --highlight-color: #3B1838;
-  //     --font-color:  #3B1838;
-  //     --article-font-color: #000000;
-  //     --candidate-font-color:#faf4ff;
-  //     --bg-color: #2e003e;
-  //     --left-color: #3D67B1;
-  //     --center-left-color: #3F4174;
-  //     --center-color: #492354;
-  //     --center-right-color: #982156;
-  //     --right-color: #E22B35;
-  // }
-  
-  
+    
   /* ALL HTML ELEMENTS & TAGS */ /* ALL HTML ELEMENTS & TAGS */ /* ALL HTML ELEMENTS & TAGS */ /* ALL HTML ELEMENTS & TAGS */ /* ALL HTML ELEMENTS & TAGS */ /* ALL HTML ELEMENTS & TAGS */
-  
-  
   body,h1,h2,h3,h4,h5,h6,span, p{
     font-family: "Source Sans Pro", sans-serif;
     color: auto;
-    /* word-wrap: break-word; */
   }
   
   body {
@@ -46,49 +28,10 @@
     text-align: center;
   }
   
-  // h1 {
+  // p {
   //   color: var(--font-color);
-  //   text-align: center;
-  //   font-size: 50pt;
-  //   font-weight: bold;
-  //   margin-top: 10px;
-  //   margin-bottom: 10px;
+  //   /* text-align: center; */
   // }
-  
-  h2 {
-    color: var(--font-color);
-    font-size: 32pt;
-    padding-left: 10px;
-    /* padding-top: 5px; */
-    margin: 0;
-    text-align: left;
-  }
-  
-  h3 {
-    color: var(--font-color);
-  
-    font-size: 20pt;
-    /* padding-top: 5px; */
-    margin: 0;
-    font-weight: bold;
-    text-align: left;
-  }
-  
-  h4 {
-    color: var(--article-font-color);
-  
-    font-size: 16pt;
-    /* padding-top: 5px; */
-    margin: 0;
-    font-weight: bold;
-    text-align: left;
-  }
-  
-  
-  p {
-    color: var(--font-color);
-    /* text-align: center; */
-  }
   
   
   a:link {
@@ -242,37 +185,3 @@
   }
   
   /* END NAVBAR */
-  
-  .button {
-    background-color: var(--bg-color); /* Green */
-    border: solid var(--metrix-color);
-    border-radius: 15px;
-    width: 95%;
-    color: var(--font-color);
-    margin-bottom: 5px;
-    padding: 5px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    scroll-margin-bottom: 5px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-
-  }
-  
-  .button:hover {
-    background-color: var(--metrix-color);
-    color: white;
-  }
-
-.bg {
-  background-color: var(--bg-color);
-}
-
-// .appContainer {
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   text-align: center;
-// }

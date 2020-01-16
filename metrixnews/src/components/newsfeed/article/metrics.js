@@ -27,8 +27,10 @@ export default class Metrics extends Component {
     }
     render() {
         const row = {
-            paddingTop: "5px",
             width: "100%",
+            height: "35px",
+            position: "absolute",
+            bottom: "5px",
         }
 
     return (
@@ -46,6 +48,8 @@ const metric = {
     height: "30px",
     margin: "0px 5px",
     float: "left",
+    // position: "absolute",
+    // bottom: "5px",
 }
 
 function Sentiment(props) {

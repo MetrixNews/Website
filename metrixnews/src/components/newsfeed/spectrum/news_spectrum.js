@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import Card from '../article/card';
 import '../newsfeed.scss';
-import '../../../app.scss';
+// import '../../../app.scss';
 
 export default class Spectrum extends Component {
     constructor(props) {

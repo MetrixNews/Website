@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import Spectrum from './spectrum/news_spectrum';
 import Data from './topic_data';
-import '../../app.scss';
+// import '../../app.scss';
 
 
 export default class Topic extends Component {
@@ -14,14 +14,14 @@ export default class Topic extends Component {
   render() {
 
     const topic = {
-      borderTop: "solid thick var(--highlight-color)",
+      borderTop: "solid 2px var(--highlight-color)",
       backgroundColor: "var(--bg-color)",
     }
 
     const topicTitle = {
-      color: "var(--font-color)",
-      fontSize: "14pt",
-      paddingLeft: "5px",
+      color: "var(--metrix-color)",
+      fontSize: "16pt",
+      fontWeight: "bold",
       textAlign: "left",
     }
     
@@ -33,6 +33,7 @@ export default class Topic extends Component {
         </div>
         <Data topic={this.props.topic}/>
         <Spectrum articles={this.props.topic.articles}/>
+        
       </div>
       )
     }

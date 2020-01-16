@@ -7,6 +7,7 @@ import loadCategories from '../actionCreators/newsfeed';
 import {getCategoriesError, getCategories, getCategoriesPending} from '../reducers/newsfeed';
 
 import Topic from './newsfeed/topic'
+import TopicMenu from './newsfeed/topic_menu'
 import '../app.scss';
 import "./page_structure/page_structure.scss"
 
@@ -47,6 +48,7 @@ class Newsfeed extends Component {
           <div className="pageDescription">
             <h1>Political Newsfeed</h1>
           </div>
+          {/* <TopicMenu topic={this.props.categories}/> */}
           <div className="bg">
             {this.props.categories.map((category, i) => (
               <Topic

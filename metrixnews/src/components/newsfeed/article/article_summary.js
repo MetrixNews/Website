@@ -12,12 +12,8 @@ export default class ArticleSummary extends Component {
             fontSize: "10pt",
             textAlign: "left",
             marginTop: "5px",
-            marginBottom: "5px",
+            marginBottom: "40px",
             textAlign: "left",
-            lineHeight: "1.5em",
-            maxHeight: "4.5em",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
         }
     return (
         <section>

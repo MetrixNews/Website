@@ -20,13 +20,19 @@ export default class ArticleHead extends Component {
             float: "left",
             paddingBottom: "5px",
             color: "var(--article-font-color)",
-            fontSize: "8pt",
+            fontSize: "10pt",
         }
 
         const source = {
             textAlign: "left",
             fontWeight: "bold",
         }
+
+       const author = {
+           lineHeight: "1.2em",
+           maxHeight: "1.2em",
+           overflow: "ellipses",
+       }
 
     return (
         <div style={row}>
@@ -36,8 +42,8 @@ export default class ArticleHead extends Component {
 
             <div style={publishInfo}>
                 <span style={source}>{this.props.story.source}</span><br/>
-                <span>{this.props.story.author}</span>
-                <span>   -   </span>    
+                <span style={author}>{this.props.story.author}</span><br/>
+                  
                 <PrettyDate story={this.props.story}/>                                    
             </div>
       </div>
@@ -49,7 +55,7 @@ function SourceLogo(props) {
     const url = props.story.url;
 
     const logo = {
-        width: 35,
+        width: "55px",
         // put something to standardize a min height
         float: "left",
         margin: "5px",

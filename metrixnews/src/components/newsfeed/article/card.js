@@ -25,36 +25,26 @@ export default function Card(props) {
       <>
         <a onClick={handleShow}>
             <li className="item">
-                <div className="row articlebox">
-                {/* <div className={props.story.political_biasness}> */}
                   <div className="article">
                       <ArticleHead story={props.story} />
                       <ArticlePhoto story={props.story} />
                       <ArticleTitle story={props.story} />
-                      <ArticleSummary story={props.story} />
+                      <ArticleSummary story={props.story}/>
+                      <Metrics story={props.story}/>
                   </div>
-                </div>
-                {/* </div> */}
-                <Metrics story={props.story}/>
             </li>
         </a>
   
         <Modal show={show} onHide={handleClose} animation={false} aria-labelledby="contained-modal-title-vcenter" centered>
-          <Modal.Header closeButton style={{fontSize: "32pt"}}>
+          <Modal.Header closeButton>
           </Modal.Header>
           <Modal.Body>
-            <div className="articlebox" >
-              {/* <div className={props.story.political_biasness}> */}
-                <div className="article">
-                  <ArticleHead story={props.story}/>
+                <ArticleHead story={props.story}/>
                   <ArticlePhoto story={props.story}/>
                   <ArticleTitle story={props.story}/>
                   {/* <ArticleSummary story={props.story}/> */}
                   <ArticleContent story={props.story}/>
                   <ArticleLink story={props.story}/>
-                </div>
-                </div>
-              {/* </div> */}
             <Metrics story={props.story}/>
           </Modal.Body> 
           <Modal.Footer>

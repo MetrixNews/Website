@@ -30,25 +30,26 @@ export default class Bio extends Component {
       }
 
       const name = {
-        color: "var(--font-color)",
-        fontSize: "14pt",
-        paddingLeft: "10px",
+        color: "var(--metrix-color)",
+        fontSize: "16pt",
+        fontWeight: "bold",
         textAlign: "left",
+        paddingLeft: "5px",
       }
       const button = {
-        backgroundColor: "var(--metrix-color)",
+        backgroundColor: "var(--bg-color)",
         border: "solid var(--metrix-color)",
         borderRadius: "20px",
         width: "100%",
         maxWidth: "700px",
-        color: "var(--bg-color)",
+        color: "var(--metrix-color)",
         margin: "5px 5px",
         textAlign: "center",
         display: "block",
         fontSize: "12pt",
         cursor: "pointer",
       }
-
+ 
 
       return (
         <div style={bio}>
@@ -58,13 +59,13 @@ export default class Bio extends Component {
           <div style={buttonContainer}>
               <h2 style={name}>{this.props.person.Name} ({this.props.person.party})</h2>
             <a href={this.props.person.website} target="_blank" rel="noopener noreferrer">
-              <button style={button}>Campaign Site</button>
+              <button style={button}>Bio: {this.props.person.website}</button>
             </a>
             <a href={this.props.person.issues} target="_blank" rel="noopener noreferrer">
-              <button style={button}>Platform</button>
+              <button style={button}>Platform: {this.props.person.issues}</button>
             </a>
-            <a href={this.props.person.website} target="_blank" rel="noopener noreferrer">
-              <button style={button}>Donation Link</button>
+            <a href={this.props.person.donation} target="_blank" rel="noopener noreferrer">
+              <button style={button}>Donate: {this.props.person.donation}</button>
             </a>
           </div>
         </div>

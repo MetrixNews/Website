@@ -76,7 +76,7 @@ export default class App extends React.Component {
     let about = <Link to='./metrix' style={linkStyles}><FontAwesomeIcon icon={faInfo} style={{marginRight: 10}} /></Link>;
 
     let newsfeedText = <Link to='./' style={linkStyles}>Newsfeed</Link>;
-    let electionText = <Link to='./election' style={linkStyles}>Election</Link>;
+    let electionText = <Link to='./election' style={linkStyles}>Candidates</Link>;
     let aboutText = <Link to='./metrix' style={linkStyles}>   About</Link>;
 
     const menuItems = styles.showSidebar
