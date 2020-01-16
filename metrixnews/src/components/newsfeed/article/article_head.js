@@ -16,7 +16,6 @@ export default class ArticleHead extends Component {
         }
 
         const publishInfo = {
-            width: "75%",
             float: "left",
             paddingBottom: "5px",
             color: "var(--article-font-color)",
@@ -31,7 +30,6 @@ export default class ArticleHead extends Component {
        const author = {
            lineHeight: "1.2em",
            maxHeight: "1.2em",
-           overflow: "ellipses",
        }
 
     return (
