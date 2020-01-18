@@ -65,9 +65,9 @@ export default class App extends React.Component {
     };
 
     const linkStyles = {
-      fontSize: 16,
+      fontSize: 24,
       color: "#492354",
-      marginRight: styles.sidebarCollapsed ? 0 : 10,
+      textAlign: "center",
 
     }
 
@@ -75,21 +75,17 @@ export default class App extends React.Component {
     let election = <Link to='./election' style={linkStyles}><FontAwesomeIcon icon={faLandmark} /></Link> ;
     let about = <Link to='./metrix' style={linkStyles}><FontAwesomeIcon icon={faInfo} style={{marginRight: 10}} /></Link>;
 
-    let newsfeedText = <Link to='./' style={linkStyles}>Newsfeed</Link>;
-    let electionText = <Link to='./election' style={linkStyles}>Candidates</Link>;
-    let aboutText = <Link to='./metrix' style={linkStyles}>   About</Link>;
-
     const menuItems = styles.showSidebar
     ? [
-        { icon: newspaper, text: newsfeedText},
-        { icon: election, text: electionText},
-        { icon: about, text: aboutText}
+        { icon: newspaper},
+        { icon: election},
+        { icon: about}
       ]
 
     : [
-      { icon: newspaper, text: newsfeedText},
-      { icon: election, text: electionText},
-      { icon: about, text: aboutText},
+      { icon: newspaper},
+      { icon: election},
+      { icon: about},
       ];
 
       return (

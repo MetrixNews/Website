@@ -28,9 +28,8 @@ export default class Metrics extends Component {
     render() {
         const row = {
             width: "100%",
-            height: "35px",
-            position: "absolute",
-            bottom: "5px",
+            height: "40px",
+            padding: "0px 5px 0px 5px",
         }
 
     return (
@@ -46,7 +45,7 @@ export default class Metrics extends Component {
 const metric = {
     width: "30px",
     height: "30px",
-    margin: "0px 5px",
+    margin: "5px 5px 5px 5px",
     float: "left",
     // position: "absolute",
     // bottom: "5px",

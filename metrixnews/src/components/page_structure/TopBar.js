@@ -20,7 +20,7 @@ const TopBar = ({ styles }) => {
     display: "inline-block",
     fontWeight: "bold",
     margin: "0 auto",
-    fontSize: 24,
+    fontSize: "24pt",
     color: "#492354"
   }
 

@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 
 import Spectrum from './spectrum/news_spectrum';
 import Data from './topic_data';
-// import '../../app.scss';
-
+import './newsfeed.scss';
 
 export default class Topic extends Component {
   constructor(props) {
@@ -18,18 +17,10 @@ export default class Topic extends Component {
       backgroundColor: "var(--bg-color)",
     }
 
-    const topicTitle = {
-      color: "var(--metrix-color)",
-      fontSize: "16pt",
-      fontWeight: "bold",
-      textAlign: "left",
-    }
-    
-
     return (
       <div style={topic}>
-        <div >
-          <h2 style={topicTitle}>{this.props.topic.topic}</h2>
+        <div className="half">
+          <h2 className="topic">{this.props.topic.topic}</h2>
         </div>
         <Data topic={this.props.topic}/>
         <Spectrum articles={this.props.topic.articles}/>

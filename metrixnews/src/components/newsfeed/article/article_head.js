@@ -20,6 +20,11 @@ export default class ArticleHead extends Component {
             paddingBottom: "5px",
             color: "var(--article-font-color)",
             fontSize: "10pt",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+            display:"block",
+            width: "75%",
         }
 
         const source = {
@@ -56,7 +61,7 @@ function SourceLogo(props) {
         width: "55px",
         // put something to standardize a min height
         float: "left",
-        margin: "5px",
+        margin: "5px 5px 5px 0px",
     }
 
     if(url.search(url.match("nytimes.com")) >= 0) {

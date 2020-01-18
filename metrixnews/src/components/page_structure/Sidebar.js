@@ -9,31 +9,33 @@ const Sidebar = ({ menuItems, styles }) => {
     zIndex: 1,
     backgroundColor: "#ffffff",
     paddingTop: 10,
+    textAlign: "center",
   };
-
-  const menuItemStyle = {
-    display: "flex",
-    justifyContent: styles.sidebarCollapsed ? "center" : "flex-start",
-    alignItems: "center",
-    padding: `4px ${styles.sidebarCollapsed ? 0 : 10}px`,
-  }
 
   const logoStyle = {
     textAlign: "center",
     color: "#492354",
-    fontSize: "20pt",
     marginBottom: 100,
-    fontWeight: "bold"
+    fontWeight: "bold",
+    fontSize: "24pt",
   };
+
+  const menuItemStyle = {
+    display: "block",
+    justifyContent: styles.sidebarCollapsed ? "center" : "flex-start",
+    padding: `4px ${styles.sidebarCollapsed ? 0 : 10}px`,
+    textAlign: "center",
+
+  }
+
+
+
 
   return (
     <div style={sidebarStyle}>
       <div style={logoStyle}>{styles.sidebarCollapsed ? "M" : "Metrix"}</div>
       {menuItems.map(item => (
-        <div style={menuItemStyle}>
-          <span>{item.icon}</span>
-          {!styles.sidebarCollapsed && item.text}
-        </div>
+          <span style={menuItemStyle}>{item.icon}</span>
       ))}
     </div>
   );

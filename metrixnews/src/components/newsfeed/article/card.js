@@ -29,7 +29,7 @@ export default function Card(props) {
                       <ArticleHead story={props.story} />
                       <ArticlePhoto story={props.story} />
                       <ArticleTitle story={props.story} />
-                      <ArticleSummary story={props.story}/>
+                      {/* <ArticleSummary story={props.story}/> */}
                       <Metrics story={props.story}/>
                   </div>
             </li>
@@ -38,7 +38,7 @@ export default function Card(props) {
         <Modal show={show} onHide={handleClose} animation={false} aria-labelledby="contained-modal-title-vcenter" centered>
           <Modal.Header closeButton>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body >
                 <ArticleHead story={props.story}/>
                   <ArticlePhoto story={props.story}/>
                   <ArticleTitle story={props.story}/>

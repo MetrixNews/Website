@@ -45,7 +45,7 @@ export default function loadCategories(){
 }
 
 const categories = [
-    "http://134.209.163.4/articles/category/2020%20Presidental%20Election",
+    "http://134.209.163.4/articles/category/2020%20Election",
     "http://134.209.163.4/articles/category/Abortion",
     "http://134.209.163.4/articles/category/Agriculture",
     "http://134.209.163.4/articles/category/Border%20Security",

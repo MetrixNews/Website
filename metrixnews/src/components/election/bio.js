@@ -1,4 +1,9 @@
 import React, { Component }  from 'react';
+
+import donate from '../../assets/icons/donate.png';
+import platform from '../../assets/icons/platform.png';
+import candidate from '../../assets/icons/bio.png';
+
 import '../../app.scss';
 import './candidate.scss'
  
@@ -44,10 +49,20 @@ export default class Bio extends Component {
         maxWidth: "700px",
         color: "var(--metrix-color)",
         margin: "5px 5px",
-        textAlign: "center",
+        textAlign: "left",
         display: "block",
-        fontSize: "12pt",
+        fontSize: "10pt",
         cursor: "pointer",
+      }
+
+      const bold = {
+        fontWeight: "bold",
+      }
+
+      const icon = {
+        width: 30,
+        height: 30,
+        margin: "0px 5px 0px 10px"
       }
  
 
@@ -59,16 +74,47 @@ export default class Bio extends Component {
           <div style={buttonContainer}>
               <h2 style={name}>{this.props.person.Name} ({this.props.person.party})</h2>
             <a href={this.props.person.website} target="_blank" rel="noopener noreferrer">
-              <button style={button}>Bio: {this.props.person.website}</button>
+              <button style={button}>
+                <img src={candidate} alt="bio" style={icon} /> 
+                <span style={bold}>Bio: </span>
+                {this.props.person.website}
+              </button>
             </a>
             <a href={this.props.person.issues} target="_blank" rel="noopener noreferrer">
-              <button style={button}>Platform: {this.props.person.issues}</button>
-            </a>
+            <button style={button}>
+                <img src={platform} alt="platform" style={icon} /> 
+                <span style={bold}>Platform: </span>
+                {this.props.person.issues}
+              </button>            </a>
             <a href={this.props.person.donation} target="_blank" rel="noopener noreferrer">
-              <button style={button}>Donate: {this.props.person.donation}</button>
-            </a>
+            <button style={button}>
+                <img src={donate} alt="donate" style={icon} /> 
+                <span style={bold}>Donate: </span>
+                <Donate person={this.props.person}/>
+              </button>            </a>
           </div>
         </div>
     )
 }
+}
+
+function Donate(props) {
+  const url = props.person.donation;
+
+  const font = {
+    fontSize: "10pt",
+}
+
+  if(url.search(url.match(".com")) >= 0) {
+    return (
+        <span style={font}>
+            {url.substring(0,url.search(".com")+4)}
+        </span>
+    )
+}
+  else {
+      return (
+          <span>Link</span>
+      )
+  }
 }

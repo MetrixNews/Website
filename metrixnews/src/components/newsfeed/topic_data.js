@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
 import data from '../../assets/icons/data.png';
-// import '../../app.scss'
+import './newsfeed.scss'
  
 export default class Data extends Component {
     constructor(props) {
@@ -9,43 +9,47 @@ export default class Data extends Component {
 
     render() {
 
-        const links = {
-            textAlign: "left",
-            width: "100%",
-        }
+        // const links = {
+        //     textAlign: "left",
+        //     float: "left",
+        // }
 
         const button = {
             backgroundColor: "var(--bg-color)",
-            border: "solid var(--metrix-color)",
-            borderRadius: "20px",
-            width: "47%",
+            width: "100%",
             color: "var(--metrix-color)",
-            padding: "2px",
-            margin: "5px",
-            textAlign: "center",
-            display: "inline-block",
-            fontSize: "12pt",
+            marginBottom: "5px",
+            textAlign: "left",
+            // display: "inline-block",
+            fontSize: "14pt",
             cursor: "pointer",
           }
+        
         const icon ={
-            width: "25px",
-            height: "25px",
-            marginRight: "10px",
+            width: "30px",
+            height: "30px",
+            margin: "0px 5px 0px 0px"
         }
 
+        const bold = {
+            fontWeight: "bold",
+          }
+
       return (
-        <div style={links}>
+        <div className="half">
             <a href={this.props.topic.data1} target="_blank" rel="noopener noreferrer">
-                <button style={button}>
+                <div style={button}>
                     <img src={data} style={icon} alt="data"></img>
+                    <span style={bold}>Data: </span>
                     <Data1 topic={this.props.topic}/>
-                </button>
+                </div>
             </a>
             <a href={this.props.topic.data2} target="_blank" rel="noopener noreferrer">
-                <button style={button}>
+                <div style={button}>
                     <img src={data} style={icon} alt="data"></img>
+                    <span style={bold}>Data: </span>
                     <Data2 topic={this.props.topic}/>
-                </button>            
+                </div>            
             </a>
         </div>
     )

@@ -12,6 +12,7 @@ export default class ArticleContent extends Component {
             fontSize: "10pt",
             position: "relative",
             textAlign: "left",
+            padding: "0px 5px 0px 5px",
         }
     return (
         <section>

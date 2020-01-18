@@ -9,8 +9,7 @@ export default class ArticleLink extends Component {
     render() {
       return (
         <div className="article_link">
-        <i className="fas fa-link"></i>
-            <a href={this.props.story.url} className="article_link" target="_blank" rel="noopener noreferrer">
+            <a href={this.props.story.url}  target="_blank" rel="noopener noreferrer">
                 <span>{this.props.story.url}</span>
             </a>
         <span></span>
