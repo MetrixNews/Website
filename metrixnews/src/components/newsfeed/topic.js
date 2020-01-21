@@ -31,5 +31,5 @@ export default class Topic extends Component {
 }
 
 Topic.propTypes = {
-  topic: PropTypes.array
+  topic: PropTypes.object
 }

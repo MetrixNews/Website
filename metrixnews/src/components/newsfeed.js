@@ -48,7 +48,7 @@ class Newsfeed extends Component {
           <div className="pageDescription">
             <h1>Political Newsfeed</h1>
           </div>
-          {/* <TopicMenu topic={this.props.categories}/> */}
+          <TopicMenu/>
           <div className="bg">
             {this.props.categories.map((category, i) => (
               <Topic

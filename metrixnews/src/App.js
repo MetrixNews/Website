@@ -59,7 +59,7 @@ export default class App extends React.Component {
       topBarHeight: 40,
       footerMenuHeight: 50,
       showFooterMenuText: windowWidth > 500,
-      showSidebar: windowWidth > 768,
+      showSidebar: windowWidth > 1224,
       sidebarWidth: windowWidth < 1100 ? 50 : 125,
       sidebarCollapsed: windowWidth < 1100,
     };
