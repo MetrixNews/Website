@@ -35,7 +35,7 @@ class Newsfeed extends Component {
   render() {
 
     const contentStyle = {
-      paddingTop: this.props.styles.showSidebar ? 25 : this.props.styles.topBarHeight + 30,
+      paddingTop: this.props.styles.showSidebar ? 40 : this.props.styles.topBarHeight + 40,
       paddingRight: 10,
       paddingBottom: this.props.styles.showSidebar ? 10 : this.props.styles.footerMenuHeight + 20,
       paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 10 : 10
@@ -48,7 +48,7 @@ class Newsfeed extends Component {
           <div className="pageDescription">
             <h1>Political Newsfeed</h1>
           </div>
-          <TopicMenu/>
+          <TopicMenu />
           <div className="bg">
             {this.props.categories.map((category, i) => (
               <Topic

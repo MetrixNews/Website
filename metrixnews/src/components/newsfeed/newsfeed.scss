@@ -41,8 +41,7 @@
     grid-template-rows: minmax(15px, 1fr);
     overflow-x: scroll;
     width: 100%;
-    margin: 0px 0px 10px 0px;
-    padding: 15px;
+    padding: 10px 0px 10px 0px;
     text-align: center;
     position: fixed;
     top: 0;
@@ -105,8 +104,7 @@
       grid-template-rows: minmax(15px, 1fr);
       overflow-x: scroll;
       width: 100%;
-      margin: 0px 0px 10px 0px;
-      padding: 15px;
+      padding: 10px 0px 10px 0px;
       text-align: center;
       position: fixed;
       top: 0;
@@ -168,8 +166,7 @@
       grid-template-rows: minmax(15px, 1fr);
       overflow-x: scroll;
       width: 100%;
-      margin: 0px 0px 10px 0px;
-      // padding: 15px;
+      padding: 10px 0px 10px 0px;
       text-align: center;
       position: fixed;
       top: 40px;
@@ -232,8 +229,7 @@
       grid-template-rows: minmax(15px, 1fr);
       overflow-x: scroll;
       width: 100%;
-      margin: 0px 0px 10px 0px;
-      // padding: 15px;
+      padding: 10px 0px 10px 0px;
       text-align: center;
       position: fixed;
       top: 40px;
@@ -289,15 +285,15 @@
     }
     .menu {
       display: grid;
-      grid-gap: calc(var(--gutter) / 2);
-      grid-template-columns: 5px repeat(100, calc(5% - var(--gutter) * -10)) 5px;
-      grid-template-rows: minmax(20px, 1fr);
+      grid-gap: calc(var(--gutter) / 1);
+      grid-template-columns: 5px repeat(40, calc(5% - var(--gutter) * -12)) 5px;
+      grid-template-rows: minmax(15px, 1fr);
       overflow-x: scroll;
-      margin: 40px 0px 10px 0px;
-      padding: 15px;
+      width: 100%;
+      padding: 10px 0px 10px 0px;
       text-align: center;
       position: fixed;
-      top: 0;
+      top: 40px;
       z-index: 1;
       background-color: var(--bg-color);
     }

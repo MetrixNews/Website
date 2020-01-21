@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+
+// import ScrollIntoView from 'react-scroll-into-view';
+import Topic from './topic';
+
 import './newsfeed.scss';
 
 export default class TopicMenu extends Component {
@@ -53,11 +57,13 @@ export default class TopicMenu extends Component {
             <div className="full hide-scroll">
                 <ul className="menu">
                 {topics.map((topic) => (
-                    <li style={item}> 
-                        <span topic={topic}>
-                            {topic}
-                        </span>
-                    </li>
+                    // <ScrollIntoView selector="#h2">
+                        <li style={item}> 
+                            <span topic={topic}>
+                                {topic}
+                            </span>
+                        </li>
+                    // </ScrollIntoView>
                 ))}
                 </ul>
               </div> 

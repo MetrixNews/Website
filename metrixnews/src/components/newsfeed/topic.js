@@ -18,7 +18,7 @@ export default class Topic extends Component {
     }
 
     return (
-      <div style={topic}>
+      <div style={topic} id={this.props.topic.topic}>
         <div className="half">
           <h2 className="topic">{this.props.topic.topic}</h2>
         </div>
