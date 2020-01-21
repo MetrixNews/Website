@@ -35,7 +35,7 @@ class Newsfeed extends Component {
   render() {
 
     const contentStyle = {
-      paddingTop: this.props.styles.showSidebar ? 10 : this.props.styles.topBarHeight,
+      paddingTop: this.props.styles.showSidebar ? 25 : this.props.styles.topBarHeight + 30,
       paddingRight: 10,
       paddingBottom: this.props.styles.showSidebar ? 10 : this.props.styles.footerMenuHeight + 20,
       paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 10 : 10

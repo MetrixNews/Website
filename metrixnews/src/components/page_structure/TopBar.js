@@ -11,7 +11,6 @@ const TopBar = ({ styles }) => {
     width: "100%",
     height: styles.topBarHeight,
     backgroundColor: "#fff",
-    borderBottom: "1px solid #d8d8d8",
     padding: "0px 20px",
     textAlign: "center",
     boxSizing: "border-box"
