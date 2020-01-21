@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 
+import { Element } from 'react-scroll'
+
 import Spectrum from './spectrum/news_spectrum';
 import Data from './topic_data';
 import './newsfeed.scss';
@@ -18,14 +20,15 @@ export default class Topic extends Component {
     }
 
     return (
-      <div style={topic} id={this.props.topic.topic}>
-        <div className="half">
-          <h2 className="topic">{this.props.topic.topic}</h2>
+      <Element id={this.props.topic.topic} name={this.props.topic.topic}>
+        <div style={topic}>
+          <div className="half">
+            <h2 className="topic">{this.props.topic.topic}</h2>
+          </div>
+          <Data topic={this.props.topic}/>
+          <Spectrum articles={this.props.topic.articles}/>
         </div>
-        <Data topic={this.props.topic}/>
-        <Spectrum articles={this.props.topic.articles}/>
-        
-      </div>
+      </Element>
       )
     }
 }

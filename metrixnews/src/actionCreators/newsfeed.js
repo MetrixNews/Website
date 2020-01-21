@@ -57,7 +57,7 @@ const categories = [
     "http://134.209.163.4/articles/category/Energy",
     "http://134.209.163.4/articles/category/Gender%20Equality",
     "http://134.209.163.4/articles/category/Government%20Spending",
-    "http://134.209.163.4/articles/category/Gun%20Control%20and%20Mass%20Shootings",
+    "http://134.209.163.4/articles/category/Gun%20Control",
     "http://134.209.163.4/articles/category/Healthcare",
     "http://134.209.163.4/articles/category/Immigration",
     "http://134.209.163.4/articles/category/Impeachment",
