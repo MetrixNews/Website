@@ -50,7 +50,7 @@ class Newsfeed extends Component {
       border: "solid 2px var(--metrix-color)",
       borderRadius: "7px",
       backgroundColor: "var(--metrix-color)",
-      color: "var(--bg-color)",
+      color: "var(--bg-color)", 
   }
 
   let Link = Scroll.Link;
@@ -65,9 +65,8 @@ class Newsfeed extends Component {
           <div className="app">
             <div className="full hide-scroll">
               <ul className="menu">
-                {this.props.categories.map((category, i) => (
-                  <li style={menuItem} key={i} topic={category}> 
-                    <Link 
+                {this.props.categories.map((category, i) => ( 
+                  <Link 
                     topic={category}
                     key={i}
                     to={category.topic}
@@ -78,11 +77,10 @@ class Newsfeed extends Component {
                     className='menuItem' 
                     activeClass='some-active-class'
                     >
-                      {/* <span key={i} topic={category}> */}
-                          {category.topic}
-                      {/* </span> */}
-                    </Link>
-                  </li>
+                      <li style={menuItem} key={i} topic={category}>
+                       {category.topic}
+                      </li>
+                  </Link>
                 ))}
                 </ul>
               </div> 
