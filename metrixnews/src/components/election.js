@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+
+import Scroll from 'react-scroll'
+import Link from 'react-scroll'
 import Spinner from 'react-bootstrap/Spinner';
 
 import loadCandidates from '../actionCreators/election';
@@ -33,11 +36,23 @@ class Election extends Component {
    render() {
 
     const contentStyle = {
-      paddingTop: this.props.styles.showSidebar ? 20 : this.props.styles.topBarHeight,
+      paddingTop: this.props.styles.showSidebar ? 40 : this.props.styles.topBarHeight + 40,
       paddingRight: 10,
-      paddingBottom: this.props.styles.showSidebar ? 20 : this.props.styles.footerMenuHeight + 20,
-      paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 20 : 10
+      paddingBottom: this.props.styles.showSidebar ? 10 : this.props.styles.footerMenuHeight + 20,
+      paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 10 : 10
     };
+
+    const menuItem = {
+      fontSize: "8pt",
+      fontWeight: "bold",
+      border: "solid 2px var(--metrix-color)",
+      borderRadius: "7px",
+      backgroundColor: "var(--metrix-color)",
+      color: "var(--bg-color)", 
+  }
+
+    let Link = Scroll.Link;
+
        if(!this.shouldComponentRender()) return <Spinner />
  
        return (
@@ -45,6 +60,30 @@ class Election extends Component {
           <div className="pageDescription">
             <h1>2020 Presidential Candidates</h1>
           </div>
+          <div className="app">
+            <div className="full hide-scroll">
+              <ul className="menu">
+                {this.props.candidates.map((candidate, i) => ( 
+                  <Link 
+                    person={candidate}
+                    key={i}
+                    to={candidate.Name}
+                    offset={-80}
+                    spy={true} 
+                    smooth={true} 
+                    duration={500} 
+                    className='menuItem' 
+                    activeClass='some-active-class'
+                    >
+                      <li style={menuItem} key={i} topic={candidate}>
+                       {candidate.Name}
+                      </li>
+                  </Link>
+                ))}
+                </ul>
+              </div> 
+          </div>
+
           <div className="bg">
             {this.props.candidates.map((candidate, i) => (
               <Candidate

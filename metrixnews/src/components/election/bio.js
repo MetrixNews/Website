@@ -5,7 +5,7 @@ import platform from '../../assets/icons/platform.png';
 import candidate from '../../assets/icons/bio.png';
 
 import '../../app.scss';
-import './candidate.scss'
+import './candidate.scss';
  
 export default class Bio extends Component {
     constructor(props) {
@@ -18,6 +18,7 @@ export default class Bio extends Component {
       }
       const bold = {
         fontWeight: "bold",
+        fontSize: "14pt",
       }
       const icon = {
         width: 30,

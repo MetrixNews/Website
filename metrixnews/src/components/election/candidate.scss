@@ -24,6 +24,12 @@
       float: left;
       width: calc(100% - 160px);
     }
+    .link {
+      height: 30px;
+      overflow: hidden;
+      width: calc(100%-40px);
+      font-size: 10pt;
+    }
   
     //large desktop screen
     @media (min-device-width:1824px) {
@@ -50,6 +56,12 @@
         cursor: pointer;
         float: left;
         width: calc(100% - 160px);
+      }
+      .link {
+        height: 30px;
+        overflow: hidden;
+        width: calc(100%-40px);
+        font-size: 10pt;
       }
     }
   
@@ -79,6 +91,12 @@
         float: left;
         width: calc(100% - 160px);
       }
+      .link {
+        height: 30px;
+        overflow: hidden;
+        width: calc(100%-40px);
+        font-size: 10pt;
+      }
     }
   }
   
@@ -103,11 +121,17 @@
         color: var(--metrix-color);
         margin-bottom: 5px;
         text-align: left;
-        font-size: 14pt;
         cursor: pointer;
         float: left;
         width: calc(100% - 160px);
       }
+      .link {
+        height: 30px;
+        overflow: hidden;
+        width: calc(100%-40px);
+        font-size: 10pt;
+      }
+      
 
   //Mobile
     @media (max-device-width:600px) {
@@ -130,7 +154,6 @@
         color: var(--metrix-color);
         margin-bottom: 5px;
         text-align: left;
-        font-size: 14pt;
         cursor: pointer;
         float: left;
         width: 100%;
@@ -147,7 +170,8 @@
       .link {
         height: 30px;
         overflow: hidden;
-        width: calc(100%-40px)
+        width: calc(100%-40px);
+        font-size: 10pt;
       }
   }
   }
