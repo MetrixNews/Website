@@ -6,10 +6,8 @@ import ArticleHead from './article_head';
 import ArticlePhoto from './article_photo';
 import ArticleTitle from './article_title';
 import Metrics from './metrics';
-import ArticleSummary from './article_summary';
 import ArticleContent from './article_content';
 import ArticleLink from './article_link';
-import CorrectionForm from './correction_form';
 import Modal from 'react-bootstrap/Modal';
 
 import '../newsfeed.scss'
@@ -19,7 +17,6 @@ export default function Card(props) {
     const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    const { handleSubmit } = props
 
     return (
       <>
@@ -29,7 +26,6 @@ export default function Card(props) {
                       <ArticleHead story={props.story} />
                       <ArticlePhoto story={props.story} />
                       <ArticleTitle story={props.story} />
-                      {/* <ArticleSummary story={props.story}/> */}
                       <Metrics story={props.story}/>
                   </div>
             </li>
@@ -42,14 +38,10 @@ export default function Card(props) {
                 <ArticleHead story={props.story}/>
                   <ArticlePhoto story={props.story}/>
                   <ArticleTitle story={props.story}/>
-                  {/* <ArticleSummary story={props.story}/> */}
                   <ArticleContent story={props.story}/>
                   <ArticleLink story={props.story}/>
             <Metrics story={props.story}/>
           </Modal.Body> 
-          <Modal.Footer>
-            <CorrectionForm onSubmit={props.handleSubmit} />
-          </Modal.Footer>
         </Modal>
       </> 
 
