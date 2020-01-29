@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faInfo } from '@fortawesome/free-solid-svg-icons'
 import {faNewspaper} from '@fortawesome/free-solid-svg-icons'
 import {faLandmark } from '@fortawesome/free-solid-svg-icons'
+import CookieConsent from "react-cookie-consent";
 
 import FooterMenu from './components/page_structure/FooterMenu'
 import Sidebar from './components/page_structure/Sidebar'
@@ -123,6 +124,13 @@ export default class App extends React.Component {
               </ul>
             </Router>
           </Provider>
+          <CookieConsent
+              style={{ background: "var(--metrix-color)", fontSize: "10pt" }}
+              buttonStyle={{ background: "var(--bg-color)", fontSize: "10pt" }}
+              expires={150}>
+              <span>This website uses cookies to enhance the user experience</span>
+
+          </CookieConsent>
       </div>
       );
    }

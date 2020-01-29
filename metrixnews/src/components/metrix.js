@@ -181,7 +181,7 @@ class Metrix extends Component {
         </Card>
 
           {/* Team */}
-          <Card>
+          {/* <Card>
             <Card.Header as="h2">Our Team</Card.Header>
           </Card>
           <CardGroup style={{marginBottom: "25px"}}>
@@ -218,10 +218,10 @@ class Metrix extends Component {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </CardGroup>
+          </CardGroup> */}
 
           {/* Contact */}
-          <Card style={{marginBottom: "25px"}}>
+          {/* <Card style={{marginBottom: "25px"}}>
             <Card.Header as="h2">Contact Us</Card.Header>
             <Card.Body>
               <Card.Title>Find more information about Metrix.News here or contact us with any questions or comments</Card.Title>
@@ -231,10 +231,10 @@ class Metrix extends Component {
                 <span>Review our open source code here: </span><a href="https://github.com/MetrixNews" target="_blank" rel="noopener noreferrer">Github</a> <br></br>
               </Card.Text> 
             </Card.Body>
-          </Card>
+          </Card> */}
 
           {/* Acknowledgements */}
-          <Card style={{marginBottom: "25px"}}>
+          {/* <Card style={{marginBottom: "25px"}}>
             <Card.Header as="h2">Acknowledgements</Card.Header>
             <Card.Body>
               <Card.Title>We thank the following services for their support</Card.Title>
@@ -245,7 +245,7 @@ class Metrix extends Component {
                 <a href="https://www.joypixels.com/emoji" target="_blank" rel="noopener noreferrer">JoyPixels</a> <br></br>
               </Card.Text> 
             </Card.Body>
-          </Card>
+          </Card> */}
 
 </div>         
         )

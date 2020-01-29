@@ -5,7 +5,6 @@ import { bindActionCreators } from 'redux';
 
 import Spinner from 'react-bootstrap/Spinner';
 import Scroll from 'react-scroll'
-import Link from 'react-scroll'
 
 import loadCategories from '../actionCreators/newsfeed';
 import {getCategoriesError, getCategories, getCategoriesPending} from '../reducers/newsfeed';
@@ -45,7 +44,7 @@ class Newsfeed extends Component {
     };
 
     const menuItem = {
-      fontSize: "8pt",
+      fontSize: "10pt",
       fontWeight: "bold",
       border: "solid 2px var(--metrix-color)",
       borderRadius: "7px",
@@ -74,7 +73,6 @@ class Newsfeed extends Component {
                     spy={true} 
                     smooth={true} 
                     duration={500} 
-                    className='menuItem' 
                     activeClass='some-active-class'
                     >
                       <li style={menuItem} key={i} topic={category}>

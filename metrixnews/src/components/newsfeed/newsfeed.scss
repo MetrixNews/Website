@@ -225,7 +225,7 @@
     .menu {
       display: grid;
       grid-gap: calc(var(--gutter) / 1);
-      grid-template-columns: 5px repeat(40, calc(5% - var(--gutter) * -10)) 5px;
+      grid-template-columns: 5px repeat(40, calc(10% - var(--gutter) * -10)) 5px;
       grid-template-rows: minmax(15px, 1fr);
       overflow-x: scroll;
       width: 100%;
@@ -286,7 +286,7 @@
     .menu {
       display: grid;
       grid-gap: calc(var(--gutter) / 1);
-      grid-template-columns: 5px repeat(40, calc(5% - var(--gutter) * -12)) 5px;
+      grid-template-columns: 5px repeat(40, calc(15% - var(--gutter) * -12)) 5px;
       grid-template-rows: minmax(15px, 1fr);
       overflow-x: scroll;
       width: 100%;
