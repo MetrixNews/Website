@@ -14,13 +14,16 @@ import sadness from '../assets/icons/metrics/sadness.png';
 import disgust from '../assets/icons/metrics/disgust.png';
 import anger from '../assets/icons/metrics/anger.png';
 import anticipation from '../assets/icons/metrics/anticipation.png';
-import plutchik from '../assets/img/plutchik.jpg';
 
 import left from '../assets/icons/metrics/left.png';
 import center_left from '../assets/icons/metrics/center_left.png';
 import center from '../assets/icons/metrics/center.png';
 import center_right from '../assets/icons/metrics/center_right.png';
 import right from '../assets/icons/metrics/right.png';
+
+import AJ  from '../assets/img/AJ.jpg';
+import marcus  from '../assets/img/marcus.jpg';
+import simon  from '../assets/img/simon.jpg';
 
 import '../app.scss';
 import './page_structure/page_structure.scss'
@@ -47,21 +50,32 @@ class Metrix extends Component {
       }
 
       const mission={
-        fontSize: "14pt",
+        fontSize: "20pt",
         textAlign: "center",
+        color: "var(--metrix-color)"
+      }
+
+      const header={
+        background: "var(--bg-color)",
+        color: "var(--metrix-color)",
+        fontSize: 32,
+        fontWeight: "bold",
+        textAlign: "left",
+        float: "left",
       }
 
       const metricContainer = {
         display: "flex",
         justifyContent: "left",
         flexWrap: "wrap",
-        margin: "10px 0px"
+        margin: "10px 0px",
+        borderBottom: "solid 2px var(--highlight-color)"
       }
 
       const legend = {
         textAlign: "center",
-        fontWeight: "bold",
-        margin: "0px 8px"
+        margin: "0px 8px",
+        fontSize: "12pt"
       }
 
       const metric = {
@@ -70,8 +84,13 @@ class Metrix extends Component {
         margin: "0px auto",
     }
 
-    const description = {
+    const text = {
       fontSize: "12pt",
+    }
+
+    const founder = {
+      width: "100%",
+      height: "auto",
     }
       
 
@@ -81,17 +100,11 @@ class Metrix extends Component {
               <h1>User Guide</h1>
             </div>
             
-            {/* Intro Message */}
-            <div style={section}>
-              <p style={mission}>Welcome! Metrix is an open source research tool for the 2020 U.S. presidential election. Follow this guide to understand exactly what we do. </p>
-            </div>
-
-
           {/* Legend */}
           <Card style={{marginBottom: "25px"}}>
-          <Card.Header as="h2">Legend</Card.Header>
+          <Card.Header as="h1" style={header}>Legend</Card.Header>
           <Card.Body>
-            <Card.Title as="h3">Political Bias</Card.Title>
+            <Card.Title as="h1" style={{color: "var(--metrix-color"}}>Political Bias</Card.Title>
             <div style={metricContainer}>
                   <div style={legend}>
                     <img src={left} style={metric} alt="left"></img>
@@ -114,12 +127,8 @@ class Metrix extends Component {
                     <p>Right</p>
                 </div>
               </div>
-              <Card.Text style={{borderBottom: "solid grey"}}>
-                <p style={description}>Our labels are not influenced by user input. Instead, we analyze the author's language in each political story. Metrix uses Machine Learning to predict political bias of individual news articles using this 5 point scale</p>
-              </Card.Text>
 
-
-            <Card.Title as="h3">Emotion</Card.Title>
+            <Card.Title as="h1">Emotional Language</Card.Title>
             <div style={metricContainer}>
                   <div style={legend}>
                     <img src={joy} style={metric} alt="joy"></img>
@@ -154,12 +163,8 @@ class Metrix extends Component {
                     <p>Anticipation</p>
                 </div>
               </div>
-              <Card.Text style={{borderBottom: "solid grey"}}>
-              <p style={description}>Metrix uses Natural Language Processing to indiciate emotional rhetoric in authors' language and presents an emoji representation of the most prominent one. Read more about these emotions here:                 <a href="https://www.6seconds.org/2017/04/27/plutchiks-model-of-emotions/" target="_blank" rel="noopener noreferrer">Plutchik's Wheel of Emotions</a> <br></br>
-              </p>
-            </Card.Text>
 
-            <Card.Title as="h3">Sentiment</Card.Title>
+            <Card.Title as="h1">Tone</Card.Title>
             <div style={metricContainer}>
                   <div style={legend}>
                     <img src={positive} style={metric} alt="positive"></img>
@@ -174,78 +179,88 @@ class Metrix extends Component {
                     <p>Negative</p>
                   </div>
                 </div>
-            <Card.Text>
-            <p style={description}>Metrix uses Natural Language Processing to inidicate the overall sentiment of the article. Due to the structure of a news article, the majority are expected to be neutral. The event or author's tone must be rather extreme to recieve a positive or negative score.</p>
-            </Card.Text>
           </Card.Body>
         </Card>
 
+          {/* Resaerch and Code */}
+          <Card style={{marginBottom: "25px"}}>
+            <Card.Header as="h1" style={header}>Research and Code</Card.Header>
+            <Card.Body>
+              <Card.Text>
+                <span style={text}>Read more about our research here: </span><a href="" target="_blank" rel="noopener noreferrer" style={text}>Research PDF</a> <br></br>
+                <span style={text}>Review our open source code here: </span><a href="https://github.com/MetrixNews" target="_blank" rel="noopener noreferrer" style={text}>Github</a> <br></br>
+                <span style={text}>Review the emotional langugage categories here: </span><a href="https://www.6seconds.org/2017/04/27/plutchiks-model-of-emotions/" target="_blank" rel="noopener noreferrer" style={text}>Plutchik's Wheel of Emotions</a> <br></br>
+                <p style={text}>Email: info@metrix.news</p>
+              </Card.Text> 
+            </Card.Body>
+          </Card>
+
           {/* Team */}
-          {/* <Card>
-            <Card.Header as="h2">Our Team</Card.Header>
+          <Card>
+            <Card.Header as="h1" style={header}>Founders</Card.Header>
           </Card>
           <CardGroup style={{marginBottom: "25px"}}>
             <Card>
-              <Card.Img variant="top" src="https://via.placeholder.com/150"/>
+              <Card.Img variant="top" src={AJ} style={founder}/>
               <Card.Body>
-                <Card.Title>AJ Raymond</Card.Title>
-                <Card.Text>
-                  Founder and Developer
+                <Card.Title as="h2" style={{fontWeight: "bold"}}>AJ Raymond</Card.Title>
+                <Card.Text as="h4">
+                  Researcher, Data Scientist, Frontend Engineer
                   <br></br>
-                  <a href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/antraymond/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </Card.Text>
               </Card.Body>
             </Card>
             <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/150"/>
+            <Card.Img variant="top" src={marcus}/>
               <Card.Body>
-                <Card.Title>Marcus Cymerman</Card.Title>
-                <Card.Text>
-                  Founder and Developer
+                <Card.Title as="h2" style={{fontWeight: "bold"}}>Marcus Cymerman</Card.Title>
+                <Card.Text as="h4">
+                  Data Scientist, Backend Engineer
                   <br></br>
-                  <a href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/mpcymerman/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </Card.Text>
               </Card.Body>
             </Card>
             <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/150"/>
+            <Card.Img variant="top" src={simon}/>
               <Card.Body>
-                <Card.Title>Simon Mantlo</Card.Title>
-                <Card.Text>
-                  Analyst
+                <Card.Title as="h2" style={{fontWeight: "bold"}}>Simon Mantlo</Card.Title>
+                <Card.Text as="h4">
+                  Data Engineer 
                   <br></br>
-                  <a href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/simonmantlo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </Card.Text>
               </Card.Body>
             </Card>
-          </CardGroup> */}
+          </CardGroup>
 
-          {/* Contact */}
-          {/* <Card style={{marginBottom: "25px"}}>
-            <Card.Header as="h2">Contact Us</Card.Header>
+          {/* Cooklies Policy */}
+          <Card style={{marginBottom: "25px"}}>
+            <Card.Header as="h1" style={header}>Cookies Policy</Card.Header>
             <Card.Body>
-              <Card.Title>Find more information about Metrix.News here or contact us with any questions or comments</Card.Title>
               <Card.Text>
-                <p>Email: contact@metrix.news</p>
-                <span>Read more about our research here: </span><a href="" target="_blank" rel="noopener noreferrer">Research PDF</a> <br></br>
-                <span>Review our open source code here: </span><a href="https://github.com/MetrixNews" target="_blank" rel="noopener noreferrer">Github</a> <br></br>
+                <span style={text}>Review our cookies policy here:  </span> 
+                <a href="https://www.cookiepolicygenerator.com/live.php?token=MaqKu1fNLSk0aRRRo1DMTN6Totu21QJN" alt="cookiesPolicy" style={text}>Cookies Policy</a>
               </Card.Text> 
             </Card.Body>
-          </Card> */}
+          </Card>
 
           {/* Acknowledgements */}
-          {/* <Card style={{marginBottom: "25px"}}>
-            <Card.Header as="h2">Acknowledgements</Card.Header>
+          <Card style={{marginBottom: "25px"}}>
+            <Card.Header as="h1" style={header}>Acknowledgements</Card.Header>
             <Card.Body>
-              <Card.Title>We thank the following services for their support</Card.Title>
               <Card.Text>
-                <a href="https://mediacloud.org/" target="_blank" rel="noopener noreferrer">MediaCloud</a> <br></br>
-                <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">NewsAPI</a> <br></br>
-                <a href="http://sentiment.nrc.ca/lexicons-for-research/" target="_blank" rel="noopener noreferrer">NRC Emotion Lexicon</a> <br></br>
-                <a href="https://www.joypixels.com/emoji" target="_blank" rel="noopener noreferrer">JoyPixels</a> <br></br>
+                <p style={text}>We sincerely thank the follwoing organizations for their supporting research, services, designs, and more.</p>
+                <a href="https://kelley.iu.edu/faculty-research/centers-institutes/entrepreneurship-innovation/index.cshtml" target="_blank" rel="noopener noreferrer" style={text}>Johnson Center for Enrepreneurship and Innovation</a> <br></br>
+                <a href="https://luddy.indiana.edu/academics/innovation-entrepreneurship/index.html" target="_blank" rel="noopener noreferrer" style={text}>Shoemaker Innovation Center</a> <br></br>
+                <a href="https://mediacloud.org/" target="_blank" rel="noopener noreferrer" style={text}>MediaCloud</a> <br></br>
+                <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer" style={text}>NewsAPI</a> <br></br>
+                <a href="http://sentiment.nrc.ca/lexicons-for-research/" target="_blank" rel="noopener noreferrer" style={text}>NRC Emotion Lexicon</a> <br></br>
+                <a href="https://www.joypixels.com/emoji" target="_blank" rel="noopener noreferrer" style={text}>JoyPixels</a> <br></br>
               </Card.Text> 
             </Card.Body>
-          </Card> */}
+          </Card>
 
 </div>         
         )

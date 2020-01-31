@@ -8,6 +8,7 @@ import ArticleTitle from './article_title';
 import Metrics from './metrics';
 import ArticleContent from './article_content';
 import ArticleLink from './article_link';
+
 import Modal from 'react-bootstrap/Modal';
 
 import '../newsfeed.scss'
