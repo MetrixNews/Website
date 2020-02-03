@@ -15,7 +15,7 @@ export default class Candidate extends Component {
  
    render() {
     const candidate = {
-      borderTop: "solid thick var(--highlight-color)",
+      borderTop: "solid 2px var(--highlight-color)",
       paddingTop: "10px",
     }
      return (
