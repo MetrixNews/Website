@@ -63,7 +63,6 @@ class Metrix extends Component {
         textAlign: "left",
         float: "left",
       }
-
       const metricContainer = {
         display: "flex",
         justifyContent: "left",
@@ -82,6 +81,7 @@ class Metrix extends Component {
         width: "40px",
         height: "auto",
         margin: "0px auto",
+
     }
 
     const text = {
