@@ -91,7 +91,7 @@ export default class App extends React.Component {
 
       return (
         <div style={{
-          backgroundColor: styles.black(0.05),
+          backgroundColor: "var(--bg-color)",
           minHeight: "100vh",
           position: "relative"
         }}>
