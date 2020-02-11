@@ -1,11 +1,11 @@
-import http from "http";
+import https from "https";
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 import { StaticRouter } from "react-router-dom";
 
 import App from "./App.js";
 
-http
+https
   .createServer((req, res) => {
     const context = {};
 
