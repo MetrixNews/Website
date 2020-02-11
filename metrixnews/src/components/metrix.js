@@ -125,6 +125,8 @@ class Metrix extends Component {
               </div>
 
             <Card.Title as="h1">Emotional Language</Card.Title>
+            <span style={text}>Read what these mean here: </span><a href="https://www.6seconds.org/2017/04/27/plutchiks-model-of-emotions/" target="_blank" rel="noopener noreferrer" style={text}>Plutchik's Wheel of Emotions</a> 
+
             <div style={metricContainer}>
                   <div style={legend}>
                     <img src={joy} style={metric} alt="joy"></img>
@@ -157,8 +159,9 @@ class Metrix extends Component {
                   <div style={legend}>
                     <img src={anticipation} style={metric} alt="anticipation"></img>            
                     <p>Anticipation</p>
-                </div>
+                  </div>
               </div>
+
 
             <Card.Title as="h1">Tone</Card.Title>
             <div style={metricContainer}>
@@ -185,7 +188,6 @@ class Metrix extends Component {
               <Card.Text>
                 <span style={text}>Read more about our research here: </span><a href={Research} target="_blank" rel="noopener noreferrer" style={text}>Research</a> <br/><br/>
                 <span style={text}>Review our open source code here: </span><a href="https://github.com/MetrixNews" target="_blank" rel="noopener noreferrer" style={text}>Github</a> <br/><br/>
-                <span style={text}>Review the emotional langugage categories here: </span><a href="https://www.6seconds.org/2017/04/27/plutchiks-model-of-emotions/" target="_blank" rel="noopener noreferrer" style={text}>Plutchik's Wheel of Emotions</a> <br/><br/>
                 <p style={text}>Email: info@metrix.news</p>
               </Card.Text> 
             </Card.Body>
