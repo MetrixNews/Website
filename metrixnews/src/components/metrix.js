@@ -49,13 +49,7 @@ class Metrix extends Component {
         margin: "0 auto",
       }
 
-      const mission={
-        fontSize: "20pt",
-        textAlign: "center",
-        color: "var(--metrix-color)"
-      }
-
-      const header={
+     const header={
         background: "var(--bg-color)",
         color: "var(--metrix-color)",
         fontSize: 32,
@@ -74,7 +68,7 @@ class Metrix extends Component {
       const legend = {
         textAlign: "center",
         margin: "0px 8px",
-        fontSize: "12pt"
+        fontSize: "10pt"
       }
 
       const metric = {
