@@ -21,6 +21,8 @@ import center from '../assets/icons/metrics/center.png';
 import center_right from '../assets/icons/metrics/center_right.png';
 import right from '../assets/icons/metrics/right.png';
 
+import Research from '../assets/brand/Research.pdf';
+
 import AJ  from '../assets/img/AJ.jpg';
 import marcus  from '../assets/img/marcus.jpg';
 import simon  from '../assets/img/simon.jpg';
@@ -181,9 +183,9 @@ class Metrix extends Component {
             <Card.Header as="h1" style={header}>Research and Code</Card.Header>
             <Card.Body>
               <Card.Text>
-                <span style={text}>Read more about our research here: </span><a href="" target="_blank" rel="noopener noreferrer" style={text}>Research PDF</a> <br></br>
-                <span style={text}>Review our open source code here: </span><a href="https://github.com/MetrixNews" target="_blank" rel="noopener noreferrer" style={text}>Github</a> <br></br>
-                <span style={text}>Review the emotional langugage categories here: </span><a href="https://www.6seconds.org/2017/04/27/plutchiks-model-of-emotions/" target="_blank" rel="noopener noreferrer" style={text}>Plutchik's Wheel of Emotions</a> <br></br>
+                <span style={text}>Read more about our research here: </span><a href={Research} target="_blank" rel="noopener noreferrer" style={text}>Research</a> <br/><br/>
+                <span style={text}>Review our open source code here: </span><a href="https://github.com/MetrixNews" target="_blank" rel="noopener noreferrer" style={text}>Github</a> <br/><br/>
+                <span style={text}>Review the emotional langugage categories here: </span><a href="https://www.6seconds.org/2017/04/27/plutchiks-model-of-emotions/" target="_blank" rel="noopener noreferrer" style={text}>Plutchik's Wheel of Emotions</a> <br/><br/>
                 <p style={text}>Email: info@metrix.news</p>
               </Card.Text> 
             </Card.Body>
@@ -199,7 +201,7 @@ class Metrix extends Component {
               <Card.Body>
                 <Card.Title as="h2" style={{fontWeight: "bold"}}>AJ Raymond</Card.Title>
                 <Card.Text as="h4">
-                  Researcher, Data Scientist, Frontend Engineer
+                  Researcher, Frontend Engineer, Data Scientist
                   <br></br>
                   <a href="https://www.linkedin.com/in/antraymond/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </Card.Text>
@@ -210,7 +212,7 @@ class Metrix extends Component {
               <Card.Body>
                 <Card.Title as="h2" style={{fontWeight: "bold"}}>Marcus Cymerman</Card.Title>
                 <Card.Text as="h4">
-                  Data Scientist, Backend Engineer
+                  Backend Engineer, Data Scientist
                   <br></br>
                   <a href="https://www.linkedin.com/in/mpcymerman/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </Card.Text>
@@ -221,7 +223,7 @@ class Metrix extends Component {
               <Card.Body>
                 <Card.Title as="h2" style={{fontWeight: "bold"}}>Simon Mantlo</Card.Title>
                 <Card.Text as="h4">
-                  Data Engineer 
+                  Researher, Data Engineer 
                   <br></br>
                   <a href="https://www.linkedin.com/in/simonmantlo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </Card.Text>
