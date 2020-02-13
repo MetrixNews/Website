@@ -15,6 +15,7 @@ export default class Bio extends Component {
     render() {
       const bio = {
         width: "100%",
+        marginBottom: "5px",
       }
       const bold = {
         fontWeight: "bold",
