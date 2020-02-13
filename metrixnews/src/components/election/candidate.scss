@@ -63,6 +63,7 @@
         overflow: hidden;
         width: calc(100%-40px);
         font-size: 10pt;
+        height: 1.2em;
       }
     }
   
@@ -97,6 +98,7 @@
         overflow: hidden;
         width: calc(100%-40px);
         font-size: 10pt;
+        height: 1.2em;
       }
     }
   }
@@ -127,10 +129,10 @@
         width: calc(100% - 160px);
       }
       .link {
-        height: 30px;
         overflow: hidden;
         width: calc(100%-40px);
         font-size: 10pt;
+        height: 30px;
       }
       
 
@@ -163,16 +165,15 @@
         width: 30px;
         height: 30px;
         margin: 0px 5px 0px 5px;
-
       }
       .bold {
         font-weight: bold;
       }
       .link {
-        height: 30px;
-        overflow: hidden;
         width: calc(100%-40px);
         font-size: 10pt;
+        overflow: hidden;
+        height: 30px;
       }
   }
   }
