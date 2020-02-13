@@ -55,7 +55,7 @@ export default class TopicMenu extends Component {
                 <ul className="menu">
                 {topics.map((topic) => (
                 <a href="" >
-                    <li style={item}> 
+                    <li style={item} className="hover"> 
                         <span topic={topic}>
                             {topic}
                         </span>

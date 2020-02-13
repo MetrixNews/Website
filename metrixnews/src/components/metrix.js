@@ -79,17 +79,15 @@ class Metrix extends Component {
         margin: "0px auto",
 
     }
+      const text = {
+        fontSize: "12pt",
+      }
 
-    const text = {
-      fontSize: "12pt",
-    }
-
-    const founder = {
-      width: "100%",
-      height: "auto",
-    }
+      const founder = {
+        width: "100%",
+        height: "auto",
+      }
       
-
         return (
           <div style={contentStyle}>
             <div className="pageDescription">

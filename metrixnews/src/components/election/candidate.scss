@@ -2,7 +2,7 @@
    @media (min-device-width:1224px) {
     .pic {
       height: 145px;
-      margin-bottom: 5;
+      margin-bottom: 10px;
       float: left;
     }
     .name {
@@ -29,13 +29,14 @@
       overflow: hidden;
       width: calc(100%-40px);
       font-size: 10pt;
+      height: 1.2em;
     }
   
     //large desktop screen
     @media (min-device-width:1824px) {
       .pic {
         height: 145px;
-        margin-bottom: 5;
+        margin-bottom: 10px;
         float: left;
       }
       .name {
@@ -69,7 +70,7 @@
     @media (max-width:1224px) {
       .pic {
         height: 145px;
-        margin-bottom: 5;
+        margin-bottom: 10px;
         float: left;
       }
       .name {
@@ -104,7 +105,7 @@
     @media (max-device-width:1224px) {
       .pic {
         height: 145px;
-        margin-bottom: 5;
+        margin-bottom: 10px;
         float: left;
       }
       .name {
@@ -137,7 +138,7 @@
     @media (max-device-width:600px) {
       .pic {
         height: 145px;
-        margin-bottom: 5;
+        margin-bottom: 10px;
         float: left;
       }
       .name {

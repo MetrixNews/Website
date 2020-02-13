@@ -58,7 +58,7 @@ export default class App extends React.Component {
       white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
       black: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
       topBarHeight: 40,
-      footerMenuHeight: 50,
+      footerMenuHeight: 60,
       showFooterMenuText: windowWidth > 500,
       showSidebar: windowWidth > 1224,
       sidebarWidth: windowWidth < 1100 ? 50 : 125,

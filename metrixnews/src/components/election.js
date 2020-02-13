@@ -5,7 +5,10 @@ import { bindActionCreators } from 'redux';
 
 import Scroll from 'react-scroll'
 import Link from 'react-scroll'
-import Spinner from 'react-bootstrap/Spinner';
+
+import Loader from 'react-loader-spinner'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+
 
 import loadCandidates from '../actionCreators/election';
 import {getCandidatesError, getCandidates, getCandidatesPending} from '../reducers/election';
@@ -49,16 +52,29 @@ class Election extends Component {
       borderRadius: "7px",
       backgroundColor: "var(--metrix-color)",
       color: "var(--bg-color)", 
-  }
+    }
+
+    const loader = {
+      margin: "0 auto",
+      textAlign: "center",
+    }
+
 
     let Link = Scroll.Link;
 
-       if(!this.shouldComponentRender()) return <Spinner />
- 
        return (
         <div style={contentStyle}>
           <div className="pageDescription">
             <h1>2020 Presidential Candidates</h1>
+          </div>
+          <div style={loader}>
+            <Loader
+              type="Oval"
+              color="var(--metrix-color)"
+              height={100}
+              width={100}
+              timeout={1000} //1.0 secs
+            />
           </div>
           <div className="app">
             <div className="full hide-scroll">

@@ -3,8 +3,10 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import Spinner from 'react-bootstrap/Spinner';
 import Scroll from 'react-scroll'
+
+import Loader from 'react-loader-spinner'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
 import loadCategories from '../actionCreators/newsfeed';
 import {getCategoriesError, getCategories, getCategoriesPending} from '../reducers/newsfeed';
@@ -51,15 +53,26 @@ class Newsfeed extends Component {
       backgroundColor: "var(--metrix-color)",
       color: "var(--bg-color)", 
   }
+    const loader = {
+      margin: "0 auto",
+      textAlign: "center",
+    }
 
-  let Link = Scroll.Link;
+    let Link = Scroll.Link;
 
-      if(!this.shouldComponentRender()) return <Spinner />
-
-      else return (
+      return (
         <div style={contentStyle}>
           <div className="pageDescription">
             <h1>Political Newsfeed</h1>
+          </div>
+          <div style={loader}>
+            <Loader
+              type="Oval"
+              color="var(--metrix-color)"
+              height={100}
+              width={100}
+              timeout={1000} //1.0 secs
+            />
           </div>
           <div className="app">
             <div className="full hide-scroll">
