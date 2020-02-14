@@ -97,7 +97,6 @@ export default class App extends React.Component {
           position: "relative"
         }}>
 
-        {/* <Provider store={store}> */}
           <Router>
             <ScrollToTop/>
             <ul>
