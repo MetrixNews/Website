@@ -34,7 +34,7 @@ export default class Metrics extends Component {
 
     return (
         <div style={row}>
-            <img src={center} style={metric} alt="center"></img>
+            <Bias story={this.props.story}/>
             <Emotion story={this.props.story}/>
             <Sentiment story={this.props.story}/>
         </div>
@@ -129,29 +129,29 @@ function Emotion(props) {
 
 function Bias (props) {
     const bias = props.story.political_biasness
-    if (bias == "left") {
+    if (bias == "Liberal") {
         return (
-            <img src={left} style={metric} alt="left"></img>
+            <img src={left} style={metric} alt="Left"></img>
         )
     }
-    if (bias == "center_left") {
+    if (bias == "Center-Liberal") {
         return (
-            <img src={center_left} style={metric} alt="center_left"></img>
+            <img src={center_left} style={metric} alt="Center_Left"></img>
         )
     }
-    if (bias == "center") {
+    if (bias == "Center") {
         return (
-            <img src={center} style={metric} alt="center"></img>
+            <img src={center} style={metric} alt="Center"></img>
         )
     }
-    if (bias == "center_right") {
+    if (bias == "Center-Conservative") {
         return (
-            <img src={center_right} style={metric} alt="center_right"></img>
+            <img src={center_right} style={metric} alt="Center_Right"></img>
         )
     }
-    if (bias == "right") {
+    if (bias == "Conservative") {
         return (
-            <img src={right} style={metric} alt="right"></img>
+            <img src={right} style={metric} alt="Right"></img>
         )
     }
     else {

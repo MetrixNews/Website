@@ -46,20 +46,15 @@ export default function loadCandidates(){
 }
 
 const candidates = [
-    "https://api.metrix.news/articles/candidate/Michael%20Bennet",
     "https://api.metrix.news/articles/candidate/Joseph%20R.%20Biden%20Jr.",
     "https://api.metrix.news/articles/candidate/Michael%20R.%20Bloomberg",
     "https://api.metrix.news/articles/candidate/Pete%20Buttigieg",
-    "https://api.metrix.news/articles/candidate/Julián%20Castro",
-    "https://api.metrix.news/articles/candidate/John%20Delaney",
     "https://api.metrix.news/articles/candidate/Tulsi%20Gabbard",
     "https://api.metrix.news/articles/candidate/Amy%20Klobuchar",
     "https://api.metrix.news/articles/candidate/Bernie%20Sanders",
     "https://api.metrix.news/articles/candidate/Tom%20Steyer",
     "https://api.metrix.news/articles/candidate/Donald%20J.%20Trump",
-    "https://api.metrix.news/articles/candidate/Joe%20Walsh",
     "https://api.metrix.news/articles/candidate/Elizabeth%20Warren",
     "https://api.metrix.news/articles/candidate/William%20F.%20Weld",
-    "https://api.metrix.news/articles/candidate/Marianne%20Williamson",
-    "https://api.metrix.news/articles/candidate/Andrew%20Yang",
+
 ];
