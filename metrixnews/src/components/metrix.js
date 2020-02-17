@@ -84,8 +84,13 @@ class Metrix extends Component {
       }
 
       const founder = {
+        // display: "flex",
+        alignText: "left",
+        // flexWrap: "wrap",
         width: "100%",
-        height: "auto",
+        borderBottom: "solid 2px var(--highlight-color)",
+        backgroundColor: "#fff", 
+        color:"var(--metrix-color)",
       }
       
         return (
@@ -98,8 +103,8 @@ class Metrix extends Component {
           <Card style={{marginBottom: "25px"}}>
           <Card.Header as="h1" style={header}>Legend</Card.Header>
           <Card.Body>
-            <Card.Title as="h1" style={{color: "var(--metrix-color"}}>Political Bias</Card.Title>
-            <div style={metricContainer}>
+            {/* <Card.Title as="h2" style={{fontWeight: "bold"}}>Political Bias</Card.Title> */}
+            {/* <div style={metricContainer}>
                   <div style={legend}>
                     <img src={left} style={metric} alt="left"></img>
                     <p>Left</p>
@@ -120,9 +125,9 @@ class Metrix extends Component {
                     <img src={right} style={metric} alt="right"></img>
                     <p>Right</p>
                 </div>
-              </div>
+              </div> */}
 
-            <Card.Title as="h1">Emotional Language</Card.Title>
+            <Card.Title  as="h2" style={{fontWeight: "bold"}}>Emotional Language</Card.Title>
             <span style={text}>Read what these mean here: </span><a href="https://www.6seconds.org/2017/04/27/plutchiks-model-of-emotions/" target="_blank" rel="noopener noreferrer" style={text}>Plutchik's Wheel of Emotions</a> 
 
             <div style={metricContainer}>
@@ -161,7 +166,7 @@ class Metrix extends Component {
               </div>
 
 
-            <Card.Title as="h1">Tone</Card.Title>
+            <Card.Title  as="h2" style={{fontWeight: "bold"}}>Tone</Card.Title>
             <div style={metricContainer}>
                   <div style={legend}>
                     <img src={positive} style={metric} alt="positive"></img>
@@ -196,8 +201,7 @@ class Metrix extends Component {
             <Card.Header as="h1" style={header}>Founders</Card.Header>
           </Card>
           <CardGroup style={{marginBottom: "25px"}}>
-            <Card>
-              <Card.Img variant="top" src={AJ} style={founder}/>
+            <Card style={founder}>
               <Card.Body>
                 <Card.Title as="h2" style={{fontWeight: "bold"}}>AJ Raymond</Card.Title>
                 <Card.Text as="h4">
@@ -207,8 +211,7 @@ class Metrix extends Component {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
-            <Card.Img variant="top" src={marcus}/>
+            <Card style={founder}>
               <Card.Body>
                 <Card.Title as="h2" style={{fontWeight: "bold"}}>Marcus Cymerman</Card.Title>
                 <Card.Text as="h4">
@@ -218,14 +221,33 @@ class Metrix extends Component {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
-            <Card.Img variant="top" src={simon}/>
+            <Card style={founder}>
               <Card.Body>
                 <Card.Title as="h2" style={{fontWeight: "bold"}}>Simon Mantlo</Card.Title>
                 <Card.Text as="h4">
-                  Researher, Data Engineer 
+                  Researcher, Data Engineer 
                   <br></br>
                   <a href="https://www.linkedin.com/in/simonmantlo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card style={founder}>
+              <Card.Body>
+                <Card.Title as="h2" style={{fontWeight: "bold"}}>Kiki Mowery</Card.Title>
+                <Card.Text as="h4">
+                  Designer, UI/UX Tester 
+                  <br></br>
+                  <a href="https://www.linkedin.com/in/kiki-mowery-532465a7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card style={founder}>
+              <Card.Body>
+                <Card.Title as="h2" style={{fontWeight: "bold"}}>Nick Wethington</Card.Title>
+                <Card.Text as="h4">
+                  UI/UX Tester 
+                  <br></br>
+                  <a href="https://www.linkedin.com/in/nick-wethington-387ab01a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </Card.Text>
               </Card.Body>
             </Card>

@@ -4,11 +4,11 @@ import positive from '../../../assets/icons/metrics/positive.png';
 import negative from '../../../assets/icons/metrics/negative.png';
 import neutral from '../../../assets/icons/metrics/neutral.png';
 
-import left from '../../../assets/icons/metrics/left.png';
-import center_left from '../../../assets/icons/metrics/center_left.png';
-import center from '../../../assets/icons/metrics/center.png';
-import center_right from '../../../assets/icons/metrics/center_right.png';
-import right from '../../../assets/icons/metrics/right.png';
+// import left from '../../../assets/icons/metrics/left.png';
+// import center_left from '../../../assets/icons/metrics/center_left.png';
+// import center from '../../../assets/icons/metrics/center.png';
+// import center_right from '../../../assets/icons/metrics/center_right.png';
+// import right from '../../../assets/icons/metrics/right.png';
 
 import joy from '../../../assets/icons/metrics/joy.png';
 import trust from '../../../assets/icons/metrics/trust.png';
@@ -34,7 +34,7 @@ export default class Metrics extends Component {
 
     return (
         <div style={row}>
-            <Bias story={this.props.story}/>
+            {/* <Bias story={this.props.story}/> */}
             <Emotion story={this.props.story}/>
             <Sentiment story={this.props.story}/>
         </div>
@@ -127,39 +127,39 @@ function Emotion(props) {
 
 }
 
-function Bias (props) {
-    const bias = props.story.political_biasness
-    if (bias == "Liberal") {
-        return (
-            <img src={left} style={metric} alt="Left"></img>
-        )
-    }
-    if (bias == "Center-Liberal") {
-        return (
-            <img src={center_left} style={metric} alt="Center_Left"></img>
-        )
-    }
-    if (bias == "Center") {
-        return (
-            <img src={center} style={metric} alt="Center"></img>
-        )
-    }
-    if (bias == "Center-Conservative") {
-        return (
-            <img src={center_right} style={metric} alt="Center_Right"></img>
-        )
-    }
-    if (bias == "Conservative") {
-        return (
-            <img src={right} style={metric} alt="Right"></img>
-        )
-    }
-    else {
-        return (
-            null
-        )
-    }
-}
+// function Bias (props) {
+//     const bias = props.story.political_biasness
+//     if (bias == "Liberal") {
+//         return (
+//             <img src={left} style={metric} alt="Left"></img>
+//         )
+//     }
+//     if (bias == "Center-Liberal") {
+//         return (
+//             <img src={center_left} style={metric} alt="Center_Left"></img>
+//         )
+//     }
+//     if (bias == "Center") {
+//         return (
+//             <img src={center} style={metric} alt="Center"></img>
+//         )
+//     }
+//     if (bias == "Center-Conservative") {
+//         return (
+//             <img src={center_right} style={metric} alt="Center_Right"></img>
+//         )
+//     }
+//     if (bias == "Conservative") {
+//         return (
+//             <img src={right} style={metric} alt="Right"></img>
+//         )
+//     }
+//     else {
+//         return (
+//             null
+//         )
+//     }
+// }
 
 {/* <img  src="https://via.placeholder.com/50" className="metric" alt="emotion"/>
 <img  src="https://via.placeholder.com/50" className="metric" alt="sentiment"/> */}
