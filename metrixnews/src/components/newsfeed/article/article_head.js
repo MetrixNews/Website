@@ -45,7 +45,7 @@ export default class ArticleHead extends Component {
 
             <div style={publishInfo}>
                 <span style={source}>{this.props.story.source}</span><br/>
-                <span style={author}>{this.props.story.author}</span><br/>
+                <span style={author}>{this.props.story.Author}</span><br/>
                   
                 <PrettyDate story={this.props.story}/>                                    
             </div>

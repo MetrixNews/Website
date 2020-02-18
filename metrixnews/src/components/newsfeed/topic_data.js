@@ -25,8 +25,8 @@ export default class Data extends Component {
           }
         
         const icon ={
-            width: "30px",
-            height: "30px",
+            width: "20px",
+            height: "20px",
             margin: "0px 5px 0px 0px"
         }
 

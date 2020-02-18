@@ -103,8 +103,8 @@ class Metrix extends Component {
           <Card style={{marginBottom: "25px"}}>
           <Card.Header as="h1" style={header}>Legend</Card.Header>
           <Card.Body>
-            {/* <Card.Title as="h2" style={{fontWeight: "bold"}}>Political Bias</Card.Title> */}
-            {/* <div style={metricContainer}>
+            {/* <Card.Title as="h2" style={{fontWeight: "bold"}}>Political Bias</Card.Title>
+            <div style={metricContainer}>
                   <div style={legend}>
                     <img src={left} style={metric} alt="left"></img>
                     <p>Left</p>
@@ -125,8 +125,8 @@ class Metrix extends Component {
                     <img src={right} style={metric} alt="right"></img>
                     <p>Right</p>
                 </div>
-              </div> */}
-
+              </div>
+ */}
             <Card.Title  as="h2" style={{fontWeight: "bold"}}>Emotional Language</Card.Title>
             <span style={text}>Read what these mean here: </span><a href="https://www.6seconds.org/2017/04/27/plutchiks-model-of-emotions/" target="_blank" rel="noopener noreferrer" style={text}>Plutchik's Wheel of Emotions</a> 
 

@@ -22,8 +22,8 @@ export default class Bio extends Component {
         fontSize: "14pt",
       }
       const icon = {
-        width: 30,
-        height: 30,
+        width: 20,
+        height: 20,
         margin: "0px 5px 0px 5px"
       }
  

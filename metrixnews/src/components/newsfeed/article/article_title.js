@@ -9,7 +9,7 @@ export default class ArticleTitle extends Component {
     render() {
       return (
         <div className="headline">
-            <span>{this.props.story.title}</span>
+            <span>{this.props.story.Title}</span>
         </div>
     )
 }
