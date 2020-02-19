@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 import PropTypes from 'prop-types'
 
 import ArticleHead from './article_head';
@@ -12,7 +12,7 @@ import Modal from 'react-bootstrap/Modal';
 
 import './newsfeed.scss'
 
-export default function Card(props) {
+export default React.memo(function Card(props) {
 
     const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
@@ -46,8 +46,8 @@ export default function Card(props) {
       </> 
 
     )
-  }
+  });
 
-Card.propTypes = {
-  articles: PropTypes.array
-}
+// Card.propTypes = {
+//   articles: PropTypes.array
+// }
