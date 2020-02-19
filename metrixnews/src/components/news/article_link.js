@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import '../newsfeed.scss'
+import './newsfeed.scss'
  
 export default class ArticleLink extends PureComponent {
     constructor(props) {

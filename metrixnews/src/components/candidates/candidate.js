@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 import { Element } from 'react-scroll'
 
 import Bio from './bio'
-import Spectrum from '../newsfeed/spectrum/news_spectrum'
+import Spectrum from '../news/news_spectrum'
 
-import '../newsfeed/newsfeed.scss';
+import '../news/newsfeed.scss';
 
 export default class Candidate extends PureComponent {
    constructor(props) {

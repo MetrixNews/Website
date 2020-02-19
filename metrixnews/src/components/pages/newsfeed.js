@@ -8,13 +8,13 @@ import Scroll from 'react-scroll'
 import Loader from 'react-loader-spinner'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
-import loadCategories from '../actionCreators/newsfeed';
-import {getCategoriesError, getCategories, getCategoriesPending} from '../reducers/newsfeed';
+import loadCategories from '../../actionCreators/newsfeed';
+import {getCategoriesError, getCategories, getCategoriesPending} from '../../reducers/newsfeed';
 
-import Topic from './newsfeed/topic';
-import '../app.scss';
-import "./page_structure/page_structure.scss";
-import './newsfeed/newsfeed.scss';
+import Topic from '../topics/topic';
+import '../../app.scss';
+import '../page_structure/page_structure.scss'
+import '../news/newsfeed.scss';
 
 class Newsfeed extends Component {
   constructor(props) {

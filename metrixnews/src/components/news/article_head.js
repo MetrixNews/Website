@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 import Moment from 'react-moment';
 
-import nyt from '../../../assets/img/nyt.png'
-import '../newsfeed.scss'
+import nyt from '../../assets/img/nyt.png'
+import './newsfeed.scss'
 
 export default class ArticleHead extends PureComponent {
     constructor(props) {

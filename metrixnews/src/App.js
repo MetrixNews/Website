@@ -17,9 +17,9 @@ import FooterMenu from './components/page_structure/FooterMenu'
 import Sidebar from './components/page_structure/Sidebar'
 import TopBar from './components/page_structure/TopBar'
 
-import NewsfeedComponent from './components/newsfeed.js';
-import ElectionComponent from './components/election.js';
-import MetrixComponent from './components/metrix.js';
+import NewsfeedComponent from './components/pages/newsfeed.js';
+import ElectionComponent from './components/pages/election.js';
+import MetrixComponent from './components/pages/metrix.js';
 
 import './app.scss';
 

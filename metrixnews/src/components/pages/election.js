@@ -8,12 +8,12 @@ import Scroll from 'react-scroll'
 import Loader from 'react-loader-spinner'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
-import loadCandidates from '../actionCreators/election';
-import {getCandidatesError, getCandidates, getCandidatesPending} from '../reducers/election';
+import loadCandidates from '../../actionCreators/election';
+import {getCandidatesError, getCandidates, getCandidatesPending} from '../../reducers/election';
 
-import Candidate from './election/candidate'
+import Candidate from '../candidates/candidate'
 
-import '../app.scss';
+import '../../app.scss';
 
 class Election extends PureComponent {
    constructor(props) {

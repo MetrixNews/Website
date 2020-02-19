@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 
 import { Element } from 'react-scroll'
 
-import Spectrum from './spectrum/news_spectrum';
+import Spectrum from '../news/news_spectrum';
 import Data from './topic_data';
-import './newsfeed.scss';
+import '../news/newsfeed.scss';
 
 export default class Topic extends PureComponent {
   constructor(props) {

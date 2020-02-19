@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import './newsfeed.scss';
+import '../news/newsfeed.scss';
 
 export default class TopicMenu extends PureComponent {
 

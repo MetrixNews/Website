@@ -10,7 +10,7 @@ import ArticleLink from './article_link';
 
 import Modal from 'react-bootstrap/Modal';
 
-import '../newsfeed.scss'
+import './newsfeed.scss'
 
 export default function Card(props) {
 

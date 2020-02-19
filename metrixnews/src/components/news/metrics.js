@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 
-import positive from '../../../assets/icons/metrics/positive.png';
-import negative from '../../../assets/icons/metrics/negative.png';
-import neutral from '../../../assets/icons/metrics/neutral.png';
+import positive from '../../assets/icons/metrics/positive.png';
+import negative from '../../assets/icons/metrics/negative.png';
+import neutral from '../../assets/icons/metrics/neutral.png';
 
 // import left from '../../../assets/icons/metrics/left.png';
 // import center_left from '../../../assets/icons/metrics/center_left.png';
@@ -10,16 +10,16 @@ import neutral from '../../../assets/icons/metrics/neutral.png';
 // import center_right from '../../../assets/icons/metrics/center_right.png';
 // import right from '../../../assets/icons/metrics/right.png';
 
-import joy from '../../../assets/icons/metrics/joy.png';
-import trust from '../../../assets/icons/metrics/trust.png';
-import fear from '../../../assets/icons/metrics/fear.png';
-import surprise from '../../../assets/icons/metrics/surprise.png';
-import sadness from '../../../assets/icons/metrics/sadness.png';
-import disgust from '../../../assets/icons/metrics/disgust.png';
-import anger from '../../../assets/icons/metrics/anger.png';
-import anticipation from '../../../assets/icons/metrics/anticipation.png';
+import joy from '../../assets/icons/metrics/joy.png';
+import trust from '../../assets/icons/metrics/trust.png';
+import fear from '../../assets/icons/metrics/fear.png';
+import surprise from '../../assets/icons/metrics/surprise.png';
+import sadness from '../../assets/icons/metrics/sadness.png';
+import disgust from '../../assets/icons/metrics/disgust.png';
+import anger from '../../assets/icons/metrics/anger.png';
+import anticipation from '../../assets/icons/metrics/anticipation.png';
 
-import '../newsfeed.scss'
+import './newsfeed.scss'
 
 export default class Metrics extends PureComponent {
     constructor(props) {
