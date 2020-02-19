@@ -4,38 +4,38 @@ import Moment from 'react-moment';
 import nyt from '../../assets/img/nyt.png'
 import './newsfeed.scss'
 
+const row = {
+    width: "100%",
+    height: "auto",
+}
+
+const publishInfo = {
+    float: "left",
+    paddingBottom: "5px",
+    color: "var(--article-font-color)",
+    fontSize: "10pt",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+    display:"block",
+    width: "75%",
+}
+
+const source = {
+    textAlign: "left",
+    fontWeight: "bold",
+}
+
+const author = {
+   lineHeight: "1.2em",
+   maxHeight: "1.2em",
+}
+
 export default class ArticleHead extends PureComponent {
     constructor(props) {
         super(props);
     }
     render() {
-        const row = {
-            width: "100%",
-            height: "auto",
-        }
-
-        const publishInfo = {
-            float: "left",
-            paddingBottom: "5px",
-            color: "var(--article-font-color)",
-            fontSize: "10pt",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-            display:"block",
-            width: "75%",
-        }
-
-        const source = {
-            textAlign: "left",
-            fontWeight: "bold",
-        }
-
-       const author = {
-           lineHeight: "1.2em",
-           maxHeight: "1.2em",
-       }
-
     return (
         <div style={row}>
             <div>

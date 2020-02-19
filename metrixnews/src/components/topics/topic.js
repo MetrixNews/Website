@@ -7,18 +7,17 @@ import Spectrum from '../news/news_spectrum';
 import Data from './topic_data';
 import '../news/newsfeed.scss';
 
+const topic = {
+  borderTop: "solid 2px var(--highlight-color)",
+  backgroundColor: "var(--bg-color)",
+}
+
 export default class Topic extends PureComponent {
   constructor(props) {
     super(props);
   }
 
   render() {
-
-    const topic = {
-      borderTop: "solid 2px var(--highlight-color)",
-      backgroundColor: "var(--bg-color)",
-    }
-
     return (
       <Element id={this.props.topic.topic} name={this.props.topic.topic}>
         <div style={topic}>

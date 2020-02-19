@@ -21,17 +21,17 @@ import anticipation from '../../assets/icons/metrics/anticipation.png';
 
 import './newsfeed.scss'
 
+const row = {
+    width: "100%",
+    height: "40px",
+    padding: "0px 5px 0px 5px",
+}
+
 export default class Metrics extends PureComponent {
     constructor(props) {
         super(props);
     }
     render() {
-        const row = {
-            width: "100%",
-            height: "40px",
-            padding: "0px 5px 0px 5px",
-        }
-
     return (
         <div style={row}>
             {/* <Bias story={this.props.story}/> */}

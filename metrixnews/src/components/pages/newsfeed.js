@@ -16,6 +16,21 @@ import '../../app.scss';
 import '../page_structure/page_structure.scss'
 import '../news/newsfeed.scss';
 
+const menuItem = {
+  fontSize: "10pt",
+  fontWeight: "bold",
+  border: "solid 2px var(--metrix-color)",
+  borderRadius: "7px",
+  backgroundColor: "var(--metrix-color)",
+  color: "var(--bg-color)", 
+}
+const loader = {
+  margin: "0 auto",
+  textAlign: "center",
+}
+
+let Link = Scroll.Link;
+
 class Newsfeed extends Component {
   constructor(props) {
       super(props);
@@ -44,22 +59,6 @@ class Newsfeed extends Component {
       paddingBottom: this.props.styles.showSidebar ? 10 : this.props.styles.footerMenuHeight + 20,
       paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 10 : 10
     };
-
-    const menuItem = {
-      fontSize: "10pt",
-      fontWeight: "bold",
-      border: "solid 2px var(--metrix-color)",
-      borderRadius: "7px",
-      backgroundColor: "var(--metrix-color)",
-      color: "var(--bg-color)", 
-  }
-    const loader = {
-      margin: "0 auto",
-      textAlign: "center",
-    }
-
-    let Link = Scroll.Link;
-
       return (
         <div style={contentStyle}>
           <div className="pageDescription">

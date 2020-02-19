@@ -1,5 +1,4 @@
 import React, {memo} from 'react';
-import PropTypes from 'prop-types'
 
 import ArticleHead from './article_head';
 import ArticlePhoto from './article_photo';

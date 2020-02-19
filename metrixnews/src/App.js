@@ -25,6 +25,18 @@ import './app.scss';
 
 const store = configureStore()
 
+const bg = {
+  backgroundColor: "var(--bg-color)",
+  minHeight: "100vh",
+  position: "relative",
+}
+
+const linkStyles = {
+  fontSize: 24,
+  color: "#492354",
+  textAlign: "center",
+}
+
 export default class App extends PureComponent {
   constructor(props) {
     super(props);
@@ -65,12 +77,6 @@ export default class App extends PureComponent {
       sidebarCollapsed: windowWidth < 1100,
     };
 
-    const linkStyles = {
-      fontSize: 24,
-      color: "#492354",
-      textAlign: "center",
-    }
-
     let newspaper = <Link to='./' style={linkStyles}> <FontAwesomeIcon icon={faNewspaper} /></Link>;
     let election = <Link to='./election' style={linkStyles}><FontAwesomeIcon icon={faLandmark} /></Link> ;
     let about = <Link to='./metrix' style={linkStyles}><FontAwesomeIcon icon={faInfo}  /></Link>;
@@ -88,11 +94,7 @@ export default class App extends PureComponent {
       { icon: about},
       ];
 
-      const bg = {
-        backgroundColor: "var(--bg-color)",
-        minHeight: "100vh",
-        position: "relative",
-      }
+
 
       return (
         <div style={bg}>

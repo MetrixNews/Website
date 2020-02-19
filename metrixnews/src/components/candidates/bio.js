@@ -6,6 +6,20 @@ import candidate from '../../assets/icons/bio.png';
 
 import '../../app.scss';
 import './candidate.scss';
+
+const bio = {
+  width: "100%",
+  marginBottom: "5px",
+}
+const bold = {
+  fontWeight: "bold",
+  fontSize: "14pt",
+}
+const icon = {
+  width: 20,
+  height: 20,
+  margin: "0px 5px 0px 5px"
+}
  
 export default class Bio extends PureComponent {
     constructor(props) {
@@ -13,21 +27,6 @@ export default class Bio extends PureComponent {
     }
 
     render() {
-      const bio = {
-        width: "100%",
-        marginBottom: "5px",
-      }
-      const bold = {
-        fontWeight: "bold",
-        fontSize: "14pt",
-      }
-      const icon = {
-        width: 20,
-        height: 20,
-        margin: "0px 5px 0px 5px"
-      }
- 
-
       return (
         <div style={bio}>
             <img className="pic" variant="top" src={this.props.person.photo} />

@@ -2,37 +2,31 @@ import React, { PureComponent } from 'react';
 import data from '../../assets/icons/data.png';
 import '../news/newsfeed.scss'
  
+const button = {
+    width: "100%",
+    color: "var(--metrix-color)",
+    marginBottom: "5px",
+    textAlign: "left",
+    // display: "inline-block",
+    fontSize: "14pt",
+    cursor: "pointer",
+  }
+
+const icon ={
+    width: "20px",
+    height: "20px",
+    margin: "0px 5px 0px 0px"
+}
+
+const bold = {
+    fontWeight: "bold",
+  }
+
 export default class Data extends PureComponent {
     constructor(props) {
         super(props);
     }
-
     render() {
-
-        // const links = {
-        //     textAlign: "left",
-        //     float: "left",
-        // }
-
-        const button = {
-            width: "100%",
-            color: "var(--metrix-color)",
-            marginBottom: "5px",
-            textAlign: "left",
-            // display: "inline-block",
-            fontSize: "14pt",
-            cursor: "pointer",
-          }
-        
-        const icon ={
-            width: "20px",
-            height: "20px",
-            margin: "0px 5px 0px 0px"
-        }
-
-        const bold = {
-            fontWeight: "bold",
-          }
 
       return (
         <div className="half">

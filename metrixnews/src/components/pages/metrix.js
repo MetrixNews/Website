@@ -30,69 +30,60 @@ import Research from '../../assets/brand/Research.pdf';
 import '../../app.scss';
 import '../page_structure/page_structure.scss'
 
+const header={
+  background: "var(--bg-color)",
+  color: "var(--metrix-color)",
+  fontSize: 32,
+  fontWeight: "bold",
+  textAlign: "left",
+  float: "left",
+}
+const metricContainer = {
+  display: "flex",
+  justifyContent: "left",
+  flexWrap: "wrap",
+  margin: "10px 0px",
+  borderBottom: "solid 2px var(--highlight-color)"
+}
+
+const legend = {
+  textAlign: "center",
+  margin: "0px 8px",
+  fontSize: "10pt"
+}
+
+const metric = {
+  width: "40px",
+  height: "auto",
+  margin: "0px auto",
+
+}
+const text = {
+  fontSize: "12pt",
+}
+
+const founder = {
+  // display: "flex",
+  alignText: "left",
+  // flexWrap: "wrap",
+  width: "100%",
+  borderBottom: "solid 2px var(--highlight-color)",
+  backgroundColor: "#fff", 
+  color:"var(--metrix-color)",
+}
+
 class Metrix extends PureComponent {
     constructor(props) {
         super(props);
     }
   
     render() {
-
       const contentStyle = {
         paddingTop: this.props.styles.showSidebar ? 20 : this.props.styles.topBarHeight,
         paddingRight: 10,
         paddingBottom: this.props.styles.showSidebar ? 20 : this.props.styles.footerMenuHeight + 20,
         paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 20 : 10
       };
-
-      const section={
-        width: "80%",
-        display: "flex",
-        textAlign: "center",
-        margin: "0 auto",
-      }
-
-     const header={
-        background: "var(--bg-color)",
-        color: "var(--metrix-color)",
-        fontSize: 32,
-        fontWeight: "bold",
-        textAlign: "left",
-        float: "left",
-      }
-      const metricContainer = {
-        display: "flex",
-        justifyContent: "left",
-        flexWrap: "wrap",
-        margin: "10px 0px",
-        borderBottom: "solid 2px var(--highlight-color)"
-      }
-
-      const legend = {
-        textAlign: "center",
-        margin: "0px 8px",
-        fontSize: "10pt"
-      }
-
-      const metric = {
-        width: "40px",
-        height: "auto",
-        margin: "0px auto",
-
-    }
-      const text = {
-        fontSize: "12pt",
-      }
-
-      const founder = {
-        // display: "flex",
-        alignText: "left",
-        // flexWrap: "wrap",
-        width: "100%",
-        borderBottom: "solid 2px var(--highlight-color)",
-        backgroundColor: "#fff", 
-        color:"var(--metrix-color)",
-      }
-      
         return (
           <div style={contentStyle}>
             <div className="pageDescription">

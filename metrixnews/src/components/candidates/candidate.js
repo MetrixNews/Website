@@ -8,16 +8,17 @@ import Spectrum from '../news/news_spectrum'
 
 import '../news/newsfeed.scss';
 
+const candidate = {
+  borderTop: "solid 2px var(--highlight-color)",
+  paddingTop: "10px",
+}
+
 export default class Candidate extends PureComponent {
    constructor(props) {
      super(props);
    }
  
    render() {
-    const candidate = {
-      borderTop: "solid 2px var(--highlight-color)",
-      paddingTop: "10px",
-    }
      return (
       <Element id={this.props.person.Name} name={this.props.person.Name}>
         <div style={candidate}>
