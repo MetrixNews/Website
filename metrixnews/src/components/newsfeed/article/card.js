@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types'
-import classnames from 'classnames';
 
 import ArticleHead from './article_head';
 import ArticlePhoto from './article_photo';

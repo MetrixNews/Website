@@ -1,7 +1,7 @@
-import React, { Component }  from 'react';
+import React, { PureComponent } from 'react';
 import '../newsfeed.scss'
  
-export default class ArticleLink extends Component {
+export default class ArticleLink extends PureComponent {
     constructor(props) {
         super(props);
     }

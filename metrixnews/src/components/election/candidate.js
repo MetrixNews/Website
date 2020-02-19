@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types'
 
 import { Element } from 'react-scroll'
@@ -8,7 +8,7 @@ import Spectrum from '../newsfeed/spectrum/news_spectrum'
 
 import '../newsfeed/newsfeed.scss';
 
-export default class Candidate extends Component {
+export default class Candidate extends PureComponent {
    constructor(props) {
      super(props);
    }

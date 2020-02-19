@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import {
   HashRouter as Router,
   Route,
   Link
 } from 'react-router-dom'
-import { Provider } from 'react-redux'
 import configureStore from './configureStore'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -26,7 +25,7 @@ import './app.scss';
 
 const store = configureStore()
 
-export default class App extends React.Component {
+export default class App extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {

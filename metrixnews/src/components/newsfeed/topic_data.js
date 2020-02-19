@@ -1,8 +1,8 @@
-import React, { Component }  from 'react';
+import React, { PureComponent } from 'react';
 import data from '../../assets/icons/data.png';
 import './newsfeed.scss'
  
-export default class Data extends Component {
+export default class Data extends PureComponent {
     constructor(props) {
         super(props);
     }

@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React, { PureComponent } from 'react';
 
 import positive from '../../../assets/icons/metrics/positive.png';
 import negative from '../../../assets/icons/metrics/negative.png';
@@ -21,7 +21,7 @@ import anticipation from '../../../assets/icons/metrics/anticipation.png';
 
 import '../newsfeed.scss'
 
-export default class Metrics extends Component {
+export default class Metrics extends PureComponent {
     constructor(props) {
         super(props);
     }

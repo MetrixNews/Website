@@ -1,11 +1,10 @@
-import React, { Component }  from 'react';
+import React, { PureComponent } from 'react';
 import Moment from 'react-moment';
 
-import notfound from '../../../assets/img/404.png'
 import nyt from '../../../assets/img/nyt.png'
 import '../newsfeed.scss'
 
-export default class ArticleHead extends Component {
+export default class ArticleHead extends PureComponent {
     constructor(props) {
         super(props);
     }
@@ -91,7 +90,7 @@ function SourceLogo(props) {
     }
     else {
         return (
-            <img src={notfound} style={logo}  alt="logo"/>
+            null
         )
     }
   }

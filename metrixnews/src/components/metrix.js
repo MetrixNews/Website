@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 
@@ -15,22 +15,22 @@ import disgust from '../assets/icons/metrics/disgust.png';
 import anger from '../assets/icons/metrics/anger.png';
 import anticipation from '../assets/icons/metrics/anticipation.png';
 
-import left from '../assets/icons/metrics/left.png';
-import center_left from '../assets/icons/metrics/center_left.png';
-import center from '../assets/icons/metrics/center.png';
-import center_right from '../assets/icons/metrics/center_right.png';
-import right from '../assets/icons/metrics/right.png';
+// import left from '../assets/icons/metrics/left.png';
+// import center_left from '../assets/icons/metrics/center_left.png';
+// import center from '../assets/icons/metrics/center.png';
+// import center_right from '../assets/icons/metrics/center_right.png';
+// import right from '../assets/icons/metrics/right.png';
 
 import Research from '../assets/brand/Research.pdf';
 
-import AJ  from '../assets/img/AJ.jpg';
-import marcus  from '../assets/img/marcus.jpg';
-import simon  from '../assets/img/simon.jpg';
+// import AJ  from '../assets/img/AJ.jpg';
+// import marcus  from '../assets/img/marcus.jpg';
+// import simon  from '../assets/img/simon.jpg';
 
 import '../app.scss';
 import './page_structure/page_structure.scss'
 
-class Metrix extends Component {
+class Metrix extends PureComponent {
     constructor(props) {
         super(props);
     }

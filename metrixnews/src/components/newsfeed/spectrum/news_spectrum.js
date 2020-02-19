@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types'
 import Card from '../article/card';
 import '../newsfeed.scss';
 // import '../../../app.scss';
 
-export default class Spectrum extends Component {
+export default class Spectrum extends PureComponent {
     constructor(props) {
     super(props);
   }

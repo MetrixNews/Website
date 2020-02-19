@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import Scroll from 'react-scroll'
-import Link from 'react-scroll'
 
 import Loader from 'react-loader-spinner'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
-
 
 import loadCandidates from '../actionCreators/election';
 import {getCandidatesError, getCandidates, getCandidatesPending} from '../reducers/election';
@@ -17,7 +15,7 @@ import Candidate from './election/candidate'
 
 import '../app.scss';
 
-class Election extends Component {
+class Election extends PureComponent {
    constructor(props) {
        super(props);
  
@@ -58,7 +56,6 @@ class Election extends Component {
       margin: "0 auto",
       textAlign: "center",
     }
-
 
     let Link = Scroll.Link;
 

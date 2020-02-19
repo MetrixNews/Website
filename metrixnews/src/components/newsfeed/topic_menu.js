@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
+import React, { PureComponent } from 'react';
 import './newsfeed.scss';
 
-export default class TopicMenu extends Component {
+export default class TopicMenu extends PureComponent {
 
   render() {
       const topics = [

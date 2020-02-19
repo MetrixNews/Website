@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React, { PureComponent } from 'react';
 
 import donate from '../../assets/icons/donate.png';
 import platform from '../../assets/icons/platform.png';
@@ -7,7 +7,7 @@ import candidate from '../../assets/icons/bio.png';
 import '../../app.scss';
 import './candidate.scss';
  
-export default class Bio extends Component {
+export default class Bio extends PureComponent {
     constructor(props) {
         super(props);
     }
