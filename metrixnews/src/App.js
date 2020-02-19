@@ -69,12 +69,11 @@ export default class App extends PureComponent {
       fontSize: 24,
       color: "#492354",
       textAlign: "center",
-
     }
 
     let newspaper = <Link to='./' style={linkStyles}> <FontAwesomeIcon icon={faNewspaper} /></Link>;
     let election = <Link to='./election' style={linkStyles}><FontAwesomeIcon icon={faLandmark} /></Link> ;
-    let about = <Link to='./metrix' style={linkStyles}><FontAwesomeIcon icon={faInfo} style={{marginRight: 10}} /></Link>;
+    let about = <Link to='./metrix' style={linkStyles}><FontAwesomeIcon icon={faInfo}  /></Link>;
 
     const menuItems = styles.showSidebar
     ? [
@@ -89,13 +88,14 @@ export default class App extends PureComponent {
       { icon: about},
       ];
 
-      return (
-        <div style={{
-          backgroundColor: "var(--bg-color)",
-          minHeight: "100vh",
-          position: "relative"
-        }}>
+      const bg = {
+        backgroundColor: "var(--bg-color)",
+        minHeight: "100vh",
+        position: "relative",
+      }
 
+      return (
+        <div style={bg}>
           <Router>
             <ScrollToTop/>
             <ul>

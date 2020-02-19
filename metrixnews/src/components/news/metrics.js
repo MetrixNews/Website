@@ -47,8 +47,6 @@ const metric = {
     height: "30px",
     margin: "5px 5px 5px 5px",
     float: "left",
-    // position: "absolute",
-    // bottom: "5px",
 }
 
 function Sentiment(props) {

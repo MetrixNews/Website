@@ -116,13 +116,6 @@ Newsfeed.propTypes = {
   pending: PropTypes.bool
 }
 
-// Newsfeed.propTypes = {
-//   arrayWithShape: PropTypes.arrayOf(PropTypes.shape({
-//     id: PropTypes.string.isRequired,
-//     source: PropTypes.string.isRequired,
-//   })).isRequired,
-// }
-
 const mapStateToProps = state => ({
   error: getCategoriesError(state),
   categories: getCategories(state),
