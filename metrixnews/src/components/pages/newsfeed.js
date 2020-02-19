@@ -70,7 +70,7 @@ class Newsfeed extends Component {
               color="var(--metrix-color)"
               height={100}
               width={100}
-              timeout={1000} //1.0 secs
+              timeout={500} //.5 secs
             />
           </div>
           <div className="app">

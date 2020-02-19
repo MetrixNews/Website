@@ -70,7 +70,7 @@ class Election extends PureComponent {
               color="var(--metrix-color)"
               height={100}
               width={100}
-              timeout={1000} //1.0 secs
+              timeout={500} //0.5 secs
             />
           </div>
           <div className="app">
