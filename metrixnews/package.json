@@ -35,7 +35,8 @@
     "build": "react-scripts build",
     "deploy-production": "react-scripts build && scp -r ./build/* metrix@134.209.163.4:/var/www/metrix.news/html",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "analyse": "node analyse.js"
   },
   "proxy": "https://api.metrix.news",
   "eslintConfig": {
@@ -52,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^3.6.0"
   }
 }
