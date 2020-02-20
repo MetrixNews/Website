@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, Suspense, lazy } from 'react';
 import {
   HashRouter as Router,
   Route,
@@ -17,13 +17,18 @@ import FooterMenu from './components/page_structure/FooterMenu'
 import Sidebar from './components/page_structure/Sidebar'
 import TopBar from './components/page_structure/TopBar'
 
-import NewsfeedComponent from './components/pages/newsfeed.js';
-import ElectionComponent from './components/pages/election.js';
-import MetrixComponent from './components/pages/metrix.js';
+// import NewsfeedComponent from './components/pages/newsfeed.js';
+// import ElectionComponent from './components/pages/election.js';
+// import MetrixComponent from './components/pages/metrix.js';
 
 import './app.scss';
 
 const store = configureStore()
+
+const NewsfeedComponent = lazy(() => import('./components/pages/newsfeed.js'));
+const ElectionComponent = lazy(() => import('./components/pages/election.js'));
+const MetrixComponent = lazy(() => import('./components/pages/metrix.js'));
+
 
 const bg = {
   backgroundColor: "var(--bg-color)",
@@ -99,6 +104,7 @@ export default class App extends PureComponent {
       return (
         <div style={bg}>
           <Router>
+            <Suspense fallback={<div>Loading...</div>}>
             <ScrollToTop/>
             <ul>
                 {styles.showSidebar ? (
@@ -124,6 +130,7 @@ export default class App extends PureComponent {
                 } ></Route> 
 
               </ul>
+              </Suspense>
             </Router>
           <CookieConsent
               style={{ background: "var(--metrix-color)", fontSize: "10pt" }}
