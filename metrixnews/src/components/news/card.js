@@ -19,30 +19,30 @@ export default React.memo(function Card(props) {
 
     return (
       <>
-        <a onClick={handleShow}>
+         <a onClick={handleShow}>
             <li className="item">
                   <div className="article">
                       <ArticleHead story={props.story} />
-                      <ArticlePhoto story={props.story} />
-                      <ArticleTitle story={props.story} />
+                      <ArticlePhoto photo={props.story.url_to_image} />
+                      <ArticleTitle title={props.story.Title} />
                       <Metrics story={props.story}/>
                   </div>
             </li>
-        </a>
+         </a>
   
-        <Modal show={show} onHide={handleClose} animation={false} aria-labelledby="contained-modal-title-vcenter" centered>
+       <Modal show={show} onHide={handleClose} animation={false} aria-labelledby="contained-modal-title-vcenter" centered>
           <Modal.Header closeButton>
           </Modal.Header>
           <Modal.Body >
                 <ArticleHead story={props.story}/>
-                  <ArticlePhoto story={props.story}/>
-                  <ArticleTitle story={props.story}/>
-                  <ArticleContent story={props.story}/>
-                  <ArticleLink story={props.story}/>
+                  <ArticlePhoto photo={props.story.url_to_image}/>
+                  <ArticleTitle title={props.story.Title}/>
+                  <ArticleContent content={props.story.content}/>
+                  <ArticleLink link={props.story.url}/>
             <Metrics story={props.story}/>
           </Modal.Body> 
         </Modal>
-      </> 
+      </>
 
     )
   });

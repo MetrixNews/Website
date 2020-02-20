@@ -9,7 +9,7 @@ export default class ArticleTitle extends PureComponent {
     render() {
       return (
         <div className="headline">
-            <span>{this.props.story.Title}</span>
+            <span>{this.props.title}</span>
         </div>
     )
 }

@@ -18,7 +18,7 @@ export default class ArticleContent extends PureComponent {
     return (
         <section>
             <p style={content}>
-                {this.props.story.content}
+                {this.props.content}
             </p>
         </section>
     )

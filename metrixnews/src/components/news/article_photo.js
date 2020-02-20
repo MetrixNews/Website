@@ -8,7 +8,7 @@ export default class ArticlePhoto extends PureComponent {
 
     render() {
       return (
-        <img className="articlephoto" src={this.props.story.url_to_image} alt="" />
+        <img className="articlephoto" src={this.props.photo} alt="" />
     )
 }
 }
