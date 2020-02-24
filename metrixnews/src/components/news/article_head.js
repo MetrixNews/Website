@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import Moment from 'react-moment';
 
-import nyt from '../../assets/img/nyt.png'
 import './newsfeed.scss'
 
 const row = {
@@ -63,11 +62,6 @@ function SourceLogo(props) {
         margin: "5px 5px 5px 0px",
     }
 
-    if(url.search(url.match("nytimes.com")) >= 0) {
-        return (
-            <img src={nyt} style={logo}  alt="logo"/>
-        )
-    }
     if(url.search(url.match(".com")) >= 0) {
         return (
             <img src={"https://logo.clearbit.com/" + url.substring(0,url.search(".com")+4)} style={logo}  alt="logo"/>

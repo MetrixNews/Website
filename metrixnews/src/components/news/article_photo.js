@@ -9,7 +9,7 @@ export default class ArticlePhoto extends PureComponent {
     componentDidMount() {
       const config = {
         root: null,
-        rootMargin: '50%',
+        rootMargin: '100%',
       }
 
         this.observer = new IntersectionObserver(

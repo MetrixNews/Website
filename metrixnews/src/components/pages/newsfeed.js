@@ -68,8 +68,8 @@ class Newsfeed extends Component {
             <Loader
               type="Oval"
               color="var(--metrix-color)"
-              height={100}
-              width={100}
+              height={50}
+              width={50}
               timeout={500} //.5 secs
             />
           </div>
