@@ -28,7 +28,7 @@
   .hs {
     display: grid;
     grid-gap: calc(var(--gutter) / 1);
-    grid-template-columns: 5px repeat(10000, 34%) 5px; //37%
+    grid-template-columns: 5px repeat(10000, 37%) 5px; //37%
     grid-template-rows: minmax(150px, 1fr);
     overflow-x: scroll;
     padding-bottom: calc(1 * var(--gutter));
