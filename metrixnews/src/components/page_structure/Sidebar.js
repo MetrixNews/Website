@@ -15,7 +15,7 @@ const Sidebar = ({ menuItems, styles }) => {
   const logoStyle = {
     textAlign: "center",
     color: "#492354",
-    marginBottom: 100,
+    marginBottom: 150,
     fontWeight: "bold",
     fontSize: "24pt",
   };
@@ -27,13 +27,9 @@ const Sidebar = ({ menuItems, styles }) => {
     textAlign: "center",
 
   }
-
-
-
-
   return (
     <div style={sidebarStyle}>
-      <div style={logoStyle}>{styles.sidebarCollapsed ? "M" : "Metrix"}</div>
+      <div style={logoStyle}>{styles.sidebarCollapsed ? "M" : "Metrix News"}</div>
       {menuItems.map(item => (
           <span style={menuItemStyle}>{item.icon}</span>
       ))}

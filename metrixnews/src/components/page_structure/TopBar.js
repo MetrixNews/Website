@@ -25,7 +25,7 @@ const TopBar = ({ styles }) => {
 
   return (
     <div style={topBarStyle}>
-      <span style={titleStyle}>Metrix</span>
+      <span style={titleStyle}>Metrix News</span>
     </div>
   );
 };

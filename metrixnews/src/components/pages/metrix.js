@@ -260,7 +260,7 @@ class Metrix extends PureComponent {
             <Card.Header as="h1" style={header}>Acknowledgements</Card.Header>
             <Card.Body>
               <Card.Text>
-                <p style={text}>We sincerely thank the follwoing organizations for their supporting research, services, designs, and more.</p>
+                <p style={text}>We sincerely thank the following organizations for their supporting research, services, designs, and more.</p>
                 <a href="https://kelley.iu.edu/faculty-research/centers-institutes/entrepreneurship-innovation/index.cshtml" target="_blank" rel="noopener noreferrer" style={text}>Johnson Center for Enrepreneurship and Innovation</a> <br></br>
                 <a href="https://luddy.indiana.edu/academics/innovation-entrepreneurship/index.html" target="_blank" rel="noopener noreferrer" style={text}>Shoemaker Innovation Center</a> <br></br>
                 <a href="https://mediacloud.org/" target="_blank" rel="noopener noreferrer" style={text}>MediaCloud</a> <br></br>

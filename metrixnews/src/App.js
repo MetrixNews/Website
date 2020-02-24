@@ -37,7 +37,7 @@ const bg = {
 }
 
 const linkStyles = {
-  fontSize: 24,
+  fontSize: 32,
   color: "#492354",
   textAlign: "center",
 }

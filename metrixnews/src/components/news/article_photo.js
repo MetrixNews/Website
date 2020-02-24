@@ -7,6 +7,11 @@ export default class ArticlePhoto extends PureComponent {
     }
 
     componentDidMount() {
+      const config = {
+        root: null,
+        rootMargin: '50%',
+      }
+
         this.observer = new IntersectionObserver(
             entries => {
               entries.forEach(entry => {
@@ -19,7 +24,8 @@ export default class ArticlePhoto extends PureComponent {
             },
             {
               root: document.querySelector(".container")
-            }
+            },
+            config
           );
           this.observer.observe(this.element);
     }

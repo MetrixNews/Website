@@ -28,7 +28,7 @@
   .hs {
     display: grid;
     grid-gap: calc(var(--gutter) / 1);
-    grid-template-columns: 5px repeat(10000, 35%) 5px;
+    grid-template-columns: 5px repeat(10000, 34%) 5px; //37%
     grid-template-rows: minmax(150px, 1fr);
     overflow-x: scroll;
     padding-bottom: calc(1 * var(--gutter));
@@ -91,7 +91,7 @@
     .hs {
       display: grid;
       grid-gap: calc(var(--gutter) / 1);
-      grid-template-columns: 5px repeat(10000, 30%) 5px;
+      grid-template-columns: 5px repeat(10000, 35%) 5px;
       grid-template-rows: minmax(150px, 1fr);
       overflow-x: scroll;
       padding-bottom: calc(1 * var(--gutter));
@@ -114,8 +114,8 @@
     .articlephoto {
       width: 100%;
       height: 100%;
-      min-height: 30vh;
-      max-height: 30vh;
+      min-height: 25vh;
+      max-height: 25vh;
       display: block;
       margin-bottom: 5px;
     }
@@ -153,7 +153,7 @@
     .hs {
       display: grid;
       grid-gap: calc(var(--gutter) / 1);
-      grid-template-columns: 5px repeat(10000, 50%) 5px;
+      grid-template-columns: 5px repeat(10000, 55%) 5px; //50%
       grid-template-rows: minmax(150px, 1fr);
       overflow-x: scroll;
       padding-bottom: calc(1 * var(--gutter));
@@ -277,7 +277,7 @@
     .hs {
       display: grid;
       grid-gap: calc(var(--gutter) / 1);
-      grid-template-columns: 5px repeat(10000, calc(20% - var(--gutter) * -15)) 5px;
+      grid-template-columns: 5px repeat(10000, calc(20% - var(--gutter) * -15)) 5px; //20%
       grid-template-rows: minmax(150px, 1fr);
       overflow-x: scroll;
       padding-bottom: calc(1 * var(--gutter));
@@ -336,7 +336,7 @@
 }
 
 //Mobile
-  @media (max-device-width:900px) {
+  @media (max-device-width:700px) {
     @media (orientation: portrait) {
     .hs {
       display: grid;
@@ -401,7 +401,7 @@
     .hs {
       display: grid;
       grid-gap: calc(var(--gutter) / 1);
-      grid-template-columns: 5px repeat(10000, calc(15% - var(--gutter) * -15)) 5px;
+      grid-template-columns: 5px repeat(10000, calc(20% - var(--gutter) * -15)) 5px;
       grid-template-rows: minmax(150px, 1fr);
       overflow-x: scroll;
       padding-bottom: calc(1 * var(--gutter));
