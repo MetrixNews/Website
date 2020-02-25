@@ -15,7 +15,13 @@ import Candidate from '../candidates/candidate'
 
 import '../../app.scss';
 
-
+const pageDescription = {
+  textAlign: "center",
+  color: "var(--highlight-color)",
+  textAlign: "center",
+  fontSize: "24pt",
+  fontWeight: "bold",
+}
 const menuItem = {
   fontSize: "8pt",
   fontWeight: "bold",
@@ -61,7 +67,7 @@ class Election extends PureComponent {
     
        return (
         <div style={contentStyle}>
-          <div className="pageDescription">
+          <div style={pageDescription}>
             <h1>2020 Presidential Candidates</h1>
           </div>
           <div style={loader}>

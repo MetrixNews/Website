@@ -13,8 +13,15 @@ import {getCategoriesError, getCategories, getCategoriesPending} from '../../red
 
 import Topic from '../topics/topic';
 import '../../app.scss';
-import '../page_structure/page_structure.scss'
 import '../news/newsfeed.scss';
+
+const pageDescription = {
+  textAlign: "center",
+  color: "var(--highlight-color)",
+  textAlign: "center",
+  fontSize: "24pt",
+  fontWeight: "bold",
+}
 
 const menuItem = {
   fontSize: "10pt",
@@ -61,7 +68,7 @@ class Newsfeed extends Component {
     };
       return (
         <div style={contentStyle}>
-          <div className="pageDescription">
+          <div style={pageDescription}>
             <h1>Political Newsfeed</h1>
           </div>
           <div style={loader}>

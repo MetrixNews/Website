@@ -28,8 +28,14 @@ import Research from '../../assets/brand/Research.pdf';
 // import simon  from '../assets/img/simon.jpg';
 
 import '../../app.scss';
-import '../page_structure/page_structure.scss'
 
+const pageDescription = {
+  textAlign: "center",
+  color: "var(--highlight-color)",
+  textAlign: "center",
+  fontSize: "24pt",
+  fontWeight: "bold",
+}
 const header={
   background: "var(--bg-color)",
   color: "var(--metrix-color)",
@@ -86,7 +92,7 @@ class Metrix extends PureComponent {
       };
         return (
           <div style={contentStyle}>
-            <div className="pageDescription">
+            <div style={pageDescription}>
               <h1>User Guide</h1>
             </div>
             
