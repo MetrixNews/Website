@@ -18,7 +18,6 @@ import '../news/newsfeed.scss';
 const pageDescription = {
   textAlign: "center",
   color: "var(--highlight-color)",
-  textAlign: "center",
   fontSize: "24pt",
   fontWeight: "bold",
 }

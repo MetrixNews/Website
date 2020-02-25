@@ -16,7 +16,6 @@ import Candidate from '../candidates/candidate'
 import '../../app.scss';
 
 const pageDescription = {
-  textAlign: "center",
   color: "var(--highlight-color)",
   textAlign: "center",
   fontSize: "24pt",
