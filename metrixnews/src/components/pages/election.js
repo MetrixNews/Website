@@ -58,7 +58,7 @@ class Election extends PureComponent {
  
    render() {
     const contentStyle = {
-      paddingTop: this.props.styles.showSidebar ? 40 : this.props.styles.topBarHeight + 40,
+      paddingTop: this.props.styles.showSidebar ? 65 : this.props.styles.topBarHeight + 65,
       paddingRight: 10,
       paddingBottom: this.props.styles.showSidebar ? 10 : this.props.styles.footerMenuHeight + 20,
       paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 10 : 10
@@ -73,9 +73,9 @@ class Election extends PureComponent {
             <Loader
               type="Oval"
               color="var(--metrix-color)"
-              height={100}
-              width={100}
-              timeout={500} //0.5 secs
+              height={76}
+              width={75}
+              timeout={1000} //0.5 secs
             />
           </div>
           <div className="app">

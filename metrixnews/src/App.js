@@ -106,7 +106,7 @@ export default class App extends PureComponent {
           <Router>
             <Suspense fallback={<div>Loading...</div>}>
             <ScrollToTop/>
-            <ul>
+            <ul style={{paddingLeft:"0px"}}>
                 {styles.showSidebar ? (
                   <Sidebar menuItems={menuItems} styles={styles} />
                 ) : (

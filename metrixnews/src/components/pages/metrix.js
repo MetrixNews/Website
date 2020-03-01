@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
+import Card from 'react-bootstrap/Card'
 
 import positive from '../../assets/icons/metrics/positive.png';
 import negative from '../../assets/icons/metrics/negative.png';
@@ -23,10 +23,6 @@ import anticipation from '../../assets/icons/metrics/anticipation.png';
 
 import Research from '../../assets/brand/Research.pdf';
 
-// import AJ  from '../assets/img/AJ.jpg';
-// import marcus  from '../assets/img/marcus.jpg';
-// import simon  from '../assets/img/simon.jpg';
-
 import '../../app.scss';
 
 const pageDescription = {
@@ -34,47 +30,50 @@ const pageDescription = {
   textAlign: "center",
   fontSize: "24pt",
   fontWeight: "bold",
+  borderBottom: "solid 2px var(--highlight-color)",
+
 }
-const header={
-  background: "var(--bg-color)",
+
+const header = {
+  borderTop: "solid 2px var(--highlight-color)",
+  marginTop: "30px",
   color: "var(--metrix-color)",
-  fontSize: 32,
+  fontSize: "32pt",
   fontWeight: "bold",
-  textAlign: "left",
-  float: "left",
 }
-const metricContainer = {
-  display: "flex",
-  justifyContent: "left",
-  flexWrap: "wrap",
-  margin: "10px 0px",
-  borderBottom: "solid 2px var(--highlight-color)"
+
+const mission = {
+  paddingTop: "20px",
+  maxWidth: "1000px", 
+  margin: "0 auto", 
+  textAlign: "center", 
+  color: "var(--metrix-color)",
 }
 
 const legend = {
   textAlign: "center",
-  margin: "0px 8px",
-  fontSize: "10pt"
+  width: "100%",
+  float: "left",
 }
 
 const metric = {
   width: "40px",
   height: "auto",
   margin: "0px auto",
-
-}
-const text = {
-  fontSize: "12pt",
 }
 
-const founder = {
-  // display: "flex",
-  alignText: "left",
-  // flexWrap: "wrap",
-  width: "100%",
-  borderBottom: "solid 2px var(--highlight-color)",
-  backgroundColor: "#fff", 
-  color:"var(--metrix-color)",
+const gridContainer ={
+  display: "grid",
+  gridTemplateColumns: "50% 50%",
+  gridGap: "5px",
+  backgroundColor: "var(--bg-color)",
+  marginBottom: "20px",
+}
+
+const founder ={
+  minWidth: "30%",
+  backgroundColor: "var(--bg-color)",
+  textAlign: "center",
 }
 
 class Metrix extends PureComponent {
@@ -87,196 +86,292 @@ class Metrix extends PureComponent {
         paddingTop: this.props.styles.showSidebar ? 20 : this.props.styles.topBarHeight,
         paddingRight: 10,
         paddingBottom: this.props.styles.showSidebar ? 20 : this.props.styles.footerMenuHeight + 20,
-        paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 20 : 10
+        paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 10 : 10,
+        width: "100%",
       };
         return (
           <div style={contentStyle}>
             <div style={pageDescription}>
               <h1>User Guide</h1>
             </div>
+
+
+          {/* Mission */}
+          <div style={mission}> 
+            <h5>America is facing critical environmental, social, and governance issues that must be addressed in the next presidential term.</h5><br/>
+            <h5>Metrix.News is an analytical research tool for the 2020 presidential election.</h5><br/>
+            <h5>Metrix.News presents data and information from diverse, credible sources through a simple platform. We do not collect, store, or analyze personal user data. 
+              Instead, we collect, store, and analyze daily news stories to hint toward authors' emotions and tone.<a href={Research} target="_blank" rel="noopener noreferrer"> Click here to continue reading about our research</a> </h5>
+          </div>
             
           {/* Legend */}
-          <Card style={{marginBottom: "25px"}}>
-          <Card.Header as="h1" style={header}>Legend</Card.Header>
-          <Card.Body>
-            {/* <Card.Title as="h2" style={{fontWeight: "bold"}}>Political Bias</Card.Title>
-            <div style={metricContainer}>
-                  <div style={legend}>
-                    <img src={left} style={metric} alt="left"></img>
-                    <p>Left</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={center_left} style={metric} alt="center_left"></img>
-                    <p>Center-Left</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={center} style={metric} alt="center"></img>
-                    <p>Center</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={center_right} style={metric} alt="center_right"></img>
-                    <p>Center-Right</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={right} style={metric} alt="right"></img>
-                    <p>Right</p>
+          <div >
+            <h2 style={header}>Tones</h2>
+          </div>
+          <div style={gridContainer}>
+            <div style = {{
+                      border: "#83c441 solid 10px",
+                      textAlign: "center",
+                      padding: "10px",
+                    }}>
+            <div style={legend}>
+              <img src={positive} style={metric}/>
+              <div>
+                <h3>Positive</h3>
+                <div>
+              </div>
+            </div>
+            </div>
+            </div>
+            <div style = {{
+                      border: "#e73642 solid 10px",
+                      textAlign: "center",
+                      padding: "10px",
+                    }}>            
+            <div style={legend}>
+              <img src={negative} style={metric}/>
+              <div>
+                <h3>Negative</h3>
+              </div>
+            </div>
+            </div>
+            <div style = {{
+                      border: "#f8d524 solid 10px",
+                      textAlign: "center",
+                      padding: "10px",
+                      gridColumn: "1 / span 2",
+                    }}>            
+            <div style={legend}>
+              <img src={neutral} style={metric}/>
+              <div>
+                <h3>Nuetral</h3>
+              </div>
+            </div>
+            </div>    
+          </div>
+
+
+          <div>
+            <h2 style={header}>Emotions</h2>
+          </div>
+          <div style={gridContainer}>
+            <div style = {{
+                      border: "#fffcd6 solid 10px",
+                      textAlign: "center",
+                      padding: "10px",
+                    }}>
+            <div style={legend}>
+              <img src={joy} style={metric}/>
+              <div>
+                <h3>Joy</h3>
+                <div>
+                  <br />
+                  <h5>Optimism, Serenity, Love, Ecstacy</h5>
                 </div>
               </div>
- */}
-            <Card.Title  as="h2" style={{fontWeight: "bold"}}>Emotional Language</Card.Title>
-            <span style={text}>Read what these mean here: </span><a href="https://www.6seconds.org/2017/04/27/plutchiks-model-of-emotions/" target="_blank" rel="noopener noreferrer" style={text}>Plutchik's Wheel of Emotions</a> 
-
-            <div style={metricContainer}>
-                  <div style={legend}>
-                    <img src={joy} style={metric} alt="joy"></img>
-                    <p>Joy</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={trust} style={metric} alt="trust"></img>
-                    <p>Trust</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={fear} style={metric} alt="fear"></img>
-                    <p>Fear</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={surprise} style={metric} alt="surprise"></img>
-                    <p>Surpirse</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={sadness} style={metric} alt="sadness"></img>
-                    <p>Sadness</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={disgust} style={metric} alt="disgust"></img>
-                    <p>Disgust</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={anger} style={metric} alt="anger"></img>
-                    <p>Anger</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={anticipation} style={metric} alt="anticipation"></img>            
-                    <p>Anticipation</p>
-                  </div>
-              </div>
-
-
-            <Card.Title  as="h2" style={{fontWeight: "bold"}}>Tone</Card.Title>
-            <div style={metricContainer}>
-                  <div style={legend}>
-                    <img src={positive} style={metric} alt="positive"></img>
-                    <p>Positive</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={neutral} style={metric} alt="neutral"></img>
-                    <p>Neutral</p>
-                  </div>
-                  <div style={legend}>
-                    <img src={negative} style={metric} alt="negative"></img>
-                    <p>Negative</p>
-                  </div>
+            </div>
+            </div>
+            <div style = {{
+                      border: "#d8e9b5 solid 10px",
+                      textAlign: "center",
+                      padding: "10px",
+                    }}>            
+            <div style={legend}>
+              <img src={trust} style={metric}/>
+              <div>
+                <h3>Admiration</h3>
+                <div>
+                  <br />
+                  <h5>Love, Acceptance, Submission, Hopeful</h5>
                 </div>
-          </Card.Body>
-        </Card>
+              </div>
+            </div>
+            </div>
+            <div style = {{
+                      border: "#a0d5b1 solid 10px",
+                      textAlign: "center",
+                      padding: "10px",
+                    }}>            
+            <div style={legend}>
+              <img src={fear} style={metric}/>
+              <div>
+                <h3>Fear</h3>
+                <div>
+                  <br />
+                  <h5>Submission, Apprehension, Awe, Terror</h5>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div style = {{
+                      border: "#bdd8ec solid 10px",
+                      textAlign: "center",
+                      padding: "10px",
+                    }}>            
+            <div style={legend}>
+              <img src={surprise} style={metric}/>
+              <div>
+                <h3>Surprise</h3>
+                <div>
+                  <br />
+                  <h5>Awe, Distraction, Disapproval, Amazement</h5>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div style = {{
+                      border: "#c7def4 solid 10px",
+                      textAlign: "center",
+                      padding: "10px",
+                    }}>            
+            <div style={legend}>
+              <img src={sadness} style={metric}/>
+              <div>
+                <h3>Sadness</h3>
+                <div>
+                  <br />
+                  <h5>Disapproval, Pensiveness, Remorse, Grief</h5>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div style = {{
+                      border: "#ccbfde solid 10px",
+                      textAlign: "center",
+                      padding: "10px",
+                    }}>            
+            <div style={legend}>
+              <img src={disgust} style={metric}/>
+              <div>
+                <h3>Disgust</h3>
+                <div>
+                  <br />
+                  <h5>Remorse, Boredom, Contempt, Loathing</h5>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div style = {{
+                      border: "#f9bab0 solid 10px",
+                      textAlign: "center",
+                      padding: "10px",
+                    }}>            
+            <div style={legend}>
+              <img src={anger} style={metric}/>
+              <div>
+                <h3>Anger</h3>
+                <div>
+                  <br />
+                  <h5>Contempt, Annoyance, Aggressiveness, Rage</h5>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div style = {{
+                      border: "#ffdfb5 solid 10px",
+                      textAlign: "center",
+                      padding: "10px",
+                    }}>            
+            <div style={legend}>
+              <img src={anticipation} style={metric}/>
+              <div>
+                <h3>Anticipation</h3>
+                <div>
+                  <br />
+                  <h5>Aggressiveness, Interest, Optimism, Vigilance</h5>
+                </div>
+              </div>
+            </div>
+            </div>        
+          </div>
 
-          {/* Resaerch and Code */}
-          <Card style={{marginBottom: "25px"}}>
-            <Card.Header as="h1" style={header}>Research and Code</Card.Header>
-            <Card.Body>
-              <Card.Text>
-                <span style={text}>Read more about our research here: </span><a href={Research} target="_blank" rel="noopener noreferrer" style={text}>Research</a> <br/><br/>
-                <span style={text}>Review our open source code here: </span><a href="https://github.com/MetrixNews" target="_blank" rel="noopener noreferrer" style={text}>Github</a> <br/><br/>
-                <p style={text}>Email: info@metrix.news</p>
-              </Card.Text> 
-            </Card.Body>
-          </Card>
+{/* Founders */}
+          <div>
+            <h2 style={header}>Founders</h2>
+          </div>
+          <CardGroup>
+          <Card style={founder}>
+              <Card.Body>
+                <Card.Text>
+                <h3>AJ Raymond</h3>
+                  <br />
+                  <h5>Researcher, Frontend Engineer, Data Scientist</h5>
+                  <h5><a href="https://www.linkedin.com/in/antraymond/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h5>
+                </Card.Text>
+              </Card.Body>
+             </Card>
 
-          {/* Team */}
-          <Card>
-            <Card.Header as="h1" style={header}>Founders</Card.Header>
-          </Card>
-          <CardGroup style={{marginBottom: "25px"}}>
-            <Card style={founder}>
+             <Card style={founder}>
               <Card.Body>
-                <Card.Title as="h2" style={{fontWeight: "bold"}}>AJ Raymond</Card.Title>
-                <Card.Text as="h4">
-                  Researcher, Frontend Engineer, Data Scientist
-                  <br></br>
-                  <a href="https://www.linkedin.com/in/antraymond/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <Card.Text>
+                <h3>Marcus Cymerman</h3>
+                  <br />
+                  <h5>Backend Engineer, Data Scientist</h5>
+                  <h5><a href="https://www.linkedin.com/in/mpcymerman/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h5>
                 </Card.Text>
               </Card.Body>
             </Card>
+
             <Card style={founder}>
               <Card.Body>
-                <Card.Title as="h2" style={{fontWeight: "bold"}}>Marcus Cymerman</Card.Title>
-                <Card.Text as="h4">
-                  Backend Engineer, Data Scientist
-                  <br></br>
-                  <a href="https://www.linkedin.com/in/mpcymerman/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <Card.Text>
+                <h3>Simon Mantlo</h3>
+                  <br />
+                  <h5>Researcher, Data Engineer</h5>
+                  <h5><a href="https://www.linkedin.com/in/simonmantlo/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h5>
                 </Card.Text>
               </Card.Body>
             </Card>
+
             <Card style={founder}>
               <Card.Body>
-                <Card.Title as="h2" style={{fontWeight: "bold"}}>Simon Mantlo</Card.Title>
-                <Card.Text as="h4">
-                  Researcher, Data Engineer 
-                  <br></br>
-                  <a href="https://www.linkedin.com/in/simonmantlo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <Card.Text>
+                <h3>Kiki Mowery</h3>
+                  <br />
+                  <h5>Designer, UI/UX Tester </h5>
+                  <h5><a href="https://www.linkedin.com/in/kiki-mowery-532465a7/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h5>
                 </Card.Text>
               </Card.Body>
             </Card>
+
             <Card style={founder}>
               <Card.Body>
-                <Card.Title as="h2" style={{fontWeight: "bold"}}>Kiki Mowery</Card.Title>
-                <Card.Text as="h4">
-                  Designer, UI/UX Tester 
-                  <br></br>
-                  <a href="https://www.linkedin.com/in/kiki-mowery-532465a7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <Card.Text>
+                <h3>Nick Wethington</h3>
+                  <br />
+                  <h5>UI/UX Tester</h5>
+                  <h5><a href="https://www.linkedin.com/in/nick-wethington-387ab01a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h5>
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card style={founder}>
-              <Card.Body>
-                <Card.Title as="h2" style={{fontWeight: "bold"}}>Nick Wethington</Card.Title>
-                <Card.Text as="h4">
-                  UI/UX Tester 
-                  <br></br>
-                  <a href="https://www.linkedin.com/in/nick-wethington-387ab01a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </CardGroup>
+            </CardGroup>
 
           {/* Cooklies Policy */}
-          <Card style={{marginBottom: "25px"}}>
-            <Card.Header as="h1" style={header}>Cookies Policy</Card.Header>
-            <Card.Body>
-              <Card.Text>
-                <span style={text}>Review our cookies policy here:  </span> 
-                <a href="https://www.cookiepolicygenerator.com/live.php?token=MaqKu1fNLSk0aRRRo1DMTN6Totu21QJN" alt="cookiesPolicy" style={text}>Cookies Policy</a>
-              </Card.Text> 
-            </Card.Body>
-          </Card>
-
+          <div >
+            <h2 style={header}>Cookies Policy</h2>
+            <h5>Review our cookies policy here:  </h5> 
+            <h5><a href="https://www.cookiepolicygenerator.com/live.php?token=MaqKu1fNLSk0aRRRo1DMTN6Totu21QJN" alt="cookiesPolicy">Cookies Policy</a></h5>
+          </div>
+          
           {/* Acknowledgements */}
-          <Card style={{marginBottom: "25px"}}>
-            <Card.Header as="h1" style={header}>Acknowledgements</Card.Header>
-            <Card.Body>
-              <Card.Text>
-                <p style={text}>We sincerely thank the following organizations for their supporting research, services, designs, and more.</p>
-                <a href="https://kelley.iu.edu/faculty-research/centers-institutes/entrepreneurship-innovation/index.cshtml" target="_blank" rel="noopener noreferrer" style={text}>Johnson Center for Enrepreneurship and Innovation</a> <br></br>
-                <a href="https://luddy.indiana.edu/academics/innovation-entrepreneurship/index.html" target="_blank" rel="noopener noreferrer" style={text}>Shoemaker Innovation Center</a> <br></br>
-                <a href="https://mediacloud.org/" target="_blank" rel="noopener noreferrer" style={text}>MediaCloud</a> <br></br>
-                <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer" style={text}>NewsAPI</a> <br></br>
-                <a href="http://sentiment.nrc.ca/lexicons-for-research/" target="_blank" rel="noopener noreferrer" style={text}>NRC Emotion Lexicon</a> <br></br>
-                <a href="https://www.joypixels.com/emoji" target="_blank" rel="noopener noreferrer" style={text}>JoyPixels</a> <br></br>
-              </Card.Text> 
-            </Card.Body>
-          </Card>
+          <div>
+            <h2 style={header}>Support</h2>
+            <h5>We sincerely thank the following organizations for their supporting research, services, designs, and more.</h5>
+            <h5><a href="https://kelley.iu.edu/faculty-research/centers-institutes/entrepreneurship-innovation/index.cshtml" target="_blank" rel="noopener noreferrer" >Johnson Center for Enrepreneurship and Innovation</a></h5> 
+            <h5><a href="https://luddy.indiana.edu/academics/innovation-entrepreneurship/index.html" target="_blank" rel="noopener noreferrer" >Shoemaker Innovation Center</a></h5>  
+            <h5><a href="https://mediacloud.org/" target="_blank" rel="noopener noreferrer" >MediaCloud</a></h5>  
+            <h5><a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer" >NewsAPI</a></h5>  
+            <h5><a href="http://sentiment.nrc.ca/lexicons-for-research/" target="_blank" rel="noopener noreferrer" >NRC Emotion Lexicon</a></h5>  
+            <h5><a href="https://www.joypixels.com/emoji" target="_blank" rel="noopener noreferrer" >JoyPixels</a></h5>  
+          </div>
 
-</div>         
+          {/* Contact */}
+          <div>
+            <h2 style={header}>Contact</h2>
+            <h5>Email: <a href="info@metrix.news" target="_blank" rel="noopener noreferrer" > info@metrix.news</a></h5> 
+            <h5>Open Source Code: <a href="https://github.com/MetrixNews" target="_blank" rel="noopener noreferrer" > Github</a></h5>  
+          </div>
+  </div>         
         )
     }
   }

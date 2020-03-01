@@ -60,7 +60,7 @@ class Newsfeed extends Component {
 
   render() {
     const contentStyle = {
-      paddingTop: this.props.styles.showSidebar ? 40 : this.props.styles.topBarHeight + 40,
+      paddingTop: this.props.styles.showSidebar ? 65 : this.props.styles.topBarHeight + 65,
       paddingRight: 10,
       paddingBottom: this.props.styles.showSidebar ? 10 : this.props.styles.footerMenuHeight + 20,
       paddingLeft: this.props.styles.showSidebar ? this.props.styles.sidebarWidth + 10 : 10
@@ -74,9 +74,9 @@ class Newsfeed extends Component {
             <Loader
               type="Oval"
               color="var(--metrix-color)"
-              height={50}
-              width={50}
-              timeout={500} //.5 secs
+              height={75}
+              width={75}
+              timeout={1000} //.5 secs
             />
           </div>
           <div className="app">

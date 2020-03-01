@@ -84,6 +84,13 @@ function Data1(props) {
             </span>        
             )
     }
+    if(url.search(url.match(".int")) >= 0) {
+        return (
+            <span style={font}>
+                {url.substring(0,url.search(".int")+4)}
+            </span>        
+            )
+    }
     else {
         return (
             <span style={font}>{url}</span>

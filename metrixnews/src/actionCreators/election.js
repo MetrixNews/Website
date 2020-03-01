@@ -52,7 +52,6 @@ const candidates = [
     "https://api.metrix.news/articles/candidate/Tulsi%20Gabbard",
     "https://api.metrix.news/articles/candidate/Amy%20Klobuchar",
     "https://api.metrix.news/articles/candidate/Bernie%20Sanders",
-    "https://api.metrix.news/articles/candidate/Tom%20Steyer",
     "https://api.metrix.news/articles/candidate/Donald%20J.%20Trump",
     "https://api.metrix.news/articles/candidate/Elizabeth%20Warren",
     "https://api.metrix.news/articles/candidate/William%20F.%20Weld",
