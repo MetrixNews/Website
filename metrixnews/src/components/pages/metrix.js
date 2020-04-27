@@ -144,7 +144,7 @@ class Metrix extends PureComponent {
             <div style={legend}>
               <img src={neutral} style={metric}/>
               <div>
-                <h3>Nuetral</h3>
+                <h3>Neutral</h3>
               </div>
             </div>
             </div>    
