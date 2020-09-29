@@ -8,4 +8,4 @@ This demo provides a brief look into Metrix News (which is no longer published).
 
 Within each topic, users could find relevant and timely stories from an even balance of news sources along the political spectrum. 
 
-Each story contains a brief glimpse of its contents. 
+Each story contains a brief glimpse of its contents along with sentiment and emotional indicators.
